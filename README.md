@@ -56,6 +56,14 @@ Just include `build/randopeep.min.js` in your thing, and use it like normal:
 </script>
 ```
 
+There is also support for AMD/require.js:
+
+```javascript
+define(['randopeep.min'], function(radnopeep){
+	document.body.innerHTML = 'I am a totally leet haxor, my name is ' + randopeep.get('person/netrunner');
+});
+```
+
 ## Testing
 
 You can run my CLI tests with `npm test` or open test/index.html to run same tests, in-browser.  The tests give excellant usage examples.
