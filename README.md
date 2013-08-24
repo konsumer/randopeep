@@ -6,11 +6,11 @@ It's basically a random lookup from a list of names, and some quick functions fo
 
 Built-in lists of random things include:
 
-* Modern male/female names from census data (person/modern/male, person/modern/female)
-* Hacker names (person/netrunner)
-* Jobs a person might do in the modern world (jobs)
-* State (us/state)
-* State Abbreviations (us/state/abbr)
+* Modern male/female names from census data (get(person/modern/male), get(person/modern/female))
+* Hacker names (get(person/netrunner))
+* Jobs a person might do in the modern world (get(jobs))
+* State (get(us/state))
+* State Abbreviations (get(us/state/abbr))
 
 Built-in generator functions for random stuff include:
 
