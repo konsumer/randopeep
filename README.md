@@ -15,7 +15,7 @@ Built-in lists of random things include:
 Built-in generator functions for random stuff include:
 
 * Credit card numbers (cc('mastercard'))
-* Random paragraphs (lorem())
+* Random paragraphs (ipsum())
 * Zipcode (address.zip())
 * City (address.city())
 * Geo-location ([address.lat(), address.long()])
