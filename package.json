@@ -1,6 +1,6 @@
 {
   "name": "randopeep",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Generate random names of things, based on data files",
   "main": "index.js",
   "scripts": {
