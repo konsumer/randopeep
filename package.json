@@ -1,0 +1,30 @@
+{
+  "name": "randopeep",
+  "version": "0.0.0",
+  "description": "Generate random names of things, based on data files",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "author": "David Konsumer <konsumer@jetboystudio.com>",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "mocha": "~1.12.0",
+    "chai": "~1.7.2",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-global-wrap": "~1.1.0",
+    "grunt-contrib-uglify": "~0.2.2"
+  },
+  "homepage" : "https://github.com/konsumer/randopeeps",
+  "bugs":{
+    "url" : "https://github.com/konsumer/randopeeps/issues",
+    "email" : "konsumer@jetboystudio.com"
+  },
+  "repository": {
+    "type" : "git",
+    "url":"https://github.com/konsumer/randopeeps.git"
+  }
+}
+
