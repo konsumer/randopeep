@@ -4,7 +4,7 @@ Generate details about people, in javascript, based on data files. Originally ma
 
 It's basically a random lookup from a list of names.
 
-Built-in libraies include:
+Built-in lists include:
 
 *  Modern male/female names from census data (person/modern/male, person/modern/female)
 *  Hacker names (person/netrunner)
