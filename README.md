@@ -22,7 +22,7 @@ Built-in generator functions for random stuff include:
 
 You can add your own, if you install dev-tools with `npm install` then add whatever you want to `data/` dir, and run `grunt`.
 
-Format is 1 word per line.
+Format is 1 item per line.
 
 ### Using name-libraries
 
@@ -54,7 +54,6 @@ Just include `build/randopeep.min.js` in your thing, and use it like normal:
 	document.body.innerHTML = 'I am a totally leet haxor, my name is ' + randopeep.get('person/netrunner');
 </script>
 ```
-
 
 ## Testing
 
