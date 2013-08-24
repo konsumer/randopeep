@@ -1,4 +1,4 @@
-# Rando Peeps Data
+# [Rando Peeps Data](http://konsumer.github.io/randopeeps/)
 
 Generate details about people, in javascript, based on data files. Originally made for generating fake NPCs for RPGs & fake accounts for things online.
 
