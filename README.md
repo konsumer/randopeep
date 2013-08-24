@@ -20,7 +20,7 @@ Format is 1 word per line.
 
 ### Using different name-libraries
 
-Say you want a modern Female firstname, and a hacker lastname:
+Say you want a modern female firstname, and a hacker lastname:
 
 ```javascript
 var myLeetName = randopeep.get('person/modern/female', 'person/netrunner');
