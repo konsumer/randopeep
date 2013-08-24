@@ -9,12 +9,16 @@ Built-in lists of random things include:
 * Modern male/female names from census data (person/modern/male, person/modern/female)
 * Hacker names (person/netrunner)
 * Jobs a person might do in the modern world (jobs)
+* State (us/state)
+* State Abbreviations (us/state/abbr)
 
 Built-in generator functions for random stuff include:
 
-* Credit card numbers (randopeep.cc('mastercard'))
-* Random paragraphs (randopeep.lorem())
-
+* Credit card numbers (cc('mastercard'))
+* Random paragraphs (lorem())
+* Zipcode (address.zip())
+* City (address.city())
+* Geo-location ([address.lat(), address.long()])
 
 ## Usage
 
