@@ -4,7 +4,7 @@ Generate details about people, in javascript, based on data files. Originally ma
 
 It's basically a random lookup from a list of names, and some quick functions for generating ranndom data, with a lot of ideas from [Faker](https://github.com/Marak/Faker.js)
 
-Built-in lists of random thingsinclude:
+Built-in lists of random things include:
 
 * Modern male/female names from census data (person/modern/male, person/modern/female)
 * Hacker names (person/netrunner)

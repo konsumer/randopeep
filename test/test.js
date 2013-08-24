@@ -79,6 +79,15 @@ describe('randopeep', function() {
 		
 	});
 
+	describe('ipsum', function() {
+		var ipsum;
+		
+		ipsum = randopeep.ipsum();
+		it('should generate 200 words, by default.', function() {
+			expect(ipsum.split(' ')).length.is(200);
+		});
+	});
+
 	/*
 	// need to work this out...
 	describe('magic', function(){
