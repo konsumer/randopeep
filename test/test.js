@@ -40,4 +40,9 @@ describe('randopeep', function() {
 		expect(name).to.not.be.empty;
 	});
 
+	name = randopeep.get('jobs');
+	it('should correctly generate a job (' + name + ')', function() {
+		expect(name).to.not.be.empty;
+	});
+
 });

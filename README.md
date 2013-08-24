@@ -8,6 +8,7 @@ Built-in lists include:
 
 *  Modern male/female names from census data (person/modern/male, person/modern/female)
 *  Hacker names (person/netrunner)
+*  Jobs (jobs)
 
 ## Usage
 
