@@ -43,7 +43,7 @@ var myLeetName = randopeep.get('person/netrunner');
 Just include `build/randopeep.min.js` in your thing, and use it like normal:
 
 ```html
-<script src="randopeep.min.js"></script>
+<script src="http://konsumer.github.io/randopeeps/randopeep.min.js"></script>
 <script>
 	document.body.innerHTML = 'I am a totally leet haxor, my name is ' + randopeep.get('person/netrunner');
 </script>
