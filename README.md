@@ -13,6 +13,7 @@ Built-in lists of random things include:
 Built-in generator functions for random stuff include:
 
 * Credit card numbers (randopeep.cc('mastercard'))
+* Random paragraphs (randopeep.lorem())
 
 
 ## Usage

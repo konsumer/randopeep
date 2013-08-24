@@ -16,12 +16,12 @@ describe('randopeep', function() {
 
 	describe('get', function() {
 		var name;
-		name = randopeep.get('person/modern/female','person/modern/last');
+		name = randopeep.get('person/prefix/female', 'person/modern/female','person/modern/last');
 		it('should correctly generate modern female name (' + name + ')', function() {
 			expect(name).to.not.be.empty;
 		});
 
-		name = randopeep.get('person/modern/male','person/modern/last');
+		name = randopeep.get('person/prefix/male', 'person/modern/male','person/modern/last');
 		it('should correctly generate modern male name (' + name + ')', function() {
 			expect(name).to.not.be.empty;
 		});
@@ -85,6 +85,35 @@ describe('randopeep', function() {
 		ipsum = randopeep.ipsum();
 		it('should generate 200 words, by default.', function() {
 			expect(ipsum.split(' ')).length.is(200);
+		});
+	});
+
+	describe('address', function() {
+		var city,zip,geo,state;
+		
+		city = randopeep.address.city();
+		it('should generate a city name ('+city+')', function() {
+			expect(city).to.not.be.empty;
+		});
+
+		zip = randopeep.address.zip();
+		it('should generate a zip code ('+zip+')', function() {
+			expect(zip).to.not.be.empty;
+		});
+
+		geo = [randopeep.address.lat(),randopeep.address.long()];
+		it('should generate a geo location ('+geo+')', function() {
+			expect(geo).to.not.be.empty;
+		});
+
+		state = randopeep.get('us/state');
+		it('should correctly generate a state name (' + state + ')', function() {
+			expect(state).to.not.be.empty;
+		});
+
+		state = randopeep.get('us/state/abbr');
+		it('should correctly generate a state abbreviation(' + state + ')', function() {
+			expect(state).to.not.be.empty;
 		});
 	});
 

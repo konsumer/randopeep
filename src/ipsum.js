@@ -16,7 +16,7 @@ module.exports = function(randopeep){
 			var word = randopeep.get(list);
 
 			// dynamically make random sentences
-			if (i===0 || i % sentenceLengths[i%sentenceLengths.length] === 0){
+			if (i===0 || i % sentenceLengths[i%5] === 0){
 				word = randopeep.titleCase(word);
 				if (i!==0){
 					out[i-1] += '.';

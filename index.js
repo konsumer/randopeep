@@ -1,10 +1,12 @@
 'use strict';
 
 module.exports = require('./src/randopeep.js');
+
 module.exports.cc = require('./src/cc.js')(module.exports);
 module.exports.ipsum = require('./src/ipsum.js')(module.exports);
+module.exports.address = require('./src/address.js')(module.exports);
 
-// wrapper for AMD/browser global
+// wrapper for AMD/browser-global
 /* global define */
 if (typeof(define) === 'function'){
 	define(function(){
