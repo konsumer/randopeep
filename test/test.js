@@ -8,7 +8,7 @@
 
 // for client-side, you should have included these as script tags (see index.html)
 if (!chai){ var chai = require('chai'); }
-if (!randopeep){var randopeep = require('../src/index.js'); }
+if (!randopeep){var randopeep = require('../index.js'); }
 
 var expect = chai.expect;
 
@@ -58,15 +58,15 @@ describe('randopeep', function() {
 			'discover': new RegExp('6011[0-9]{12}')
 		};
 
-		// usign 13 to test visa & mastercard, others should have differnt lengths
+		// using 13 to test visa & mastercard, others should have different lengths
 		for (var v in validators){
 			cc = randopeep.cc(v, 13);
 			it('should be able to generate a valid ' + v + ' (' + cc + ')', function() {
 				expect(cc).match(validators[v]);
 				if (v!='visa' && v!='mastercard'){
-					expect(visa).length.is.not(13);
+					expect(cc).length.is.not(13);
 				}else{
-					expect(visa).length.is(13);
+					expect(cc).length.is(13);
 				}
 			});
 		}
@@ -83,7 +83,11 @@ describe('randopeep', function() {
 	// need to work this out...
 	describe('magic', function(){
 		it('should be able to resolve randopeep.gen.person.netrunner', function(){
-			console.log(randopeep.gen.person.netrunner);
+			expect(randopeep.gen.person.netrunner).to.not.be.empty;
+		});
+
+		it('should be able to resolve randopeep.gen.person.modern.male', function(){
+			expect(randopeep.gen.person.modern.male).to.not.be.empty;
 		});
 	});
 	*/

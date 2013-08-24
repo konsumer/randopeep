@@ -8,7 +8,7 @@ var randopeep = {};
  * @return Array        the members of that dictionary
  */
 randopeep.getList = function(name){
-	return require('../data_js/' + name + '.js');
+	return randopeep.lists['data_js/' + name + '.js'];
 };
 
 /**
@@ -24,8 +24,5 @@ randopeep.get = function(){
 	}
 	return out.join(' ');
 };
-
-randopeep.cc = require('./cc.js');
-
 
 module.exports = randopeep;

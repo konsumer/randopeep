@@ -7,8 +7,8 @@ module.exports = function(grunt) {
 		'wordlists': {
 			'default': {
 				'options':{
-					'main':'src/index.js',
-					'out': 'build/tmp.js',
+					'main':'index.js',
+					'out': 'index.js',
 				},
 				'src':  ['**/*.txt'],
 				'cwd': 'data/',
@@ -18,18 +18,15 @@ module.exports = function(grunt) {
 			}
 		},
 		
-		'globalwrap': {
+		'browserify': {
 			'default': {
-				'main': 'build/tmp.js',
-				'global': '<%= pkg.name %>',
-				'dest': 'build/<%= pkg.name %>.js',
-				'bundleOptions': { debug: true }
+				'files': {'build/<%= pkg.name %>.js': 'index.js'}
 			}
 		},
 
 		'uglify': {
 			'options': {
-				'banner': '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+				'banner': '/*! <%= pkg.name %> v<%= pkg.version %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
 			},
 			'default': {
 				'src': 'build/<%= pkg.name %>.js',
@@ -39,7 +36,6 @@ module.exports = function(grunt) {
 
 		'clean': {
 			'default': ['build','data_js'],
-			'tmp': 'build/tmp.js'
 		}
 	});
 
@@ -56,17 +52,17 @@ module.exports = function(grunt) {
 		var options = this.options({});
 
 		if (options.main && options.out){
-			var t = grunt.file.read(options.main) + "\n// For browserify: pre-cache data-requires\n";
+			var t = grunt.file.read(options.main).replace(/\n\/\/<browserify>(.|\n)+\/\/<\/browserify>/, '') + "\n//<browserify>\n";
 			out.forEach(function(o){
-				t += "require('../" + o + "');\n"
+				t += "module.exports.lists['"+o+"'] = require('./" + o + "');\n"
 			});
-			grunt.file.write(options.out, t);
+			grunt.file.write(options.out, t + "//</browserify>");
 		}
 	});
 
 	grunt.loadNpmTasks('grunt-contrib-clean');
-	grunt.loadNpmTasks("grunt-global-wrap");
+	grunt.loadNpmTasks('grunt-browserify');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 
-	grunt.registerTask('default', ['clean:default', 'wordlists', 'globalwrap', 'clean:tmp', 'uglify']);
+	grunt.registerTask('default', ['clean:default', 'wordlists', 'browserify', 'uglify']);
 };
