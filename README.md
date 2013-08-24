@@ -2,13 +2,18 @@
 
 Generate details about people, in javascript, based on data files. Originally made for generating fake NPCs for RPGs & fake accounts for things online.
 
-It's basically a random lookup from a list of names.
+It's basically a random lookup from a list of names, and some quick functions for generating ranndom data, with a lot of ideas from [Faker](https://github.com/Marak/Faker.js)
 
-Built-in lists include:
+Built-in lists of random thingsinclude:
 
-*  Modern male/female names from census data (person/modern/male, person/modern/female)
-*  Hacker names (person/netrunner)
-*  Jobs (jobs)
+* Modern male/female names from census data (person/modern/male, person/modern/female)
+* Hacker names (person/netrunner)
+* Jobs (jobs)
+
+Built-in generator functions for random stuff include:
+
+* Credit card numbers (randopeep.cc('mastercard'))
+
 
 ## Usage
 
@@ -19,7 +24,7 @@ You can add your own, if you install dev-tools with `npm install` then add whate
 
 Format is 1 word per line.
 
-### Using different name-libraries
+### Using name-libraries
 
 Say you want a modern female firstname, and a hacker lastname:
 
@@ -49,3 +54,8 @@ Just include `build/randopeep.min.js` in your thing, and use it like normal:
 	document.body.innerHTML = 'I am a totally leet haxor, my name is ' + randopeep.get('person/netrunner');
 </script>
 ```
+
+
+## Testing
+
+You can run my CLI tests with `npm test` or open test/index.html to run same tests, in-browser.  The tests give excellant usage examples.

@@ -13,36 +13,78 @@ if (!randopeep){var randopeep = require('../src/index.js'); }
 var expect = chai.expect;
 
 describe('randopeep', function() {
-	var name;
 
-	name = randopeep.get('person/modern/female','person/modern/last');
-	it('should correctly generate modern female name (' + name + ')', function() {
-		expect(name).to.not.be.empty;
+	describe('get', function() {
+		var name;
+		name = randopeep.get('person/modern/female','person/modern/last');
+		it('should correctly generate modern female name (' + name + ')', function() {
+			expect(name).to.not.be.empty;
+		});
+
+		name = randopeep.get('person/modern/male','person/modern/last');
+		it('should correctly generate modern male name (' + name + ')', function() {
+			expect(name).to.not.be.empty;
+		});
+
+		name = randopeep.get('person/netrunner');
+		it('should correctly generate Netrunner name (' + name + ')', function() {
+			expect(name).to.not.be.empty;
+		});
+
+		name = randopeep.get('person/modern/female', 'person/netrunner');
+		it('should correctly generate a female Netrunner name (' + name + ')', function() {
+			expect(name).to.not.be.empty;
+		});
+
+		name = randopeep.get('person/modern/male', 'person/netrunner');
+		it('should correctly generate a male Netrunner name (' + name + ')', function() {
+			expect(name).to.not.be.empty;
+		});
+
+		name = randopeep.get('jobs');
+		it('should correctly generate a job (' + name + ')', function() {
+			expect(name).to.not.be.empty;
+		});
 	});
 
-	name = randopeep.get('person/modern/male','person/modern/last');
-	it('should correctly generate modern male name (' + name + ')', function() {
-		expect(name).to.not.be.empty;
+	describe('cc', function() {
+		var cc,visa;
+
+		// RegExpes that validate format of CC#
+		var validators = {
+			'visa': new RegExp('4(?:[0-9]{12}|[0-9]{15})'),
+			'mastercard':  new RegExp('5[1-5][0-9]{14}'),
+			'amex': new RegExp('3[47][0-9]{13}'),
+			'discover': new RegExp('6011[0-9]{12}')
+		};
+
+		// usign 13 to test visa & mastercard, others should have differnt lengths
+		for (var v in validators){
+			cc = randopeep.cc(v, 13);
+			it('should be able to generate a valid ' + v + ' (' + cc + ')', function() {
+				expect(cc).match(validators[v]);
+				if (v!='visa' && v!='mastercard'){
+					expect(visa).length.is.not(13);
+				}else{
+					expect(visa).length.is(13);
+				}
+			});
+		}
+
+		visa = randopeep.cc();
+		it('should fake a valid 16 digit Visa, by default (' + visa + ')', function() {
+			expect(visa).match(validators.visa).length.is(16);
+		});
+
+		
 	});
 
-	name = randopeep.get('person/netrunner');
-	it('should correctly generate Netrunner name (' + name + ')', function() {
-		expect(name).to.not.be.empty;
+	/*
+	// need to work this out...
+	describe('magic', function(){
+		it('should be able to resolve randopeep.gen.person.netrunner', function(){
+			console.log(randopeep.gen.person.netrunner);
+		});
 	});
-
-	name = randopeep.get('person/modern/female', 'person/netrunner');
-	it('should correctly generate a female Netrunner name (' + name + ')', function() {
-		expect(name).to.not.be.empty;
-	});
-
-	name = randopeep.get('person/modern/male', 'person/netrunner');
-	it('should correctly generate a male Netrunner name (' + name + ')', function() {
-		expect(name).to.not.be.empty;
-	});
-
-	name = randopeep.get('jobs');
-	it('should correctly generate a job (' + name + ')', function() {
-		expect(name).to.not.be.empty;
-	});
-
+	*/
 });
