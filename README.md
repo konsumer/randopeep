@@ -2,7 +2,7 @@
 
 Generate details about people, in javascript, based on data files. Originally made for generating fake NPCs for RPGs & fake accounts for things online.
 
-It's basically a random lookup from a list of names, and some quick functions for generating ranndom data, with a lot of ideas from [Faker](https://github.com/Marak/Faker.js)
+It's basically a random lookup from a list of names, and some quick functions for generating random data, with a lot of ideas from [Faker](https://github.com/Marak/Faker.js)
 
 Built-in lists of random things include:
 
