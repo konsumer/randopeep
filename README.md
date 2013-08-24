@@ -17,7 +17,7 @@ Built-in lists include:
 
 You can add your own, if you install dev-tools with `npm install` then add whatever you want to `data/` dir, and run `grunt`.
 
-Format is 1 word per line.
+Format is 1 item per line.
 
 ### Using different name-libraries
 
