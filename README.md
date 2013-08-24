@@ -8,7 +8,7 @@ Built-in lists of random thingsinclude:
 
 * Modern male/female names from census data (person/modern/male, person/modern/female)
 * Hacker names (person/netrunner)
-* Jobs (jobs)
+* Jobs a person might do in the modern world (jobs)
 
 Built-in generator functions for random stuff include:
 
