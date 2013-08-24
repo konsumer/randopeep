@@ -112,7 +112,7 @@ describe('randopeep', function() {
 		});
 
 		state = randopeep.get('us/state/abbr');
-		it('should correctly generate a state abbreviation(' + state + ')', function() {
+		it('should correctly generate a state abbreviation (' + state + ')', function() {
 			expect(state).to.not.be.empty;
 		});
 	});
