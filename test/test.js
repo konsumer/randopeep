@@ -5,6 +5,7 @@
 'use strict';
 /* global describe */
 /* global it */
+/*jshint expr: true */
 
 // for client-side, you should have included these as script tags (see index.html)
 if (!chai){ var chai = require('chai'); }
@@ -58,25 +59,23 @@ describe('randopeep', function() {
 			'discover': new RegExp('6011[0-9]{12}')
 		};
 
+		visa = randopeep.cc();
+		it('should fake a valid 16 digit Visa, by default (' + visa + ')', function() {
+			expect(visa).match(validators.visa).length.is(16);
+		});
+
 		// using 13 to test visa & mastercard, others should have different lengths
 		for (var v in validators){
 			cc = randopeep.cc(v, 13);
 			it('should be able to generate a valid ' + v + ' (' + cc + ')', function() {
 				expect(cc).match(validators[v]);
-				if (v!='visa' && v!='mastercard'){
+				if (v !== 'visa' && v !== 'mastercard'){
 					expect(cc).length.is.not(13);
 				}else{
 					expect(cc).length.is(13);
 				}
 			});
 		}
-
-		visa = randopeep.cc();
-		it('should fake a valid 16 digit Visa, by default (' + visa + ')', function() {
-			expect(visa).match(validators.visa).length.is(16);
-		});
-
-		
 	});
 
 	describe('ipsum', function() {
@@ -199,7 +198,7 @@ describe('randopeep', function() {
 			expect(email).to.not.be.empty;
 		});
 
-		email = randopeep.internet.email("Cool Guy");
+		email = randopeep.internet.email('Cool Guy');
 		it('should generate an email address derived from "Cool Guy" ('+email+')', function() {
 			expect(email).to.not.be.empty;
 		});
@@ -208,12 +207,16 @@ describe('randopeep', function() {
 	/*
 	// need to work this out...
 	describe('magic', function(){
-		it('should be able to resolve randopeep.gen.person.netrunner', function(){
-			expect(randopeep.gen.person.netrunner).to.not.be.empty;
+		it('should be able to resolve randopeep.person.netrunner', function(){
+			expect(randopeep.person.netrunner).to.not.be.empty;
 		});
 
-		it('should be able to resolve randopeep.gen.person.modern.male', function(){
-			expect(randopeep.gen.person.modern.male).to.not.be.empty;
+		it('should be able to resolve randopeep.person.modern.male', function(){
+			expect(randopeep.person.modern.male).to.not.be.empty;
+		});
+
+		it('should be able to resolve randopeep.corporate.bs', function(){
+			expect(randopeep.corporate.bs).to.not.be.empty;
 		});
 	});
 	*/
