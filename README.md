@@ -19,6 +19,15 @@ Built-in generator functions for random stuff include:
 * Zipcode (address.zip())
 * City (address.city())
 * Geo-location (address.geo())
+* Street name (address.streetName())
+* Street address (address.streetAddress())
+* Company names (corporate.name())
+* Corporate catch-phrases (corporate.catchPhrase())
+* Corporate BS (corporate.bs())
+* IP address (internet.ip())
+* Domain name (internet.domain())
+* Email address (internet.email())
+* Username (internet.username())
 
 ## Usage
 

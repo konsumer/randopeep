@@ -89,7 +89,7 @@ describe('randopeep', function() {
 	});
 
 	describe('address', function() {
-		var city,zip,geo,state;
+		var city,zip,geo,state,address,county,country;
 		
 		city = randopeep.address.city();
 		it('should generate a city name ('+city+')', function() {
@@ -107,13 +107,96 @@ describe('randopeep', function() {
 		});
 
 		state = randopeep.get('us/state');
-		it('should correctly generate a state name (' + state + ')', function() {
+		it('should correctly generate a US state name (' + state + ')', function() {
 			expect(state).to.not.be.empty;
 		});
 
 		state = randopeep.get('us/state/abbr');
-		it('should correctly generate a state abbreviation (' + state + ')', function() {
+		it('should correctly generate a US state abbreviation (' + state + ')', function() {
 			expect(state).to.not.be.empty;
+		});
+
+		county = randopeep.get('uk/county');
+		it('should correctly generate a UK county (' + county + ')', function() {
+			expect(county).to.not.be.empty;
+		});
+
+		country = randopeep.get('uk/country');
+		it('should correctly generate a UK country (' + country + ')', function() {
+			expect(country).to.not.be.empty;
+		});
+
+		address=randopeep.address.streetAddress();
+		it('should correctly generate a street address (' + address + ')', function() {
+			expect(address).to.not.be.empty;
+		});
+	});
+
+	describe('corporate', function() {
+		var company, catchPhrase, bs;
+
+		company = randopeep.corporate.name();
+		it('should generate a company name ('+company+')', function() {
+			expect(company).to.not.be.empty;
+		});
+
+		company = randopeep.corporate.name('firm');
+		it('should generate a firm company name ('+company+')', function() {
+			expect(company).to.not.be.empty;
+		});
+
+		company = randopeep.corporate.name('small');
+		it('should generate a small company name ('+company+')', function() {
+			expect(company).to.not.be.empty;
+		});
+
+		company = randopeep.corporate.name('large');
+		it('should generate a large company name ('+company+')', function() {
+			expect(company).to.not.be.empty;
+		});
+
+		company = randopeep.corporate.name('cyber');
+		it('should generate a cyber company name ('+company+')', function() {
+			expect(company).to.not.be.empty;
+		});
+
+		catchPhrase = randopeep.corporate.catchPhrase();
+		it('should generate a catch-phrase ('+catchPhrase+')', function() {
+			expect(catchPhrase).to.not.be.empty;
+		});
+
+		bs = randopeep.corporate.bs();
+		it('should generate some BS ('+bs+')', function() {
+			expect(bs).to.not.be.empty;
+		});
+	});
+
+	describe('internet', function() {
+		var ip, username, domain, email;
+		
+		ip = randopeep.internet.ip();
+		it('should generate an IP address ('+ip+')', function() {
+			expect(ip).to.not.be.empty;
+		});
+
+		username = randopeep.internet.username();
+		it('should generate a username ('+username+')', function() {
+			expect(username).to.not.be.empty;
+		});
+
+		domain = randopeep.internet.domain();
+		it('should generate a domain name ('+domain+')', function() {
+			expect(domain).to.not.be.empty;
+		});
+
+		email = randopeep.internet.email();
+		it('should generate an email address ('+email+')', function() {
+			expect(email).to.not.be.empty;
+		});
+
+		email = randopeep.internet.email("Cool Guy");
+		it('should generate an email address derived from "Cool Guy" ('+email+')', function() {
+			expect(email).to.not.be.empty;
 		});
 	});
 

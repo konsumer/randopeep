@@ -23,17 +23,56 @@ module.exports = function(randopeep){
 	        }
 	    },
 
-		lat: function () {
+		latitude: function () {
 			return (randopeep.int(180 * 10000) / 10000.0 - 90.0).toFixed(4);
 		},
 
-		long: function () {
+		longitude: function () {
 			return (randopeep.int(360 * 10000) / 10000.0 - 180.0).toFixed(4);
 		},
 
 		geo:function(){
-			return [address.lat(), address.long()];
-		}
+			return [address.latitude(), address.longitude()];
+		},
+
+		// weighted with female & last names
+		streetName: function () {
+			switch (randopeep.int(6)) {
+			case 0:
+			case 1:
+				return randopeep.get('person/modern/last') + ' ' + randopeep.get('street/suffix');
+			case 2:
+			case 3:
+				return  randopeep.get('person/modern/female') + ' ' + randopeep.get('street/suffix');
+			case 4:
+				return  randopeep.get('person/modern/male') + ' ' + randopeep.get('street/suffix');
+			case 5:
+				return  randopeep.titleCase(randopeep.get('bs/noun')) + ' ' + randopeep.get('street/suffix');
+			}
+		},
+
+		streetAddress: function (useFullAddress) {
+			var out = (useFullAddress) ? address.secondaryAddress() : '';
+			switch (randopeep.int(3)) {
+			case 0:
+				return randopeep.replaceSymbolWithNumber('#####') + ' ' + address.streetName() + out;
+			case 1:
+				return randopeep.replaceSymbolWithNumber('####') + ' ' + address.streetName() + out;
+			case 2:
+				return randopeep.replaceSymbolWithNumber('###') + ' ' + address.streetName() + out;
+			}
+		},
+
+		secondaryAddress: function () {
+			return randopeep.replaceSymbolWithNumber(randopeep.randomEl(
+				[
+					'Apt. ###',
+					'Suite ###'
+				]
+			));
+		},
+
+
 	};
 
 	return address;
