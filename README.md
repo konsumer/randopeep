@@ -6,29 +6,29 @@ It's basically a random lookup from a list of names, and some quick functions fo
 
 Built-in lists of random things include:
 
-* Modern male/female names from census data (get(person/modern/male), get(person/modern/female), get(person/modern/last))
-* Hacker names (get(person/netrunner))
-* Jobs a person might do in the modern world (get(jobs))
-* State (get(us/state))
-* State Abbreviations (get(us/state/abbr))
+* Modern male/female names from census data (`get(person/modern/male)`, `get(person/modern/female)`, `get(person/modern/last)`)
+* Hacker names (`get(person/netrunner)`)
+* Jobs a person might do in the modern world (`get(jobs)`)
+* State (`get(us/state)`)
+* State Abbreviations (`get(us/state/abbr)`)
 
 Built-in generator functions for random stuff include:
 
-* Credit card numbers (cc('mastercard'))
-* Paragraphs (ipsum())
-* Zipcode (address.zip())
-* City (address.city())
-* Geo-location (address.geo())
-* Street name (address.streetName())
-* Street address (address.streetAddress())
-* Phone Number (address.phone())
-* Company names (corporate.name())
-* Corporate catch-phrases (corporate.catchPhrase())
-* Corporate BS (corporate.bs())
-* IP address (internet.ip())
-* Domain name (internet.domain())
-* Email address (internet.email())
-* Username (internet.username())
+* Credit card numbers (`cc('mastercard')`)
+* Paragraphs (`ipsum()`)
+* Zipcode (`address.zip()`)
+* City (`address.city()`)
+* Geo-location (`address.geo()`)
+* Street name (`address.streetName()`)
+* Street address (`address.streetAddress()`)
+* Phone Number (`address.phone()`)
+* Company names (`corporate.name()`)
+* Corporate catch-phrases (`corporate.catchPhrase()`)
+* Corporate BS (`corporate.bs()`)
+* IP address (`internet.ip()`)
+* Domain name (`internet.domain()`)
+* Email address (`internet.email()`)
+* Username (`internet.username()`)
 
 ## Usage
 
