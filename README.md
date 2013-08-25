@@ -16,6 +16,8 @@ All parameters are optional.
 * `randopeep.streetName(count)` - Street name
 * `randopeep.streetAddress(count, useFullAddress)` - Street address: , useFullAddress is a boolean for including secondary address
 * `randopeep.phone(count)` - Phone Number
+* `randopeep.uk.country(count)` - UK countries
+* `randopeep.uk.county(count)` - UK counties
 
 
 ### Credit-card Numbers

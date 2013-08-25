@@ -48,4 +48,8 @@ module.exports = function(randopeep){
 	randopeep.domain = function (n,derived){ return wrapFunc(n, randopeep.internet.domain, derived); };
 	randopeep.email = function (n,derived){ return wrapFunc(n, randopeep.internet.email, derived); };
 	randopeep.username = function (n,derived){ return wrapFunc(n, randopeep.internet.username, derived); };
+	randopeep.uk = {
+		country: function(n) { return wrap(n,'uk/country'); },
+		county: function(n) { return wrap(n,'uk/county'); }
+	};
 };
