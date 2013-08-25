@@ -11,7 +11,6 @@ randopeep.randomEl =  function (array) {
 };
 
 
-
 /**
  * Get an element of a built-in dictionary of words
  * @param String [multiple]  all the dictionary names you want to load, in order
@@ -24,6 +23,16 @@ randopeep.get = function(){
 		out.push(randopeep.randomEl(items));
 	}
 	return out.join(' ');
+};
+
+randopeep.getCount = function(n, list){
+    var out = [];
+    n = n || 1;
+    
+    for (var a=0;a<n;a++){
+        out.push(randopeep.get(list));
+    }
+    return out;
 };
 
 /**

@@ -130,6 +130,11 @@ describe('randopeep', function() {
 			expect(address).to.not.be.empty;
 		});
 
+		address=randopeep.address.streetAddress(true);
+		it('should correctly generate a street address - full (' + address + ')', function() {
+			expect(address).to.not.be.empty;
+		});
+
 		phone = randopeep.address.phone();
 		it('should generate a phone number (' + phone + ')', function() {
 			expect(phone).to.not.be.empty;
@@ -204,17 +209,106 @@ describe('randopeep', function() {
 		});
 	});
 
-	/*
-	// need to work this out...
-	// Eventually I want everything reference-able as a function, for a uniform API
-	describe('magic', function(){
-		it('should be able to resolve randopeep.get.person.netrunner()', function(){
-			expect(randopeep.get.person.netrunner()).to.not.be.empty;
+	describe('the interface', function(){
+
+		it('should generate 20 female names', function() {
+			expect(randopeep.person(20,'female')).length.is(20);
 		});
 
-		it('should be able to resolve randopeep.get.person.modern.male(10)', function(){
-			expect(randopeep.get.person.modern.male(10)).length.is(10);
+		it('should generate 20 male names', function() {
+			expect(randopeep.person(20,'male')).length.is(20);
+		});
+
+		it('should generate 20 netrunner names', function() {
+			expect(randopeep.netrunner(20)).length.is(20);
+		});
+
+		it('should generate 20 jobs', function() {
+			expect(randopeep.job(20)).length.is(20);
+		});
+
+		it('should generate 20 states', function() {
+			expect(randopeep.state(20)).length.is(20);
+		});
+
+		it('should generate 20 abbreviated states', function() {
+			expect(randopeep.state.a(20)).length.is(20);
+		});
+
+		it('should generate 20 US zip codes', function() {
+			expect(randopeep.zip(20)).length.is(20);
+		});
+
+		it('should generate 20 cities', function() {
+			expect(randopeep.city(20)).length.is(20);
+		});
+
+		it('should generate 20 geo-locations', function() {
+			expect(randopeep.geo(20)).length.is(20);
+		});
+
+		it('should generate 20 streets', function() {
+			expect(randopeep.streetName(20)).length.is(20);
+		});
+
+		it('should generate 20 addresses', function() {
+			expect(randopeep.streetAddress(20)).length.is(20);
+		});
+
+		it('should generate 20 addresses (full)', function() {
+			expect(randopeep.streetAddress(20, true)).length.is(20);
+		});
+
+		it('should generate 20 phone numbers', function() {
+			expect(randopeep.phone(20)).length.is(20);
+		});
+
+		it('should generate 20 visa CC#s', function() {
+			expect(randopeep.ccnum(20, 'visa')).length.is(20);
+		});
+
+		it('should generate 20 mastercard CC#s', function() {
+			expect(randopeep.ccnum(20, 'mastercard')).length.is(20);
+		});
+
+		it('should generate 20 cyber company names', function() {
+			expect(randopeep.company(20, 'cyber')).length.is(20);
+		});
+
+		it('should generate 20 firm company names', function() {
+			expect(randopeep.company(20, 'firm')).length.is(20);
+		});
+
+		it('should generate 20 small company names', function() {
+			expect(randopeep.company(20, 'small')).length.is(20);
+		});
+
+		it('should generate 20 large company names', function() {
+			expect(randopeep.company(20, 'large')).length.is(20);
+		});
+
+		it('should generate 20 catch-phrases', function() {
+			expect(randopeep.catchPhrase(20)).length.is(20);
+		});
+
+		it('should generate 20 BS snippets', function() {
+			expect(randopeep.bs(20)).length.is(20);
+		});
+
+		it('should generate 20 IP addresses', function() {
+			expect(randopeep.ip(20)).length.is(20);
+		});
+
+		it('should generate 20 domain names', function() {
+			expect(randopeep.domain(20)).length.is(20);
+		});
+
+		it('should generate 20 email addresses', function() {
+			expect(randopeep.email(20)).length.is(20);
+		});
+
+		it('should generate 20 usernames', function() {
+			expect(randopeep.username(20)).length.is(20);
 		});
 	});
-	*/
 });

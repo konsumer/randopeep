@@ -12,19 +12,17 @@ module.exports = function(randopeep){
 		list = list || 'ipsum/lorem';
 		var out = [];
 		var sentenceLengths = [10,12,13,15,14];
-		for (var i=0;i<len;i++){
-			var word = randopeep.get(list);
+		var words = randopeep.getCount(len, list);
 
-			// dynamically make random sentences
+		words.forEach(function(word,i){
 			if (i===0 || i % sentenceLengths[i%5] === 0){
 				word = randopeep.titleCase(word);
 				if (i!==0){
 					out[i-1] += '.';
 				}
 			}
-
 			out.push(word);
-		}
+		});
 		return out.join(' ') + '.';
 	};
 

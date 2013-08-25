@@ -4,34 +4,46 @@ Generate details about people, in javascript, based on data files. Originally ma
 
 It's basically a random lookup from a list of names, and some quick functions for generating random data, with a lot of ideas from [Faker](https://github.com/Marak/Faker.js)
 
-Built-in lists of random things include:
+## What random stuff can it generate?
 
-* Modern male/female names from census data (`get(person/modern/male)`, `get(person/modern/female)`, `get(person/modern/last)`)
-* Hacker names (`get(person/netrunner)`)
-* Jobs a person might do in the modern world (`get(jobs)`)
-* State (`get(us/state)`)
-* State Abbreviations (`get(us/state/abbr)`)
+All parameters are optional.
 
-Built-in generator functions for random stuff include:
+### Places
 
-* Credit card numbers (`cc('mastercard')`)
-* Paragraphs (`ipsum()`)
-* Zipcode (`address.zip()`)
-* City (`address.city()`)
-* Geo-location (`address.geo()`)
-* Street name (`address.streetName()`)
-* Street address (`address.streetAddress()`)
-* Phone Number (`address.phone()`)
-* Company names (`corporate.name()`)
-* Corporate catch-phrases (`corporate.catchPhrase()`)
-* Corporate BS (`corporate.bs()`)
-* IP address (`internet.ip()`)
-* Domain name (`internet.domain()`)
-* Email address (`internet.email()`)
-* Username (`internet.username()`)
+* `randopeep.zip(count)` - US zipcodes
+* `randopeep.city(count)` - City name
+* `randopeep.geo(count)` - Geo-location
+* `randopeep.streetName(count)` - Street name
+* `randopeep.streetAddress(count, useFullAddress)` - Street address: , useFullAddress is a boolean for including secondary address
+* `randopeep.phone(count)` - Phone Number
+
+
+### Credit-card Numbers
+
+* `randopeep.ccnum(count, type)` - Seemingly legit CC#'s: type includes visa, mastercard, amex, discover
+
+
+### Corporate Things
+
+* `randopeep.company(count, type)` - Company names: type includes cyber, firm, small, large
+* `randopeep.catchPhrase(count)` - Corporate catch-phrases
+* `randopeep.bs(count)` - Corporate BS
+
+
+### Internet Things
+
+* `randopeep.ip(count)` - IP address
+* `randopeep.domain(count, derived)` - Domain name: derived is a string to derive the name from
+* `randopeep.email(count, derived)` - Email address: derived is a string to derive the name from
+* `randopeep.username(count, derived)` - Username: derived is a string to derive the name from
+
+
+### Random Text
+
+* `randopeep.ipsum(count)` - Ipsum text: default count is 200 words
+
 
 ## Usage
-
 
 ### Adding your own name-libraries
 
@@ -56,7 +68,7 @@ in your code:
 
 ```javascript
 var randopeep = require('randopeep');
-var myLeetName = randopeep.get('person/netrunner');
+var myLeetName = randopeep.netrunner();
 ```
 
 ### Browser
@@ -66,7 +78,7 @@ Just include `build/randopeep.min.js` in your thing, and use it like normal:
 ```html
 <script src="http://konsumer.github.io/randopeeps/randopeep.min.js"></script>
 <script>
-	document.body.innerHTML = 'I am a totally leet haxor, my name is ' + randopeep.get('person/netrunner');
+	document.body.innerHTML = 'I am a totally leet haxor, my name is ' + randopeep.netrunner();
 </script>
 ```
 
@@ -74,7 +86,7 @@ There is also support for AMD/require.js, just put build/randopeep.js in your ap
 
 ```javascript
 define(['randopeep'], function(peep){
-	document.body.innerHTML = 'I am a totally leet haxor, my name is ' + peep.get('person/netrunner');
+	document.body.innerHTML = 'I am a totally leet haxor, my name is ' + peep.netrunner();
 });
 ```
 

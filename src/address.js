@@ -52,7 +52,7 @@ module.exports = function(randopeep){
 		},
 
 		streetAddress: function (useFullAddress) {
-			var out = (useFullAddress) ? address.secondaryAddress() : '';
+			var out = (useFullAddress) ? ', ' + address.secondaryAddress() : '';
 			switch (randopeep.int(3)) {
 			case 0:
 				return randopeep.replaceSymbolWithNumber('#####') + ' ' + address.streetName() + out;
