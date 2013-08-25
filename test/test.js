@@ -206,17 +206,14 @@ describe('randopeep', function() {
 
 	/*
 	// need to work this out...
+	// Eventually I want everything reference-able as a function, for a uniform API
 	describe('magic', function(){
-		it('should be able to resolve randopeep.person.netrunner', function(){
-			expect(randopeep.person.netrunner).to.not.be.empty;
+		it('should be able to resolve randopeep.get.person.netrunner()', function(){
+			expect(randopeep.get.person.netrunner()).to.not.be.empty;
 		});
 
-		it('should be able to resolve randopeep.person.modern.male', function(){
-			expect(randopeep.person.modern.male).to.not.be.empty;
-		});
-
-		it('should be able to resolve randopeep.corporate.bs', function(){
-			expect(randopeep.corporate.bs).to.not.be.empty;
+		it('should be able to resolve randopeep.get.person.modern.male(10)', function(){
+			expect(randopeep.get.person.modern.male(10)).length.is(10);
 		});
 	});
 	*/
