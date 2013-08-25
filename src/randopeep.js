@@ -2,15 +2,6 @@
 
 var randopeep = {};
 
-/**
- * Load an internal dictionary wordlist
- * @param  String name  name of built-in dictionary
- * @return Array        the members of that dictionary
- */
-randopeep.getList = function(name){
-	return randopeep.lists['data_js/' + name + '.js'];
-};
-
 randopeep.int = function(max){
 	return Math.floor(Math.random() * max);
 };
@@ -29,7 +20,7 @@ randopeep.randomEl =  function (array) {
 randopeep.get = function(){
 	var out = [];
 	for (var a in arguments){
-		var items = randopeep.getList(arguments[a]);
+		var items = randopeep.data[arguments[a]];
 		out.push(randopeep.randomEl(items));
 	}
 	return out.join(' ');
@@ -46,15 +37,11 @@ randopeep.titleCase = function(str){
 
 // parses string for a symbol and replace it with a random number from 1-10
 randopeep.replaceSymbolWithNumber = function (string, symbol) {
-    // default symbol is '#'
-    if (symbol === undefined) {
-        symbol = '#';
-    }
-
+    symbol = symbol || '#';
     var str = '';
     for (var i = 0; i < string.length; i++) {
         if (string[i] == symbol) {
-            str += Math.floor(Math.random() * 10);
+            str += randopeep.int(10);
         } else {
             str += string[i];
         }
