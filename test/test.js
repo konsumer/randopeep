@@ -89,7 +89,7 @@ describe('randopeep', function() {
 	});
 
 	describe('address', function() {
-		var city,zip,geo,state,address,county,country;
+		var city,zip,geo,state,address,county,country,phone;
 		
 		city = randopeep.address.city();
 		it('should generate a city name ('+city+')', function() {
@@ -129,6 +129,11 @@ describe('randopeep', function() {
 		address=randopeep.address.streetAddress();
 		it('should correctly generate a street address (' + address + ')', function() {
 			expect(address).to.not.be.empty;
+		});
+
+		phone = randopeep.address.phone();
+		it('should generate a phone number (' + phone + ')', function() {
+			expect(phone).to.not.be.empty;
 		});
 	});
 

@@ -72,7 +72,9 @@ module.exports = function(randopeep){
 			));
 		},
 
-
+		phone: function(){
+			return randopeep.replaceSymbolWithNumber(randopeep.get('phone/formats'));
+		}
 	};
 
 	return address;
