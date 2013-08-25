@@ -49,12 +49,13 @@ module.exports = function(grunt) {
 			});
 		});
 
+		var dest = this.data.dest;
 		var options = this.options({});
-
 		if (options.main && options.out){
 			var t = grunt.file.read(options.main).replace(/\n\/\/<browserify>(.|\n)+\/\/<\/browserify>/, '') + "\n//<browserify>\n";
 			out.forEach(function(o){
-				t += "module.exports.lists['"+o+"'] = require('./" + o + "');\n"
+				var n = o.replace(dest,'').replace('.js','');
+				t += "module.exports.data['"+n+"'] = require('./" + o + "');\n";
 			});
 			grunt.file.write(options.out, t + "//</browserify>");
 		}
