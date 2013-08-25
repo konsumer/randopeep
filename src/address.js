@@ -29,6 +29,10 @@ module.exports = function(randopeep){
 
 		long: function () {
 			return (randopeep.int(360 * 10000) / 10000.0 - 180.0).toFixed(4);
+		},
+
+		geo:function(){
+			return [address.lat(), address.long()];
 		}
 	};
 

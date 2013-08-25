@@ -101,7 +101,7 @@ describe('randopeep', function() {
 			expect(zip).to.not.be.empty;
 		});
 
-		geo = [randopeep.address.lat(),randopeep.address.long()];
+		geo = randopeep.address.geo();
 		it('should generate a geo location ('+geo+')', function() {
 			expect(geo).to.not.be.empty;
 		});

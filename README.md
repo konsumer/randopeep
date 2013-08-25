@@ -18,7 +18,7 @@ Built-in generator functions for random stuff include:
 * Random paragraphs (ipsum())
 * Zipcode (address.zip())
 * City (address.city())
-* Geo-location ([address.lat(), address.long()])
+* Geo-location (address.geo())
 
 ## Usage
 
