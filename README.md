@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/konsumer/randopeep.png?branch=master)](https://travis-ci.org/konsumer/randopeep)
 
-![npm install](https://nodei.co/npm/randopeep.png?downloads=true)
+[![NPM](https://nodei.co/npm/randopeep.png)](https://nodei.co/npm/randopeep/)
 
 
 Generate fake details about people, in javascript, based on data files. Originally made for generating fake NPCs for RPGs & fake accounts for things online.
