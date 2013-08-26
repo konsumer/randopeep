@@ -1,4 +1,4 @@
-# [Rando Peeps Data](http://konsumer.github.io/randopeeps/)
+# [Rando Peeps Data](http://konsumer.github.io/randopeep/)
 
 Generate fake details about people, in javascript, based on data files. Originally made for generating fake NPCs for RPGs & fake accounts for things online.
 
@@ -78,7 +78,7 @@ var myLeetName = randopeep.netrunner();
 Just include `build/randopeep.min.js` in your thing, and use it like normal:
 
 ```html
-<script src="http://konsumer.github.io/randopeeps/randopeep.min.js"></script>
+<script src="http://konsumer.github.io/randopeep/randopeep.min.js"></script>
 <script>
 	document.body.innerHTML = 'I am a totally leet haxor, my name is ' + randopeep.netrunner();
 </script>
