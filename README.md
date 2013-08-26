@@ -1,5 +1,10 @@
 # [Rando Peeps Data](http://konsumer.github.io/randopeep/)
 
+[![Build Status](https://travis-ci.org/konsumer/randopeep.png?branch=master)](https://travis-ci.org/konsumer/randopeep)
+
+![npm install](https://nodei.co/npm/randopeep.png?downloads=true)
+
+
 Generate fake details about people, in javascript, based on data files. Originally made for generating fake NPCs for RPGs & fake accounts for things online.
 
 It's basically a random lookup from a list of names, and some quick functions for generating random data, with a lot of ideas from [Faker](https://github.com/Marak/Faker.js)
