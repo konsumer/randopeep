@@ -1,6 +1,8 @@
 'use strict';
 
 /* global module */
+/* global require */
+/* global define */
 
 if (!module){ module = {}; }
 
@@ -11,7 +13,7 @@ module.exports.ipsum = require('./src/ipsum.js')(module.exports);
 module.exports.address = require('./src/address.js')(module.exports);
 module.exports.corporate = require('./src/corporate.js')(module.exports);
 module.exports.internet = require('./src/internet.js')(module.exports);
-require('./src/interface.js')(module.exports)
+require('./src/interface.js')(module.exports);
 
 
 // these are pre-cached by grunt, so browserify knows they are loaded:
