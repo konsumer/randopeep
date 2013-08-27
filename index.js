@@ -10,18 +10,6 @@ module.exports.internet = require('./src/internet.js')(module.exports);
 require('./src/interface.js')(module.exports)
 
 
-// wrapper for AMD/browser-global
-/* global define */
-if (typeof(define) === 'function'){
-	define(function(){
-		return module.exports;
-	});
-}else{
-	if (typeof(window) !== 'undefined'){
-		window.randopeep = module.exports;
-	}
-}
-
 // these are pre-cached by grunt, so browserify knows they are loaded:
 module.exports.data={};
 //<browserify>
@@ -50,3 +38,15 @@ module.exports.data['uk/county'] = require('./data_js/uk/county.js');
 module.exports.data['us/state'] = require('./data_js/us/state.js');
 module.exports.data['us/state/abbr'] = require('./data_js/us/state/abbr.js');
 //</browserify>
+
+// wrapper for AMD/browser-global
+/* global define */
+if (typeof(define) === 'function'){
+	define(function(){
+		return module.exports;
+	});
+}else{
+	if (typeof(window) !== 'undefined'){
+		window.randopeep = module.exports;
+	}
+}
