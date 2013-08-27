@@ -1,0 +1,2069 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<classes type="standard" genre="fantasy" creation-time="2002-08-01 02:13:18">
+
+	<class alias="ltp" parents="np, itma" name="Human (low-tech)" nationality="Human" tech-level="3~4"
+	       age="18~20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37~50">
+		<stats>
+			<health						mean="10.2"/>
+		</stats>
+		<attributes>
+			<hearing			min="-3" max="2"/>
+			<hit-points			min="-3" max="2"/>
+			<vision				min="-3" max="2"/>
+		</attributes>
+
+		<advantages>
+			<fashion-sense						req="01.2"/>
+			<immunity-to-disease				req="01.01"/>
+			<lightning-calculator				req="01.8"/>
+			<magery						min="0" max="2" mean="0" req="02"/>
+			<magic-resistance			min="1" max="5" mean="1.2" req="03"/>
+			<literacy							req="06"/>
+			<marksman							req="-1"/>
+			<math-ability						req="-1"/>
+			<paramilitary-rank					req="-1"/>
+			<photogenic							req="-1"/>
+			<psi-resistance						req="-1"/>
+		</advantages>
+		<disadvantages>
+			<bad-smell							req="04.5"/>
+			<dyslexia					min="-2" max="-1" req="05"/>
+			<fat						min="-2" max="-1" req="02"/>
+			<illiteracy					  		req="-1"/>
+			<lame						min="-3" max="0" mean="-0.4" req="06"/>
+			<low-pain-threshold			  		req="02"/>
+			<one-arm							req="00.2"/>
+			<one-eye							req="00.6"/>
+			<one-hand							req="00.6"/>
+			<overweight							req="08"/>
+			<pacifism					min="-2" max="-1" req="01"/>
+			<skinny								req="05"/>
+			<social-stigma-ex-con				req="-1"/>
+			<solipsist							req="00.03"/>
+			<ugly						min="-2" max="-1" req="09" mean="-1"/>
+			<weak-immune-system					req="02.63"/>
+			<youth						min="-3" max="-1" mean="-1" req="03.8"/>
+		</disadvantages>
+
+		<quirk-nouns>
+			<affirmative_action					req="-1"/>
+			<alternative_medicine				req="-1"/>
+			<alternative_music					req="-1"/>
+			<bank_robbers						req="-1"/>
+			<B_movies							req="-1"/>
+			<board_games						req="-1"/>
+			<Bob_Barker							req="-1"/>
+			<breakfast_cereals					req="-1"/>
+			<cartoons							req="-1"/>
+			<cheese_burgers						req="-1"/>
+			<coke								req="-1"/>
+			<commercials						req="-1"/>
+			<computer_games						req="-1"/>
+			<computers							req="-1"/>
+			<creationism						req="-1"/>
+			<doctors							req="-1"/>
+			<epic_movies						req="-1"/>
+			<fashion_magazines					req="-1"/>
+			<fast_cars							req="-1"/>
+			<fat_pornstars						req="-1"/>
+			<fireworks							req="-1"/>
+			<free_health_care					req="-1"/>
+			<game_shows							req="-1"/>
+			<golf								req="-1"/>
+			<greek_food							req="-1"/>
+			<gun_control						req="-1"/>
+			<homemade_bombs						req="-1"/>
+			<homeopathic_drugs					req="-1"/>
+			<horror_movies						req="-1"/>
+			<Keanu_Reeves						req="-1"/>
+			<lasers								req="-1"/>
+			<monster_trucks						req="-1"/>
+			<motivational_speakers				req="-1"/>
+			<motorcycles						req="-1"/>
+			<obituaries							req="-1"/>
+			<Oprah								req="-1"/>
+			<personality_tests					req="-1"/>
+			<pop_music							req="-1"/>
+			<pop_psychology						req="-1"/>
+			<pornography						req="-1"/>
+			<reality_television					req="-1"/>
+			<recreational_drugs					req="-1"/>
+			<rockets							req="-1"/>
+			<roleplaying_games					req="-1"/>
+			<romance_novels						req="-1"/>
+			<sasquach							req="-1"/>
+			<sitcoms							req="-1"/>
+			<sleep_disorders					req="-1"/>
+			<sports_trivia						req="-1"/>
+			<stamps								req="-1"/>
+			<talk_shows							req="-1"/>
+			<UFOs								req="-1"/>
+			<vegetarians						req="-1"/>
+			<velcro								req="-1"/>
+
+			<ancient_dragons/>
+			<baby_orcs/>
+			<baby_elves/>
+			<baby_kobolds/>
+			<baby_dragons/>
+			<baby_dwarves/>
+			<baby_ogres/>
+			<balrogs/>
+			<black_orcs/>
+			<castles/>
+			<cave_orcs/>
+			<dragon_armor/>
+			<dragons/>
+			<dungeon_crawls/>
+			<dungeons/>
+			<dwarf_rights/>
+			<dwarves/>
+			<elf_rights/>
+			<elves/>
+			<Ents/>
+			<floating_eyes/>
+			<giants/>
+			<gnomes/>
+			<gray_dwarves/>
+			<gray_dwarves/>
+			<half_breeds/>
+			<half_elves/>
+			<half_orcs/>
+			<humans/>
+			<kobold_rights/>
+			<kobolds/>
+			<magic_items/>
+			<magic_swords/>
+			<ogres/>
+			<orc_rights/>
+			<orcs/>
+			<peasants/>
+			<quests/>
+			<siege_engines/>
+			<slime_molds/>
+			<sorcerers/>
+			<the_undead/>
+			<unicorns/>
+			<war_horses/>
+		</quirk-nouns>
+
+		<skills							min="5" max="14" mean="10">
+			<alchemy					max="1" req="05" mean="-0.4"/>
+			<archaeology				req="-1" mean="-0.4"/>
+			<astrology					max="1" req="07" mean="-0.4"/>
+			<astronomy					max="1" req="06" mean="-0.4"/>
+			<axe-mace					max="1" req="13" mean="-0.4"/>
+			<biochemistry				req="-1" mean="-0.4"/>
+			<blacksmith					max="1" mean="-0.4"/>
+			<boxing						req="-1" mean="-0.4"/>
+			<chemistry					req="-1" mean="-0.4"/>
+			<climbing					max="1" req="20" mean="-0.4"/>
+			<computer-operation			req="-1" mean="-0.4"/>
+			<computer-programming		req="-1" mean="-0.4"/>
+			<cryptanalysis				req="-1" mean="-0.4"/>
+			<cryptography				req="-1" mean="-0.4"/>
+			<cryptology					req="-1" mean="-0.4"/>
+			<demolitions				req="-1" mean="-0.4"/>
+			<driving					req="-1" mean="-0.4"/>
+			<electronics				req="-1" mean="-0.4"/>
+			<electronics-comm			req="-1" mean="-0.4"/>
+			<fast-draw-sword			max="1" mean="-0.4"/>
+			<fast-draw-arrow			max="1" mean="-0.4"/>
+			<fast-draw-smg				req="-1" mean="-0.4"/>
+			<fast-draw-pistol			req="-1" mean="-0.4"/>
+			<fast-draw-clip				req="-1" mean="-0.4"/>
+			<flail						max="1" mean="-0.4"/>
+			<forensics					req="-1" mean="-0.4"/>
+			<gunner-ballista			max="1" mean="-0.4"/>
+			<guns-light-auto			req="-1" mean="-0.4"/>
+			<guns-machine-pistol		req="-1" mean="-0.4"/>
+			<guns-pistol				req="-1" mean="-0.4"/>
+			<guns-rifle					req="-1" mean="-0.4"/>
+			<guns-shotgun				req="-1" mean="-0.4"/>
+			<heraldry					max="1" mean="-0.4"/>
+			<judo						req="-1" mean="-0.4"/>
+			<jumping					max="1" req="20" mean="-0.4"/>
+			<karate						req="-1" mean="-0.4"/>
+			<knife						max="1" req="19" mean="-0.4"/>
+			<lance						max="1" mean="-0.4"/>
+			<language-chinese			req="-1" mean="-0.4"/>
+			<language-dutch				req="-1" mean="-0.4"/>
+			<language-french			req="-1" mean="-0.4"/>
+			<language-german			req="-1" mean="-0.4"/>
+			<language-italian			req="-1" mean="-0.4"/>
+			<language-japanese			req="-1" mean="-0.4"/>
+			<language-portuguese		req="-1" mean="-0.4"/>
+			<language-russian			req="-1" mean="-0.4"/>
+			<language-spanish			req="-1" mean="-0.4"/>
+
+			<!-- <language-common			min="-4" max="1" req="1" mean="-0.4"/>
+			<language-draconic			max="-1" req="05" mean="-0.4"/>
+			<language-dwarvish			max="-1" req="07" mean="-0.4"/>
+			<language-elvish			max="-1" req="06" mean="-0.4"/>
+			<language-orcish			max="-1" req="07" mean="-0.4"/> -->
+
+			<linguistics				req="-1" mean="-0.4"/>
+			<main-gauche				min="-1" max="1" mean="-0.4"/>
+			<mechanic					req="-1" mean="-0.4"/>
+			<motorcycle					req="-1" mean="-0.4"/>
+			<parachuting				req="-1" mean="-0.4"/>
+			<photography				req="-1" mean="-0.4"/>
+			<physician					req="-1" mean="-0.4"/>
+			<piloting					req="-1" mean="-0.4"/>
+			<scuba						req="-1" mean="-0.4"/>
+			<shield						max="1" mean="-0.4"/>
+			<short-sword				max="1" req="12" mean="-0.4"/>
+			<spear						max="1" req="14" mean="-0.4"/>
+			<spear-throwing				max="2" mean="-0.4"/>
+			<speed-load-bow				max="1" mean="-0.4"/>
+			<speed-load-pistol			req="-1" mean="-0.4"/>
+			<speed-load-smg				req="-1" mean="-0.4"/>
+			<speed-load-rifle			req="-1" mean="-0.4"/>
+			<stealth					max="1" req="21" mean="-0.4"/>
+			<surgery					req="-1" mean="-0.4"/>
+			<swimming					max="1" req="17" mean="-0.4"/>
+			<throwing					req="11" mean="-0.4"/>
+			<two-hand-sword				max="1" mean="-0.4"/>
+			<veterinary					req="-1" mean="-0.4"/>
+			<writing					max="1" req="-1" mean="-0.4"/>
+		</skills>
+
+		<weapons>
+			<handcuffs req="-1"/>
+			<camera req="-1"/>
+			<flashb req="-1"/>
+			<radioh req="-1"/>
+			<flashlight req="-1"/>
+			<hflashlight req="-1"/>
+			<nylonc req="-1"/>
+			<rflare req="-1"/>
+			<binoculars req="-1"/>
+			<rope req="07"/>
+			<torch req="04"/>
+			<backpack req="07.5"/>
+			<cphone req="-1"/>
+		</weapons>
+	</class>
+
+	<class alias="weapons" abstract="1" name="Weapons, Fantasy - Abstract" nationality="Human">
+		<weapons	 min="0" max="2" mean="1">
+			<basword/>
+			<baswordt/>
+			<baxe/>
+			<bsword/>
+			<bswordt/>
+			<bswordtf/>
+			<bswordtfire req="01.5"/>
+			<cbow/>
+			<cbows/>
+			<claymore/>
+			<clubl/>
+			<cmbow/>
+			<csbow/>
+			<cutlass/>
+			<darkblade/>
+			<dcbow/>
+			<dwaxe/>
+			<elsword/>
+			<falchion/>
+			<flamberge/>
+			<flail/>
+			<gaxe/>
+			<gdart/>
+			<glaive/>
+			<ghammer/>
+			<gsword/>
+			<gswords req="0.3"/>
+			<halberd/>
+			<hatch/>
+			<hspear/>
+			<istaff req="0.6"/>
+			<javelin/>
+			<kabow req="0.1"/>
+			<latknife/>
+			<lbow/>
+			<lcbow/>
+			<laknife/>
+			<lspear/>
+			<lsword/>
+			<lswordf/>
+			<lswords req="0.1"/>
+			<macef/>
+			<maceh/>
+			<mangosh/>
+			<maul/>
+			<mstar/>
+			<opick/>
+			<pcbow/>
+			<pick/>
+			<pike/>
+			<poison/>
+			<potion req="05"/>
+			<rapier/>
+			<srapier/>
+			<saber/>
+			<satknife/>
+			<sbow/>
+			<scimitar/>
+			<sclub/>
+			<sknife/>
+			<sling/>
+			<smsword/>
+			<spear/>
+			<ssword/>
+			<sswordf/>
+			<sswordp/>
+			<sswords req="0.9"/>
+			<staff/>
+			<taxe/>
+			<trident/>
+			<wh/>
+			<whip/>
+		</weapons>
+	</class>
+
+	<class alias="lweap" parents="weapons" abstract="1" name="Light Weapons, Fantasy - Abstract" nationality="Human">
+		<weapons>
+			<basword						req="-1"/>
+			<baswordt 						req="-1"/>
+			<baxe 							req="-1"/>
+			<bsword 						req="-1"/>
+			<bswordt 						req="-1"/>
+			<bswordtf 						req="-1"/>
+			<bswordtfire					req="-1"/>
+			<cbow 							req="-1"/>
+			<claymore 						req="-1"/>
+			<clubl 							req="-1"/>
+			<cmbow 							req="-1"/>
+			<dcbow							req="-1"/>
+			<dwaxe 							req="-1"/>
+			<falchion 						req="-1"/>
+			<flamberge						req="-1"/>
+			<flail 							req="-1"/>
+			<gaxe 							req="-1"/>
+			<glaive 						req="-1"/>
+			<gsword 						req="-1"/>
+			<gswords 						req="-1"/>
+			<halberd 						req="-1"/>
+			<istaff							req="-1"/>
+			<lbow 							req="-1"/>
+			<lspear 						req="-1"/>
+			<lsword 						req="-1"/>
+			<macef 							req="-1"/>
+			<maceh 							req="-1"/>
+			<maul 							req="-1"/>
+			<mstar 							req="-1"/>
+			<opick 							req="-1"/>
+			<pick 							req="-1"/>
+			<pike							req="-1"/>
+			<rapier 						req="-1"/>
+			<srapier 						req="-1"/>
+			<scimitar 						req="-1"/>
+			<sclub 							req="-1"/>
+			<scramsax 						req="-1"/>
+			<trident 						req="-1"/>
+			<wh 							req="-1"/>
+			<whip 							req="-1"/>
+		</weapons>
+	</class>
+
+	<class alias="armor" abstract="1" name="Armor, Fantasy - Abstract" nationality="Human">
+		<armor		min="0" max="2" mean=".3">
+			<amulet	req="02.9"/>
+			<atshield/>
+			<banded/>
+			<bplate/>
+			<bracelet/>
+			<bracersd	req="0.3"/>
+			<brig/>
+			<brigv/>
+			<broach	req="01"/>
+			<bshield/>
+			<buckler/>
+			<ccap/>
+			<ccoif/>
+			<cgloves/>
+			<chain/>
+			<circlet/>
+			<cloak/>
+			<cloth/>
+			<dkshield/>
+			<eboots/>
+			<fhelm/>
+			<fplate/>
+			<gauntlets/>
+			<ghelm/>
+			<hcorse/>
+			<hcvest/>
+			<hlvest/>
+			<hleather/>
+			<hplate/>
+			<hrmvest/>
+			<hscvest/>
+			<slshoes	req="37"/>
+			<slboots	req="17"/>
+			<lboots		req="70"/>
+			<hlboots	req="38"/>
+			<lchain/>
+			<lcvest/>
+			<llvest/>
+			<lvest/>
+			<leather/>
+			<leatherl/>
+			<lleather/>
+			<lgloves/>
+			<lhelm/>
+			<ljacket/>
+			<lshield/>
+			<mcshirt/>
+			<mchain/>
+			<metlam/>
+			<mplate/>
+			<mshield/>
+			<msshield/>
+			<necklace/>
+			<ocesti/>
+			<pad/>
+			<phelm/>
+			<plate/>
+			<ring	req="05.1"/>
+			<ring2	req="02"/>
+			<ringp	req="02"/>
+			<rmail/>
+			<sbracers/>
+			<scale/>
+			<shplates/>
+			<sleather/>
+			<sollerets/>
+			<spbracers/>
+			<srobe/>
+			<sshield/>
+			<slvest/>
+			<thplates/>
+		</armor>
+	</class>
+
+	<class alias="larma" parents="armor" abstract="1" name="Light Armor, Fantasy - Abstract" nationality="Human">
+		<armor>
+			<atshield						req="-1"/>
+			<banded							req="-1"/>
+			<bplate							req="-1"/>
+			<brig							req="-1"/>
+			<bshield						req="-1"/>
+			<chain							req="-1"/>
+			<dkshield						req="-1"/>
+			<fhelm							req="-1"/>
+			<fplate							req="-1"/>
+			<gauntlets						req="-1"/>
+			<ghelm							req="-1"/>
+			<hcorse							req="-1"/>
+			<hplate							req="-1"/>
+			<hcvest							req="-1"/>
+			<hscvest						req="-1"/>
+			<metlam							req="-1"/>
+			<mplate							req="-1"/>
+			<lshield						req="-1"/>
+			<phelm							req="-1"/>
+			<plate							req="-1"/>
+			<scale							req="-1"/>
+			<sollerets						req="-1"/>
+			<slshoes						req="59"/>
+			<slboots						req="77"/>
+			<lboots							req="58"/>
+			<hlboots						req="18"/>
+		</armor>
+	</class>
+
+	<class alias="itma" parents="weapons, armor" abstract="1" name="Items, Fantasy - Abstract" nationality="Human"/>
+
+
+	<class alias="elf" parents="ltp" name="Elf" nationality="Elf, Half-Elf, Wood-Elf, High-Elf, Dark-Elf"
+	       hair="silver, white, white-blonde, golden, gray, gray-black, raven-black"
+		   eyes="light-blue, dark-green, blue-gray, light-green, blue-green, metallic-blue"
+		   images-male="male-elf.gif" images-female="female-elf.gif"
+		   tech-level="4" age="18~250~1100">
+		<stats>
+			<strength					max="17" mean="10.2"/>
+			<dexterity					max="20" mean="10.9"/>
+			<intelligence				max="19" mean="10.8"/>
+		</stats>
+
+		<advantages						min="0" max="1" mean="0">
+			<attractive							min="1" max="2" mean="1" req="86"/>
+			<combat-reflexes					req="41"/>
+			<magery								min="0" max="1" mean="0" req="78"/>
+			<magic-resistance					min="1" max="5" mean="1.2" req="-1"/>
+			<music-ability						min="1" max="3" mean="1.2" req="79"/>
+			<longevity							req="96"/>
+			<fashion-sense						req="09"/>
+		</advantages>
+		<disadvantages					min="1" max="4" mean="2.2">
+			<bad-smell							req="0.1"/>
+			<code-of-honor-elf					min="-3" max="-1" mean="-2" req="42"/>
+			<dwarfism							req="-1"/>
+			<fat								req="-1"/>
+			<intolerance-racial					req="61"/>
+			<overweight							req="0.5"/>
+			<pyromania							req="01"/>
+			<sense-of-duty-nature				min="-3" max="-2" mean="-3" req="60"/>
+			<skinny								req="56"/>
+			<stocky								req="-1"/>
+			<ugly								req="03"/>
+		</disadvantages>
+
+		<skills>
+			<bard						min="-1" max="2" req="58"/>
+			<language-elvish			max="1" req="-1"/>
+			<musical-instrument			max="1" req="67"/>
+			<savoir-faire				min="-1" max="2" req="94"/>
+
+			<spell-apportation			max="1" req="07"/>
+			<spell-blur					max="1" req="06"/>
+			<spell-death-vision			max="1" req="05"/>
+			<spell-dexterity			max="0"/>
+			<spell-distant-blow			max="1" req="03"/>
+			<spell-fear					max="1" req="06"/>
+			<spell-fireball				max="1"/>
+			<spell-forest-warning		max="1"/>
+			<spell-hinder				max="1"/>
+			<spell-iron-arm				max="1" req="06"/>
+			<spell-lightning			max="1"/>
+			<spell-mage-stealth			max="1"/>
+			<spell-might				max="1"/>
+			<spell-minor-healing		max="1" req="07"/>
+			<spell-tangle-growth		max="1"/>
+			<spell-vigor				max="0"/>
+			<spell-water-jet			max="0"/>
+		</skills>
+	</class>
+
+	<class alias="earch" parents="elf, archa" name="Elf Archer"
+	       nationality="Dark-Elf, Half-Elf, Wood-Elf, Elf, Elf, Elf, Half-Elf, High-Elf" item-mod-inc="1" gender-ratio="64">
+		<stats>
+			<strength					min="10" mean="11"/>
+			<dexterity					min="11" mean="11.8"/>
+			<intelligence				max="19" mean="11"/>
+			<health						min="9"/>
+		</stats>
+
+		<skills							min="1" max="5"/>
+	</class>
+
+	<class alias="ebrb" parents="elf, brba" name="Elf Barbarian" nationality="Dark-Elf, Half-Elf" item-mod-inc="1" gender-ratio="71">
+		<stats>
+			<strength					min="10" mean="11.8"/>
+			<dexterity					min="11" mean="12"/>
+			<health						min="9"  mean="11.6"/>
+		</stats>
+		<advantages>
+			<attractive						min="1" max="3" mean="1" req="26"/>
+		</advantages>
+		<disadvantages>
+			<sense-of-duty-nature			req="03"/>
+		</disadvantages>
+
+		<skills							min="1" max="4"/>
+	</class>
+
+	<class alias="erng" parents="elf, rngra" name="Elf Ranger" nationality="Wood-Elf, Elf, Half-Elf" item-mod-inc="2" gender-ratio="68">
+		<stats>
+			<strength					min="10" mean="10.8" max="15"/>
+			<dexterity					min="11"  mean="12.2"/>
+			<intelligence				min="11"/>
+			<health						min="9" mean="11"/>
+		</stats>
+
+		<skills							min="1" max="4">
+			<spell-dexterity			min= "-1" max="1" req="10"/>
+			<spell-forest-warning		min= "-1" max="1" req="19"/>
+			<spell-mammal-control		min= "-1" max="2" req="12"/>
+			<spell-silence				min= "-1" max="2" req="12"/>
+			<spell-tangle-growth		min= "-1" max="1" req="13"/>
+		</skills>
+	</class>
+
+	<class alias="eknt" parents="elf, knta" name="Elf Knight" nationality="Elf, High-Elf, High-Elf, Dark-Elf" item-mod-inc="2" gender-ratio="90">
+		<stats>
+			<strength					min="10" mean="11.4"/>
+			<dexterity					min="11" mean="12.2"/>
+			<intelligence				min="10" mean="12"/>
+			<health						min="10" mean="11.5"/>
+		</stats>
+
+		<disadvantages>
+			<code-of-honor				min="-2" max="-1" req="-1"/>
+		</disadvantages>
+
+		<skills							min="1" max="5"/>
+
+		<armor>
+			<mplate							req="36"/>
+		</armor>
+	</class>
+
+	<class alias="erog" parents="elf, roga" name="Elf Rogue" nationality="Elf, Half-Elf, Dark-Elf" item-mod-inc="2" gender-ratio="63">
+		<stats>
+			<strength					min="9" max="14" mean="10.5"/>
+			<dexterity					min="12" mean="13.2"/>
+			<intelligence				min="10" mean="12"/>
+		</stats>
+
+		<skills							min="1" max="5">
+			<panhandling				max="2" req="19"/>
+		</skills>
+	</class>
+
+	<class alias="mkill" parents="elf, hwar" name="Mage Killer" nationality="Dark-Elf"
+		   hair="silver, white, gray, gray-black, raven-black, black, blue-black, pure-black, black-gray, ink-black, iron-black, steel-gray"
+		   item-mod-inc="8" gender-ratio="59">
+		<stats>
+			<strength					min="10" mean="11.6"/>
+			<dexterity					min="11"  mean="12.1"/>
+			<intelligence				min="10"  mean="11.8"/>
+			<health						min="10" mean="12"/>
+		</stats>
+		<attributes>
+			<hearing			min="0" max="2"/>
+			<hit-points			min="0" max="3" mean="1"/>
+			<vision				min="-1" max="2"/>
+		</attributes>
+
+		<advantages>
+			<magery						min="0" max="2" mean="0" req="-1"/>
+			<magic-resistance			min="2" max="5" mean="2.2" req="98"/>
+			<rank						req="-1"/>
+		</advantages>
+		<disadvantages					min="1" max="3" mean="2">
+			<blood-lust					req="50"/>
+			<callous					req="46"/>
+			<code-of-honor				min="-2" max="-2" req="1"/>
+			<code-of-honor-elf			min="-2" max="-1" mean="-1" req="-1"/>
+			<sadism						req="34"/>
+		</disadvantages>
+
+		<skills							min="0" max="3">
+			<axe-mace					max="2" req="52"/>
+			<bard						req="-1"/>
+			<broad-sword				min="-1" max="2" req="80"/>
+			<bow						req="10"/>
+			<crossbow					min="-1" max="2" mean="1" req="78"/>
+			<flail						max="2" req="26"/>
+			<knife						max="2" req="79"/>
+			<poisons					max="2" req="99"/>
+			<pole-arm					max="2" req="28"/>
+			<riding						req="24"/>
+			<savoir-faire				req="04"/>
+			<shield						max="2" req="86"/>
+			<short-sword				min="1" max="3" mean="2" req="1"/>
+			<spear						min="0" max="2" req="42"/>
+			<spell-apportation			max="1" req="-1"/>
+			<spell-blur					max="1" req="-1"/>
+			<spell-death-vision			max="1" req="-1"/>
+			<spell-detect-magic			max="1" req="-1"/>
+			<spell-dexterity			max="0" req="-1"/>
+			<spell-distant-blow			max="1" req="-1"/>
+			<spell-fear					max="1" req="-1"/>
+			<spell-fireball				max="1" req="-1"/>
+			<spell-forest-warning		max="1" req="-1"/>
+			<spell-hinder				max="1" req="-1"/>
+			<spell-iron-arm				max="1" req="-1"/>
+			<spell-lightning			max="1" req="-1"/>
+			<spell-mage-stealth			max="1" req="-1"/>
+			<spell-might				max="1" req="-1"/>
+			<spell-minor-healing		max="1" req="-1"/>
+			<spell-missile-shield		max="0" req="-1"/>
+			<spell-resist-fire			max="1" req="-1"/>
+			<spell-tangle-growth		max="1" req="-1"/>
+			<spell-vigor				max="0" req="-1"/>
+			<spell-water-jet			max="0" req="-1"/>
+
+			<stealth					min="-1" max="2" req="92"/>
+			<thaumatology				max="2" req="1"/>
+			<throwing					max="1" req="09"/>
+			<two-hand-sword				min="0" max="2" req="62"/>
+		</skills>
+
+		<weapons	 min="1" max="2" mean="1">
+			<darkblade					req="76"/>
+			<lcbow						req="30"/>
+			<poison						req="92"/>
+			<ssword						req="10"/>
+		</weapons>
+		<armor>
+			<amulet						req="75"/>
+			<dplate						req="12"/>
+		</armor>
+	</class>
+
+
+	<class alias="dassassin" parents="dwarf, hwar" name="Dwarf Assassin" nationality="Gray-Dwarf"
+		   hair="gray, gray-black, raven-black, black, pure-black, black-gray, ink-black, iron-black, steel-gray"
+		   item-mod-inc="4" gender-ratio="72">
+		<stats>
+			<strength					min="11" mean="12.6"/>
+			<dexterity					min="11"  mean="12"/>
+			<intelligence				min="10"  mean="11.98"/>
+			<health						min="10" mean="12"/>
+		</stats>
+		<attributes>
+			<hearing			min="0" max="3" mean="1"/>
+		</attributes>
+
+		<advantages>
+			<rank						req="-1"/>
+		</advantages>
+		<disadvantages					min="0" max="3" mean="1.1">
+			<blood-lust					req="72"/>
+			<callous					req="26"/>
+		</disadvantages>
+
+		<skills							min="0" max="3">
+			<axe-mace					min="1" max="3" req="1"/>
+			<bow						req="10"/>
+			<crossbow					min="-1" max="2" mean="1" req="78"/>
+			<flail						max="2" req="26"/>
+			<knife						max="2" req="79"/>
+			<poisons					max="2" req="1"/>
+			<pole-arm					max="2" req="-1"/>
+			<savoir-faire				req="04"/>
+			<shield						max="2" req="86"/>
+			<short-sword				min="1" max="3" mean="1.4" req="1"/>
+			<spear						min="0" max="2" req="42"/>
+
+			<stealth					min="1" max="2" req="1"/>
+			<two-hand-sword				min="0" max="2" req="62"/>
+		</skills>
+
+		<weapons>
+			<baxe						req="68"/>
+			<darkblade					req="16"/>
+			<poison						req="94"/>
+		</weapons>
+		<armor>
+			<dplate						req="12"/>
+		</armor>
+	</class>
+
+
+	<class alias="dwarf" parents="ltp" name="Dwarf" nationality="Dwarf, Dwarf, Dwarf, Dwarf, Gray-Dwarf" tech-level="4" age="20~76"
+		   images-male="male-dwarf1.gif,male-dwarf2.gif" images-female="female-dwarf.gif">
+		<stats>
+			<strength					max="20"  mean="11.6"/>
+			<dexterity					max="16"  mean="10"/>
+			<health						min="8" max="19"  mean="11.2"/>
+		</stats>
+		<attributes>
+			<fatigue			min="-1" max="3" mean="1"/>
+			<move				min="-1"  max="-1"/>
+		</attributes>
+
+		<advantages						min="0" max="2" mean="0">
+			<extended-lifespan					req="1"/>
+			<extra-encumbrance					req="1"/>
+			<hard-to-kill						min="1" max="2" mean="1" req="1"/>
+			<toughness							min="1" max="2" mean="1" req="1"/>
+		</advantages>
+		<disadvantages					min="1" max="3" mean="1.2">
+			<dwarfism							req="-1"/>
+			<greed								req="40"/>
+			<miserliness						req="90"/>
+			<skinny								req="-1"/>
+			<stocky							min="-2" max="-2" req="1"/>
+		</disadvantages>
+		<quirk-nouns>
+			<cave_orcs							req="1"/>
+		</quirk-nouns>
+
+		<skills>
+			<armory						min="0" max="2" mean="1" req="94"/>
+			<axe-mace					min="0" max="3" req="1"/>
+			<axe-throwing				min="0" max="2" req="41"/>
+			<blacksmith					min="1" max="3" mean="2" req="92"/>
+			<language-dwarvish			max="1" req="-1"/>
+			<merchant					min="-1" max="2" mean="0" req="67"/>
+		</skills>
+	</class>
+
+	<class alias="dbrb" parents="dwarf, brba" name="Dwarf Barbarian" item-mod-inc="1" gender-ratio="76">
+		<stats>
+			<strength					 mean="12.2"/>
+			<dexterity					min="9"/>
+			<health						min="9"  mean="12.2"/>
+		</stats>
+
+		<skills							min="1" max="4">
+			<axe-mace					min="1" max="3" mean="1.2" req="1"/>
+		</skills>
+
+		<armor		min="2" max="5" mean="2.2"/>
+	</class>
+
+	<class alias="drngr" parents="dwarf, rngra" name="Dwarf Ranger" nationality="Dwarf" item-mod-inc="1" gender-ratio="82">
+		<stats>
+			<strength					mean="12"/>
+			<dexterity					min="9" mean="10.4"/>
+			<intelligence				min="10" max="16"  mean="11.6"/>
+			<health						min="9"  mean="12.1"/>
+		</stats>
+
+		<skills							min="1" max="4" mean="2">
+			<axe-mace					min="-1" max="3" mean="1" req="1"/>
+			<broad-sword				min="-1" max="2" mean="0" req="60"/>
+		</skills>
+
+		<armor		min="2" max="4" mean="2.2"/>
+		<weapons	 min="1" max="2" mean="1">
+			<baxe						req="76"/>
+			<bswordt					req="11"/>
+			<lbow						req="46"/>
+			<laknife					req="1"/>
+		</weapons>
+	</class>
+
+	<class alias="dvrog" parents="dwarf, roga" name="Dwarf Rogue" item-mod-inc="1" gender-ratio="81">
+		<stats>
+			<strength					mean="11.6"/>
+			<dexterity					min="10" mean="11"/>
+			<intelligence				min="10" max="16"  mean="11.6"/>
+			<health						min="9"  mean="11.6"/>
+		</stats>
+		<attributes>
+			<hearing			min="-1" max="4"/>
+			<hit-points			min="-1" max="2"/>
+			<vision				min="-1" max="4"/>
+		</attributes>
+
+		<skills							min="0" max="3">
+			<axe-mace					min="-1" max="3" mean="1" req="1"/>
+		</skills>
+
+		<armor		min="1" max="4" mean="2"/>
+		<weapons>
+			<baxe						req="50"/>
+		</weapons>
+	</class>
+
+	<class alias="deguard" parents="dwarf, knta" name="Dwarf Elite Guard" nationality="Dwarf" item-mod-inc="2" gender-ratio="84">
+		<stats>
+			<strength					min="11" mean="13"/>
+			<dexterity					min="9"  mean="11.8" sdev="1.1"/>
+			<intelligence				min="8" max="14" mean="11.3" sdev="1.2"/>
+			<health						min="10" mean="12.3"/>
+		</stats>
+
+		<advantages>
+			<rank						min="0" max="2" mean="1" req="1"/>
+		</advantages>
+		<disadvantages>
+			<greed						req="13"/>
+			<low-pain-threshold			req="-1"/>
+			<unfit						req="-1"/>
+		</disadvantages>
+
+		<skills							min="1" max="5" mean="2.4">
+			<axe-mace					min="1" max="3" mean="2.2" req="1"/>
+			<broad-sword				min="-1" max="2" mean="0" req="72"/>
+			<fast-draw-arrow			req="01"/>
+		</skills>
+
+		<weapons						min="1" max="2" mean="1">
+			<baxe						req="76"/>
+			<bswordt					req="10"/>
+			<dwaxe						req="56"/>
+		</weapons>
+		<armor		min="3" max="6" mean="4.1">
+			<gauntlets						req="62"/>
+			<sollerets						req="59"/>
+		</armor>
+	</class>
+
+
+	<class alias="orc" parents="ltp" name="Orc" nationality="Orc, Half-Orc, Black-Orc, Cave-Orc"
+	       hair="lice-infested-brunet, burn-scarred-skin, dingy-blue-black, filthy-rat-brown, yellowy-white, murky-brown, ink-black, scabby-melanoid, mangy-yellow, patchy-soot-brown, no, stringy-charcoal, stubbly-black, no"
+		   eyes="crusty-yellow, rotten-brown, crooked-green, algae-green, pus-yellow, light-yellow, dark-green, bulging-purple, snot-green, blood-red, beady-red, empty-black, moldy-gray, puke-yellow, pink-speckled, yellow-green, light-green, puke-green, green-brown"
+		   images-male="orc.gif,orc2.gif" images-female="female-orc3.gif"
+		   tech-level="2~3" age="18~24,25,26,27,28,29~46">
+		<stats>
+			<strength					min="8" max="20" mean="11.6"/>
+			<dexterity					min="7" max="15"  mean="10.1"/>
+			<intelligence				min="6" max="14" mean="8.6"/>
+			<health						min="8" max="20"  mean="12.2"/>
+		</stats>
+		<attributes>
+			<hearing					min="-1" max="3"/>
+			<hit-points					min="-1" max="3"/>
+			<fatigue					min="-1" max="3"/>
+		</attributes>
+
+		<advantages						min="0" max="2" mean="0">
+			<attractive					min="1" max="3" mean="1" req="01"/>
+			<night-vision				req="90"/>
+			<toughness					min="1" max="2" mean="1.1" req="92"/>
+		</advantages>
+		<disadvantages					min="0" max="2" mean=".28">
+			<bully						req="15"/>
+			<callous					req="08"/>
+			<code-of-honor				min="-3" max="-1" mean="-1.265" req="25"/>
+			<dwarfism					req="-1"/>
+			<innumerate					req="48"/>
+			<intolerance				min="-2" max="-1" req="20"/>
+			<low-pain-threshold			req="01"/>
+			<pacifism					req="-1"/>
+			<pacifism-self-defense		req="0.4"/>
+			<ugly						min="-3" max="-1" mean="-1.52" req="92"/>
+			<selfish					req="10"/>
+			<social-disease				min="-3" max="-1" req="11"/>
+			<social-stigma				req="-1"/>
+			<social-stigma-beast		min="-4" max="-4" req="1"/>
+			<stocky						req="92"/>
+		</disadvantages>
+		<quirk-verbs					min="1" max="4" mean="2.2"/>
+
+		<skills>
+			<brawling					min="0" max="3" req="1"/>
+			<fencing					req="-1"/>
+			<language-orcish			max="1" req="-1"/>
+			<sex-appeal					min="-7" max="-2" mean="-4"/>
+			<sling						max="2" req="45"/>
+			<spear						max="2" req="65"/>
+			<spear-throwing				max="2" req="62"/>
+		</skills>
+
+		<armor>
+			<bone						req="13"/>
+			<fplate						req="-1"/>
+			<plate						req="-1"/>
+			<mchain						req="-1"/>
+			<mplate						req="-1"/>
+			<mcshirt					req="-1"/>
+			<hcorse						req="-1"/>
+			<sollerets					req="0.02"/>
+			<slshoes					req="02"/>
+			<slboots					req="02"/>
+			<lboots						req="03"/>
+			<hlboots					req="01"/>
+		</armor>
+		<weapons>
+			<scramsax/>
+		</weapons>
+	</class>
+
+	<class alias="oberz" parents="orc, brba" name="Orc Berzerker" nationality="Orc, Black-Orc, Cave-Orc" item-mod-inc="0" gender-ratio="80">
+		<stats>
+			<strength					min="11" max="20"  mean="12.78" mode="13"/>
+			<dexterity					min="9" max="15" mean="11.1"/>
+			<health						min="10" max="20"  mean="12.8"/>
+		</stats>
+
+		<advantages>
+			<toughness							min="1" max="3" mean="2" req="1"/>
+		</advantages>
+		<disadvantages>
+			<berserk							req="1"/>
+		</disadvantages>
+
+		<skills							min="1" max="3">
+			<brawling					min="0" max="2" req="1"/>
+		</skills>
+	</class>
+
+	<class alias="oscout" parents="orc, rngra" name="Orc Scout" nationality="Orc, Black-Orc, Half-Orc, Half-Orc" item-mod-inc="0" gender-ratio="84">
+		<stats>
+			<strength					min="10" max="17" mean="12"/>
+			<dexterity					min="10" max="15" mean="11.5"/>
+			<intelligence				min="8"  max="14" mean="10.2" sdev="1.25"/>
+			<health						min="9"  max="17"  mean="12.8"/>
+		</stats>
+
+		<advantages>
+			<toughness							min="1" max="2" mean="1" req="1"/>
+			<attractive							min="1" max="3" mean="1" req="-1"/>
+		</advantages>
+
+		<skills							min="2" max="5">
+			<brawling					min="-1" max="3" req="1"/>
+			<spell-forest-warning		min= "-1" max="1" req="01"/>
+			<spell-mammal-control		min= "-1" max="2" req="01"/>
+			<spell-tangle-growth		min= "-1" max="1" req="01"/>
+			<spell-body-of-wood			max="1" req="01"/>
+			<spell-gift-of-tongues		max="1" req="01"/>
+			<spell-hail					max="1" req="01"/>
+			<spell-ice-dagger			max="1" req="01"/>
+			<spell-repel-mammal			max="1" req="01"/>
+			<spell-spit-venom			max="1" req="01"/>
+			<spell-water-jet			max="0" req="01"/>
+		</skills>
+	</class>
+
+	<class alias="oraid" parents="orc, roga" name="Orc Raider" nationality="Orc, Orc, Orc, Half-Orc" item-mod-inc="1" gender-ratio="79">
+		<stats>
+			<strength					min="10" max="17"  mean="12"/>
+			<dexterity					min="10" max="15" mean="11.8"/>
+			<intelligence				min="7"  max="13" mean="9.1" sdev="1.2"/>
+			<health						min="10"  max="17"  mean="12.7"/>
+		</stats>
+
+		<advantages>
+			<toughness							min="1" max="2" mean="1" req="1"/>
+			<attractive							min="1" max="3" mean="1" req="-1"/>
+		</advantages>
+
+		<skills							min="1" max="3">
+			<brawling					min="0" max="3" req="1"/>
+			<fencing					min="-1" max="2" req="-1"/>
+			<panhandling				max="2" req="22"/>
+			<poisons					min="0" max="2" mean="1.2" req="02"/>
+			<riding						min="0" max="3" req="1"/>
+			<shield						max="2" req="89"/>
+
+			<acrobatics					min="-1" max="1" req="01"/>
+			<disguise					max="1" req="-1"/>
+			<escape						max="1" req="07"/>
+			<fast-talk					min="-1" max="2" req="03"/>
+			<first-aid					max="1" req="02"/>
+			<hold-out					max="1" req="24"/>
+			<merchant					max="1" req="05"/>
+			<pick-pocket				max="2" req="26"/>
+			<scrounging					max="1" req="39"/>
+			<sex-appeal					min="-2" max="1" req="0.04"/>
+			<sleight-of-hand			max="1" req="06"/>
+			<stealth					min="-1" max="3" req="1"/>
+			<streetwise					max="1" req="24"/>
+		</skills>
+
+		<weapons>
+			<falchion							req="67"/>
+		</weapons>
+		<armor		min="1" max="3" mean="2">
+			<sshield						req="47"/>
+		</armor>
+	</class>
+
+	<class alias="owar" parents="orc, knta" name="Orc Warrior"
+	       nationality="Orc, Black-Orc, Black-Orc, Half-Orc, Cave-Orc" item-mod-inc="1" gender-ratio="84">
+		<stats>
+			<strength					min="11" max="17"  mean="12.5"/>
+			<dexterity					min="9"  max="16"  mean="11.8"/>
+			<health						min="11" max="17"  mean="12.9"/>
+		</stats>
+
+		<advantages>
+			<rank						min="0" max="4" mean="2" req="12"/>
+			<toughness					min="1" max="2" mean="1" req="1"/>
+		</advantages>
+		<disadvantages>
+			<honesty					req="01"/>
+		</disadvantages>
+
+		<skills							min="1" max="3">
+			<brawling						min="0" max="3" req="1"/>
+			<lance							max="2" req="02"/>
+			<pole-arm						max="2" req="30"/>
+			<riding							min="0" max="2" req="38"/>
+			<savoir-faire					max="2" req="02" mean="0"/>
+		</skills>
+
+		<armor		min="1" max="3" mean="1.2">
+			<bone							req="47"/>
+			<bplate							req="30"/>
+			<hlvest							req="60"/>
+			<mshield						req="84"/>
+		</armor>
+		<weapons	 min="1" max="2" mean="2">
+			<laknife							req="1"/>
+			<bswordt							req="-1"/>
+			<scramsax							req="68"/>
+		</weapons>
+	</class>
+
+	<class alias="hwarmag" parents="hwar, maga" name="Human Warrior Mage" nationality="Human" item-mod-inc="3" gender-ratio="62">
+		<stats>
+			<intelligence				min="11" max="16"  mean="12.3"/>
+			<health						min="9" max="15"  mean="11.2"/>
+		</stats>
+
+		<advantages min="0" max="1">
+			<magery							min="0" max="2" mean="1.2" req="1"/>
+			<magic-resistance				req="-1"/>
+			<literacy						req="28"/>
+		</advantages>
+
+		<skills							min="1" max="4">
+			<shield						max="0" req="73"/>
+			<spell-fireball				max="1"/>
+			<spell-forest-warning		max="1"/>
+			<spell-lightning			max="1"/>
+			<spell-mage-stealth			max="1"/>
+			<spell-tangle-growth		max="1"/>
+		</skills>
+
+		<weapons>
+			<bswordt							req="20"/>
+			<cbow								req="05"/>
+			<mstaff							req="03"/>
+		</weapons>
+	</class>
+
+	<class alias="ebard" parents="elf, barda" name="Elf Bard" nationality="Wood-Elf, Elf, Half-Elf, Dark-Elf, Elf, Half-Elf">
+		<stats>
+			<strength					min="8" max="14"  mean="10.1"/>
+			<dexterity					min="10" max="18"  mean="13.4"/>
+			<intelligence				min="11" max="17"  mean="12.6"/>
+		</stats>
+
+		<skills							min="1" max="3">
+			<axe-mace					max="2" req="04"/>
+			<bow						req="1"/>
+			<broad-sword				min="-1" max="2" req="47"/>
+			<crossbow					max="2" req="0.02"/>
+			<fencing					min="-1" max="3" mean="1.4" mode="1" req="95"/>
+		</skills>
+
+		<weapons>
+			<elsword							req="43"/>
+			<rapier								req="18"/>
+			<saber								req="01"/>
+			<ssword								req="01"/>
+		</weapons>
+		<armor		min="1" max="3" mean="1.6">
+			<mshield							req="-1"/>
+		</armor>
+	</class>
+
+	<class alias="hbard" parents="barda" name="Human Bard" nationality="Human"/>
+
+	<class alias="barda" parents="roga, larma, hwarmag" abstract="1" name="Bard - Abstract" nationality="Human" item-mod-inc="2" gender-ratio="58">
+		<stats>
+			<intelligence				min="11" max="16" />
+		</stats>
+		<attributes>
+			<fatigue					min="-1" max="2" mean="0"/>
+		</attributes>
+
+		<advantages min="0" max="1">
+			<absolute-direction				req="10"/>
+			<ambidexterity					req="06"/>
+			<attractive						min="1" max="3" mean="1" req="36"/>
+			<combat-reflexes				req="30"/>
+			<danger-sense					req="15"/>
+			<double-jointed					req="02"/>
+			<hyper-reflexes					req="02"/>
+			<music-ability				min="1" max="4" mean="1.2" req="45"/>
+			<pious							req="05"/>
+			<toughness						min="1" max="2" mean="1" req="06"/>
+		</advantages>
+		<disadvantages>
+			<gregarious					req="20"/>
+			<loner						req="-1"/>
+			<low-self-image				req="-1"/>
+			<shy						req="-1"/>
+		</disadvantages>
+
+		<skills							min="1" max="4">
+			<acrobatics					min="-1" max="2" req="02"/>
+			<alchemy					max="2" req="02"/>
+			<axe-mace					max="2" req="21"/>
+			<bard						min="-1" max="2" req="1"/>
+			<bow						req="31"/>
+			<brawling					min="-1" max="2" req="12"/>
+			<broad-sword				min="-1" max="2" req="90"/>
+			<camouflage					max="2" req="02"/>
+			<climbing					min="0" max="2" req="06"/>
+			<crossbow					max="2" req="04"/>
+			<dancing					max="2" req="74"/>
+			<detect-lies				max="1" req="06"/>
+			<disguise					max="2" req="05"/>
+			<escape						max="2" req="03"/>
+			<fast-draw-knife			max="2" req="11"/>
+			<fencing					min="-1" max="2" req="75"/>
+			<flail						max="2" req="03"/>
+			<hold-out					max="2" req="16"/>
+			<intimidation				max="2" req="10"/>
+			<knife						mean="0" req="62"/>
+			<knife-throwing				min="0"  max="2" mean="2" req="60"/>
+			<lance						max="2" req="01"/>
+			<lip-reading				max="2" req="03"/>
+			<lockpicking				max="2" req="03"/>
+			<main-gauche				min="-1" max="2" mean="1" req="39"/>
+			<musical-instrument			min="-1" max="2" req="88"/>
+			<panhandling				max="2" req="18"/>
+			<pick-pocket				max="2" req="02"/>
+			<poisons					max="2" req="04"/>
+			<pole-arm					max="2" req="01"/>
+			<riding						min="0" max="2" req="70"/>
+			<scrounging					max="2" req="06"/>
+			<sex-appeal					min="-2" max="1" req="34"/>
+			<shadowing					max="2" req="07"/>
+			<short-sword				min="0" max="2" req="92"/>
+			<singing					max="2" req="74"/>
+			<sling						max="1" req="04"/>
+			<spear						min="-2" max="2" req="20"/>
+			<spear-throwing				max="2" req="08"/>
+			<staff						min="-2" max="2" req="09"/>
+			<streetwise					max="2" req="42"/>
+			<thaumatology				max="2" req="02"/>
+			<traps						max="2" req="03"/>
+			<two-hand-axe-mace			min="-1" max="2" req="02"/>
+			<two-hand-sword				min="-1" max="2" req="03"/>
+
+			<spell-counterspell			max="1" req="03"/>
+			<spell-curse-missile		max="1" req="10"/>
+			<spell-death-vision			max="1" req="-1"/>
+			<spell-detect-magic			max="1" req="22"/>
+			<spell-dexterity			max="1" req="06"/>
+			<spell-fear					max="1" req="-1"/>
+			<spell-iron-arm				max="1" req="07"/>
+			<spell-might				max="1" req="06"/>
+			<spell-recover-strength		max="1" req="20"/>
+			<spell-sense-foes			max="1" req="21"/>
+			<spell-skin-of-stone		max="1" req="02.6"/>
+			<spell-spasm				max="1" req="12"/>
+			<spell-stone-missile		max="1" req="07"/>
+			<spell-vigor				max="1" req="09"/>
+			<spell-water-jet			max="1" req="04"/>
+		</skills>
+
+		<armor		min="2" max="4" mean="2.2">
+			<dplate								req="-1"/>
+		</armor>
+		<weapons	 min="1" max="2" mean="1">
+			<baxe								req="-1"/>
+			<bswordt							req="14"/>
+			<cbow								req="-1"/>
+			<gswords							req="-1"/>
+			<mstaff								req="-1"/>
+			<rapier								req="18"/>
+			<srapier							req="09"/>
+			<saber								req="43"/>
+			<ssword								req="09"/>
+			<lsword								req="10"/>
+			<sbow								req="42"/>
+			<pstone								req="32"/>
+			<pstone2							req="06"/>
+			<pstoneq							req="02"/>
+		</weapons>
+	</class>
+
+	<class alias="hwar" parents="knta, grd" name="Human Warrior" nationality="Human" item-mod-inc="1" gender-ratio="75">
+		<stats>
+			<strength					min="10" max="19"  mean="12.6"/>
+			<dexterity					min="9"  max="17"  mean="12.7"/>
+			<intelligence				min="7"  max="15"  mean="10.7"/>
+			<health						min="9"  max="16"  mean="12"/>
+		</stats>
+
+		<advantages>
+			<rank							min="0" max="4" mean="2" req="15"/>
+			<toughness						min="1" max="2" mean="1" req="42"/>
+		</advantages>
+		<disadvantages>
+			<code-of-honor				req="02"/>
+			<honesty					req="05"/>
+		</disadvantages>
+
+		<skills							min="1" max="6" mean="3">
+			<brawling						min="0" max="2" req="1"/>
+			<throwing						min="-1" max="1" req="59"/>
+
+			<broad-sword					min="1" max="3" req="90"/>
+			<crossbow						max="2" req="30"/>
+			<flail							max="2" req="46"/>
+			<intimidation					max="2" req="35"/>
+			<knife							req="87"/>
+			<lance							max="2" req="04"/>
+			<pole-arm						max="2" req="34"/>
+			<riding							min="0" max="2" req="1"/>
+			<savoir-faire					max="2" req="10"/>
+			<shield							max="2" req="1"/>
+			<short-sword					min="0" max="2" req="90"/>
+			<two-hand-sword					min="-1" max="2" req="52"/>
+
+		</skills>
+
+		<armor		min="1" max="4" mean="2">
+			<bplate							req="41"/>
+			<mshield						req="84"/>
+		</armor>
+		<weapons	 min="1" max="3" mean="2">
+			<bswordt							req="26"/>
+			<cbow								req="15"/>
+			<laknife							req="1"/>
+		</weapons>
+	</class>
+
+	<class alias="ochamp" parents="owar" name="Orc Champion" nationality="Orc, Black-Orc" item-mod-inc="6" gender-ratio="97">
+		<stats>
+			<strength					min="12" max="21" mean="15.7"/>
+		</stats>
+
+		<advantages>
+			<ambidexterity						req="10"/>
+			<charisma					min="1" max="4" mean="1.2" req="22"/>
+			<fearlessness				min="1" max="4" mean="1.2" req="30"/>
+			<higher-purpose						req="12"/>
+			<magic-resistance			min="1" max="5" mean="1.2" req="06"/>
+			<unfazeable							req="14"/>
+		</advantages>
+		<disadvantages>
+			<charitable							req="-1"/>
+			<code-of-honor				min="-2" max="-2" req="1"/>
+			<low-self-image						req="-1"/>
+			<sadism								req="37"/>
+			<weak-immune-system					req="-1"/>
+		</disadvantages>
+
+		<skills							min="2" max="5">
+			<lance							req="-1"/>
+			<leadership						min="-1" max="2" req="70"/>
+		</skills>
+	</class>
+
+	<class alias="grd" parents="ltp" name="Human City Guard" nationality="Human" item-mod-inc="-1" gender-ratio="95">
+		<stats>
+			<strength					min="9"  mean="11.8"/>
+			<dexterity					min="9"  mean="11.1"/>
+			<intelligence				min="7" max="15"  mean="10.5"/>
+			<health						min="8" max="16"  mean="11.7"/>
+		</stats>
+
+		<advantages>
+			<combat-reflexes				req="10"/>
+			<high-pain-threshold			req="07"/>
+			<legal-enforcement				min="1" max="2" mean="1" req="1"/>
+			<rank							min="0" max="4" mean="1" req="1"/>
+		</advantages>
+
+		<disadvantages>
+			<blind							req="-1"/>
+			<combat-paralysis				req="-1"/>
+			<dwarfism						req="00.3"/>
+		</disadvantages>
+
+		<skills							min="1" max="6" mean="3">
+			<axe-mace						max="2" req="1"/>
+			<bow							req="41"/>
+			<brawling						min="-1" max="1" req="36"/>
+			<broad-sword					min="-1" max="2" req="1"/>
+			<crossbow						req="60"/>
+			<gunner-ballista				max="1" req="12"/>
+			<fast-draw-sword				req="13"/>
+			<flail							req="50"/>
+			<knife							req="1"/>
+			<pole-arm						max="1" req="47"/>
+			<shield							req="1"/>
+			<short-sword					req="1"/>
+			<spear							req="72"/>
+			<throwing						req="46"/>
+			<two-hand-axe-mace				req="38"/>
+			<two-hand-sword					max="1" req="56"/>
+		</skills>
+
+		<weapons	 min="1" max="2" mean="1">
+			<laknife						req="60"/>
+			<scramsax						req="02"/>
+			<ssword							req="72"/>
+			<cbow							req="13"/>
+			<lbow							req="11"/>
+		</weapons>
+
+		<armor		min="1" max="3" mean="1.2">
+			<cloth							req="12"/>
+			<mshield						req="1"/>
+			<leather						req="21"/>
+			<pad							req="18"/>
+		</armor>
+	</class>
+
+	<class alias="hsold" parents="grd" name="Human Soldier" nationality="Human" item-mod-inc="-2" gender-ratio="97">
+		<stats>
+			<strength					min="10"  mean="11.9"/>
+			<dexterity					min="9"   mean="11.1"/>
+			<intelligence				min="7"  max="15"  mean="10.5"/>
+			<health						min="9"  max="16"  mean="11.9"/>
+		</stats>
+
+		<advantages>
+			<combat-reflexes				req="14"/>
+			<high-pain-threshold			req="10"/>
+			<legal-enforcement				min="1" max="2" mean="1" req="06"/>
+			<rank							min="0" max="4" mean="1" req="1"/>
+		</advantages>
+		<disadvantages>
+			<blind							req="-1"/>
+			<combat-paralysis				req="-1"/>
+			<dwarfism						req="00.3"/>
+		</disadvantages>
+
+		<skills							min="2" max="7" mean="3.4">
+			<brawling						min="-1" max="1" req="67"/>
+			<flail							req="34"/>
+			<gunner-ballista				max="1" req="33"/>
+			<pole-arm						max="1" req="51"/>
+			<shield							req="1"/>
+			<spear							req="1"/>
+			<throwing						req="20"/>
+			<two-hand-axe-mace				req="53"/>
+			<two-hand-sword					max="1" req="62"/>
+		</skills>
+
+		<weapons	 min="1" max="3" mean="1.1" sdev=".2">
+			<laknife						req="72"/>
+			<ssword							req="58"/>
+		</weapons>
+
+		<armor		min="1" max="4" mean="2">
+			<mshield						req="60"/>
+			<phelm							req="90"/>
+			<hleather						req="65"/>
+			<chain							req="48"/>
+		</armor>
+	</class>
+
+	<class alias="ogre" parents="oberz" name="Ogre Barbarian" nationality="Underworld" item-mod-inc="2" gender-ratio="67"
+		   images-male="ogre.gif" images-female="female-ogre.gif">
+		<stats>
+			<strength					min="17" max="23" mean="18.4"/>
+			<dexterity					min="7"  max="13" mean="9" sdev="1.6"/>
+			<intelligence				min="6"  max="14" mean="8.8" sdev="1.6"/>
+			<health						min="9"  max="17" mean="12.9"/>
+		</stats>
+
+		<advantages>
+			<hyper-reflexes						req="-1"/>
+		</advantages>
+		<disadvantages>
+			<bad-smell							req="1"/>
+			<gigantism							req="1"/>
+			<stocky								req="-1"/>
+		</disadvantages>
+
+		<skills							min="0" max="2">
+			<axe-mace					min="-1" max="2" req="1"/>
+			<language-orcish			max="0" req="-1"/>
+		</skills>
+	</class>
+
+	<class alias="kbldinv" parents="kbld, larma, lweap, maga" name="Kobold Invoker" item-mod-inc="2" gender-ratio="90">
+		<stats>
+			<intelligence				min="10" max="15"  mean="11.8"/>
+		</stats>
+
+		<skills							min="1" max="4"/>
+
+		<weapons	 min="0" max="2" mean="1">
+			<hspear 						req="18"/>
+			<laknife 						req="1"/>
+		</weapons>
+		<armor		min="1" max="3"/>
+	</class>
+
+	<class alias="kbldchief" parents="kbld, larma, lweap, brba" name="Kobold Chieftan" item-mod-inc="2" gender-ratio="99">
+		<stats>
+			<strength					min="9" max="11"/>
+			<dexterity					min="10" max="16"  mean="12.3"/>
+			<health						min="9" max="14" />
+		</stats>
+		<disadvantages min="0" max="1" mode="0" mean="0" sdev=".3">
+			<bad-smell					req="08"/>
+			<social-disease				req="01"/>
+		</disadvantages>
+	</class>
+
+	<class alias="kbld" parents="lweap, larma, grd, orc" name="Kobold Warrior"
+	       nationality="Underworld" item-mod-inc="-1" gender-ratio="64" age="17~38">
+		<stats>
+			<strength					min="7" max="12" mean="8.51" sdev="1.4"/>
+			<dexterity					min="9" max="16" mean="11.9"/>
+			<intelligence				min="6" max="12" mean="9"/>
+			<health						min="7" max="13" mean="11"/>
+		</stats>
+		<attributes>
+			<move				min="0" max="1" mean="0.15"/>
+			<vision				min="0" max="5" mean="2.2"/>
+		</attributes>
+
+		<advantages>
+			<rank								req="-1"/>
+			<legal-enforcement					req="-1"/>
+		</advantages>
+		<disadvantages>
+			<bad-smell							req="34"/>
+			<dwarfism							req="1"/>
+			<social-stigma						req="-1"/>
+			<stocky								req="-1"/>
+			<truthfulness						req="-1"/>
+		</disadvantages>
+
+		<skills							min="1" max="5" mean="3">
+			<language-draconic			max="0" req="-1"/>
+			<spear						min="-1" max="2" req="1"/>
+		</skills>
+
+		<weapons	 min="0" max="1" mean="1">
+			<hspear 						req="52"/>
+			<laknife 						req="1"/>
+		</weapons>
+		<armor	 min="0" max="3" mean="1"/>
+	</class>
+
+
+	<class alias="brb" parents="brba, grd" name="Human Barbarian" nationality="Human" item-mod-inc="0" gender-ratio="79"/>
+
+	<class alias="brba" parents="itma" abstract="1" name="Barbarian - Abstract" nationality="Human">
+		<stats>
+			<strength					min="11" max="16" mean="12.8"/>
+			<dexterity					min="9" max="15" mean="11.9"/>
+			<intelligence				min="7" max="15" mean="10.2"/>
+			<health						min="9" max="15" mean="11.9"/>
+		</stats>
+		<attributes>
+			<hit-points			min="-1" max="3" mean=".4"/>
+			<will				min="-1" max="2" mean=".4"/>
+		</attributes>
+
+		<advantages>
+			<ambidexterity					req="10"/>
+			<attractive						min="1" max="3" mean="1" req="03"/>
+			<clerical-investment			min="1" max="1" req="01"/>
+			<combat-reflexes				req="35"/>
+			<danger-sense					req="10"/>
+			<fearlessness					min="1" max="4" mean="1.2" req="32"/>
+			<hard-to-kill					min="1" max="4" mean="1.2" req="28"/>
+			<high-pain-threshold			req="20"/>
+			<hyper-reflexes					req="05"/>
+			<legal-enforcement				req="-1"/>
+			<pious							req="-1"/>
+			<rank							req="-1"/>
+			<rapid-healing					min="1" max="2" mean="1" req="20"/>
+			<toughness						min="1" max="2" mean="1" req="55"/>
+		</advantages>
+		<disadvantages					min="1" max="3" mean="1.8">
+			<berserk							req="72"/>
+			<blind								req="-1"/>
+			<callous							req="19.33"/>
+			<careful							req="-1"/>
+			<combat-paralysis					req="-1"/>
+			<cowardice							req="-1"/>
+			<fat								req="-1"/>
+			<honesty							req="-1"/>
+			<klutz								req="-1"/>
+			<lame								req="-1"/>
+			<lecherousness						req="10"/>
+			<low-pain-threshold					req="-1"/>
+			<pacifism							req="-1"/>
+			<pacifism-self-defense				req="-1"/>
+		</disadvantages>
+
+		<skills							min="1" max="4">
+			<axe-mace					min="-1" max="2" mean="2" req="1"/>
+			<axe-throwing				max="1" req="24"/>
+			<bow						req="18"/>
+			<brawling					min="-1" max="2" req="90"/>
+			<broad-sword				min="-1" max="2" req="92"/>
+			<carousing					req="30"/>
+			<crossbow					req="30"/>
+			<fast-draw-sword			req="17"/>
+			<flail						max="2" req="39"/>
+			<gunner-ballista			max="1" req="04"/>
+			<hold-out					max="2" req="10"/>
+			<intimidation				min="-1" max="2" req="70"/>
+			<knife						req="82"/>
+			<knife-throwing				min="0"  max="2" req="17"/>
+			<lockpicking				max="1" req="14"/>
+			<pick-pocket				max="1" req="02"/>
+			<poisons					max="1" req="07"/>
+			<pole-arm					max="1" req="06"/>
+			<riding						max="1" req="67"/>
+			<shield						req="90"/>
+			<short-sword				max="2" req="92"/>
+			<spear						min="-1" max="1" req="58"/>
+			<spear-throwing				max="1" req="26"/>
+			<stealth					min="-1" max="2" req="81"/>
+			<survival					min="-1" max="1" req="20"/>
+			<throwing					min="-2" max="1" req="24"/>
+			<tracking					min="-1" max="1" req="53"/>
+			<two-hand-axe-mace			min="-1" max="2" req="64"/>
+			<two-hand-sword				min="-1" max="1" req="14"/>
+		</skills>
+
+		<weapons	 min="1" max="3" mean="1.5">
+			<baxe						req="71"/>
+			<sclub						req="21"/>
+			<ssword						req="23"/>
+			<laknife					req="76"/>
+		</weapons>
+
+		<armor		min="1" max="4" mean="2">
+			<ghelm							req="0.03"/>
+			<fplate							req="-1"/>
+			<hlvest							req="80"/>
+			<mshield						req="25"/>
+			<sshield						req="29"/>
+			<plate							req="-1"/>
+			<shplates						req="21"/>
+		</armor>
+	</class>
+
+	<class alias="humarch" parents="archa, grd" name="Human Archer" nationality="Human" item-mod-inc="0" gender-ratio="91"/>
+
+	<class alias="archa" parents="larma" abstract="1" name="Archer - Abstract" nationality="Human">
+		<stats>
+			<strength					min="10"  mean="11.9"/>
+			<dexterity					min="10" max="17"  mean="12"/>
+		</stats>
+		<attributes>
+			<hearing			min="-1" max="1"/>
+			<vision				min="-1" max="3"/>
+		</attributes>
+
+		<advantages>
+			<danger-sense					req="12"/>
+			<fearlessness					min="1" max="4" mean="1.2" req="12"/>
+			<fit							min="1" max="2" mean="1" req="18"/>
+			<rank							req="41"/>
+		</advantages>
+
+		<disadvantages>
+			<berserk							req="02"/>
+			<blind								req="-1"/>
+			<one-arm							req="-1"/>
+			<one-hand							req="-1"/>
+		</disadvantages>
+
+		<skills							min="2" max="7" mean="4.4">
+			<bow						req="1" min="0" max="3" mean="1.2"/>
+			<brawling					min="-1" max="2" req="70"/>
+			<camouflage					max="2" req="51"/>
+			<crossbow					req="06"/>
+			<first-aid					max="2" req="72"/>
+			<knife						max="2" req="1"/>
+			<pole-arm					max="1" req="03"/>
+			<short-sword				max="2" req="1"/>
+			<stealth					min="0" max="2" req="83"/>
+			<survival					min="-1" max="1" req="31"/>
+			<tracking					min="0" max="2" req="29"/>
+			<two-hand-axe-mace			min="-1" max="2" req="02"/>
+		</skills>
+
+		<weapons	 min="0" max="1" mean="1">
+			<cmbow							req="92"/>
+			<lbow							req="70"/>
+			<laknife						req="1"/>
+			<csbow							req="08"/>
+			<cbow							req="-1"/>
+			<ssword							req="52"/>
+			<kabow							req="2.1"/>
+		</weapons>
+		<armor		min="2" max="4" mean="2">
+			<buckler						req="28"/>
+			<mshield						req="05"/>
+		</armor>
+	</class>
+
+	<class alias="rngr" parents="rngra, grd" name="Human Ranger" nationality="Human" item-mod-inc="1" gender-ratio="72"/>
+
+	<class alias="rngra" parents="larma" abstract="1" name="Ranger - Abstract" nationality="Human">
+		<stats>
+			<strength					min="9" max="16" mean="11.9"/>
+			<dexterity					min="10" max="17"  mean="11.9"/>
+			<intelligence				min="9" max="16"  mean="11.9"/>
+			<health						min="9" max="15" mean="11.9"/>
+		</stats>
+
+		<advantages>
+			<absolute-direction				req="35"/>
+			<ambidexterity					req="12.5"/>
+			<animal-empathy					req="67"/>
+			<combat-reflexes				req="31"/>
+			<fit							min="1" max="2" mean="1" req="20"/>
+			<high-pain-threshold			req="16"/>
+			<legal-enforcement				min="1" max="2" mean="1" req="-1"/>
+			<rank							min="0" max="3" mean="1"/>
+			<literacy						req="25"/>
+		</advantages>
+
+		<disadvantages>
+			<blind							req="-1"/>
+			<combat-paralysis				req="-1"/>
+			<cowardice						req="01"/>
+			<fat							req="-1"/>
+			<honesty						req="02"/>
+			<klutz							req="-1"/>
+			<lame							req="-1"/>
+			<one-arm						req="-1"/>
+			<overweight						req="-1"/>
+			<ugly							req="01"/>
+			<weak-immune-system				req="01"/>
+		</disadvantages>
+
+		<skills							min="1" max="6" mean="2.2">
+			<animal-handling			max="2" req="71"/>
+			<axe-mace					max="2" req="78"/>
+			<bow						min="-2" max="2" req="89"/>
+			<broad-sword				min="-1" max="3" mean="1" req="1"/>
+			<crossbow					min="-2" max="2" req="12"/>
+			<fast-draw-arrow			max="1" req="10"/>
+			<fast-draw-sword			req="18"/>
+			<fencing					min="-1" max="2" req="18"/>
+			<first-aid					max="2" req="62"/>
+			<flail						req="19"/>
+			<knife						req="1"/>
+			<knife-throwing				min="-1"  max="2" req="60"/>
+			<main-gauche				max="1" req="12"/>
+			<naturalist					min="-1" max="1" req="27"/>
+			<poisons					max="1" req="11"/>
+			<pole-arm					max="1" req="01.7"/>
+			<riding						max="1" req="77"/>
+			<shadowing					max="1" req="14"/>
+			<shield						req="56"/>
+			<short-sword				min="-1" max="2" req="1"/>
+			<spear						max="1" req="56"/>
+			<staff						max="1" req="11"/>
+			<stealth					max="2" req="89"/>
+			<survival					min="-1" max="1" req="69"/>
+			<tracking					min="-1" max="2" req="88"/>
+			<two-hand-axe-mace			min="-1" max="2" req="02"/>
+
+			<spell-forest-warning		min= "-1" max="1" req="11"/>
+			<spell-mammal-control		min= "-1" max="2" req="08"/>
+			<spell-tangle-growth		min= "-1" max="1" req="07"/>
+			<spell-body-of-wood			max="1" req="03"/>
+			<spell-gift-of-tongues		max="1" req="02"/>
+			<spell-hail					max="1" req="05"/>
+			<spell-ice-dagger			max="1" req="03"/>
+			<spell-repel-mammal			max="1" req="04"/>
+			<spell-spit-venom			max="1" req="05"/>
+			<spell-water-jet			max="0" req="04"/>
+		</skills>
+
+		<weapons	 min="1" max="2">
+			<cbow							req="05"/>
+			<lbow							req="59"/>
+			<sbow							req="21"/>
+			<laknife						req="1"/>
+			<latknife						req="64"/>
+			<bswordt						req="58"/>
+			<macef							req="0.01"/>
+			<rope req="15"/>
+		</weapons>
+
+		<armor		min="1" max="3" mean="2">
+			<hlvest							req="48"/>
+			<slvest							req="52"/>
+			<mshield						req="25"/>
+			<fplate							req="-1"/>
+		</armor>
+	</class>
+
+	<class alias="rog" parents="roga, ltp" name="Human Rogue" nationality="Human" item-mod-inc="1" gender-ratio="72"/>
+
+	<class alias="roga" parents="larma" abstract="1" name="Rogue - Abstract" nationality="Human">
+		<stats>
+			<strength					min="8" max="15" mean="10.9"/>
+			<dexterity					min="11" max="17"  mean="12.9"/>
+			<intelligence				min="9" max="15"  mean="11.9"/>
+			<health						min="8" max="15"  mean="10.4"/>
+		</stats>
+		<attributes>
+			<hearing			min="-1" max="4"/>
+			<hit-points			min="-1" max="2"/>
+			<vision				min="-1" max="4"/>
+		</attributes>
+
+		<advantages>
+			<ambidexterity					req="08"/>
+			<attractive						min="1" max="3" mean="1" req="07"/>
+			<clerical-investment			min="1" max="1" req="01"/>
+			<combat-reflexes				req="08"/>
+			<danger-sense					req="52"/>
+			<double-jointed					req="25"/>
+			<hyper-reflexes					req="04"/>
+			<legal-enforcement				req="-1"/>
+			<pious							req="-1"/>
+			<pitiable						req="08"/>
+			<rank							req="-1"/>
+		</advantages>
+
+		<disadvantages>
+			<blind								req="-1"/>
+			<careful							req="-1"/>
+			<charitable							req="-1"/>
+			<combat-paralysis					req="-1"/>
+			<fat								req="-1"/>
+			<greed								req="55"/>
+			<honesty							req="-1"/>
+			<klutz								req="-1"/>
+			<lame								req="-1"/>
+			<truthfulness						req="01"/>
+		</disadvantages>
+
+		<skills							min="1" max="8" mean="4">
+			<acrobatics					min="-1" max="1" req="30"/>
+			<axe-mace					max="1" req="36"/>
+			<bow						req="61"/>
+			<brawling					min="-1" max="1" req="42"/>
+			<broad-sword				min="-1" max="1" req="98"/>
+			<climbing					min="-1" max="2" req="73"/>
+			<disguise					max="1" req="22"/>
+			<escape						max="1" req="31"/>
+			<fast-draw-knife			max="1" req="57"/>
+			<fast-draw-sword			max="1" req="26"/>
+			<fast-talk					min="-1" max="2" req="60"/>
+			<fencing					min="-1" max="1" req="11"/>
+			<first-aid					max="1" req="10"/>
+			<hold-out					max="1" req="71"/>
+			<knife						min="-1" max="2" mean="2" req="1"/>
+			<knife-throwing				min="0"  max="2" mean="2" req="70"/>
+			<lockpicking				max="2" req="63"/>
+			<main-gauche				min="-1" max="1" req="21"/>
+			<merchant					max="1" req="61"/>
+			<panhandling				max="2" req="48"/>
+			<pick-pocket				max="2" req="64"/>
+			<poisons					min="-1" max="1" mean="1" req="33"/>
+			<scrounging					max="1" req="21"/>
+			<sex-appeal					min="-2" max="1" req="20"/>
+			<shadowing					max="1" req="41"/>
+			<shield						max="0" req="33"/>
+			<short-sword				max="2" req="1"/>
+			<sleight-of-hand			max="1" req="20"/>
+			<sling						max="1" req="41"/>
+			<stealth					min="-1" max="3" req="1"/>
+			<streetwise					max="1" req="52"/>
+			<traps						max="2" req="63"/>
+		</skills>
+
+		<weapons	 min="1" max="2">
+			<laknife						req="1"/>
+			<latknife						req="30"/>
+			<satknife						req="30"/>
+			<lsword							req="30"/>
+			<ssword							req="60"/>
+			<sbow							req="44"/>
+			<poison							req="40"/>
+			<rope req="25"/>
+		</weapons>
+
+		<armor		min="1" max="3">
+			<cloak							req="48"/>
+			<hlvest							req="68"/>
+			<gauntlets						req="-1"/>
+			<chain							req="-1"/>
+			<scale							req="-1"/>
+			<plate							req="-1"/>
+			<fplate							req="-1"/>
+			<ghelm							req="-1"/>
+			<lshield						req="-1"/>
+		</armor>
+	</class>
+
+
+	<class alias="knt"  parents="knta, grd" name="Human Knight" nationality="Human" item-mod-inc="1" gender-ratio="99"/>
+
+	<class alias="knta" parents="itma"   abstract="1" name="Knight - Abstract" nationality="Human">
+		<stats>
+			<strength					min="11" max="18"  mean="12.2"/>
+			<dexterity					min="9" max="16"  mean="12"/>
+			<intelligence				min="8" max="15" mean="10.5" sdev="1.2"/>
+			<health						min="10" max="15"  mean="11.9"/>
+		</stats>
+
+		<advantages>
+			<combat-reflexes				req="33.33"/>
+			<high-pain-threshold			req="21"/>
+			<higher-purpose					req="08"/>
+			<rank							min="2" max="4" mean="2.8" req="45"/>
+			<legal-enforcement			min="1" max="3" mean="1" req="10"/>
+			<status						min="1" max="4" mean="1.2" req="19"/>
+		</advantages>
+		<disadvantages					min="1" max="4" mean="2">
+			<bad-smell							req="02"/>
+			<blind								req="-1"/>
+			<code-of-honor				min="-2" max="-2" req="90"/>
+			<combat-paralysis					req="-1"/>
+			<cowardice							req="-1"/>
+			<delicate-metabolism				req="-1"/>
+			<dwarfism							req="00.01"/>
+			<fanaticism					min="-2" max="-1" req="20"/>
+			<honesty							req="50"/>
+			<lame						        req="00.1"/>
+			<pacifism					        req="-1"/>
+			<skinny								req="01"/>
+			<social-stigma						req="00.1"/>
+		</disadvantages>
+ 
+		<skills							min="1" max="6" mean="2.4">
+			<axe-mace						min="0" max="2" req="78"/>
+			<bow							max="1" req="10"/>
+			<brawling						min="-1" max="2" req="66"/>
+			<broad-sword					min="1" max="3" req="1"/>
+			<crossbow						max="2" req="70"/>
+			<flail							max="2" req="56"/>
+			<intimidation					max="2" req="65"/>
+			<knife							req="57"/>
+			<lance							max="2" req="81"/>
+			<pole-arm						max="2" req="74"/>
+			<riding							min="0" max="2" req="1"/>
+			<savoir-faire					max="2" req="1" mean="0"/>
+			<shield							max="2" req="1"/>
+			<short-sword					min="0" max="2" req="1"/>
+			<spear							min="-2" max="2" req="56"/>
+			<spear-throwing					max="2" req="17"/>
+			<two-hand-axe-mace				min="-1" max="2" req="32"/>
+			<two-hand-sword					min="-1" max="2" req="62"/>
+		</skills>
+
+		<weapons	 min="1" max="3" mean="2">
+			<bswordt							req="62"/>
+			<cbow								req="32"/>
+			<gswords							req="02"/>
+			<laknife							req="1"/>
+			<lbow								req="03.2"/>
+			<scramsax							req="0.6"/>
+			<ssword								req="22"/>
+		</weapons>
+
+		<armor		min="3" max="5" mean="3.45">
+			<bplate							req="64"/>
+			<dplate/>
+			<mshield						req="70"/>
+			<cloth							req="-1"/>
+			<pad							req="-1"/>
+			<lleather						req="-1"/>
+			<leather						req="-1"/>
+			<sollerets						req="08"/>
+			<slshoes						req="07"/>
+			<slboots						req="18"/>
+			<lboots							req="71"/>
+			<hlboots						req="88"/>
+			<fhelm							req="32"/>
+			<phelm							req="48"/>
+			<ccoif							req="35"/>
+			<lgloves						req="69"/>
+			<gauntlets						req="34"/>
+		</armor>
+	</class>
+
+	<class alias="pld" parents="knt" name="Human Paladin" nationality="Human" item-mod-inc="2">
+		<stats>
+			<strength					min="10" max="15"  mean="12"/>
+			<dexterity					min="9" max="15"  mean="11" mode="11" sdev="1.1"/>
+			<intelligence				min="10" max="15"  mean="11.2"/>
+			<health						min="10" max="15"  mean="12.8"/>
+		</stats>
+
+		<advantages						min="0" max="1" mean=".1">
+			<attractive							min="1" max="3" mean="1" req="10"/>
+			<charisma							min="1" max="4" mean="1.2" req="11"/>
+			<clerical-investment				min="1" max="1" req="64"/>
+			<combat-reflexes					req="07"/>
+			<fearlessness						min="1" max="4" mean="1.2" req="18"/>
+			<higher-purpose						req="04"/>
+			<high-pain-threshold				req="13"/>
+			<immunity-to-disease				req="09"/>
+			<legal-enforcement					min="1" max="3" mean="1" req="04"/>
+			<literacy							req="21"/>
+			<patron								req="13"/>
+			<power-investiture					min="1" max="1" req="1"/>
+			<rank								min="0" max="4" mean="2" req="10"/>
+			<sanctity							req="20"/>
+			<status								req="32"/>
+			<true-faith							req="08"/>
+		</advantages>
+		<disadvantages					min="1" max="4" mean="1.2">
+			<charitable							req="64"/>
+			<code-of-honor						min="-2" max="-2" req="1"/>
+			<sadism								req="-1"/>
+			<truthfulness						req="16"/>
+			<ugly								req="-1"/>
+			<weak-immune-system					req="-1"/>
+			<pitiable							req="-1"/>
+		</disadvantages>
+
+		<skills							min="0" max="3" mean="1">
+			<axe-mace						min="0" max="2" req="48"/>
+			<bow							max="1" req="04"/>
+			<brawling						min="-1" max="2" req="56"/>
+			<detect-lies					max="1" req="30"/>
+			<diplomacy						min="-2" max="2" req="78"/>
+			<knife							req="18"/>
+			<lance							max="2" req="85"/>
+			<leadership						min="-2" max="2" req="98"/>
+			<pole-arm						max="2" req="68"/>
+			<sex-appeal						req="-1"/>
+			<spear							min="-2" max="2" req="41"/>
+			<spear-throwing					max="2" req="30"/>
+			<two-hand-axe-mace				min="-1" max="2" req="28"/>
+
+			<spell-awaken					max="1" req="11"/>
+			<spell-bravery					max="1" req="25"/>
+			<spell-cure-disease				max="1" req="09"/>
+			<spell-exorcism					max="1" req="12"/>
+			<spell-major-healing			max="1" req="10"/>
+			<spell-minor-bless				max="1" req="16"/>
+			<spell-minor-healing			max="2" req="20"/>
+			<spell-monk-banquet				max="2" req="06"/>
+			<spell-neutralize-poison		max="1" req="07"/>
+			<spell-sense-foes				max="2" req="99"/>
+			<spell-turn-zombie				max="1" req="99"/>
+		</skills>
+
+		<weapons	 min="1" max="2" mean="1">
+			<bswordt						req="70"/>
+			<bswordtf						req="42"/>
+			<bswordh						req="10"/>
+		</weapons>
+
+		<armor		min="1" max="3" mean="1.5">
+			<ghelm							req="55"/>
+			<plate							req="81"/>
+			<fplate							req="29"/>
+			<bplate							req="23"/>
+			<dplate							req="-1"/>
+			<gauntlets						req="56"/>
+			<sollerets						req="53"/>
+		</armor>
+	</class>
+
+	<class alias="fmonk" parents="larma, knta, ltp, mart" name="Fighting Monk" gender-ratio="79">
+		<stats>
+			<dexterity					min="11" max="16" mean="13.1"/>
+		</stats>
+
+		<skills							min="2" max="6" mean="3.2">
+			<acrobatics					max="2" req="10"/>
+			<boxing						req="-1"/>
+			<breath-control				max="2" req="07"/>
+			<cloak						min="-2" max="2" req="-1"/>
+			<fast-draw-clip				max="2" req="-1"/>
+			<fencing					min="0" max="2" req="28"/>
+			<immovable-stance			max="2" req="07"/>
+			<jitte-sai					max="2" req="08"/>
+			<katana						max="2" req="14"/>
+			<knife						min="-1" max="2" req="1"/>
+			<kusari						max="2" req="-1"/>
+			<power-blow					max="2" req="25"/>
+			<push						max="2" req="-1"/>
+			<savoir-faire-dojo			max="2" req="-1"/>
+			<short-staff				max="2" req="07.4"/>
+			<staff						max="2" req="32"/>
+			<tournament-law				max="2"	req="-1"/>
+			<wrestling					min="-1" max="2" req="18"/>
+		</skills>
+		<maneuvers>
+			<jab						max="0" mean="-1" req="-1"/>
+			<roundhouse-punch			max="0" mean="-1" req="-1"/>
+			<shuto						max="0" mean="-1" req="-1"/>
+		</maneuvers>
+
+		<weapons	 min="1" max="2" mean="1"/>
+		<armor		min="1" max="2" mean="1">
+			<bplate							req="10"/>
+			<ghelm							req="-1"/>
+			<plate							req="-1"/>
+			<fplate							req="-1"/>
+			<dplate							req="-1"/>
+		</armor>
+	</class>
+
+</classes>

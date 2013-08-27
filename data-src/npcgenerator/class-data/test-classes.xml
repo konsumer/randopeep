@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+ 
+<classes type="standard" genre="miscellaneous" creation-time="2003-23-21 02:13:18">
+
+	<class alias="anarc" parents="br, mart" name="Anarchist" item-mod-inc="-10" nationality="American, American, English, Spanish" gender-ratio="74" tech-level="8">
+		<stats>
+			<strength					min="8" max="16" mean="11"/>
+			<dexterity					min="8" max="16" mean="11.7"/>
+			<health						min="8" max="15" mean="10.5"/>
+		</stats>
+		<advantages>
+			<magery					req="-1"/>
+		</advantages>
+		<disadvantages>
+			<pacifism					req="-1"/>
+			<pacifism-self-defense		req="01"/>
+		</disadvantages>
+
+		<skills							min="2" max="6">
+			<demolitions				max="1" req="60"/>
+		</skills>
+	</class>
+
+	<class alias="terror" parents="anarc" name="Terrorist" nationality="English, Spanish, Chinese, Japanese, German" gender-ratio="71">
+		<stats>
+			<strength					min="9" max="16" mean="11.6"/>
+			<health						min="8" max="16" mean="11.1"/>
+		</stats>
+		<disadvantages>
+			<pacifism-self-defense		req="-1"/>
+		</disadvantages>
+
+		<weapons						min="1" max="4" mean="2.4"/>
+	</class>
+
+</classes>

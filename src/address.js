@@ -1,6 +1,9 @@
 'use strict';
 
 module.exports = function(randopeep){
+	// where do people come from that cities/streets are named after?
+	var sOrigins = ['english','english','english','japanese','chinese','germanic','spanish'];
+
 	var address = {
 		zip:function(){
 			return randopeep.replaceSymbolWithNumber(randopeep.randomEl(['#####', '#####-####']));
@@ -9,49 +12,72 @@ module.exports = function(randopeep){
 		city: function (){
 			switch (randopeep.int(6)) {
 			case 0:
-				return randopeep.get('city/prefix') + ' ' + randopeep.get('person/modern/male') + randopeep.get('city/suffix');
+				return randopeep.format(
+					'{0} {1}{2}',
+					randopeep.get('city/prefix'),
+					randopeep.name({'justLast': true, 'origin': sOrigins, 'prefix':false}),
+					randopeep.get('city/suffix')
+				);
 			case 1:
-				return randopeep.get('city/prefix') + ' ' + randopeep.get('person/modern/male');
-			case 2:
-				return randopeep.get('person/modern/male') + randopeep.get('city/suffix');
+				return randopeep.format(
+					'{0} {1}{2}',
+					randopeep.get('city/prefix'),
+					randopeep.name({'last': false, 'origin': sOrigins, 'prefix':false}),
+					randopeep.get('city/suffix')
+				);
+	        case 2:
+				return randopeep.format(
+					'{0}{1}',
+					randopeep.name({'justLast': true, 'origin': sOrigins, 'prefix':false}),
+					randopeep.get('city/suffix')
+				);
 			case 3:
-				return randopeep.get('person/modern/last') + randopeep.get('city/suffix');
-			case 4:
-				return randopeep.get('city/prefix') + ' ' + randopeep.get('person/modern/female') + randopeep.get('city/suffix');
+				return randopeep.format(
+					'{0}{1}',
+					randopeep.name({'last': false, 'origin': sOrigins, 'prefix':false}),
+					randopeep.get('city/suffix')
+				);
+	        case 4:
+				return randopeep.format(
+					'{0} {1}',
+					randopeep.get('city/prefix'),
+					randopeep.name({'justLast': true, 'origin': sOrigins, 'prefix':false})
+				);
 			case 5:
-				return randopeep.get('city/prefix') + ' ' + randopeep.get('person/modern/male') + ' ' + randopeep.get('person/modern/last') + randopeep.get('city/suffix');
+				return randopeep.format(
+					'{0} {1}',
+					randopeep.get('city/prefix'),
+					randopeep.name({'last': false, 'origin': sOrigins, 'prefix':false})
+				);
 	        }
 	    },
 
-		latitude: function () {
-			return (randopeep.int(180 * 10000) / 10000.0 - 90.0).toFixed(4);
-		},
-
-		longitude: function () {
-			return (randopeep.int(360 * 10000) / 10000.0 - 180.0).toFixed(4);
-		},
-
 		geo:function(){
-			return [address.latitude(), address.longitude()];
+			return [(randopeep.int(180 * 10000) / 10000.0 - 90.0).toFixed(4), (randopeep.int(360 * 10000) / 10000.0 - 180.0).toFixed(4)];
 		},
-
-		// weighted with female & last names
+		
 		streetName: function () {
-			switch (randopeep.int(6)) {
+			switch (randopeep.int(5)) {
 			case 0:
 			case 1:
-				return randopeep.get('person/modern/last') + ' ' + randopeep.get('street/suffix');
 			case 2:
 			case 3:
-				return  randopeep.get('person/modern/female') + ' ' + randopeep.get('street/suffix');
+				return randopeep.format(
+					'{0} {1}',
+					randopeep.name({'justLast': true, 'origin': sOrigins, 'prefix':false}),
+					randopeep.get('street/suffix')
+				);
 			case 4:
-				return  randopeep.get('person/modern/male') + ' ' + randopeep.get('street/suffix');
-			case 5:
-				return  randopeep.titleCase(randopeep.get('bs/noun')) + ' ' + randopeep.get('street/suffix');
+				return randopeep.format(
+					'{0} {1}',
+					randopeep.titleCase(randopeep.get('bs/noun')),
+					randopeep.get('street/suffix')
+				);
 			}
 		},
 
 		streetAddress: function (useFullAddress) {
+			if (useFullAddress === 'random') { useFullAddress = randopeep.randomEl([true,false]); }
 			var out = (useFullAddress) ? ', ' + address.secondaryAddress() : '';
 			switch (randopeep.int(3)) {
 			case 0:
@@ -73,7 +99,7 @@ module.exports = function(randopeep){
 		},
 
 		phone: function(){
-			return randopeep.replaceSymbolWithNumber(randopeep.get('phone/formats'));
+			return randopeep.replaceSymbolWithNumber(randopeep.get('phone'));
 		}
 	};
 

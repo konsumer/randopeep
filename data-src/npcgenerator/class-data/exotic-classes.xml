@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<classes type="exotic" genre="exotic" creation-time="2002-02-01 17:20:18">
+
+	<class alias="wd" parents="ss" name="Weißerdämon" nationality="German" item-mod-inc="2" gender-ratio="100" age="18~20,21,22,23,24,25,26,27,28,29,30,31,32~39"
+		   eyes="black, dark-blue, blue, light-blue, blue-gray, light-gray, gray, blue-green, red-brown, white-blue, white-pink" hair="light-blonde, blonde, dirty-blonde, white, white-blonde, gray, silver, light-brown"
+		   images-male="male-large.gif">
+		<stats>
+			<strength					min="12" max="22" mode="17" mean="17" sdev="2.3"/>
+			<dexterity					min="10" max="16" mode="12" mean="12"/>
+			<intelligence				min="9"  max="16" mode="11" mean="11"/>
+			<health						min="13" max="20" mode="15" mean="15"/>
+		</stats>
+		<attributes>
+			<hit-points			min="-1" max="6" mean="2"/>
+			<fatigue			min="-2" max="4" mean="1"/>
+			<vision				min="-4" max="2" mean="-2"/>
+			<hearing			min="1" max="6" mean="4"/>
+			<taste-smell		min="4" max="8" mean="6"/>
+			<will				min="-2" max="4" mean="1"/>
+		</attributes>
+
+		<advantages						min="0" max="1">
+			<awareness					min="1" max="2" req="06"/>
+			<damage-resistance			min="1" max="8" mode="4" mean="3" req="1"/>
+			<enhanced-parry				/>
+			<fearlessness				min="2" max="6" mode="3" req="33"/>
+			<fit						min="1" max="2" req="09"/>
+			<hard-to-kill				min="1" max="5" mode="3" req="33"/>
+			<high-pain-threshold		req="25"/>
+			<iron-hand					min="1" max="2" mode="1" req="09"/>
+			<night-vision				req="50"/>
+			<!-- <passive-defense			min="1" max="2" mean="1" sdev=".45" req="1"/> -->
+			<peripheral-vision			req="10"/>
+			<psi-resistance				min="2" max="8" mode="4" req="05"/>
+			<rank						min="0" max="4" mode="2" mean="2" req="1"/>
+		</advantages>
+		<disadvantages					min="0" max="2">
+			<albinism					req="15"/>
+			<berserk					req="25"/>
+			<blood-lust					req="08"/>
+			<bully						req="11"/>
+			<callous					req="15"/>
+			<dwarfism				    req="-1"/>
+			<easy-to-read				req="25"/>
+			<fanaticism					min="-2" max="-1" req="50"/>
+			<gigantism					req="09"/>
+			<gullibility				req="10"/>
+			<honesty					req="06"/>
+			<intolerance				min="-2" max="-1" req="20"/>
+			<lame						req="-1"/>
+			<needy						min="-2" max="-1" req="12"/>
+			<one-arm					req="-1"/>
+			<one-hand					req="-1"/>
+			<on-the-edge				req="06"/>
+			<sadism						req="25"/>
+			<selfish					min="-2" max="-1" req="07"/>
+			<ugly						min="-3" max="-1" req="25"/>
+		</disadvantages>
+
+		<skills>
+			<first-aid					min="-1" max="2"/>
+			<gunner-mg					min="1" max="3" req="1"/>
+			<guns-LAW					min="1" max="2" req="1"/>
+			<guns-light-auto			min="2" max="3" req="1"/>
+			<guns-pistol				min="2" max="2" req="1"/>
+			<guns-rifle					min="2" max="3" req="1"/>
+			<intimidation				min="1" max="3" req="1"/>
+			<savoir-faire-martial		min="0" max="1" req="1"/>
+			<stealth					min="-2" max="1"/>
+			<tactics					min="1" max="1"/>
+			<tracking					min="0" max="3" req="1"/>
+		</skills>
+
+		<weapons						min="1" max="4" mean="2.1">
+			<long-knife					req="1"/>
+			<mg42						req="46"/>
+		</weapons>
+	</class>
+
+	<class alias="pb" parents="law, ar" name="Polio Baby" nationality="American" gender-ratio="97">
+		<stats>
+			<strength					min="9" max="14" mode="11" mean="10"/>
+			<dexterity					min="10" max="16" mode="12" mean="12"/>
+			<intelligence				min="12" max="18" mode="15" mean="14.8"/>
+			<health						min="8" max="15" mode="9" mean="8.8"/>
+		</stats>
+		<attributes>
+			<fatigue			min="-1" max="3" mean="1"/>
+			<will				min="1" max="6" mean="3"/>
+		</attributes>
+
+		<advantages						min="0" max="2">
+			<danger-sense				req="05"/>
+			<high-pain-threshold		req="1"/>
+			<immunity-to-disease		req="-1"/>
+			<language-talent			min="1" max="3" req="50"/>
+			<math-ability				req="25"/>
+			<rank						min="2" max="5" mode="4" mean="3.6" sdev=".7" req="1"/>
+			<unfazeable					req="25"/>
+		</advantages>
+		<disadvantages					min="0" max="2">
+			<code-of-honor				min="-2" max="-1" req="12"/>
+			<sense-of-duty				min="-2" max="-1" req="07"/>
+			<honesty					req="06"/>
+			<intolerance				min="-2" max="-1" req="14"/>
+			<bad-temper					req="05"/>
+			<paralysis					min="-3" max="-1" mean="-1" req="05"/>
+			<facial-paralysis			min="-3" max="-1" mean="-1" req="20"/>
+			<truthfulness				req="20"/>
+			<callous					req="12"/>
+			<stubborn					req="05"/>
+			<overconfidence				req="15"/>
+			<hemophilia					req="05"/>
+			<delicate-metabolism		min="-2" max="-1" req="11"/>
+			<shy						min="-2" max="-1" req="20"/>
+			<loner						min="-2" max="-1" req="20"/>
+		</disadvantages>
+
+		<skills							min="2" max="7" mean="4.45">
+			<acting						min="0" max="2"/>
+			<armory						req="20"/>
+			<chemistry					req="10"/>
+			<cryptography				min="0" max="2" req="40"/>
+			<cryptology					min="0" max="2" req="33"/>
+			<demolitions				min="-1" max="2" req="50"/>
+			<detect-lies				min="0" max="2" req="1"/>
+			<guns-pistol				min="0" max="2" mean="1" req="1"/>
+			<guns-LAW					req="20"/>
+			<hold-out					req="75"/>
+			<interrogation				min="1" max="2" req="65"/>
+			<knife						min="-1" max="3" req="40"/>
+			<mathematics				req="65"/>
+			<psychology					min="0" max="2" req="65"/>
+			<psi-mind-shield			max="2" req="23"/>
+			<psi-suggest				max="2" req="28"/>
+			<psi-telereceive			max="2" req="31"/>
+			<psi-psychometry			max="2" req="32"/>
+			<psi-combat-teleport		max="2" req="13"/>
+			<psi-pk-shield				max="2" req="18"/>
+		</skills>
+
+		<weapons						min="0" max="3" mean="0.4"/>
+	</class>
+
+	<class alias="inf" parents="in, se" name="Infested Trooper" nationality="exotic">
+		<stats>
+			<strength					min="8" max="18" mean="12"/>
+			<dexterity					min="9" max="16" mean="11"/>
+			<intelligence				min="7" max="17" mean="11"/>
+			<health						min="10" max="16" mean="13"/>
+		</stats>
+
+		<skills>
+			<guns-shotgun						max="2" req="76"/>
+		</skills>
+		<weapons						min="1" max="3" mode="2"/>
+	</class>
+
+	<class alias="yt" parents="in" name="Yithoghu" nationality="exotic" gender-ratio="73" hair="no" eyes="black, red, pink, blood-red, yellow" tech-level="?" age="56~360">
+		<stats>
+			<strength					min="9" max="16" mean="11"/>
+			<dexterity					min="10" max="16" mean="12"/>
+			<intelligence				min="12" max="19" mean="15"/>
+			<health						min="10" max="16" mean="12"/>
+		</stats>
+		<attributes>
+			<fatigue			min="-1" max="4" mean="2"/>
+			<will				min="1" max="4" mode="2"/>
+		</attributes>
+
+		<advantages						min="0" max="2">
+			<attractive					req="-1"/>
+			<facial-tentacles			min="3" max="8" mean="4.4" req="1"/>
+			<fashion-sense				req="-1"/>
+			<longevity					req="92"/>
+			<magery						req="-1"/>
+			<magic-resistance			min="5" max="15" req="1"/>
+			<paramilitary-rank			req="-1"/>
+			<psi-resistance				req="-1"/>
+			<rank						req="-1"/>
+			<telepathy-power			min="10" max="22" mean="14.68" sdev="2.9" req="1"/>
+		</advantages>
+
+		<disadvantages					min="0" max="2" mode="0">
+			<albinism					req="08"/>
+			<astral-entity				req="1"/>
+			<berserk					req="06"/>
+			<blood-lust					req="20"/>
+			<bully						req="14"/>
+			<callous					req="50"/>
+			<dependency-energy			req="1"/>
+			<fanaticism					req="13"/>
+			<greed						req="06"/>
+			<hemophilia					req="-1"/>
+			<intolerance				min="-2" max="-1" req="25"/>
+			<lecherousness				req="-1"/>
+			<low-self-image				req="-1"/>
+			<monstrous-appearance		req="1"/>
+			<nightmares					req="-1"/>
+			<reputation					min="-3" max="-3" req="1"/>
+			<sadism						req="33"/>
+			<selfish					min="-2" max="-1" req="09"/>
+			<ugly						req="-1"/>
+		</disadvantages>
+		<quirk-verbs					min="0" max="2" mean="0.4"/>
+
+		<skills							min="4" max="10" mean="7">
+			<area-knowledge-yetcirah	min="-1" max="1" req="1"/>
+			<boxing						max="1" req="-1"/>
+			<carousing					max="2" req="-1"/>
+			<computer-operation			max="2" req="-1"/>
+			<computer-programming		max="1" req="-1"/>
+			<cryptology					max="1" req="-1"/>
+			<dancing					max="2" req="-1"/>
+			<electronics				max="1" req="-1"/>
+			<electronics-comm			max="2" req="-1"/>
+			<fencing					max="2" req="-1"/>
+			<forensics					max="2" req="-1"/>
+			<gambling					max="2" req="-1"/>
+			<mechanic					max="2" req="-1"/>
+			<parachuting				max="2" req="-1"/>
+			<ritual-magic				max="2" req="-1"/>
+			<sex-appeal					max="2" req="-1"/>
+			<psi-drain-dx				max="2" req="76"/>
+			<psi-drain-int				max="2" req="76"/>
+			<psi-steal-energy			max="2" req="76"/>
+			<psi-pk-shield				max="2" req="76"/>
+			<psi-mind-sword				max="2" req="54"/>
+			<psi-suggest				max="2" req="82"/>
+			<psi-mind-wipe				max="2" req="80"/>
+			<psi-mental-stab			max="2" req="83"/>
+			<psi-mental-blast			max="1" req="21"/>
+			<psi-telekinesis			max="2" req="73"/>
+		</skills>
+
+		<weapons>
+			<small-knife				req="-1"/>
+		</weapons>
+
+		<armor		min="0" max="0"/>
+	</class>
+
+	<class alias="rspawn" parents="ltp" name="Ring Spawn" nationality="exotic" item-mod-inc="4" gender-ratio="54" eyes="red, gray-brown, white-blue">
+		<stats>
+			<strength					min="7" max="17"/>
+			<dexterity					min="7" max="17"/>
+			<intelligence				min="7" max="17"/>
+			<health						min="7" max="17"/>
+		</stats>
+		<attributes>
+			<fatigue			min="-4" max="4"/>
+			<hearing			min="-4" max="4"/>
+			<hit-points			min="-4" max="4"/>
+			<taste-smell		min="-4" max="4"/>
+			<vision				min="-4" max="4"/>
+			<will				min="-4" max="4"/>
+		</attributes>
+
+		<skills							min="12" max="25">
+			<axe-mace					max="2" req="50"/>
+			<bow						min="1" max="2" req="50"/>
+			<broad-sword				min="-1" max="2" req="50"/>
+			<knife							req="1"/>
+			<short-sword				max="2" req="50"/>
+			<staff						max="2" req="50"/>
+
+			<spell-alter-body			max="2" req="05"/>
+			<spell-blink				max="2" req="05"/>
+			<spell-body-of-air			max="2" req="05"/>
+			<spell-body-of-stone		max="2" req="05"/>
+			<spell-breathe-fire			max="2" req="05"/>
+			<spell-control-illusion		max="2" req="05"/>
+			<spell-create-fire-elemental	max="2" req="02"/>
+			<spell-darkvision			max="2" req="05"/>
+			<spell-explosive-fireball	max="2" req="05"/>
+			<spell-fireball				max="2" req="05"/>
+			<spell-frostbite			max="2" req="05"/>
+			<spell-gift-of-tongues		max="2" req="05"/>
+			<spell-great-haste			max="2" req="32"/>
+			<spell-hail					max="2" req="05"/>
+			<spell-ice-sphere			max="2" req="05"/>
+			<spell-illusion-disguise	max="2" req="05"/>
+			<spell-instant-regeneration	max="2" req="32"/>
+			<spell-iron-arm				max="2" req="05"/>
+			<spell-poltergeist			max="2" req="05"/>
+			<spell-rear-vision			max="2" req="05"/>
+			<spell-reverse-missiles		max="2" req="05"/>
+			<spell-rooted-feet			max="2" req="05"/>
+			<spell-shapeshift-other		max="2" req="05"/>
+			<spell-skull-spirit			max="2" req="05"/>
+			<spell-sound-jet			max="2" req="05"/>
+			<spell-sound-vision			max="2" req="05"/>
+			<spell-turn-zombie			max="2" req="05"/>
+			<spell-utter-dome			max="2" req="05"/>
+			<spell-wither-limb			max="2" req="05"/>
+
+			<psi-drain-dx			max="2" req="06"/>
+			<psi-drain-int			max="2" req="06"/>
+			<psi-steal-energy		max="2" req="06"/>
+			<psi-pk-shield			max="2" req="06"/>
+			<psi-mind-sword			max="2" req="06"/>
+			<psi-suggest			max="2" req="06"/>
+			<psi-mind-wipe			max="2" req="06"/>
+		</skills>
+
+		<weapons	 min="1" max="3">
+			<laknife						req="1"/>
+			<pstone							req="08"/>
+		</weapons>
+
+		<armor		 min="0" max="5"/>
+	</class>
+
+
+	<class alias="dk" parents="knt, necroa, sket" name="Death Knight" nationality="various" item-mod-inc="30" gender-ratio="92" age="100~1000">
+		<stats>
+			<strength					min="10" max="24" mean="16"/>
+			<dexterity					min="11" max="20" mean="13"/>
+			<intelligence				min="11" max="18" mean="14"/>
+			<health						min="9" max="17" mean="13"/>
+		</stats>
+		<advantages>
+			<rapid-healing									req="-1"/>
+		</advantages>
+		<disadvantages>
+			<charitable										req="-1"/>
+			<disturbing-voice								req="78"/>
+			<dyslexia										req="-1"/>
+			<gregarious										req="-1"/>
+			<honesty										req="-1"/>
+			<klutz											req="-1"/>
+			<pitiable										req="-1"/>
+			<reprogrammable-duty							req="-1"/>
+			<slave-mentality								req="-1"/>
+			<youth											req="-1"/>
+		</disadvantages>
+		<quirk-verbs					min="0" max="3" mode="1"/>
+		<weapons>
+			<mstaff								req="-1"/>
+		</weapons>
+	</class>
+
+	<class alias="demi" parents="knta, bwiz, pld, necroa" name="Demigod" nationality="exotic" item-mod-inc="94" gender-ratio="58" eyes="golden, white, silver, ruby, jade, sapphire, black" tech-level="*" age="18~424~1240">
+		<stats>
+			<strength					min="10" max="26" mean="18" mode="18" sdev="4"/>
+			<dexterity					min="10" max="25" mean="16" mode="16" sdev="4"/>
+			<intelligence				min="15" max="26" mean="16" mode="16" sdev="4"/>
+			<health						min="15" max="18"/>
+		</stats>
+
+		<advantages>
+			<attractive					min="2" max="4" mean="2.6" req="1"/>
+			<charisma					min="3" max="8" mean="4" req="1"/>
+			<damage-resistance			min="2" max="10" mean="4" req="1"/>
+			<legal-enforcement			req="05"/>
+			<longevity					req="99"/>
+			<rank						req="-1"/>
+		</advantages>
+		<disadvantages>
+			<bad-smell										req="-1"/>
+			<charitable										req="01.6"/>
+			<code-of-honor									req="10"/>
+			<dyslexia										req="-1"/>
+			<honesty										req="10"/>
+			<jealousy										req="08"/>
+			<klutz											req="-1"/>
+			<pantheon-outcast								req="07"/>
+			<pitiable										req="-1"/>
+			<social-stigma									req="-1"/>
+			<unfit											req="-1"/>
+			<weak-immune-system								req="-1"/>		
+		</disadvantages>
+		<quirk-verbs					min="0" max="2" mode="1"/>
+
+		<skills>
+			<language-common			min="-4" max="2" req="-1"/>
+			<language-draconic			max="0" req="-1"/>
+			<language-dwarvish			max="0" req="-1"/>
+			<language-elvish			max="0" req="-1"/>
+			<language-orcish			max="0" req="-1"/>
+			<language-celestial			min="-2" max="2" req="1"/>
+			<sex-appeal					min="0" max="4" req="80"/>
+		</skills>
+
+		<weapons min="1" max="1">
+			<bswordh							req="3"/>
+			<gswords							req="6"/>
+			<lswords							req="5"/>
+			<staffp								req="7"/>
+			<mstaff								req="04"/>
+			<kabow								req="4"/>
+		</weapons>
+		<armor min="1" max="7">
+			<ghelm							req="10"/>
+			<plate							req="10"/>
+			<fplate							req="10"/>
+			<bplate							req="10"/>
+			<dplate							req="10"/>
+		</armor>
+	</class>
+
+
+	<class alias="hikutu" parents="larma, elf" name="Hikutu - Royal Bodyguard" nationality="High-Elf" tech-level="3"
+		   age="70~176" item-mod-inc="3" gender-ratio="100">
+		<stats>
+			<strength					min="11" max="15" mean="13"/>
+			<dexterity					min="13" max="17" mean="14.6"/>
+			<intelligence				min="11" max="16" mean="12.6"/>
+			<health						min="11" max="15" mean="13"/>
+		</stats>
+		<attributes>
+			<fatigue			min="-1" max="3"/>
+			<hearing			min="0" max="4"/>
+			<will				min="2" max="2"/>
+		</attributes>
+
+		<advantages						min="0" max="2" mean="0.4">
+			<combat-reflexes			req="95"/>
+			<high-pain-threshold		req="15"/>
+			<hyper-reflexes				req="45"/>
+			<hyper-strength				req="25"/>
+			<patron						min="3" max="3" req="1"/>
+			<rank						req="-1"/>
+			<iron-hand					req="35"/>
+		</advantages>
+		<disadvantages					min="1" max="3" mean="1.4">
+			<code-of-honor-elf			min="-2" max="-1" mean="-1" req="-1"/>
+			<code-of-honor-royalty		min="-4" max="-4" req="1"/>
+			<eunuch						req="1"/>
+			<lame						req="-1"/>
+			<low-pain-threshold			req="-1"/>
+			<one-arm					req="-1"/>
+			<one-hand					req="-1"/>
+			<overweight					req="-1"/>
+			<pacifism					req="-1"/>
+			<pacifism-self-defense		req="-1"/>
+			<sense-of-duty-nature		min="-3" max="-2" mean="-3" req="-1"/>
+			<ugly						req="01"/>
+			<youth						req="01"/>
+		</disadvantages>
+		<quirk-nouns>
+			<hair						req="1"/>
+		</quirk-nouns>
+
+		<skills							min="0" max="3">
+			<acrobatics					max="2" req="1"/>
+			<axe-mace					max="2" req="-1"/>
+			<bard						req="-1"/>
+			<bow						req="10"/>
+			<boxing						req="-1"/>
+			<brawling					req="-1"/>
+			<breath-control				max="2" req="87"/>
+			<broad-sword				min="-1" max="2" req="80"/>
+			<crossbow					req="-1"/>
+			<hold-out					req="-1"/>
+			<immovable-stance			min="-1" max="1" req="50"/>
+			<judo						min="-1" max="1" req="1"/>
+			<judo-art					min="-1" max="2" req="27"/>
+			<jumping					max="2" req="43"/>
+			<karate						min="1" max="2" req="1"/>
+			<karate-art					min="-1" max="2" req="1"/>
+			<meditation					max="1"	req="1"/>
+			<power-blow					min="-1" max="1" req="50"/>
+			<pressure-points			min="-1" max="1" req="50"/>
+			<push						min="-1" max="1" req="50"/>
+			<riding						req="24"/>
+			<savoir-faire				req="98"/>
+			<shield						max="2" req="16"/>
+			<stealth					min="-1" max="2" req="92"/>
+			<thaumatology				max="2" req="1"/>
+			<throwing					max="1" req="09"/>
+			<two-hand-sword				min="0" max="2" req="62"/>
+
+			<spell-apportation			max="1" req="-1"/>
+			<spell-blur					max="1" req="-1"/>
+			<spell-detect-magic			max="1" req="-1"/>
+			<spell-dexterity			max="0" req="10"/>
+			<spell-fireball				max="1" req="-1"/>
+			<spell-forest-warning		max="1" req="-1"/>
+			<spell-hinder				max="1" req="-1"/>
+			<spell-iron-arm				max="1" req="-1"/>
+			<spell-lightning			max="1" req="-1"/>
+			<spell-mage-stealth			max="1" req="-1"/>
+			<spell-major-healing		max="1" req="95"/>
+			<spell-might				max="1" req="25"/>
+			<spell-minor-healing		max="1" req="-1"/>
+			<spell-tangle-growth		max="1" req="-1"/>
+			<spell-vigor				max="0" req="25"/>
+		</skills>
+		<maneuvers>
+			<aggressive-parry			min="-1" max="0" req="1"/>
+			<arm-lock					max="2" req="1"/>
+			<disarming					min="1" max="2" req="76"/>
+			<ground-fighting			max="0" mode="-2" req="26"/>
+		</maneuvers>
+
+		<weapons	 min="0" max="0">
+			<small-knife				req="-1"/>
+			<cbow						req="-1"/>
+			<gswords					req="-1"/>
+			<laknife					req="-1"/>
+			<bswordt					req="-1"/>
+		</weapons>
+		<armor min="0" max="2">
+			<circlet					req="1"/>
+			<lleather					req="1"/>
+		</armor>
+	</class>
+
+
+
+	<class alias="ettin" parents="larma, ogre" name="Ettin" nationality="Underworld" age="20~70" item-mod-inc="-1" gender-ratio="85">
+		<stats>
+			<strength					min="22" max="30" mean="26"/>
+			<health						min="11" max="15" mean="13"/>
+		</stats>
+		<attributes>
+			<hearing			min="0" max="4"/>
+			<vision				min="0" max="4"/>
+			<will				min="2" max="2"/>
+		</attributes>
+
+		<advantages						min="0" max="2" mean="0.4">
+			<ambidexterity				req="1"/>
+			<peripheral-vision			req="1"/>
+			<high-pain-threshold		req="46"/>
+		</advantages>
+		<disadvantages					min="1" max="3" mean="1.4">
+			<low-pain-threshold			req="-1"/>
+			<pacifism					req="-1"/>
+			<pacifism-self-defense		req="-1"/>
+			<sense-of-duty-nature		min="-3" max="-2" mean="-3" req="-1"/>
+		</disadvantages>
+
+		<skills							min="0" max="2">
+			<axe-mace					min="-1" max="2" mean="0" req="1"/>
+			<flail						min="0" max="1" req="1"/>
+			<short-sword				max="2" req="-1"/>
+		</skills>
+		<weapons	 min="0" max="1" mean="0">
+			<small-knife				req="-1"/>
+			<cbow						req="-1"/>
+			<gswords					req="-1"/>
+			<laknife					req="-1"/>
+			<bswordt					req="-1"/>
+			<mstar						req="95"/>
+			<maul						req="93"/>
+			<flail						req="92"/>
+			<macef						req="90"/>
+			<clubg						req="99"/>
+		</weapons>
+		<armor min="0" max="1" mean="0">
+			<circlet					req="-1"/>
+		</armor>
+	</class>
+
+</classes>

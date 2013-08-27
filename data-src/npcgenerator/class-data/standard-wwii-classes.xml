@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<classes type="standard" genre="WWII" creation-time="2002-02-01 17:20:18">
+
+	<class alias="standwwii" parents="standsold" abstract="1" name="Standard WWII Soldier" tech-level="6">
+		<advantages>
+			<iron-hand							req="-1"/>
+			<magic-resistance					req="-1"/>
+		</advantages>
+
+		<quirk-nouns>
+			<A_Bombs/>
+			<army_food/>
+			<artillery/>
+			<battleships/>
+			<biochemical_warfare/>
+			<bureaucrats/>
+			<cavalry/>
+			<civilians/>
+			<collateral_damage/>
+			<concentration_camps/>
+			<cowards/>
+			<desk_jockeys/>
+			<Eisenhower/>
+			<famous_battles/>
+			<fighter_pilots/>
+			<flame_throwers/>
+			<friendly_fire/>
+			<generals/>
+			<gernades/>
+			<hand_to_hand_combat/>
+			<Himmler/>
+			<Hitler/>
+			<infantry/>
+			<land_mines/>
+			<machineguns/>
+			<machinegunners/>
+			<meatloaf/>
+			<medical_officers/>
+			<medics/>
+			<military_bureaucracy/>
+			<military_decorations/>
+			<military_funerals/>
+			<Montgomery/>
+			<non-comms/>
+			<orders/>
+			<paratroopers/>
+			<Patton/>
+			<prisoners/>
+			<radio_propaganda/>
+			<Rommell/>
+			<sauerkraut/>
+			<snipers/>
+			<submarines/>
+			<submachineguns/>
+			<suicide_missions/>
+			<superior_officers/>
+			<supply_staff/>
+			<squad_leaders/>
+			<tanks/>
+			<tank_destroyers/>
+			<the_Airforce/>
+			<the_Army/>
+			<the_British/>
+			<the_French/>
+			<the_Gestapo/>
+			<the_Italians/>
+			<the_Japanese/>
+			<the_Navy/>
+			<the_OSS/>
+			<tiger_tanks/>
+			<war/>
+			<war_booty/>
+			<war_heroes/>
+			<weak_officers/>
+			<women_and_children/>
+
+			<affirmative_action					req="-1"/>
+			<alternative_medicine				req="-1"/>
+			<alternative_music					req="-1"/>
+			<Bob_Barker							req="-1"/>
+			<body_piercings						req="-1"/>
+			<computer_games						req="-1"/>
+			<computers							req="-1"/>
+			<free_health_care					req="-1"/>
+			<game_shows							req="-1"/>
+			<gun_control						req="-1"/>
+			<homeopathic_drugs					req="-1"/>
+			<Keanu_Reeves						req="-1"/>
+			<lasers								req="-1"/>
+			<magic								req="-1"/>
+			<monster_trucks						req="-1"/>
+			<motivational_speakers				req="-1"/>
+			<Oprah								req="-1"/>
+			<personality_tests					req="-1"/>
+			<pop_psychology						req="-1"/>
+			<reality_television					req="-1"/>
+			<recreational_drugs					req="-1"/>
+			<roleplaying_games					req="-1"/>
+			<sasquach							req="-1"/>
+			<sitcoms							req="-1"/>
+			<talk_shows							req="-1"/>
+			<velcro								req="-1"/>
+		</quirk-nouns>
+
+		<skills							min="3" max="9" mean="6" sdev="1">
+			<alchemy					max="2" req="-1"/>
+			<axe-mace					req="11"/>
+			<axe-throwing				req="01"/>
+			<biochemistry				max="2" req="-1"/>
+			<computer-operation			max="3" req="-1"/>
+			<computer-programming		max="2" req="-1"/>
+			<gunner-mg					min="-1" max="1" req="87"/>
+			<guns-machine-pistol		req="-1"/>
+			<scuba						req="-1"/>
+			<language-chinese			max="-1" req="0.26" mean="-2.4" min="-4"/>
+			<language-japanese			max="-1" req="0.49" mean="-2.4" min="-4"/>
+			<language-portuguese		max="-1" req="0.76" mean="-2.4" min="-4"/>
+			<language-spanish			max="-1" req="02.1" mean="-2.4" min="-4"/>
+		</skills>
+
+		<armor		min="0" max="1" mean="0">
+			<flakw						req="03"/>
+			<cvest/>
+			<cbootsw					req="1"/>
+			<overcoatw/>
+			<ljacketw/>
+			<wcloth/>
+		</armor>
+
+		<weapons>
+			<crashkit req="01"/>
+			<canteen req="50"/>
+			<entrench req="14"/>
+			<radiopack req="02"/>
+			<binoculars req="03"/>
+			<gmask req="04.1"/>
+
+			<ammob req="75"/>
+			<ammop req="16"/>
+			<smokeg req="06"/>
+			<rope req="06"/>
+			<firstaid req="05"/>
+			<flashb req="-1"/>
+			<handcuffs req="-1"/>
+			<radioh req="0.01"/>
+			<hflashlight req="0.1"/>
+			<nylonc req="-1"/>
+			<rflare req="02"/>
+			<camera req="02.64"/>
+			<machb req="08"/>
+			<cphone req="-1"/>
+		</weapons>
+	</class>
+
+	<class alias="st" abstract="1" name="Standard Tank Crewman" >
+		<skills>
+			<driving-halftrack			max="2" req="10"/>
+			<driving-tank				max="2" req="56"/>
+			<electronics-comm			max="1" req="59"/>
+			<gunner-cannon				min="1" max="2" req="78"/>
+			<gunner-mg					min="1" max="2" req="1"/>
+			<mechanic					max="2" req="68"/>
+		</skills>
+		<disadvantages>
+			<gigantism							req="-1"/>
+		</disadvantages>
+
+		<weapons	 min="0" max="1" mean="1">
+			<binoculars req="36"/>
+			<entrench req="02"/>
+		</weapons>
+		<armor>
+			<cvest						req="02.3"/>
+			<flakw						req="-1"/>
+			<ljacketw					req="72"/>
+		</armor>
+	</class>
+
+	<class alias="snco" parents="so" abstract="1" name="Standard Noncommissioned Officer"
+	       age="25~27,28,29,30,31,32,33,34,35,36,37,38~56">
+		<advantages>
+			<rank						min="1" max="2" mean="1.49" sdev=".9" req="1"/>
+		</advantages>
+		<disadvantages>
+			<illiteracy							req="-1"/>
+			<youth								req="-1"/>
+		</disadvantages>
+
+		<skills							min="1" max="6" mode="3" mean="2" sdev="1.3">
+			<armory						min="-1" max="2" req="50"/>
+			<heraldry					max="1" req="69"/>
+			<law-martial				min="-3" max="2" req="45"/>
+			<leadership					max="2" req="1"/>
+			<savoir-faire-martial		max="1" req="94"/>
+			<tactics					min="0" max="2" req="1"/>
+		</skills>
+	</class>
+
+	<class alias="so" abstract="1" name="Standard Officer" 
+	       age="18~21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38~56">
+		<stats>
+			<intelligence				min="9" max="16" mean="11.5"/>
+		</stats>
+		<advantages>
+			<rank						min="3" max="8" mode="4" mean="3.7" sdev="1.6" req="1"/>
+		</advantages>
+		<disadvantages>
+			<dyslexia							req="-1"/>
+			<illiteracy							req="-1"/>
+			<klutz								req="02"/>
+			<youth								req="0.5"/>
+		</disadvantages>
+
+		<skills							min="2" max="5" mode="3" mean="2" sdev="1">
+			<administration				min="-1" max="1" req="37"/>
+			<armory						min="-1" max="2" req="30"/>
+			<electronics-comm			max="1" req="69"/>
+			<forward-observer			max="2" req="60"/>
+			<guns-pistol				min="-1" max="2" req="1"/>
+			<guns-rifle					min="0" max="2" req="1"/>
+			<heraldry					max="1" req="68"/>
+			<law-martial				min="-3" max="2" req="65"/>
+			<leadership					max="2" req="1"/>
+			<savoir-faire-martial		max="1" req="1"/>
+			<tactics					min="-1" max="2" req="1"/>
+		</skills>
+
+		<weapons>
+			<canteen req="20"/>
+			<entrench req="01"/>
+			<radiopack req="-1"/>
+			<binoculars req="07"/>
+
+			<ammob req="07"/>
+			<ammop req="75"/>
+			<smokeg req="01.5"/>
+		</weapons>
+	</class>
+
+	<class alias="seng" abstract="1" name="Standard Engineer" >
+		<stats>
+			<intelligence				min="9" max="15" mode="11" mean="11.4"/>
+		</stats>
+		<skills							min="2" max="6" mode="4" mean="4" sdev="1">
+			<armory						min="0" max="2" req="1"/>
+			<combat-engineering			min="-1" max="2" req="66"/>
+			<demolitions				max="2" req="1"/>
+			<electronics-comm			max="2" req="1"/>
+			<forward-observer			max="2" req="65"/>
+			<guns-pistol				max="2" req="1"/>
+			<mechanic					max="2" req="73"/>
+		</skills>
+
+		<weapons>
+			<crashkit req="-1"/>
+			<canteen req="40"/>
+			<entrench req="12"/>
+			<radiopack req="0.3"/>
+
+			<ammob req="26"/>
+			<ammop req="60"/>
+			<mineap req="09"/>
+			<mineat req="06"/>
+			<engtoolk req="07"/>
+			<wirec req="13"/>
+			<demotoolk req="71"/>
+			<smokeg req="11"/>
+			<rope req="09"/>
+			<rflare req="05.2"/>
+		</weapons>
+	</class>
+
+	<class alias="sc" abstract="1" name="Standard Clerk" gender-ratio="98">
+		<stats>
+			<strength					min="7" max="14"  mode="10" mean="10" sdev="1.6"/>
+			<intelligence				min="9" max="15" mode="11" mean="11.1" sdev="1.4"/>
+		</stats>
+
+		<skills							min="2" max="6" mode="4" mean="4" sdev="1">
+			<administration				min="-1" max="2" req="1"/>
+			<driving					max="1" req="1"/>
+			<electronics-comm			max="1" req="1"/>
+			<guns-pistol				max="1" req="77"/>
+			<guns-light-auto			min="-1" max="1" req="46"/>
+			<heraldry					max="1" req="21"/>
+			<savoir-faire-martial		max="1" req="1"/>
+			<writing					min="-1" max="2" req="1"/>
+		</skills>
+		<weapons	 min="0" max="1">
+			<canteen req="40"/>
+			<entrench req="01"/>
+			<radiopack req="24"/>
+
+			<ammob req="07"/>
+			<ammop req="75"/>
+			<smokeg req="01.5"/>
+		</weapons>
+	</class>
+
+	<class alias="sm" abstract="1" name="Standard Medic" > 
+		<disadvantages>
+			<berserk					req="01"/>
+			<blood-lust					req="-1"/>
+			<combat-paralysis			req="06"/>
+			<pacifism					req="14"/>
+			<pacifism-self-defense		req="08"/>
+		</disadvantages>
+
+		<skills							min="2" max="6" mode="4" mean="4" sdev="1">
+			<diagnosis					min="-3" max="2" req="1"/>
+			<first-aid					min="0" max="2" req="1"/>
+			<guns-pistol				min="0" max="2" req="75"/>
+			<guns-light-auto			min="-1" max="2" req="16"/>
+			<guns-rifle					min="0" max="2" req="22"/>
+			<guns-shotgun				min="0" max="2" req="10"/>
+			<guns-LAW					min="0" max="2" req="06"/>
+			<physician					min="-5" max="2" req="36"/>
+			<surgery					min="-4" max="1" req="57"/>
+			<survival					max="2" req="1"/>
+		</skills>
+
+		<weapons>
+			<crashkit req="1"/>
+			<firstaid req="-1"/>
+			<canteen req="99"/>
+			<entrench req="0.5"/>
+			<radiopack req="-1"/>
+
+			<ammob req="07"/>
+			<ammop req="70"/>
+			<smokeg req="-1"/>
+			<bang req="-1"/>
+		</weapons>
+	</class>
+
+	<class alias="milsci" abstract="1" name="Military Scientist"  
+	       age="26~30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46~68" gender-ratio="71">
+		<stats>
+			<strength					min="7" max="13"  mode="9" mean="9" sdev="1.4"/>
+			<dexterity					min="9" max="15"  mode="11.4" mean="11"/>
+			<intelligence				min="11" max="17" mode="12" mean="12.85" sdev="1.5"/>
+		</stats>
+
+		<advantages>
+			<combat-reflexes			req="02"/>
+			<rank						min="4" max="6" mode="4" mean="4.63" sdev="1.69" req="1"/>
+		</advantages>
+		<disadvantages>
+			<intolerance-racial			req="49"/>
+			<low-empathy				req="11"/>
+			<sadism						req="15.8"/>
+		</disadvantages>
+
+		<skills							min="1" max="5" mode="4" mean="3" sdev="1">
+			<biochemistry				max="2" req="83"/>
+			<diagnosis					min="-2" max="2" req="1"/>
+			<first-aid					min="-1" max="2" req="1"/>
+			<guns-LAW					min="0" max="2" req="02"/>
+			<guns-light-auto			min="-1" max="2" req="14"/>
+			<guns-pistol				min="0" max="2" req="68"/>
+			<guns-rifle					min="0" max="2" req="19"/>
+			<guns-shotgun				min="0" max="2" req="12"/>
+			<occultism					max="1" req="62"/>
+			<physician					min="-2" max="2" req="1"/>
+			<psychology					max="1" req="53"/>
+			<research					max="2" req="84"/>
+			<surgery					min="-2" max="2" req="1"/>
+			<writing					max="1" req="83"/>
+			<gunner-mg					max="1" req=".02"/>
+			<fast-draw-clip				max="1" req="02"/>
+			<fast-draw-smg				max="1" req="01"/>
+			<speed-load-pistol			max="1" req=".01"/>
+			<speed-load-rifle			max="1" req=".01"/>
+			<speed-load-smg				max="1" req=".01"/>
+			<gunner-mg					max="1" req="01"/>
+			<gunner-rocket				max="1" req="02"/>
+			<spear						max="1" req="01"/>
+		</skills>
+
+		<armor>
+			<ltrench req="84"/>
+		</armor>
+		<weapons>
+			<crashkit req="1"/>
+			<firstaid req="-1"/>
+			<canteen req="02"/>
+			<entrench req="0.01"/>
+			<radiopack req="-1"/>
+
+			<ammob req="02"/>
+			<ammop req="67"/>
+			<smokeg req="-1"/>
+			<machb req="-1"/>
+			<bang req="-1"/>
+		</weapons>
+	</class>
+
+	<class alias="sp" abstract="1" name="Standard Pilot" >
+		<stats>
+			<strength					min="8" max="16"  mode="10" mean="11"/>
+			<dexterity					min="9" max="18"  mode="11" mean="11.3"/>
+			<intelligence				min="9" max="16"  mode="11" mean="10.9"/>
+			<health						min="10" max="18" mode="11" mean="11"/>
+		</stats>
+
+		<advantages>
+			<rank						min="3" max="5" mode="3" mean="3" sdev="1.3" req="1"/>
+			<daredevil							req="06"/>
+		</advantages>
+		<disadvantages>
+			<careful							req="-1"/>
+			<gigantism							req="-1"/>
+			<lame								req="-1"/>
+			<one-arm							req="-1"/>
+			<one-hand							req="-1"/>
+			<dyslexia							req="-1"/>
+			<illiteracy							req="-1"/>
+			<klutz								req="01"/>
+		</disadvantages>
+
+		<skills							min="2" max="6" mode="4" mean="4" sdev="1">
+			<electronics-comm			max="1" req="1"/>
+			<forward-observer			max="1" req="1"/>
+			<gunner-mg					min="0" max="2" req="1"/>
+			<guns-LAW					min="0" max="2" req="02"/>
+			<guns-light-auto			min="-1" max="1" req="11"/>
+			<guns-pistol				max="1" req="1"/>
+			<guns-rifle					min="-1" max="1" req="18"/>
+			<mechanic					max="1" req="42"/>
+			<navigation					max="1" req="1"/>
+			<parachuting				max="1" req="1"/>
+			<piloting					min="-1" max="2" req="1"/>
+		</skills>
+
+		<weapons>
+			<crashkit req="-1"/>
+			<canteen req="05"/>
+			<entrench req="-1"/>
+			<radiopack req="-1"/>
+
+			<ammob req="02"/>
+			<ammop req="57"/>
+			<machb req="-1"/>
+			<smokeg req="01"/>
+		</weapons>
+		<armor>
+			<lglovesw req="1"/>
+			<flhelm req="1"/>
+			<fjacketw req="1"/>
+			<machb req="-1"/>
+		</armor>
+	</class>
+
+	<class alias="se" abstract="1" name="Standard Elite Soldier" >
+		<stats>
+			<strength					min="9" max="20"  mean="11.1"/>
+			<dexterity					min="9" max="18"  mean="11.4" sdev="1.7"/>
+			<intelligence				min="8" max="16"  mean="10.7" sdev="1.4"/>
+			<health						min="10" max="18" mean="11.3" sdev="1.5"/>
+		</stats>
+		<advantages>
+			<combat-reflexes					req="32"/>
+			<danger-sense						req="08"/>
+			<daredevil							req="06"/>
+			<fit						min="1" max="2" mode="1" mean="1" sdev=".45" req="30"/>
+			<high-pain-threshold				req="11"/>
+			<marksman							req="04"/>
+			<rank						min="0" max="4" mode="1" mean="0.15" sdev="1.5" req="1"/>
+		</advantages>
+		<disadvantages>
+			<combat-paralysis					req="-1"/>
+			<cowardice							req="-1"/>
+			<pacifism							req="-1"/>
+			<fat								req="-1"/>
+			<overweight							req="-1"/>
+			<unfit								req="-1"/>
+			<skinny								req="02"/>
+		</disadvantages>
+		<skills							min="1" max="5" mean="2" sdev="1">
+			<armory						min="-1" max="2" req="68"/>
+			<electronics-comm			max="1" req="1"/>
+			<fast-draw-clip				max="1" req="32"/>
+			<fast-draw-smg				max="1" req="15"/>
+			<first-aid					max="1" req="1"/>
+			<forward-observer			max="2" req="40"/>
+			<guns-LAW					min="-1" max="1" req="1"/>
+			<guns-light-auto			min="-1" mean="1" max="2" req="1"/>
+			<guns-pistol				min="-1" max="1" req="1"/>
+			<guns-rifle					min="0"  mean="1" max="2" req="1"/>
+			<intelligence-analysis		max="1" req="26"/>
+			<judo						max="1" req="08"/>
+			<karate						max="1" req="10"/>
+			<knife						min="-1" max="2" req="1"/>
+			<leadership					max="1" req="32"/>
+			<speed-load-pistol			max="1" req="08"/>
+			<speed-load-rifle			max="1" req="26"/>
+			<speed-load-smg				max="1" req="22"/>
+			<survival					max="2" req="78"/>
+			<tactics					min="-1" max="1" req="50"/>
+		</skills>
+
+		<armor>
+			<flakw						req="02"/>
+			<cvest						req="71"/>
+		</armor>
+
+		<weapons>
+			<crashkit req="0.5"/>
+			<canteen req="80"/>
+			<entrench req="09"/>
+			<radiopack req="02.5"/>
+			<binoculars req="04"/>
+
+			<ammob req="1"/>
+			<ammop req="63"/>
+			<smokeg req="03"/>
+		</weapons>
+	</class>
+
+	<class alias="spara" abstract="1" parents="se" name="Standard Paratrooper" >
+		<skills>
+			<forward-observer			max="2" req="20"/>
+			<freefall					min="-2" max="2" mean="0" req="50"/>
+			<guns-LAW					min="-1" max="1" req="90"/>
+			<intelligence-analysis		max="1" req="12"/>
+			<parachuting				min="0" max="2" req="1"/>
+			<survival					max="2" req="1"/>
+		</skills>
+	</class>
+
+	<class alias="smg" abstract="1" name="Standard Machinegunner" >
+		<stats>
+			<strength					min="10" max="20" mode="11" mean="11.9" sdev="1.82"/>
+			<dexterity					min="9" max="18"  mode="11.4" mean="11"/>
+		</stats>
+		<advantages>
+			<rank						min="0" max="2" mode="1" mean="0.09" sdev="1.4" req="1"/>
+		</advantages>
+		<skills>
+			<armory						max="2" req="1"/>
+			<gunner-mg					min="0" max="3" mean="1.4" sdev="1.1" req="1"/>
+			<guns-light-auto			min="0" max="2" req="88"/>
+		</skills>
+		<weapons	 min="0" max="1" mean="0">
+			<ammob req="16"/>
+			<machb req="84"/>
+			<radiopack req="-1"/>
+		</weapons>
+	</class>
+
+	<class alias="sgw" abstract="1" name="Standard German Weapons">
+		<weapons>
+			<combat-knife				req="1"/>
+			<p-38						req="16"/>
+			<mauser						req="09"/>
+			<luger						req="11"/>
+			<mp40						req="54"/>
+			<ppsh-41					req="04"/>
+			<karabiner					req="73"/>
+			<gewehr						req="06"/>
+			<sturmgewehr				req="04"/>
+			<fg42						req="02"/>
+			<mg42						req="09"/>
+			<mg34						req="05"/>
+			<panzerfaust				req="18"/>
+			<stielhandgranate-24		req="43"/>
+			<gmask req="19.3"/>
+		</weapons>
+	</class>
+
+	<class alias="lgw" abstract="1" name="Light German Weapons">
+		<weapons>
+			<combat-knife				req="80"/>
+			<p-38						req="30"/>
+			<mauser						req="12"/>
+			<luger						req="28"/>
+			<mp40						req="72"/>
+			<ppsh-41					req="03"/>
+			<karabiner					req="06"/>
+			<gewehr						req="01"/>
+			<sturmgewehr				req="02"/>
+			<mg42						req="-1"/>
+			<fg42						req="0.02"/>
+			<mg34						req="-1"/>
+			<panzerfaust				req="02"/>
+			<stielhandgranate-24		req="20"/>
+			<machb req="01"/>
+			<rope req="01"/>
+			<firstaid req="01"/>
+			<backpack req="-1"/>
+			<gmask req="01"/>
+		</weapons>
+	</class>
+ 
+	<class alias="gs" parents="sgw, standwwii" name="German Soldier" nationality="German"
+		   hair="brown, blonde, black, brown, blonde, black, brown, brown, auburn, red-brown, dark-brown, dark-brown, dark-brown, light-brown, light-brown, light-brown, blonde, blonde, blonde, blonde, dirty-blonde, dirty-blonde, light-blonde, strawberry-blonde, white-blonde, red, red-brown, orange-red, gray, dark-gray, white, black, black, blonde, jet-black, blue-black, brown-balding, bald, bald, balding, brown, light-brown, sandy-blonde, sandy-blonde, light-brown, light-blonde, blonde, blonde-balding, gray-blonde, dark-blonde" 
+		   age="17~17,18,19,20,21,22,35,36,38,39,40,41,42,43,44,45,46~54">
+		<skills>
+			<gunner-mg					min="0" max="3" req="87"/>
+			<language-german			req="-1"/>
+		</skills>
+		<disadvantages>
+			<lame								req="07.5"/>
+			<one-arm							req="0.4"/>
+			<one-eye							req="03.5"/>
+			<one-hand							req="01.4"/>
+			<youth								req="08"/>
+		</disadvantages>
+		<armor>
+			<ghelmet req="1"/>
+		</armor>
+	</class>
+
+	<class alias="saw" abstract="1" name="Standard American Weapons">
+		<weapons>
+			<bang							req="03"/>
+			<combat-knife					req="1"/>
+			<thompson						req="47"/>
+			<colt-45						req="21"/>
+			<enfield-38						req="04"/>
+			<sten							req="07"/>
+			<greasegun						req="12"/>
+			<m-1-carbine					req="44"/>
+			<m-1-carbinef					req="14"/>
+			<m-1a							req="79"/>
+			<springfield-m1903				req="08"/>
+			<bazooka						req="08"/>
+			<mk-ii							req="54"/>
+			<bar							req="09"/>
+			<mmg							req="02"/>
+			<!-- auto-shotgun ...um, no -->
+		</weapons>
+	</class>
+
+	<class alias="law" abstract="1" name="Light American Weapons">
+		<weapons>
+			<bang req="-1"/>
+			<thompson						req="64"/>
+			<colt-45						req="39"/>
+			<enfield-38						req="05"/>
+			<sten							req="15"/>
+			<greasegun						req="22"/>
+			<m-1-carbine					req="59"/>
+			<m-1-carbinef					req="15"/>
+			<m-1a							req="10"/>
+			<springfield-m1903				req="-1"/>
+			<bazooka						req="-1"/>
+			<mk-ii							req="23"/>
+			<bar							req="-1"/>
+			<mmg							req="-1"/>
+			<machb req="01"/>
+			<rope req="01"/>
+			<firstaid req="01"/>
+			<backpack req="-1"/>
+			<gmask req="0.4"/>
+		</weapons>
+	</class>
+
+	<class alias="as" parents="saw, standwwii" name="American Soldier" nationality="American">
+		<skills>
+			<language-english			req="-1"/>
+			<teamster					req="-1"/>
+		</skills>
+		<disadvantages>
+			<youth						min="-2" max="-1" mode="-1" mean="-1" sdev=".4" req="02.5"/>
+		</disadvantages>
+		<armor>
+			<uhelmet req="1"/>
+		</armor>
+	</class>
+
+	<class alias="at" parents="st, law, as" name="American Tank Crewman" nationality="American">
+		<armor>
+			<thelm req="91"/>
+			<uhelmet req="19"/>
+		</armor>
+		<weapons>
+			<goggles req="97"/>
+		</weapons>
+	</class>
+
+	<class alias="ac" parents="sc, law, as" name="American Clerk" nationality="American"/>
+
+	<class alias="atcmd" parents="at, ao" name="American Tank Commander" nationality="American"/>
+	<class alias="aro" parents="so, law, ar" name="American Ranger Officer" nationality="American">
+		<weapons>
+			<colt-45 req="1"/>
+		</weapons>
+	</class>
+
+	<class alias="amg" parents="smg, law, as" name="American Machinegunner" nationality="American">
+		<weapons>
+			<bar							req="82"/>
+			<mmg							req="62"/>
+			<thompson						req="03"/>
+			<sten							req="05"/>
+			<greasegun						req="02"/>
+			<m-1-carbine					req="02"/>
+			<m-1a							req="01"/>
+		</weapons>
+	</class>
+
+	<class alias="aparao" parents="so, law, apara" name="American Paratrooper Officer" nationality="American">
+		<weapons>
+			<colt-45 req="1"/>
+		</weapons>
+	</class>
+	<class alias="apara" parents="spara, as" name="American Paratrooper" nationality="American">
+		<weapons>
+			<colt-45 req="70"/>
+			<m-1-carbine  req="10"/>
+			<m-1-carbinef req="38"/>
+		</weapons>
+	</class>
+
+	<class alias="ar" parents="se, as" name="American Ranger" nationality="American">
+		<weapons>
+			<mk-ii req="1"/>
+			<colt-45 req="90"/>
+		</weapons>
+	</class>
+
+	<class alias="ao" parents="so, law, as" name="American Officer" nationality="American"/>
+	<class alias="anco" parents="snco, law, as" name="American Noncommissioned Officer" nationality="American"/>
+
+	<class alias="am" parents="sm, law, as" name="American Medic" nationality="American"/>
+
+	<class alias="ae" parents="seng, law, as" name="American Engineer" nationality="American">
+		<weapons>
+			<bang							req="07"/>
+		</weapons>
+	</class>
+
+	<class alias="ap" parents="sp, law, as" name="American Pilot" nationality="American">
+		<weapons>
+			<mk-ii req="02"/>
+			<colt-45 req="80"/>
+			<enfield-38	req="41"/>
+			<thompson						req="02"/>
+			<sten							req="02"/>
+			<greasegun						req="02"/>
+			<m-1-carbine					req="02"/>
+			<m-1a							req="01"/>
+		</weapons>
+		<armor		min="0" max="0">
+			<uhelmet req="-1"/>
+		</armor>
+	</class>
+	<!-- <class alias="apo" parents="sp, ao" name="American Pilot Officer" nationality="American">
+		<advantages>
+			<rank						min="3" max="6" mode="4" req="1"/>
+		</advantages>
+		<weapons>
+			<mk-ii req="02"/>
+			<colt-45 req="1"/>
+		</weapons>
+		<armor		min="0" max="0">
+			<uhelmet req="-1"/>
+		</armor>
+	</class> -->
+
+	<class alias="gms" parents="milsci, lgw, gs" name="German Military Scientist" nationality="German">
+		<armor>
+			<ghelmet req=".04"/>
+		</armor>
+	</class>
+
+	<class alias="gt" parents="st, lgw, gs" name="German Tank Crewman" nationality="German">
+		<armor		min="0" max="0">
+			<ghelmet req="04"/>
+		</armor>
+		<weapons>
+			<goggles req="27"/>
+		</weapons>
+	</class>
+
+	<class alias="gc" parents="sc, lgw, gs" name="German Clerk" nationality="German"/>
+	<class alias="gsc" parents="sc, go" name="German Super Clerk" nationality="German" gender-ratio="100">
+		<advantages>
+			<rank						min="1" max="3" mode="1" req="1"/>
+		</advantages>
+	</class>
+
+	<class alias="gtc" parents="gt, go" name="German Tank Commander" nationality="German"/>
+	<class alias="sso" parents="lgw, so, ss" name="German SS Officer" nationality="German">
+		<weapons>
+			<p-38	req="1"/>
+		</weapons>
+		<armor		min="0" max="0">
+			<ghelmet req="24"/>
+		</armor>
+	</class>
+
+	<class alias="gmg" parents="smg, lgw, gs" name="German Machinegunner" nationality="German">
+		<weapons>
+			<mg42						req="99"/>
+			<mg34						req="20"/>
+			<mp40						req="22"/>
+			<ppsh-41					req="01"/>
+			<karabiner					req="03"/>
+			<sturmgewehr				req="01"/>
+			<panzerfaust				req="01.2"/>
+		</weapons>
+	</class>
+
+	<class alias="gpara" parents="spara, gs" name="German Paratrooper" nationality="German" age="17~18,19,20,21,22,23,24,25,26,27,28,29~35">
+		<weapons>
+			<mg34 req="-1"/>
+			<mg42 req="01"/>
+			<fg42 req="34"/>
+			<stielhandgranate-24 req="75"/>
+			<p-38	req="74"/>
+		</weapons>
+	</class>
+
+	<class alias="ss" parents="se, gs" name="German SS" nationality="German">
+		<weapons>
+			<stielhandgranate-24 req="75"/>
+			<p-38	req="74"/>
+		</weapons>
+	</class>
+
+	<class alias="gnco" parents="snco, lgw, gs" name="German Noncommissioned Officer" nationality="German">
+		<armor		min="0" max="0">
+			<ghelmet req="40"/>
+		</armor>
+	</class>
+	<class alias="go" parents="so, lgw, gs" name="German Officer" nationality="German">
+		<weapons>
+			<p-38	req="1"/>
+		</weapons>
+		<armor		min="0" max="0">
+			<ghelmet req="10"/>
+		</armor>
+	</class>
+	<class alias="gm" parents="sm, lgw, gs" name="German Medic" nationality="German">
+		<weapons>
+			<p-38 req="1"/>
+		</weapons>
+	</class>
+	<class alias="ge" parents="seng, lgw, gs" name="German Engineer" nationality="German" age="19~21,22,23,24,25,26,27,28,29~35">
+		<weapons>
+			<p-38	req="60"/>
+		</weapons>
+	</class>
+	<class alias="gp" parents="sp, lgw, gs" name="German Pilot" nationality="German">
+		<weapons>
+			<p-38	req="90"/>
+			<stielhandgranate-24		req="02"/>
+			<mp40						req="12"/>
+			<ppsh-41					req="01"/>
+			<karabiner					req="01"/>
+			<gewehr						req="0.1"/>
+			<sturmgewehr				req="0.1"/>
+		</weapons>
+		<armor		min="0" max="0">
+			<ghelmet req="-1"/>
+		</armor>
+	</class>
+	<!-- <class alias="gpo" parents="sp, go" name="German Pilot Officer" nationality="German">
+		<advantages>
+			<rank						min="3" max="6" mode="4" req="1"/>
+		</advantages>
+		<weapons>
+			<luger req="1"/>
+			<stielhandgranate-24		req="02"/>
+			<panzerfaust				req="-1"/>
+		</weapons>
+		<armor		min="0" max="0">
+			<ghelmet req="-1"/>
+		</armor>
+	</class> -->
+
+</classes>

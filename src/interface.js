@@ -1,16 +1,10 @@
 'use strict';
 
 /**
- * Help make the interface more friendly
+ * Help make the api more friendly & handle multiples
  */
 
 module.exports = function(randopeep){
-	function wrap(n,name){
-		n = n || 1;
-		var out = randopeep.getCount(n,name);
-		return (n===1) ? out.pop() : out;
-	}
-
 	function wrapFunc(n, func){
 		var args = Array.prototype.slice.call(arguments,2);
 		n = n || 1;
@@ -21,35 +15,39 @@ module.exports = function(randopeep){
 		return (n===1) ? out.pop() : out;
 	}
 
-	randopeep.person = function(n, gender) {
-		n = n || 1;
-		var out = [];
-		for(var i=0;i<n;i++){
-			var g = (gender) ? gender : randopeep.randomEl(['female','male']);
-			out.push(randopeep.get('person/prefix/' + g, 'person/modern/' + g, 'person/modern/last'));
-		}
-		return (n===1) ? out.pop() : out;
-	};
-	randopeep.netrunner = function(n) { return wrap(n,'person/netrunner'); };
-	randopeep.job = function(n) { return wrap(n,'jobs'); };
-	randopeep.state = function(n) { return wrap(n,'us/state'); };
-	randopeep.state.a = function(n) { return wrap(n,'us/state/abbr'); };
-	randopeep.zip = function(n){ return wrapFunc(n, randopeep.address.zip); };
-	randopeep.city = function(n){ return wrapFunc(n, randopeep.address.city); };
-	randopeep.geo = function(n){ return wrapFunc(n, randopeep.address.geo); };
-	randopeep.streetName = function(n){ return wrapFunc(n, randopeep.address.streetName); };
-	randopeep.streetAddress = function(n, useFullAddress){ return wrapFunc(n, randopeep.address.streetAddress, useFullAddress); };
-	randopeep.phone = function(n){ return wrapFunc(n, randopeep.address.phone); };
-	randopeep.ccnum = function(n, type){ return wrapFunc(n, randopeep.cc, type); };
-	randopeep.company = function (n, type){ return wrapFunc(n, randopeep.corporate.name, type); };
-	randopeep.catchPhrase = function (n){ return wrapFunc(n, randopeep.corporate.catchPhrase); };
-	randopeep.bs = function (n){ return wrapFunc(n, randopeep.corporate.bs); };
-	randopeep.ip = function (n){ return wrapFunc(n, randopeep.internet.ip); };
-	randopeep.domain = function (n,derived){ return wrapFunc(n, randopeep.internet.domain, derived); };
-	randopeep.email = function (n,derived){ return wrapFunc(n, randopeep.internet.email, derived); };
-	randopeep.username = function (n,derived){ return wrapFunc(n, randopeep.internet.username, derived); };
-	randopeep.uk = {
-		country: function(n) { return wrap(n,'uk/country'); },
-		county: function(n) { return wrap(n,'uk/county'); }
-	};
+	var api = {};
+
+	api.data = randopeep.data;
+	api.get = randopeep.getCount; // (n, list)
+	api.ipsum = randopeep.ipsum; // (n, list)
+
+	api.name = function (params,n){ return wrapFunc(n, randopeep.name, params); };
+	api.job = function(n) { return api.get(n,'jobs'); };
+	api.cc = function(type, charCount, n){ return wrapFunc(n, randopeep.cc, type, charCount); };
+
+	api.address = {};
+	api.address.state = function(n) { return api.get(n,'us/state'); };
+	api.address.state.a = function(n) { return api.get(n,'us/state/abbr'); };
+	api.address.zip = function(n){ return wrapFunc(n, randopeep.address.zip); };
+	api.address.city = function(n){ return wrapFunc(n, randopeep.address.city); };
+	api.address.geo = function(n){ return wrapFunc(n, randopeep.address.geo); };
+	api.address.streetName = function(n){ return wrapFunc(n, randopeep.address.streetName); };
+	api.address.streetAddress = function(useFullAddress,n){ return wrapFunc(n, randopeep.address.streetAddress, useFullAddress); };
+	api.address.phone = function(n){ return wrapFunc(n, randopeep.address.phone); };
+	api.address.uk = {};
+	api.address.uk.country = function(n) { return api.get(n,'uk/country'); };
+	api.address.uk.county = function(n) { return api.get(n,'uk/county'); };
+	
+	api.corporate = {};
+	api.corporate.name = function (type,n){ return wrapFunc(n, randopeep.corporate.name, type); };
+	api.corporate.catchPhrase = function (n){ return wrapFunc(n, randopeep.corporate.catchPhrase); };
+	api.corporate.bs = function (n){ return wrapFunc(n, randopeep.corporate.bs); };
+	
+	api.internet = {};
+	api.internet.ip = function (n){ return wrapFunc(n, randopeep.internet.ip); };
+	api.internet.domain = function (derived,n){ return wrapFunc(n, randopeep.internet.domain, derived); };
+	api.internet.email = function (derived,n){ return wrapFunc(n, randopeep.internet.email, derived); };
+	api.internet.username = function (derived,n){ return wrapFunc(n, randopeep.internet.username, derived); };
+	
+	return api;
 };

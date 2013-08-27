@@ -1,56 +1,108 @@
 # [Rando Peeps Data](http://konsumer.github.io/randopeep/)
 
 [![Build Status](https://travis-ci.org/konsumer/randopeep.png?branch=master)](https://travis-ci.org/konsumer/randopeep)
-
 [![NPM](https://nodei.co/npm/randopeep.png)](https://nodei.co/npm/randopeep/)
 
-
 Generate fake details about people, in javascript, based on data files. Originally made for generating fake NPCs for RPGs & fake accounts for things online.
-
-It's basically a random lookup from a list of names, and some quick functions for generating random data, with a lot of ideas from [Faker](https://github.com/Marak/Faker.js)
 
 ## What random stuff can it generate?
 
 All parameters are optional.
 
+`n` parameters is how many you would like, leave blank for 1.
+
+### People
+
+* `randopeep.name(params, n)` - a person's name, `params` are explained below
+* `randopeep.job(n)` - a job a person might do
+
 ### Places
 
-* `randopeep.zip(count)` - US zipcodes
-* `randopeep.city(count)` - City name
-* `randopeep.geo(count)` - Geo-location
-* `randopeep.streetName(count)` - Street name
-* `randopeep.streetAddress(count, useFullAddress)` - Street address: , useFullAddress is a boolean for including secondary address
-* `randopeep.phone(count)` - Phone Number
-* `randopeep.uk.country(count)` - UK countries
-* `randopeep.uk.county(count)` - UK counties
+* `randopeep.address.state(n)` - a US state
+* `randopeep.address.state.a(n)` - an abbreviated US state
+* `randopeep.address.zip(n)` - a zipcode
+* `randopeep.address.city(n)` - a pretend city
+* `randopeep.address.geo(n)` - a geolocation
+* `randopeep.address.streetName(n)` - a streetName
+* `randopeep.address.streetAddress(useFullAddress, n)` - a street address, set useFullAddress to get secondary address
+* `randopeep.address.phone(n)` - a phone number
+* `randopeep.address.uk.country(n)` - a country in the UK
+* `randopeep.address.uk.county(n)` - a county in the UK
 
 
 ### Credit-card Numbers
 
-* `randopeep.ccnum(count, type)` - Seemingly legit CC#'s: type includes visa, mastercard, amex, discover
+* `randopeep.cc(type, charCount, n)` - a credit-card, `type` is "visa", "mastercard", "amex", or "discover". `charCount` should be 13 or 16
 
 
 ### Corporate Things
 
-* `randopeep.company(count, type)` - Company names: type includes cyber, firm, small, large
-* `randopeep.catchPhrase(count)` - Corporate catch-phrases
-* `randopeep.bs(count)` - Corporate BS
+* `randopeep.corporate.name(type, n)` - a corporate name, `type` is explained below
+* `randopeep.corporate.catchPhrase(n)` - `n` corporate catchphrases
+* `randopeep.corporate.bs(n)` - `n` lines of corporate BS
 
 
 ### Internet Things
 
-* `randopeep.ip(count)` - IP address
-* `randopeep.domain(count, derived)` - Domain name: derived is a string to derive the name from
-* `randopeep.email(count, derived)` - Email address: derived is a string to derive the name from
-* `randopeep.username(count, derived)` - Username: derived is a string to derive the name from
+* `randopeep.internet.ip(n)` - an IP address
+* `randopeep.internet.domain(derived, n)` - a internet domainname, `derived` is explained, below
+* `randopeep.internet.email(derived, n)` - an email address, `derived` is explained, below
+* `randopeep.internet.username(derived, n)` - an internet username, `derived` is explained, below
 
 
 ### Random Text
 
-* `randopeep.ipsum(count)` - Ipsum text: default count is 200 words
+* `randopeep.ipsum(n, list)` - `n` words from ipsum `list`, default list is "lorem" and default count is 200
+
+
+### Other stuff
+
+* `randopeep.data` - the raw data, keyed by list name
+* `randopeep.get(n, list)` - `n` items from `list`
+
+
+### Parameters used above
+
+#### `params` for `randopeep.name`
+
+A lot of different types of names can be generated. All parameters are optional, here are the defaults:
+
+```
+{
+	'origin' : random - 'chinese', 'dark/elven', 'dwarven','elven', 'english', 'germanic','japanese','orcish','spanish','netrunner',
+	'gender': random - 'male','female',
+	'last': true,
+	'justLast': false,
+	'prefix': random - true, false,
+	'returnData': false,
+};
+```
+
+* `origin` - the place/time the names come from (see data dir)
+* `gender` - male/female, if names are gendered
+* `last` - get a lastname?
+* `justLast` - get lastname only?
+* `prefix` - look up gendered prefix, if applicable
+* `returnData` - return options (as generated) with `name` field, good if you want random gender/origin, but want to know about it after
+
+### `type` for `randopeep.corporate.name`
+
+It can be one of these:
+
+* cyber -  a company form the future
+* firm - a law-firm, all alst names are random, but from the same origin
+* small - a small company
+* large - a large corp
+
+
+#### `derived` for `randopeep.internet.*`
+
+Will attempt to use the text that you give it as a base for generating other things.  Makes more-legit looking email, if you already know the name, for example.
 
 
 ## Usage
+
+See my units-tests in [test/test.js](https://github.com/konsumer/randopeep/blob/master/test/test.js) if you need more detail.
 
 ### Adding your own name-libraries
 
@@ -60,10 +112,10 @@ Format is 1 item per line.
 
 ### Using name-libraries
 
-Say you want a modern female firstname, and a hacker lastname:
+Say you want an English female firstname, and a hacker lastname:
 
 ```javascript
-var myLeetName = randopeep.get('person/modern/female', 'person/netrunner');
+var myLeetName = randopeep.get(1, 'name/english/female/first') + ' ' + randopeep.get(1, 'name/netrunner/first');
 ```
 
 
@@ -75,7 +127,7 @@ in your code:
 
 ```javascript
 var randopeep = require('randopeep');
-var myLeetName = randopeep.netrunner();
+var myFakeName = randopeep.name();
 ```
 
 ### Browser
@@ -85,7 +137,7 @@ Just include `build/randopeep.min.js` in your thing, and use it like normal:
 ```html
 <script src="http://konsumer.github.io/randopeep/randopeep.min.js"></script>
 <script>
-	document.body.innerHTML = 'I am a totally leet haxor, my name is ' + randopeep.netrunner();
+	document.body.innerHTML = 'I am a totally cool dude, my name is ' + randopeep.name({gender:'male'});
 </script>
 ```
 
@@ -93,10 +145,23 @@ There is also support for AMD/require.js, just put build/randopeep.js in your ap
 
 ```javascript
 define(['randopeep'], function(peep){
-	document.body.innerHTML = 'I am a totally leet haxor, my name is ' + peep.netrunner();
+	document.body.innerHTML = 'I am a totally cool lady, my name is ' + randopeep.name({gender:'female'});
 });
 ```
 
 ## Testing
 
-You can run my CLI tests with `npm test` or open test/index.html to run same tests, in-browser.  The tests give excellant usage examples.
+You can run my CLI tests with `npm test` or open test/index.html to run same tests, in-browser.
+
+
+## TODO
+
+* use the GURPS class-data
+* ipsum could be smarter with English, so it can assemble seemingly sensical text.
+* serve all this up with a remote API, so you don't need all the dictionaries, if you have internet access (and make "light" build)
+
+
+
+## Credits
+
+* see [data credits](https://github.com/konsumer/randopeep/tree/master/data_src) for info about where a lot of this stuff came from.

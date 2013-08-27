@@ -1,0 +1,625 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<classes type="standard" genre="martial-arts" creation-time="2002-09-21 02:13:18">
+
+	<class alias="mart" parents="np" abstract="0" name="Martial Artist - Generic Style" nationality="American, Chinese, Japanese, Spanish"
+	       item-mod-inc="-90" gender-ratio="72" tech-level="7~8~8" age="18~24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39~54">
+		<stats>
+			<strength					min="9" max="16" mean="11.4"/>
+			<dexterity					min="10" max="17" mean="12.6"/>
+			<intelligence				min="8" max="15" mean="10.3"/>
+			<health						min="9" max="15" mean="11.4"/>
+		</stats>
+
+		<advantages>
+			<ambidexterity						req="05"/>
+			<combat-reflexes					req="32"/>
+			<danger-sense						req="03"/>
+			<fit						min="1" max="2" req="50"/>
+			<high-pain-threshold				req="13"/>
+			<hyper-reflexes						req="04"/>
+			<iron-hand					min="1" max="2" mean="1" req="03"/>
+			<reputation					min="1" max="3" mean="1" req="05"/>
+			<toughness					min="1" max="2" mean="1" req="16"/>
+			<trained-by-master			min="1" max="2" mean="1" req="04"/>
+		</advantages>
+
+		<disadvantages>
+			<bad-back					req="00.02"/>
+			<code-of-honor				min="-2" max="-1" req="09"/>
+			<code-of-honor-bushido		min="-3" max="-3" req="-1"/>
+			<combat-paralysis			req="00.16"/>
+			<cowardice					req="00.21"/>
+			<fanaticism					min="-2" max="-1" req="06.5"/>
+			<fat						min="-2" max="-1" req="-1"/>
+			<lame						req="-1"/>
+			<low-pain-threshold			req="01"/>
+			<overweight					req="10"/>
+			<pacifism-self-defense		req="06"/>
+			<unfit						req="-1"/>
+		</disadvantages>
+
+		<skills							min="1" max="7" mean="3">
+			<acrobatics					max="2" req="20"/>
+			<axe-mace					max="2" req="26"/>
+			<boxing						min="-1" max="2" req="12"/>
+			<brawling					max="2" req="20"/>
+			<breath-control				max="2" req="11"/>
+			<broad-sword				min="-1" max="2" req="30"/>
+			<cloak						min="-2" max="2"/>
+			<fast-draw-clip				max="2" req="01"/>
+			<fast-draw-knife			max="2" req="19"/>
+			<fast-draw-pistol			max="2" req="02"/>
+			<fast-draw-smg				max="2" req="01"/>
+			<fast-draw-sword			max="2" req="12"/>
+			<flail						req="27"/>
+			<immovable-stance			max="2" req="09"/>
+			<intimidation				req="32"/>
+			<jitte-sai					max="2" req="20"/>
+			<judo						min="-1" max="2" req="48"/>
+			<judo-art					min="-1" max="2" req="27"/>
+			<jumping					max="2" req="43"/>
+			<karate						min="-1" max="2" req="59"/>
+			<karate-art					min="-1" max="2" req="30"/>
+			<katana						max="2" req="28"/>
+			<knife						min="-1" max="2" req="50"/>
+			<kusari						max="2" req="18"/>
+			<language-chinese			max="0" req="12"/>
+			<language-japanese			max="0" req="12"/>
+			<meditation					max="1"	req="16"/>
+			<philosophy					max="2" req="17"/>
+			<power-blow					max="2" req="11"/>
+			<pressure-points			max="2" req="06"/>
+			<push						max="2" req="08"/>
+			<savoir-faire-dojo			max="2" req="40"/>
+			<short-staff				max="2" req="24"/>
+			<short-sword				max="2" req="38"/>
+			<spear						max="2" req="09"/>
+			<speed-load-pistol			max="2" req="01"/>
+			<speed-load-rifle			max="2" req="01"/>
+			<speed-load-smg				max="2" req="01"/>
+			<staff						max="2" req="44"/>
+			<stealth					max="2" req="71"/>
+			<theology					max="2" req="22"/>
+			<tournament-law				max="2"	req="29"/>
+			<two-hand-sword				max="2" req="10"/>
+			<wrestling					min="-1" max="2" req="28"/>
+		</skills>
+
+		<maneuvers						min="0" max="6" mean="3">
+			<aggressive-parry			max="0" mean="-1.4" req="08"/>
+			<arm-lock					max="2" req="11"/>
+			<axe-kick					max="2" mean="-0.5" req="06"/>
+			<back-kick					max="2" mean="-0.5" req="06"/>
+			<breakfall					max="2" req="06"/>
+			<cat-stance					max="1" mean="-0.5" req="06"/>
+			<choke-hold					max="0" req="06"/>
+			<disarming					max="2" req="06"/>
+			<drop-kick					max="0" mean="-1.4" req="09"/>
+			<ear-clap					max="0" mean="-2.5" req="05"/>
+			<elbow-strike				max="2" mean="0" req="06"/>
+			<eye-gouging				max="-3" mean="-5.5" req="05"/>
+			<ground-fighting			max="0" mean="-2" req="06"/>
+			<head-butt					max="0" mean="-2.5" req="09"/>
+			<head-lock					max="0" req="10"/>
+			<hook-kick					max="2" mean="-0.5" req="06"/>
+			<jab						max="0" mean="-1" req="05"/>
+			<jump-kick					max="0" mean="-1.4" req="09"/>
+			<knee-strike				max="1" mean="0" req="09"/>
+			<roundhouse-punch			max="0" mean="-1" req="07"/>
+			<shin-kick					max="0" mean="-1" req="09"/>
+			<shuto						max="0" mean="-1" req="06"/>
+			<spin-kick					max="0" mean="-1" req="11"/>
+			<stamp-kick					max="0" mean="-1" req="06"/>
+			<sweeping-kick				max="0" mean="-1" req="12"/>
+		</maneuvers>
+
+		<weapons	 min="0" max="1" mean="1">
+			<small-knife				req="12.5"/>
+			<combat-knife/>
+			<kama/>
+			<bokken/>
+			<katana/>
+			<kusari/>
+			<staff/>
+			<ssword/>
+			<saber/>
+			<smsword/>
+			<nunchaku/>
+			<clubl/>
+			<spear/>
+			<estick/>
+			<sai/>
+		</weapons>
+
+		<quirk-nouns>
+			<Street_Fighter_II				req="1"/>
+			<Sonny_Chiba					req="1"/>
+			<Bruce_Lee						req="1"/>
+			<Bruce_Lee						req="1"/>
+			<Chuck_Norris					req="1"/>
+			<John_Woo						req="1"/>
+			<Jean_Claude_Van_Damme			req="1"/>
+			<Brandon_Lee					req="1"/>
+			<The_Karate_Kid					req="1"/>
+			<Quentin_Tarentino				req="1"/>
+			<Akira_Kurosawa 				req="1"/>
+			<Akira_Kurosawa 				req="1"/>
+			<Ang_Lee		 				req="1"/>
+			<Chow_Yun-Fat	 				req="1"/>
+			<Michelle_Yeoh	 				req="1"/>
+			<Zhang_Ziyi	 					req="1"/>
+			<Yuen_Woo-Ping	 				req="1"/>
+			<Steven_Seagal	 				req="1"/>
+			<Jet_Li			 				req="1"/>
+			<Jackie_Chan	 				req="1"/>
+		</quirk-nouns>
+	
+	</class>
+
+	<class alias="maik" parents="mart" abstract="0" name="Martial Artist - Aikido Style" nationality="American, Japanese, Japanese" gender-ratio="68">
+		<stats>
+			<strength					min="8" max="16" mean="10.4"/>
+			<dexterity					min="10" max="16" mean="11.4"/>
+		</stats>
+
+		<disadvantages>
+			<pacifism-self-defense				req="08"/>
+		</disadvantages>
+
+		<skills>
+			<judo						min="-1" max="2" req="1"/>
+			<judo-art					min="-1" max="2" req="1"/>
+			<katana-art					max="2" req="1"/>
+			<staff						max="2" req="72"/>
+			<push						max="2" req="59"/>
+			<immovable-stance			max="2" req="44"/>
+		</skills>
+
+		<maneuvers>
+			<arm-lock					max="2" req="78"/>
+			<breakfall					max="2" req="1"/>
+			<ground-fighting			max="0" mean="-2" req="59"/>
+		</maneuvers>
+
+		<weapons	 min="0" max="0">
+			<staff						req="34"/>
+		</weapons>
+	</class>
+
+	<class alias="mband" parents="mart" abstract="0" name="Martial Artist - Bando Style" nationality="American, Chinese, Japanese" gender-ratio="79">
+		<disadvantages>
+			<berserk					req="18"/>
+		</disadvantages>
+
+		<skills>
+			<axe-mace					max="2" req="67"/>
+			<boxing						min="-1" max="2" req="1"/>
+			<brawling					max="2" req="1"/>
+			<fast-draw-knife			max="2" req="20"/>
+			<flail						req="32"/>
+			<immovable-stance			max="2" req="34"/>
+			<jitte-sai					max="2" req="58"/>
+			<judo						min="-1" max="2" req="86"/>
+			<karate						min="-1" max="2" req="1"/>
+			<katana						max="2" req="67"/>
+			<knife						min="-1" max="2" req="1"/>
+			<kusari						max="2" req="58"/>
+			<power-blow					max="2" req="33"/>
+			<push						max="2" req="40"/>
+			<short-staff				max="2" req="66"/>
+			<short-sword				max="2" req="72"/>
+			<spear						max="2" req="48"/>
+			<staff						max="2" req="1"/>
+			<tournament-law				max="2"	req="56"/>
+			<two-hand-sword				max="2" req="14"/>	
+		</skills>
+
+		<maneuvers						min="0" max="4" mean="2">
+			<aggressive-parry			max="0" mean="-1.4" req="68"/>
+			<arm-lock					max="2" req="1"/>
+			<elbow-strike				max="2" mean="0" req="1"/>
+			<head-butt					max="0" mean="-2.5" req="66"/>
+			<head-lock					max="0" req="56"/>
+			<jab						max="0" mean="-1" req="1"/>
+			<knee-strike				max="2" mean="0" req="50"/>
+			<shin-kick					max="0" mean="-1" req="66"/>
+			<stamp-kick					max="0" mean="-1" req="48"/>
+		</maneuvers>
+
+		<weapons	 min="1" max="1"/>
+	</class>
+
+	<class alias="mcap" parents="mart" abstract="0" name="Martial Artist - Capoeira Style" nationality="Spanish, Spanish, American" gender-ratio="76">
+		<skills>
+			<acrobatics					min="-1" max="2" req="1"/>
+			<boxing						min="-1" max="2" req="-1"/>
+			<dancing					min="-2" max="2" req="68"/>
+			<judo						min="-1" max="2" req="82"/>
+			<karate						min="-2" max="2" req="1"/>
+			<knife						min="-1" max="2" req="75"/>
+			<occultism					max="2" req="54"/>
+			<power-blow					max="2" req="54"/>
+			<short-sword				max="2" req="70"/>
+			<staff						max="2" req="65"/>
+			<tournament-law				max="2"	req="-1"/>
+		</skills>
+
+		<maneuvers						min="0" max="7" mean="3">
+			<ground-fighting			max="0" mean="-2" req="1"/>
+			<spin-kick					max="0" mean="-1" req="1"/>
+			<sweeping-kick				max="0" mean="-1" req="1"/>
+		</maneuvers>
+
+		<weapons	 min="0" max="1"/>
+	</class>
+
+	<class alias="mesc" parents="mart" abstract="0" name="Martial Artist - Escrima Style" nationality="American, Japanese" gender-ratio="75">
+		<skills>
+			<judo						min="-1" max="2" req="84"/>
+			<karate						min="-2" max="2" req="1"/>
+			<knife						min="-1" max="2" req="89"/>
+			<knife-throwing				min="-1" max="2" req="69"/>
+			<main-gauche				min="-2" max="2" req="1"/>
+			<power-blow					max="2" req="60"/>
+			<short-staff				min="-2" max="2" req="1"/>
+			<short-sword				max="2" req="59"/>
+			<staff						max="2" req="65"/>
+		</skills>
+
+		<maneuvers						min="0" max="7" mean="3">
+			<arm-lock					max="2" req="1"/>
+			<elbow-strike				max="2" mean="0" req="1"/>
+			<knee-strike				max="2" mean="0" req="1"/>
+		</maneuvers>
+
+		<weapons	 min="0" max="1" mean="0">
+			<estick						req="1"/>
+		</weapons>
+	</class>
+
+	<class alias="mgoj" parents="mart" abstract="0" name="Martial Artist - Goju Ryu Style" nationality="American, Chinese, Chinese" gender-ratio="71">
+		<skills>
+			<breath-control				max="2" req="1"/>
+			<flail						req="73"/>
+			<immovable-stance			max="2" req="50"/>
+			<jitte-sai					max="2" req="1"/>
+			<karate						min="-1" max="2" req="89"/>
+			<karate-art					min="-1" max="2" req="92"/>
+			<katana						max="2" req="56"/>
+			<meditation					max="2"	req="1"/>
+			<power-blow					max="2" req="41"/>
+			<staff						max="2" req="78"/>
+			<tournament-law				max="2"	req="1"/>
+		</skills>
+
+		<maneuvers						min="0" max="7" mean="3">
+			<aggressive-parry			max="0" mean="-1.4" req="1"/>
+			<back-kick					max="2" mean="-0.4" req="1"/>
+			<cat-stance					max="2" mean="-0.4" req="1"/>
+			<elbow-strike				max="2" mean="0" req="1"/>
+			<knee-strike				max="2" mean="0" req="1"/>
+		</maneuvers>
+
+		<weapons	 min="0" max="1" mean="0">
+			<sai						req="88"/>
+		</weapons>
+	</class>
+
+	<class alias="mhap" parents="mart" abstract="0" name="Martial Artist - Hapkido Style" nationality="American, Chinese, Chinese" gender-ratio="69">
+		<stats>
+			<strength					min="8" max="16" mean="11.4"/>
+		</stats>
+		<attributes>
+			<fatigue			min="-2" max="2" mean="0"/>
+		</attributes>
+
+		<disadvantages>
+			<pacifism-self-defense				req="07"/>
+		</disadvantages>
+		<skills>
+			<acrobatics					min="-1" max="2" req="78"/>
+			<boxing						min="-1" max="2" req="-1"/>
+			<judo						min="-1" max="2" req="84"/>
+			<jumping					max="2" req="76"/>
+			<karate						min="-1" max="2" req="1"/>
+			<power-blow					max="2" req="44"/>
+			<pressure-points			max="2" req="20"/>
+			<tournament-law				max="2"	req="49"/>
+		</skills>
+
+		<maneuvers						min="0" max="7" mean="3">
+			<back-kick					max="2" mean="-0.5" req="1"/>
+			<hook-kick					max="2" mean="-0.5" req="1"/>
+			<jab						max="0" mean="-1" req="-1"/>
+			<jump-kick					max="0" mean="-1.4" req="1"/>
+			<roundhouse-punch			max="0" mean="-1" req="-1"/>
+			<shuto						max="0" mean="-1" req="80"/>
+			<spin-kick					max="0" mean="-1" req="1"/>
+			<sweeping-kick				max="0" mean="-1" req="1"/>
+		</maneuvers>
+
+		<weapons	 min="0" max="0"/>
+	</class>
+
+	<class alias="mhsing" parents="mart" abstract="0" name="Martial Artist - Hsing-Yi Chuan Style" nationality="American, Chinese, Chinese" gender-ratio="77">
+		<advantages>
+			<combat-reflexes					req="73"/>
+			<high-pain-threshold				req="26"/>
+			<iron-hand					min="1" max="2" mean="1" req="32"/>
+			<toughness					min="1" max="2" mean="1" req="47"/>
+			<trained-by-master					req="22"/>
+		</advantages>
+		<disadvantages>
+			<code-of-honor				min="-2" max="-1" req="65"/>
+		</disadvantages>
+
+		<skills>
+			<acrobatics					min="-1" max="2" req="78"/>
+			<boxing						min="-1" max="2" req="-1"/>
+			<breath-control				max="2" req="1"/>
+			<immovable-stance			max="2" req="64"/>
+			<intimidation				req="55"/>
+			<judo						min="-1" max="2" req="1"/>
+			<jumping					max="2" req="1"/>
+			<karate						min="-1" max="2" req="1"/>
+			<katana						min="-1" max="2" req="80"/>
+			<knife						min="-1" max="2" req="1"/>
+			<meditation					max="2"	req="1"/>
+			<philosophy					max="2" req="89"/>
+			<power-blow					max="2" req="38"/>
+			<pressure-points			max="2" req="40"/>
+			<push						max="2" req="34"/>
+			<spear						max="2" req="1"/>
+			<staff						max="2" req="64"/>
+		</skills>
+
+		<maneuvers						min="0" max="7" mean="3">
+			<arm-lock					max="2" req="1"/>
+			<axe-kick					max="2" mean="-0.5" req="1"/>
+			<cat-stance					max="2" mean="-0.5" req="1"/>
+			<hook-kick					max="2" mean="-0.5" req="1"/>
+			<jab						max="0" mean="-1" req="-1"/>
+			<jump-kick					max="0" mean="-1.4" req="1"/>
+			<roundhouse-punch			max="0" mean="-1" req="-1"/>
+			<spin-kick					max="0" mean="-1" req="1"/>
+		</maneuvers>
+
+		<weapons	 min="0" max="0">
+			<spear						req="38"/>
+		</weapons>
+	</class>
+
+	<class alias="mjkd" parents="mart" abstract="0" name="Martial Artist - Jeet Kune Do Style" nationality="American, American, Chinese, Chinese, Japanese" gender-ratio="80">
+		<stats>
+			<strength					min="9" max="16" mean="11.4"/>
+		</stats>
+
+		<disadvantages>
+			<fanaticism					min="-2" max="-1" req="11"/>
+			<pacifism-self-defense				req="-1"/>
+		</disadvantages>
+		<skills>
+			<acrobatics					min="-1" max="2" req="79"/>
+			<axe-mace					max="2" req="72"/>
+			<boxing						min="-1" max="2" req="1"/>
+			<flail						max="2" req="78"/>
+			<immovable-stance			max="2" req="51"/>
+			<jitte-sai					max="2" req="68"/>
+			<judo						min="-1" max="2" req="1"/>
+			<karate						min="-1" max="2" req="1"/>
+			<kusari						max="2" req="64"/>
+			<power-blow					max="2" req="47"/>
+			<pressure-points			max="2" req="29"/>
+			<short-staff				max="2" req="80"/>
+			<short-sword				max="2" req="77"/>
+			<staff						max="2" req="81"/>
+		</skills>
+
+		<maneuvers						min="0" max="5" mean="3">
+			<back-kick					max="2" mean="-0.5" req="70"/>
+			<ear-clap					max="0" mean="-2.5" req="62"/>
+			<elbow-strike				max="2" mean="0" req="1"/>
+			<hook-kick					max="2" mean="-0.5" req="65"/>
+			<jab						max="0" mean="-1" req="77"/>
+			<jump-kick					max="0" mean="-1.4" req="60"/>
+			<knee-strike				max="2" mean="0" req="60"/>
+			<spin-kick					max="0" mean="-1" req="55"/>
+			<stamp-kick					max="0" mean="-1" req="45"/>
+		</maneuvers>
+
+		<weapons	 min="0" max="1">
+			<nunchaku					req="45"/>
+		</weapons>
+	</class>
+
+	<class alias="mjuj" parents="mart" abstract="0" name="Martial Artist - Jujutsu Style" nationality="Spanish, American, Chinese, Japanese" gender-ratio="69">
+		<attributes>
+			<fatigue			min="-1" max="3" mean="0.4"/>
+		</attributes>
+
+		<skills>
+			<judo						min="-1" max="2" req="1"/>
+			<judo-art					min="-1" max="2" req="40"/>
+			<karate						min="-1" max="2" req="1"/>
+			<power-blow					max="2" req="40"/>
+			<pressure-points			max="2" req="43"/>
+			<tournament-law				max="2"	req="49"/>
+		</skills>
+
+		<maneuvers						min="0" max="7" mean="3">
+			<arm-lock					max="2" req="1"/>
+			<back-kick					max="2" mean="-0.5" req="1"/>
+			<disarming					max="2" req="1"/>
+			<spin-kick					max="0" mean="-1" req="68"/>
+		</maneuvers>
+
+		<weapons	 min="0" max="0"/>
+	</class>
+
+	<class alias="mkemp" parents="mart" abstract="0" name="Martial Artist - Kempo Style" nationality="American, Japanese, Japanese" gender-ratio="60">
+		<stats>
+			<strength					min="8" max="16" mean="10.4"/>
+		</stats>
+
+		<disadvantages>
+			<pacifism-self-defense				req="42"/>
+		</disadvantages>
+		<skills>
+			<breath-control				max="2" req="76"/>
+			<judo						min="0" max="2" req="1"/>
+			<karate						min="-1" max="2" req="1"/>
+			<meditation					max="2"	req="88"/>
+			<philosophy					min="-2" max="2" req="1"/>
+			<power-blow					max="2" req="30"/>
+			<pressure-points			max="2" req="49"/>
+			<staff						max="2" req="81"/>
+		</skills>
+
+		<maneuvers						min="0" max="7" mean="3">
+			<arm-lock					max="2" req="1"/>
+			<spin-kick					max="0" mean="-1" req="1"/>
+		</maneuvers>
+
+		<weapons	 min="0" max="0">
+			<small-knife				req="-1"/>
+			<staff						req="44"/>
+		</weapons>
+	</class>
+
+	<class alias="mkuksool" parents="mart" abstract="0" name="Martial Artist - Kuk Sool Won Style" nationality="American, Chinese, Chinese" gender-ratio="64">
+		<skills>
+			<judo						min="-1" max="2" req="1"/>
+			<karate						min="-1" max="2" req="1"/>
+			<katana						min="-1" max="2" req="1"/>
+			<knife						min="-1" max="2" req="1"/>
+			<main-gauche				min="-2" max="2" req="73"/>
+			<philosophy					max="2" req="42"/>
+			<power-blow					max="2" req="40"/>
+			<pressure-points			max="2" req="61"/>
+			<short-staff				max="2" req="72"/>
+			<short-sword				max="2" req="56"/>
+			<staff						max="2" req="92"/>
+			<throwing					max="2" req="65"/>
+		</skills>
+
+		<maneuvers						min="0" max="7" mean="3">
+			<arm-lock					max="2" req="1"/>
+			<back-kick					max="2" mean="-0.5" req="1"/>
+			<jump-kick					max="0" mean="-1.4" req="1"/>
+			<spin-kick					max="0" mean="-1" req="1"/>
+		</maneuvers>
+
+		<weapons	 min="0" max="1">
+			<gum						req="74"/>
+			<katana						req="-1"/>
+		</weapons>
+	</class>
+
+	<class alias="mmthai" parents="mart" abstract="0" name="Martial Artist - Muay Thai Style" nationality="Spanish, American, American, Japanese" gender-ratio="77">
+		<advantages>
+			<combat-reflexes					req="70"/>
+			<high-pain-threshold				req="72"/>
+			<hyper-reflexes						req="12"/>
+			<reputation					min="1" max="3" mean="1" req="08"/>
+			<toughness					min="1" max="2" mean="1" req="1"/>
+			<trained-by-master					req="-1"/>
+		</advantages>
+
+		<skills>
+			<boxing						min="-1" max="2" req="1"/>
+			<judo						min="-1" max="2" req="82"/>
+			<judo-art					min="-1" max="2" req="05"/>
+			<karate						min="-1" max="2" req="1"/>
+			<karate-art					min="-1" max="2" req="05"/>
+		</skills>
+
+		<maneuvers						min="0" max="7" mean="3">
+			<aggressive-parry			max="0" mean="-1.4" req="72"/>
+			<axe-kick					max="2" mean="-0.5" req="61"/>
+			<back-kick					max="2" mean="-0.5" req="1"/>
+			<elbow-strike				min="0" max="2" mean="1" req="1"/>
+			<hook-kick					max="2" mean="-0.5" req="1"/>
+			<jab						max="0" mean="-1" req="1"/>
+			<jump-kick					max="0" mean="-1.4" req="74"/>
+			<knee-strike				min="0" max="2" mean="1" req="1"/>
+			<roundhouse-punch			max="0" mean="-1" req="1"/>
+			<shin-kick					min="-1" max="0" req="1"/>
+			<spin-kick					max="0" mean="-1" req="90"/>
+		</maneuvers>
+
+		<weapons	 min="0" max="1" mean="0">
+			<small-knife				req="-1"/>
+		</weapons>
+	</class>
+
+	<class alias="mpens" parents="mart" abstract="0" name="Martial Artist - Penjak Silat Style" nationality="American, Chinese, Japanese" gender-ratio="82">
+		<advantages>
+			<combat-reflexes					req="68"/>
+			<fit						min="1" max="2" req="87"/>
+			<trained-by-master					req="26"/>
+		</advantages>
+
+		<skills>
+			<acrobatics					min="-1" max="2" req="72"/>
+			<axe-mace					max="2" req="70"/>
+			<fast-draw-knife			max="2" req="68"/>
+			<jitte-sai					max="2" req="70"/>
+			<judo						min="-1" max="2" req="1"/>
+			<karate						min="-1" max="2" req="1"/>
+			<katana						max="2" req="74"/>
+			<knife						min="-1" max="2" req="1"/>
+			<kusari						max="2" req="65"/>
+			<main-gauche				min="-2" max="2" req="1"/>
+			<power-blow					max="2" req="46"/>
+			<pressure-points			max="2" req="50"/>
+			<short-staff				max="2" req="90"/>
+			<short-sword				max="2" req="1"/>
+			<spear						max="2" req="69"/>
+			<staff						max="2" req="1"/>
+			<two-hand-sword				max="2" req="56"/>	
+		</skills>
+
+		<maneuvers						min="0" max="7" mean="3">
+			<arm-lock					max="2" req="1"/>
+			<back-kick					max="2" mean="-0.5" req="1"/>
+			<elbow-strike				max="2" mean="0" req="1"/>
+			<ground-fighting			max="0" mean="-2" req="1"/>
+			<head-lock					max="0" req="70"/>
+			<jump-kick					max="0" mean="-1.4" req="80"/>
+			<spin-kick					max="0" mean="-1" req="1"/>
+			<sweeping-kick				max="0" mean="-1" req="1"/>
+		</maneuvers>
+
+		<weapons	 min="0" max="1" mean="1"/>
+	</class>
+
+	<class alias="mpray" parents="mart" abstract="0" name="Martial Artist - Praying Mantis Kung Fu" nationality="American, Chinese, Chinese" gender-ratio="80">
+		<advantages>
+			<enhanced-parry				req="66"/>
+		</advantages>
+
+		<skills>
+			<acrobatics					min="-1" max="2" req="86"/>
+			<judo						min="-1" max="2" req="1"/>
+			<karate						min="-1" max="2" req="1"/>
+			<knife						min="-1" max="2" req="1"/>
+			<kusari						max="2" req="75"/>
+			<philosophy					max="2" req="1"/>
+			<power-blow					max="2" req="43"/>
+			<pressure-points			max="2" req="50"/>
+			<savoir-faire-dojo			max="2" req="1"/>
+			<short-staff				max="2" req="90"/>
+			<staff						max="2" req="1"/>
+		</skills>
+
+		<maneuvers						min="0" max="7" mean="3">
+			<cat-stance					max="2" mean="-0.5" req="56"/>
+			<elbow-strike				max="2" mean="0" req="1"/>
+			<jump-kick					max="0" mean="-1.4" req="1"/>
+			<knee-strike				max="2" mean="0" req="1"/>
+			<spin-kick					max="0" mean="-1" req="1"/>
+		</maneuvers>
+	</class>
+
+</classes>

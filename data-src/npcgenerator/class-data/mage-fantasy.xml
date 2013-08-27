@@ -1,0 +1,658 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<classes type="mage" genre="fantasy" creation-time="2002-08-01 02:13:18">
+
+	<class alias="edrd" parents="drda, elf" name="Elf Druid" nationality="Wood-Elf, Wood-Elf, Half-Elf, Elf" item-mod-inc="4" gender-ratio="48">
+		<stats>
+			<strength					min="7"/>
+			<dexterity					min="10" mean="12"/>
+			<intelligence				min="12" max="18" mean="13.2"/>
+		</stats>
+	</class>
+
+	<class alias="drd" parents="drda, ltp" name="Human Druid" nationality="Human" item-mod-inc="3" gender-ratio="52"/>
+
+	<class alias="drda" parents="maga" abstract="1" name="Druid - Abstract" nationality="Human">
+		<stats>
+			<strength					min="8"/>
+			<dexterity					min="9"/>
+			<intelligence				min="11" max="16" mean="12.7"/>
+			<health						min="9" max="15" mean="10.6"/>
+		</stats>
+
+		<advantages>
+			<absolute-direction				req="20"/>
+			<animal-empathy					req="88"/>
+			<high-pain-threshold			req="11"/>
+			<legal-enforcement				min="1" max="2" mean="1" req="03"/>
+			<literacy						req="54"/>
+			<magery							min="1" max="3" mean="1.4" req="1"/>
+			<magic-resistance				min="1" max="5" mean="1.4" req="-1"/>
+			<rank							min="0" max="3" mean="1" req="-1"/>
+		</advantages>
+
+		<skills							min="1" max="5" mean="3">
+			<animal-handling			max="2" req="1"/>
+			<axe-mace					max="1" req="40"/>
+			<bow						min="-1" max="1" req="39"/>
+			<camouflage					max="2" req="85"/>
+			<first-aid					max="1" req="32"/>
+			<naturalist					min="0" max="2" req="1"/>
+			<poisons					max="1" req="20"/>
+			<riding						max="1" req="56"/>
+			<stealth					max="1" req="1"/>
+			<survival					min="-1" max="2" req="85"/>
+			<tracking					min="-1" max="1" req="25"/>
+
+			<spell-animate-plant		max="1" req="09"/>
+			<spell-bird-control			max="1" req="07"/>
+			<spell-bloat				max="2" req="04"/>
+			<spell-body-of-wood			max="1" req="07"/>
+			<spell-skin-of-stone		max="1" req="02"/>
+			<spell-curse-missile		max="1" req="06"/>
+			<spell-fireball				max="1" req="-1"/>
+			<spell-forest-warning		max="1" req="08"/>
+			<spell-gift-of-tongues		max="1" req="04"/>
+			<spell-hail					max="1" req="12"/>
+			<spell-ice-dagger			max="1" req="08"/>
+			<spell-mammal-control		max="1" req="72"/>
+			<spell-plant-sense			max="1" req="13"/>
+			<spell-repel-mammal			max="1" req="29"/>
+			<spell-reptile-control		max="1" req="10"/>
+			<spell-resist-fire			max="1" req="06"/>
+			<spell-rooted-feet			max="1" req="11"/>
+			<spell-sense-life			max="1" req="1"/>
+			<spell-shapeshifting		min="-2" max="2" req="08"/>
+			<spell-shapeshift-other		min="-3" max="1" req="02"/>
+			<spell-sound-vision			max="1" req="05"/>
+			<spell-spider-silk			max="1" req="08"/>
+			<spell-spit-venom			max="1" req="12"/>
+			<spell-stone-missile		max="1" req="01"/>
+			<spell-tangle-growth		max="1" req="11"/>
+			<spell-water-jet			max="0" req="05"/>
+		</skills>
+
+		<weapons>
+			<mstaff							req="75"/>
+		</weapons>
+	</class>
+
+	<class alias="osham" parents="maga, orc" name="Orc Shaman" nationality="Orc, Orc, Black-Orc, Cave-Orc" item-mod-inc="3" gender-ratio="91">
+		<stats>
+			<dexterity					min="8"/>
+			<intelligence				min="10" max="15" mean="11.9"/>
+			<health						min="9"/>
+		</stats>
+
+		<advantages>
+			<awareness					min="1" max="2" req="20"/>
+			<magery						min="1" max="3" mean="2" req="1"/>
+			<medium						req="24"/>
+			<rank						min="0" max="3" mean="1" req="-1"/>
+		</advantages>
+
+		<disadvantages>
+			<sense-of-duty-tribe		min="-3" max="-2" req="1"/>
+		</disadvantages>
+
+		<skills							min="1" max="3">
+			<astronomy					max="1" req="40"/>
+			<axe-mace					req="55"/>
+			<short-sword				max="1" req="90"/>
+			<spear						max="1" req="60"/>
+			<staff						max="1" req="1"/>
+
+			<spell-breathe-fire			max="2" req="12"/>
+			<spell-summon-spirit		min="-2" max="2" req="29"/>
+			<spell-ethereal-body		max="1" req="06"/>
+			<spell-skull-spirit			max="1" req="11"/>
+			<spell-poltergeist			max="1" req="18"/>
+			<spell-instant-restoration	max="1" req="02"/>
+			<spell-darkvision			max="1" req="31"/>
+			<spell-mystic-mist			max="1" req="11"/>
+			<spell-walk-on-air			max="1" mean="-2" req="0.4"/>
+			<spell-wizard-eye			max="1" req="10"/>
+		</skills>
+	</class>
+
+	<class alias="ogrem" parents="osham" name="Ogre Mage" nationality="Underworld" item-mod-inc="6" gender-ratio="72" age="40~80"
+		   images-male="ogre.gif" images-female="female-ogre.gif">
+		<stats>
+			<strength					min="16" max="23" mean="18.2"/>
+			<dexterity					min="7"  max="12" mean="9" sdev="1.5"/>
+			<intelligence				min="10" max="14" mean="11.8" sdev="1.6"/>
+			<health						min="9"  max="16" mean="12.9"/>
+		</stats>
+		<disadvantages>
+			<bad-smell							req="32"/>
+			<gigantism							req="1"/>
+			<stocky								req="-1"/>
+		</disadvantages>
+
+		<skills>
+			<language-orcish			max="0" req="-1"/>
+		</skills>
+		<weapons		min="1" max="3" mean="1.4"/>
+	</class>
+
+
+	<class alias="dbwiz" parents="bwiza, dwarf" name="Dwarf Battle Wizard" nationality="Dwarf" item-mod-inc="4" gender-ratio="76">
+		<stats>
+			<strength					min="10" max="15" mean="11.8"/>
+			<dexterity					min="9" max="14" mean="11.9"/>
+		</stats>
+		<advantages						min="0" max="2" mean="0.7"/>
+		<skills>
+			<axe-mace					min="-1" max="2" req="1"/>
+		</skills>
+
+		<armor		min="1" max="4" mean="2"/>
+		<weapons>
+			<baxe						req="46"/>
+			<mstaff						req="48"/>
+			<laknife					req="1"/>
+		</weapons>
+	</class>
+
+	<class alias="bwiz" parents="bwiza, ltp" name="Human Battle Wizard" nationality="Human" item-mod-inc="4" gender-ratio="88"/>
+
+	<class alias="bwiza" parents="itma, maga" abstract="1" name="Battle Wizard - Abstract" nationality="Human">
+		<stats>
+			<strength					min="8" max="15" mean="11.9"/>
+			<dexterity					min="10" max="14" mean="11.9"/>
+			<intelligence				min="11" max="17" mean="12.96" sdev="1.4" mode="13"/>
+			<health						min="9" max="15" mean="11"/>
+		</stats>
+
+		<advantages>
+			<combat-reflexes				req="07"/>
+			<literacy						req="94"/>
+			<magery							min="1" max="3" mean="1.8" sdev="1.2" req="1"/>
+			<magic-resistance				min="1" max="5" mean="1.4" req="-1"/>
+			<rank							min="2" max="4" mean="3" req="50"/>
+		</advantages>
+
+		<disadvantages>
+			<cowardice							req="-1"/>
+		</disadvantages>
+
+		<skills							min="0" mean="1.2" max="4">
+			<axe-mace					max="1" req="22"/>
+			<broad-sword				min="-1" max="2" req="71"/>
+			<first-aid					max="1" req="40"/>
+			<gesture					max="1" req="32"/>
+			<leadership					max="1" req="60"/>
+			<shield						max="0" req="72"/>
+			<staff						max="2" req="1"/>
+			<stealth					max="1" req="40"/>
+			<tactics					max="1" req="1"/>
+
+			<spell-alter-visage			req="-1"/>
+			<spell-body-of-stone		max="1" req="04"/>
+			<spell-concussion			max="1" req="02"/>
+			<spell-curse-missile		max="1" req="09"/>
+			<spell-deflect-missile		max="1"	req="07"/>
+			<spell-dexterity			max="1" req="03"/>
+			<spell-flight				max="1" req="03"/>
+			<spell-great-haste			max="1" req="02"/>
+			<spell-hail					max="1" req="03"/>
+			<spell-invisibility			max="1" req="01"/>
+			<spell-lightning			max="1" req="03"/>
+			<spell-major-healing		max="1" req="08"/>
+			<spell-mental-stun			max="1" req="02"/>
+			<spell-might				max="1" req="07"/>
+			<spell-rain-of-stones		max="1"	req="05"/>
+			<spell-reverse-missiles		max="1" req="05"/>
+			<spell-spell-shield			max="1" req="03"/>
+			<spell-ward					min="-1" max="2" req="20"/>
+
+			<spell-body-of-flames		max="1" req="06"/>
+			<spell-brand				max="1" req="02"/>
+			<spell-breathe-fire			max="1" req="06"/>
+			<spell-essential-flame		max="1" req="07"/>
+			<spell-explosive-fireball	max="2" mean="1" req="18"/>
+			<spell-explosive-lava-bolt	max="2" mean="1" req="06"/>
+			<spell-fireball				max="2" mean="1" req="38"/>
+			<spell-firestorm			max="1" req="03"/>
+			<spell-fire-bolt			max="1" req="12"/>
+			<spell-fire-cloud			max="1" req="08"/>
+			<spell-flame-jet			max="1" req="10"/>
+			<spell-flaming-armor		max="1" req="06"/>
+			<spell-homing-fire-bolt		max="1" req="04"/>
+			<spell-homing-lava-bolt		max="1" req="03"/>
+			<spell-lava-bolt			max="1" req="10"/>
+			<spell-lava-eruption		max="1" req="01"/>
+			<spell-lava-jet				max="1" req="03"/>
+			<spell-wall-of-fire			max="1" req="07"/>
+			<spell-water-jet			max="0" req="01"/>
+		</skills>
+
+		<armor min="1" max="4">
+			<dplate/>
+		</armor>
+		<weapons	min="1" max="3" mean="1.7">
+			<mstaff						req="69"/>
+			<laknife					req="1"/>
+		</weapons>
+	</class>
+
+	<class alias="sorc" parents="maga, ltp" abstract="0" name="Human Sorceror" nationality="Human" item-mod-inc="6" gender-ratio="56">
+		<stats>
+			<strength					min="7" max="14" mean="9.4"/>
+			<dexterity					min="10" max="15" mean="11.65"/>
+			<intelligence				min="11" max="20" mean="13.99" sdev="1.6" mode="14"/>
+			<health						min="10" max="16" mean="12"/>
+		</stats>
+
+		<advantages						min="0" mean="1" max="2">
+			<literacy						req="1"/>
+			<magery							min="1" max="5" mean="2.8" sdev="1.3" req="1"/>
+			<magic-resistance				req="-1"/>
+		</advantages>
+
+		<skills							min="0" mean="1.2" max="4">
+			<alchemy					max="1" req="1"/>
+			<shield						max="2" req="-1"/>
+			<staff						max="2" req="1"/>
+			<axe-mace					max="1" req="10"/>
+			<broad-sword				max="1" req="21"/>
+
+			<spell-animate-object		max="1" req="03"/>
+			<spell-bloat				max="2" req="03"/>
+			<spell-blur					max="1" req="05"/>
+			<spell-body-of-stone		max="1" req="01"/>
+			<spell-skin-of-stone		max="1" req="07"/>
+			<spell-charm				max="1" req="12"/>
+			<spell-color-burst			max="1" req="08"/>
+			<spell-command				max="1" req="17"/>
+			<spell-complex-illusion		max="1" req="12"/>
+			<spell-concussion			max="1" req="05"/>
+			<spell-counterspell			max="0" req="06"/>
+			<spell-create-warrior		max="1" req="03"/>
+			<spell-curse-missile		max="1" req="16"/>
+			<spell-death-vision			max="1" req="10"/>
+			<spell-deflect-missile		max="1"	req="10"/>
+			<spell-distant-blow			max="1" req="09"/>
+			<spell-drain-mana			min="-2" max="1" mean="0" req="22"/>
+			<spell-fire-bolt			max="1" req="15"/>
+			<spell-great-haste			max="1" req="04"/>
+			<spell-hawkflight			max="1" req="11"/>
+			<spell-hex					max="1"	req="04"/>
+			<spell-homing-fire-bolt		max="1" req="11"/>
+			<spell-invisibility			max="1" req="05"/>
+			<spell-lava-bolt			max="1" req="08"/>
+			<spell-lightning			max="1" req="06"/>
+			<spell-major-healing		max="1" req="07"/>
+			<spell-mental-stun			max="1" req="03"/>
+			<spell-might				max="1" req="08"/>
+			<spell-great-brand		max="0" req="09"/>
+			<spell-rain-of-stones		max="1"	req="08.5"/>
+			<spell-reverse-missiles		max="1" req="05"/>
+			<spell-see-invisible		max="1" req="06"/>
+			<spell-spell-shield			max="1" req="05"/>
+			<spell-stink-ball			max="1"	req="07"/>
+			<spell-stone-missile		max="1" req="16"/>
+			<spell-utter-dome			max="1"	req="05"/>
+			<spell-wall-of-fire			max="1" req="09"/>
+			<spell-ward					min="-1" max="2" req="20"/>
+			<spell-water-jet			max="0" req="03"/>
+			<spell-wizard-eye			max="1" req="08"/>
+			<spell-firewalker-zombie	max="1" req="02"/>
+			<spell-iron-arm				max="1" mean="-1.8" req="26"/>
+			<spell-hysteria				max="1" req="05"/>
+			<spell-weaken-will			max="1" req="04"/>
+		</skills>
+
+		<weapons	 min="0" max="2" mean="0.6">
+			<mstaff							req="1"/>
+			<staffp							req="04"/>
+			<potion							req="14"/>
+			<pstone							req="68"/>
+			<pstone2						req="20"/>
+			<pstoneq						req="10"/>
+			<scroll							req="26"/>
+		</weapons>
+
+	</class>
+
+	<class alias="dinq" parents="clerica, dwarf" name="Dwarf Inquisitor" nationality="Dwarf" item-mod-inc="4" gender-ratio="89">
+		<stats>
+			<strength					min="10" max="16" mean="12.2"/>
+		</stats>
+		<skills							min="0" max="4" mean="1.4">
+			<axe-mace					min="0" max="3" mean="1.9" req="1"/>
+			<broad-sword				min="-1" max="2" mean="0" req="20"/>
+			<fast-draw-arrow			req="-1"/>
+		</skills>
+
+		<armor							min="3" max="6" mean="3.2"/>
+		<weapons>
+			<baxe						req="68"/>
+		</weapons>
+	</class>
+
+	<class alias="hcleric" parents="clerica, ltp" name="Human Cleric" nationality="Human" item-mod-inc="4" gender-ratio="80"/>
+
+	<class alias="clerica" parents="itma, maga" abstract="1" name="Cleric - Abstract" nationality="Human">
+		<stats>
+			<strength					min="9" max="17" mean="11.9"/>
+			<dexterity					min="9" max="14" mean="10.5"/>
+			<intelligence				min="10" max="16" mean="12.1"/>
+			<health						min="9" max="15" mean="12.9"/>
+		</stats>
+
+		<advantages						min="0" max="1" mean="0.5">
+			<awareness							min="1" max="2" req="04"/>
+			<clerical-investment				min="1" max="2" mean="1" req="1"/>
+			<magery								min="1" max="1" req="1"/>
+			<magic-resistance					min="1" max="5" mean="1.4" req="-1"/>
+			<power-investiture					min="1" max="1" req="1"/>
+			<sanctity							req="14"/>
+			<true-faith							req="12"/>
+			<literacy							req="67"/>
+		</advantages>
+
+		<skills							min="1" max="6" mean="3">
+			<axe-mace						min="-1" max="2" req="1"/>
+			<broad-sword					min="-1" max="2" req="72"/>
+			<first-aid						max="1" req="1"/>
+			<intimidation					max="1" req="20"/>
+			<knife							max="1" req="12"/>
+			<poisons						max="1" req="01"/>
+			<shield							max="1" req="1"/>
+			<short-sword					min="-1" max="1" req="82"/>
+
+			<spell-death-vision				req="-1"/>
+			<spell-alter-visage				req="-1"/>
+			<spell-awaken					max="1" req="15"/>
+			<spell-bloat					max="2" req="06"/>
+			<spell-bravery					max="1" req="12"/>
+			<spell-breathe-fire				max="1" req="02"/>
+			<spell-cure-disease				max="1" req="14"/>
+			<spell-exorcism					max="1" req="15"/>
+			<spell-healing-slumber			max="1" req="10"/>
+			<spell-invigorate				max="1" req="11"/>
+			<spell-instant-regeneration		max="1" req="02"/>
+			<spell-major-healing			max="1" req="1"/>
+			<spell-mental-stun				max="1" req="12"/>
+			<spell-might					max="1" req="08"/>
+			<spell-minor-bless				max="1" req="10"/>
+			<spell-monk-banquet				max="1" req="05"/>
+			<spell-neutralize-poison		max="1" req="11"/>
+			<spell-restoration				max="2" req="15"/>
+			<spell-sense-foes				max="1" req="11"/>
+			<spell-sunbolt					max="1" req="18"/>
+			<spell-sunlight					max="1" req="10"/>
+			<spell-turn-zombie				max="1" req="1"/>
+			<spell-water-jet				max="0" req="03"/>
+		</skills>
+
+		<armor		min="2" max="4" mean="3">
+			<dplate/>
+			<bplate							req="60"/>
+		</armor>
+		<weapons	min="1" max="3" mean="2">
+			<mstaff							req="-1"/>
+			<macef							req="72"/>
+			<maceh							req="40"/>
+			<laknife						req="01"/>
+		</weapons>
+	</class>
+
+	<class alias="enecro" parents="necroa, elf" name="Elf Necromancer" nationality="Dark-Elf, Dark-Elf, Dark-Elf, High-Elf" item-mod-inc="4" gender-ratio="62">
+		<stats>
+			<intelligence				min="11" max="19" mean="13.9"/>
+		</stats>
+
+		<advantages						min="0" max="1" mean="0.4"/>
+		<disadvantages>
+			<ugly								req="-1"/>
+		</disadvantages>
+
+		<skills							min="1" max="4"/>
+	</class>
+
+	<class alias="necro" parents="necroa, ltp" name="Human Necromancer" nationality="Human" item-mod-inc="3" gender-ratio="67"/>
+
+	<class alias="necroa" parents="maga" abstract="1" name="Necromancer - Abstract" nationality="Human">
+		<stats>
+			<strength					min="8" max="14" mean="10.2"/>
+			<dexterity					min="9" max="15" mean="11.1"/>
+			<intelligence				min="11" max="19" mean="13.9"/>
+			<health						min="9" max="14" mean="11.7"/>
+		</stats>
+		<attributes>
+			<fatigue			min="1" max="4" mean="2.2"/>
+		</attributes>
+
+		<advantages				min="0" max="2" mean="1">
+			<high-pain-threshold			req="25"/>
+			<literacy						req="1"/>
+			<magery							min="1" max="4" mean="2" req="1"/>
+			<magic-resistance				min="1" max="5" mean="1.4" req="-1"/>
+			<unfazeable						req="15"/>
+			<rank							req="01.7"/>
+		</advantages>
+
+		<disadvantages>
+			<cowardice							req="05"/>
+			<pacifism							req="-1"/>
+			<pacifism-self-defense				req="-1"/>
+			<sadism								req="55"/>
+		</disadvantages>
+
+		<skills							min="1" max="5" mean="3">
+			<diplomacy					max="1" req="40"/>
+			<knife						max="1" req="1"/>
+			<occultism					max="1" req="51"/>
+			<poisons					max="1" req="70"/>
+			<stealth					max="1" req="37"/>
+			<thaumatology				max="1" req="96"/>
+			<writing					max="2" req="84"/>
+
+			<spell-agonize				max="2" req="08"/>
+			<spell-animation			max="2" req="04"/>
+			<spell-bloat				max="2" req="04"/>
+			<spell-blur					max="1" req="03"/>
+			<spell-burning-death		min="-1" max="1" req="07"/>
+			<spell-control-zombie		max="2" req="32"/>
+			<spell-create-servant		max="1" req="02"/>
+			<spell-curse-missile		max="2" req="12"/>
+			<spell-darkvision			max="1" req="05"/>
+			<spell-daze					max="1" req="02"/>
+			<spell-death-touch			max="2" req="38"/>
+			<spell-death-vision			max="2" mean="0" req="10"/>
+			<spell-dexterity			max="0" req="02"/>
+			<spell-ecstasy				max="1" req="04"/>
+			<spell-evisceration			max="1" req="03"/>
+			<spell-frostbite			max="1" req="03"/>
+			<spell-haste				max="0" req="03"/>
+			<spell-rotting-death		max="1" req="05"/>
+			<spell-ice-dagger			max="1" req="06"/>
+			<spell-infectious-zombie	max="1" req="04"/>
+			<spell-instant-regeneration	max="1" req="02"/>
+			<spell-madness				max="1" mean="-1" req="05"/>
+			<spell-might				max="1" req="01"/>
+			<spell-pain					max="2" req="10"/>
+			<spell-pestilence			max="1" req="05"/>
+			<spell-possession			max="1" req="02"/>
+			<spell-skull-spirit			max="1" req="13"/>
+			<spell-steal-eyes			max="1" req="04"/>
+			<spell-steal-health			max="1" req="56"/>
+			<spell-stink-ball			max="1" req="06"/>
+			<spell-stone-missile		max="1" req="01"/>
+			<spell-suggestion			max="1" req="04"/>
+			<spell-summon-shade			max="1" req="02"/>
+			<spell-turn-zombie			max="1" req="07"/>
+			<spell-vampiric-bolt		max="1" req="16"/>
+			<spell-water-jet			max="0" req="-1"/>
+			<spell-wither-limb			max="1" req="06"/>
+			<spell-zombie				max="1" req="31"/>
+			<spell-firewalker-zombie	max="1" req="03"/>
+			<spell-weaken-will			max="1" req="10"/>
+			<spell-drain-strength		min="-2" max="1" mean="0" req="11"/>
+			<spell-puppet-master		min="-2" max="2" mean="0" req="10"/>
+			<spell-zombie-double		min="-2" max="2" mean="0" req="03"/>
+		</skills>
+
+		<weapons>
+			<mstaff							req="91"/>
+			<poison							req="50"/>
+		</weapons>
+	</class>
+
+
+	<class alias="hmag" parents="maga, ltp" name="Human Mage Apprentice" nationality="Human" item-mod-inc="3" gender-ratio="68"/>
+
+	<class alias="maga" parents="larma" abstract="1" name="Mage Apprentice - Abstract" nationality="Human">
+		<stats>
+			<intelligence				min="10" max="16" mean="12.9"/>
+			<dexterity					min="9" max="16" mean="12.9"/>
+			<health						min="8" max="15" mean="11.9"/>
+		</stats>
+		<attributes>
+			<fatigue			min="-1" max="3" mean="1"/>
+		</attributes>
+
+		<advantages>
+			<magery							min="0" max="3" mean="1.4" req="1"/>
+			<literacy						req="89"/>
+			<magic-resistance				req="-1"/>
+		</advantages>
+
+		<skills							min="4" max="9" mean="5.8">
+			<alchemy					max="1" mean="-1" req="28"/>
+			<axe-mace					max="1" req="20"/>
+			<broad-sword				max="1" req="61"/>
+			<knife								req="64"/>
+			<knife-throwing				max="1" req="40"/>
+			<shield						max="0" req="16"/>
+			<short-sword				max="0" req="68"/>
+			<staff						min="-2" max="1" req="92"/>
+			<thaumatology				max="1" mean="-1" req="62"/>
+
+			<spell-apportation			max="1" mean="-1.8" req="14"/>
+			<spell-blur					max="1" mean="-1.8" req="11"/>
+			<spell-color-burst			max="1" mean="-1.8" req="01"/>
+			<spell-counterspell			max="0" mean="-1.8" req="10"/>
+			<spell-curse-missile		max="1" mean="-1.8" req="15"/>
+			<spell-daze					max="1" mean="-1.8" req="16"/>
+			<spell-death-vision			max="1" mean="-1.8" req="10"/>
+			<spell-dexterity			max="0" mean="-1.8" req="10"/>
+			<spell-distant-blow			max="1" mean="-1.8" req="07"/>
+			<spell-fear					max="1" mean="-1.8" req="12"/>
+			<spell-flash				max="1" mean="-1.8" req="14"/>
+			<spell-haste				max="0" mean="-1.8" req="12"/>
+			<spell-hinder				max="1" mean="-1.8" req="09"/>
+			<spell-iron-arm				max="1" mean="-1.8" req="20"/>
+			<spell-mage-light			max="1" mean="-1.8" req="16"/>
+			<spell-mage-sense			max="1" mean="-1.8" req="22"/>
+			<spell-mage-stealth			max="1" mean="-1.8" req="12"/>
+			<spell-might				max="1" mean="-1.8" req="09"/>
+			<spell-minor-healing		max="1" mean="-1.8" req="15"/>
+			<spell-missile-shield		max="0" mean="-1.8" req="12"/>
+			<spell-great-brand			max="0" mean="-1.8" req="02"/>
+			<spell-recover-strength		max="1" mean="-1.8" req="1"/>
+			<spell-sense-foes			max="1" mean="-1.8" req="20"/>
+			<spell-shield				max="1" mean="-1.8" req="15"/>
+			<spell-spasm				max="1" mean="-1.8" req="15"/>
+			<spell-stone-missile		max="1" mean="-1.8" req="10"/>
+			<spell-vigor				max="0" mean="-1.8" req="05"/>
+			<spell-water-jet			max="0" mean="-1.8" req="03"/>
+			<spell-skin-of-stone		max="0" mean="-1.8" req="01.5"/>
+
+			<!-- relatively rare spells -->
+			<spell-alter-visage			max="1" mean="-2" req="0.6"/>
+			<spell-charm				max="1" mean="-2" req="02"/>
+			<spell-command				max="1" mean="-2" req="01"/>
+			<spell-create-servant		max="1" mean="-2" req="01.4"/>
+			<spell-dancing-weapon		max="1" mean="-2" req="03"/>
+			<spell-delay				max="1" mean="-2" req="0.7"/>
+			<spell-disintegrate			max="1" mean="-2" req="0.5"/>
+			<spell-earthquake			max="1" mean="-2" req="01"/>
+			<spell-fumble				max="1" mean="-2" req="03"/>
+			<spell-hawkflight			max="1" mean="-2" req="01"/>
+			<spell-levitation			max="1" mean="-2" req="02"/>
+			<spell-locksmith			max="1" mean="-2" req="02"/>
+			<spell-madness				max="1" mean="-2" req="02"/>
+			<spell-see-invisible		max="1" mean="-2" req="01.5"/>
+			<spell-sound-jet			max="1" mean="-2" req="02"/>
+			<spell-strike-dumb			max="1" mean="-2" req="02"/>
+			<spell-suggestion			max="1" mean="-2" req="02"/>
+			<spell-summon-demon			max="1" mean="-2" req="0.4"/>
+			<spell-voices				max="1" mean="-2" req="02"/>
+			<spell-walk-on-air			max="1" mean="-2" req="02"/>
+		</skills>
+
+		<weapons	 min="0" max="2" mean="1">
+			<mstaff							req="62"/>
+			<staffp							req="0.8"/>
+			<laknife						req="1"/>
+			<potion							req="11"/>
+			<pstone							req="64"/>
+			<pstone2						req="14"/>
+			<pstone3						req="07"/>
+			<pstoneq						req="10"/>
+			<scroll							req="22"/>
+		</weapons>
+
+		<armor		min="1" max="4">
+			<ring		req="6"/>
+			<amulet		req="5"/>
+			<sbracers	req="17"/>
+			<cloak		req="19"/>
+			<bracersd	req="03.5"/>
+		</armor>
+	</class>
+
+
+	<class alias="hillusion" parents="illusiona, ltp" name="Human Illusionist" nationality="Human" item-mod-inc="3" gender-ratio="51"/>
+
+	<class alias="illusiona" parents="maga" abstract="1" name="Illusionist - Abstract" nationality="Human">
+		<stats>
+			<dexterity					min="9" max="15" mean="12.3"/>
+			<intelligence				min="12" max="17" mean="13"/>
+			<health						min="8" max="15" mean="10.8"/>
+		</stats>
+
+		<advantages>
+			<literacy						req="96"/>
+			<magery							min="1" max="3" mean="1.4" req="1"/>
+			<magic-resistance				min="1" max="5" mean="1.4" req="-1"/>
+		</advantages>
+
+		<skills							min="2" max="7" mean="4.4">
+			<illusion-art				min="-1" max="2" mean="0" req="96"/>
+			<stealth					max="1" req="92"/>
+
+			<spell-animate-object		max="1" req="05"/>
+			<spell-aura					max="1" req="08"/>
+			<spell-blur					max="1" req="11"/>
+			<spell-complex-illusion		max="1" req="42"/>
+			<spell-color-burst			max="1" req="17"/>
+			<spell-control-illusion		max="1" req="34"/>
+			<spell-counterspell			max="0" req="06"/>
+			<spell-create-servant		max="1" req="08"/>
+			<spell-create-warrior		max="1" req="04"/>
+			<spell-curse-missile		max="1" req="08"/>
+			<spell-daze					max="1" req="01"/>
+			<spell-dazzle				max="1" req="09"/>
+			<spell-death-vision			max="1" req="06"/>
+			<spell-dispel-illusion		max="1" req="23"/>
+			<spell-flash				max="1" req="14"/>
+			<spell-illusion-shell		max="1" req="14"/>
+			<spell-imitate-voice		max="1" req="11"/>
+			<spell-independence			max="1" req="06"/>
+			<spell-invisibility			max="1" req="16"/>
+			<spell-know-illusion		max="1" req="24"/>
+			<spell-minor-healing		max="1" req="12"/>
+			<spell-perfect-illusion		max="1" req="40"/>
+			<spell-sense-foes			max="1" req="13"/>
+			<spell-spasm				max="1" req="05"/>
+			<spell-stone-missile		max="1" req="08"/>
+			<spell-voices				max="1" req="13"/>
+			<spell-water-jet			max="0" req="02"/>
+		</skills>
+	</class>
+
+</classes>

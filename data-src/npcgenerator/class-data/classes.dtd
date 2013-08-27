@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!-- Parameter Entities (have to be defined first) -->
+<!ELEMENT min			(#PCDATA)>
+<!ELEMENT max			(#PCDATA)>
+<!ELEMENT mode			(#PCDATA)>
+<!ENTITY % RANGE "(min, max, mode?)">
+<!ENTITY % OPTRANGE "(min?, max?, mode?)">
+
+<!-- TOP Level Element -->
+<!ELEMENT classes (type?, genre, creation-time?, class+)>
+
+	<!ELEMENT type			(#PCDATA)>
+	<!ELEMENT genre			(#PCDATA)>
+	<!ELEMENT creation-time	(#PCDATA)>
+	<!ELEMENT class		(alias, parents?, name, nationality?, item-mod-inc?, gender-ratio?, tech-level?, age?, hair?, eyes?,
+						 stats?, attributes?, advantages?, disadvantages?, skills?, maneuvers?, weapons?, armor?)>
+
+		<!ELEMENT alias			(#PCDATA)>
+		<!ELEMENT parents		(#PCDATA)>
+		<!ELEMENT name			(#PCDATA)>
+		<!ELEMENT nationality	(#PCDATA)>
+		<!ELEMENT item-mod-inc	(#PCDATA)>
+		<!ELEMENT gender-ratio	(#PCDATA)>
+		<!ELEMENT tech-level	(#PCDATA)>
+		<!ELEMENT age			(#PCDATA)>
+		<!ELEMENT hair			(#PCDATA)>
+		<!ELEMENT eyes			(#PCDATA)>
+
+		<!ELEMENT stats			(strength?, dexterity?, intelligence?, health?)>
+			<!ELEMENT strength		%RANGE;>
+			<!ELEMENT dexterity		%RANGE;>
+			<!ELEMENT intelligence	%RANGE;>
+			<!ELEMENT strength		%RANGE;>
+
+		<!ELEMENT attributes	(fatigue?, hearing?, hit-points?, move?, speed?, taste-smell?, vision?, will?)>
+			<!ELEMENT fatigue		%RANGE;>
+			<!ELEMENT hearing		%RANGE;>
+			<!ELEMENT hit-points	%RANGE;>
+			<!ELEMENT move			%RANGE;>
+			<!ELEMENT speed			%RANGE;>
+			<!ELEMENT taste-smell	%RANGE;>
+			<!ELEMENT vision		%RANGE;>
+			<!ELEMENT will			%RANGE;>
+
+		<!ELEMENT advantages	%OPTRANGE;>
+		<!ELEMENT disadvantages	%OPTRANGE;>
+		<!ELEMENT skills		%OPTRANGE;>
+		<!ELEMENT maneuvers		%OPTRANGE;>
+		<!ELEMENT weapons		%OPTRANGE;>
+		<!ELEMENT armor			%OPTRANGE;>
+
+

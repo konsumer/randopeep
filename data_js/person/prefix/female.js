@@ -1,1 +1,0 @@
-module.exports = ["Mrs.","Ms.","Miss","Dr."];

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+ 
+<weapons>
+	<weapon-stats>
+		<!-- WWII Guns -->
+		<p-38		name="Walther P-38"					mod="5" wt="2.4lbs" caliber="9mm" rel="0" dam="2d+2" ss="10" acc="3" rof="3" shots="8" st="9" rcl="-1" tl="5" skills="guns-pistol"/>
+		<mauser		name="Broomhandle Mauser"			mod="8" wt="2.8lbs" caliber="7.62mm" rel="0" dam="2d+1-" ss="11" acc="3" rof="3" shots="10" st="10" rcl="-1" tl="5" skills="guns-pistol"/>
+		<luger		name="Luger P 08"					mod="8" wt="2.4lbs" caliber="9mm" rel="-1" dam="2d+2" ss="9" acc="4" rof="3" shots="8" st="9" rcl="-1" tl="5" skills="guns-pistol"/>
+		<colt-45	name="Colt M-1911A1"				mod="6" wt="3lbs" caliber=".45ACP" rel="+1" dam="2d+" ss="10" acc="2" rof="3" shots="7" st="10" rcl="-2" tl="5" skills="guns-pistol"/>
+		<enfield-38	name="S&amp;W .38"					mod="3" wt="1.8lbs" caliber=".38" rel="0" dam="2d-1" ss="10" acc="2" rof="2" shots="6" st="8" rcl="-1" tl="5" skills="guns-pistol"/>
+		<ppsh-41	name="PPSh-41 Submachinegun"		mod="8" wt="11.7lbs" caliber="7.62mm" rel="0" dam="3d-1-" ss="10" acc="6" rof="15" shots="71" st="10" rcl="-1" tl="6" skills="guns-rifle, guns-light-auto"/>
+		<thompson	name="M-1A1 Thompson"				mod="9" wt="12.2lbs" caliber=".45ACP" rel="0" dam="2d+1+" ss="11" acc="7" rof="11" shots="30" st="11" rcl="-3" tl="6" skills="guns-rifle, guns-light-auto"/>
+		<greasegun	name="M-3 Greasegun"				mod="8" wt="10.2lbs" caliber=".45ACP" rel="0"  dam="2d+1+" ss="10" acc="6" rof="8" shots="30" st="11" rcl="-3" tl="6" skills="guns-rifle, guns-light-auto"/>
+		<mp40		name="MP40 Machine-Pistol"			mod="8" wt="10.4lbs" caliber="9mm" rel="0" dam="3d-1" ss="10" acc="6" rof="8" shots="32" st="10" rcl="-1" tl="6" skills="guns-rifle, guns-light-auto"/>
+		<sten		name="Sten MkII"					mod="9" wt="7.6lbs" caliber="9mm" rel="-1" dam="3d-1" ss="10" acc="6" rof="9" shots="32" st="10" rcl="-1" tl="6" skills="guns-rifle, guns-light-auto"/>
+		<sturmgewehr name="Sturmgewehr Assault Rifle"	mod="8" wt="13.4lbs" caliber="7.92mm" rel="0" dam="5d+1" ss="12" acc="8" rof="8" shots="30" st="10" rcl="-2" skills="guns-rifle, guns-light-auto" tl="6"/>
+		<m-1-carbine name="M-1 Carbine"					mod="7" wt="5.5lbs" caliber=".30cal" rel="0" dam="3d+2-" ss="12" acc="8" rof="3" shots="16" st="9" rcl="-1" tl="6" skills="guns-rifle, guns-light-auto"/>
+		<m-1-carbinef name="M-1 Carbine "				mod="7" wt="5.1lbs" caliber=".30cal" rel="0" dam="3d+2-" ss="12" acc="8" rof="3" shots="16" st="9" rcl="-1" tl="6" skills="guns-rifle, guns-light-auto" req-mods="folding-stock"/>
+		<m-1a		name="M-1 Garand"					mod="5" wt="10lbs" caliber=".306cal" rel="0" dam="7d+1" ss="14" acc="11" rof="3" shots="8" st="12" rcl="-3" tl="6" skills="guns-rifle, guns-light-auto"/>
+		<bar		name="BAR Light Machinegun"			mod="5" wt="21lbs" caliber=".306cal" rel="0" dam="7d+1" ss="17" acc="11" rof="9" shots="20" st="13b" rcl="-2" tl="6" skills="gunner-mg"/>
+		<springfield-m1903 name="Springfield Bolt-Action"	mod="8" wt="9.3lbs" caliber=".306cal" rel="+1" dam="7d+1" ss="14" acc="11" rof=".5" shots="6" st="12" rcl="-3" tl="6" skills="guns-rifle"/>
+		<enflield-303 name="Enfield No.4 Mk I"			mod="9" wt="10lbs" caliber=".303cal" rel="0" dam="6d+2" ss="14" acc="8" rof="1" shots="10" st="12" rcl="-2" tl="6" skills="guns-rifle"/>
+		<karabiner	name="Karabiner Bolt-Action"		mod="6" wt="8.9lbs" caliber="7.92mm" rel="+1" dam="7d" ss="14" acc="11" rof=".5" shots="6" st="12" rcl="-3" tl="6" skills="guns-rifle, guns-light-auto"/>
+		<gewehr		name="Gewehr Automatic Rifle"		mod="6" wt="10.3lbs" caliber="7.92mm" rel="0" dam="7d" ss="14" acc="11" rof="3" shots="10" st="12" rcl="-3" tl="6" skills="guns-rifle, guns-light-auto"/>
+		<auto-shotgun name="Browning Automatic Shotgun"	mod="5" wt="9lbs" caliber="12g" rel="0" dam="4d" ss="11" acc="5" rof="3" shots="6" st="12" rcl="-2" tl="5" skills="guns-shotgun"/>
+		<mg42		name="MG42 Machinegun"				mod="6" wt="28lbs" caliber="7.92mm" rel="0" dam="7d" ss="19" acc="10" rof="20" shots="50" st="13t" rcl="-1" skills="gunner-mg" tl="6"/>
+		<fg42		name="FG-42 Automatic Rifle"		mod="12" wt="12.4lbs" caliber="7.92mm" rel="0" dam="6d+1" ss="14" acc="10" rof="15" shots="20" st="13b" rcl="-3" skills="guns-rifle, guns-light-auto" tl="6"/>
+		<mg34		name="MG34 Machinegun"				mod="6" wt="29lbs" caliber="7.92mm" rel="0" dam="7d" ss="19" acc="10" rof="15" shots="50" st="13t" rcl="-1" skills="gunner-mg" tl="6"/>
+		<mmg		name="M-1919A4 Machinegun"			mod="-1" wt="46lbs" caliber=".306cal" rel="0" dam="7d+1" ss="20" acc="12" rof="8" shots="250" st="19t" rcl="-1" skills="gunner-mg" tl="6"/>
+		<panzerfaust name="Panzerfaust Rocket"			wt="11.2lbs" caliber="30mm" rel="0" dam="6dx3(10)" ss="14" acc="4" rof="1" st="12" rcl="-2" skills="guns-LAW"/>
+		<bazooka	name="Bazooka M26"					wt="16.7lbs" caliber="20mm" rel="0" dam="6dx2(10)" ss="16" acc="9" rof=".5" st="13" rcl="-2" skills="guns-LAW"/>
+		<mk-ii		name="Mk-II Pineapple Gernade"		quantity="1~4" wt="1.3lbs" dam="2d-2 [2d]"/>
+		<stielhandgranate-24 name="Stielhandgranate-24"	quantity="1~4" wt="1.3lbs" dam="4d+1"/>
+
+		<!-- Modern Guns -->
+		<ruger-22	name="Ruger STD 22"					mod="4" wt="2.1lbs" caliber=".22cal" rel="0" dam="1d+1" ss="9" acc="4" rof="3" shots="10" st="7" rcl="-1" tl="5" skills="guns-pistol"/>
+		<wppk		name="Walther PPK .32ACP"			mod="4" wt="1.25lbs" caliber=".32cal" rel="0" dam="2d-1" ss="10" acc="2" rof="3" shots="7" st="8" rcl="-1" tl="5" skills="guns-pistol, hold-out"/>
+		<beretta-92	name="Beretta 92-F"					mod="6" wt="2.5lbs" caliber="9mm" rel="+1" dam="2d+2" ss="10" acc="3" rof="3" shots="15" st="9" rcl="-1" tl="7" skills="guns-pistol"/>
+		<glock-17	name="Glock 17"						mod="6" wt="2lbs" caliber="9mm" rel="+1" dam="2d+2" ss="10" acc="3" rof="3" shots="17" st="9" rcl="-1" tl="7" skills="guns-pistol"/>
+		<sig-p229	name="Sig Sauer P-229 .40 SW"		mod="7" wt="2.4lbs" caliber=".40SW" rel="+1" dam="2d+1+" ss="10" acc="3" rof="3" shots="12" st="10" rcl="-2" tl="7" skills="guns-pistol"/>
+		<usp		name="USP Tactical .45ACP"			mod="7" wt="3lbs" caliber=".45cal" rel="+1" dam="2d+" ss="9" acc="3" rof="3" shots="12" st="10" rcl="-2" tl="7" skills="guns-pistol"/>
+		<deagle		name="IMI Desert Eagle .44"			mod="6" wt="4.5lbs" caliber=".44mag" rel="0" dam="3d" ss="12" acc="3" rof="3" shots="9" st="12" rcl="-3" tl="7" skills="guns-pistol"/>
+		<snub-38	name="38 Spl Undercover"			mod="3" wt="2lbs" caliber=".38spl" rel="+1" dam="2d-1" ss="10" acc="2" rof="2" shots="6" st="8" rcl="-1" tl="5" skills="guns-pistol, hold-out"/>
+		<python		name="357 Colt Python"				mod="3" wt="3lbs" caliber=".357mag" rel="+1" dam="3d-1" ss="11" acc="3" rof="2" shots="6" st="10" rcl="-2" tl="5" skills="guns-pistol"/>
+		<m870		name="Rem M870 Pump Shotgun"		mod="5" wt="8lbs" caliber="12G" rel="+1" dam="4d" ss="12" acc="5" rof="2" shots="5" st="12" rcl="-3" tl="5" skills="guns-shotgun, guns-rifle"/>
+		<spas		name="SPAS 12G"						mod="6" wt="9.5lbs" caliber="12G" rel="+1" dam="4d" ss="11" acc="5" rof="3" shots="7" st="12" rcl="-3" tl="7" skills="guns-shotgun, guns-rifle"/>
+		<mini-uzi	name="Israeli Mini-Uzi"				mod="6" wt="6lbs" caliber="9mm" rel="0" dam="3d-1" ss="9" acc="6" rof="10" shots="25" st="10" rcl="-1" tl="7" skills="guns-rifle, guns-light-auto"/>
+		<uzi		name="Israeli Uzi"					mod="8" wt="9.5lbs" caliber="9mm" rel="0" dam="3d-1" ss="10" acc="7" rof="10" shots="32" st="10" rcl="-1" tl="7" skills="guns-rifle, guns-light-auto"/>
+		<mp5		name="H&amp;K MP5"					mod="9" wt="7.25lbs" caliber="9mm" rel="+1" dam="3d-1" ss="10" acc="8" rof="12" shots="30" st="10" rcl="-1" tl="7" skills="guns-rifle, guns-light-auto"/>
+		<mp5k		name="H&amp;K MP5-K"				mod="9" wt="6.4lbs" caliber="9mm" rel="+1" dam="3d-1" ss="9" acc="7" rof="12" shots="30" st="10" rcl="-1" tl="7" skills="guns-rifle, guns-light-auto"/>
+		<mac-10		name="MAC 10 .45ACP"				mod="9" wt="6lbs" caliber=".45ACP" rel="0" dam="2d+1+" ss="9" acc="6" rof="12" shots="20" st="12" rcl="-2" tl="7" skills="guns-rifle, guns-light-auto"/>
+		<m-16		name="M-16A2"						mod="10" wt="8lbs" caliber="5.56mm" rel="0" dam="5d" ss="12" acc="11" rof="12" shots="30" st="9" rcl="-1" tl="7" skills="guns-rifle, guns-light-auto"/>
+		<colt-m4	name="Colt M-4 Carbine"				mod="11" wt="7.4lbs" caliber="5.56mm" rel="+1" dam="5d" ss="10" acc="10" rof="12" shots="30" st="9" rcl="-1" tl="7" skills="guns-rifle, guns-light-auto"/>
+		<aug		name="Styer Aug 5.56mm"				mod="6" wt="9lbs" caliber="5.56mm" rel="0" dam="5d" ss="11" acc="10" rof="11" shots="30" st="9" rcl="-1" tl="7" skills="guns-rifle, guns-light-auto"/>
+		<ak-47		name="AK-47"						mod="10" wt="10.5lbs" caliber="7.62mm" rel="+1" dam="5d+1" ss="12" acc="7" rof="10" shots="30" st="10" rcl="-1" tl="7" skills="guns-rifle, guns-light-auto"/>
+		<fn-fal		name="FN-FAL"						mod="10" wt="11lbs" caliber="7.62mm" rel="+1" dam="7d" ss="14" acc="11" rof="11" shots="20" st="11" rcl="-2" tl="7" skills="guns-rifle, guns-light-auto"/>
+
+		<!-- Modern Melee Weapons.  Note that for hand-weapons, damage=thrust,swing -->
+		<combat-knife	name="Combat Knife"				mod="-1" wt="1lbs"	damage="0,-2" st="- "	rch="c,1"	note=" max dam 1d+2"	skills="knife, spear" tl="5"/>
+		<long-knife		name="Long Bayonette/Sword"		mod="15" wt="1.7lbs" damage="0,0" st="6 "	rch="1"		note=" max imp 1d+2"	skills="knife, short-sword, spear" tl="5"/>
+		<small-knife	name="Small Dagger"				mod="10" wt=".5lbs" damage="-1,-3" st="- "	rch="c,1"	note=" max dam 1d+1"	skills="knife" tl="5"/>
+		<pr24			name="PR24 Tonfa"				mod="-1" wt="1.5lbs" damage="0,0" st="7 "	rch="1"		note=" crushing"		skills="short-sword" tl="6"/>
+		<cbaton			name="Collapsable Baton"		mod="-1" wt=".5lbs" damage="-,-1" st="6 "	rch="1"		note=" crushing"		skills="short-sword" tl="7"/>
+
+		<!-- Tech8 Weapons -->
+		<stun			name="Stun Wand"				mod="-1" wt="1lbs"   damage="0,0" st="7 "	rch="1"		note=" crush/stun"		skills="short-sword" tl="9"/>
+		<vknife			name="Vibro Knife"				mod="-1" wt="1lbs"	damage="3,1" st="- "	rch="c,1"	note=" "				skills="knife" tl="9"/>
+		<vkatana		name="Vibro Katana"				mod="-1" wt="2.5lbs" damage="5,5"  st="11"	rch="1,2"	note=" fine quality"	skills="katana, broad-sword" tl="9"/>
+
+		<ruger-sp		name="Ruger Sporter"			mod="11" wt="1lbs" caliber=".22cal" rel="0" dam="1d+1" ss="9" acc="6" rof="4" shots="40" st="7" rcl="-1" tl="8" skills="guns-pistol"/>
+		<aaa-mp			name="357 Mini-Python"			mod="3" wt="2lbs" caliber=".357mag" rel="+1" dam="3d-1" ss="9" acc="2" rof="2" shots="5" st="10" rcl="-2" tl="8" skills="guns-pistol, hold-out"/>
+		<beretta-99		name="Beretta 99"				mod="14" wt="1.5lbs" caliber="9mm" rel="+1" dam="2d+2" ss="9" acc="5" rof="3" shots="24" st="8" rcl="-1" tl="8" skills="guns-pistol" req-mods="biometric-security"/>
+		<hk-10			name="H&amp;K 10mm Magnum"		mod="16" wt="2lbs" caliber="10mm" rel="+1" dam="2d+1+"  ss="9" acc="5" rof="3" shots="16" st="10" rcl="-1" tl="8" skills="guns-pistol"/>
+		<uzi-micro		name="Israeli Micro-Uzi"		mod="14" wt="3.2lbs" caliber="9mm" rel="0" dam="2d+1" ss="9" acc="5" rof="20" shots="32" st="9" rcl="-2" tl="8" skills="guns-rifle, guns-light-auto, guns-machine-pistol"/>
+		<marks			name="Marksite Autopistol"		mod="16" wt="4lbs" caliber="10mm" rel="+1" dam="3d" ss="9" acc="8" rof="10" shots="30" st="9" rcl="-2" tl="8" skills="guns-rifle, guns-light-auto, guns-machine-pistol"/>
+		<colts			name="Colt SCAMP-II"			mod="17" wt="4lbs" caliber="7.5mm" rel="+1" dam="2d+2" ss="9" acc="9" rof="20" shots="40" st="9" rcl="-1" tl="8" skills="guns-rifle, guns-light-auto, guns-machine-pistol"/>
+		<sr-27			name="SR-27 Carbine"			mod="17" wt="7lbs" caliber="7mm" rel="+1" dam="6d" ss="10" acc="11" rof="10" shots="60" st="9" rcl="-1" tl="8" skills="guns-rifle, guns-light-auto"/>
+		<sr-27a			name="SR-27 Assault Rifle"		mod="22" wt="8lbs" caliber="7mm" rel="+1" dam="6d+1" ss="12" acc="14" rof="10" shots="80" st="9" rcl="-1" tl="8" skills="guns-rifle, guns-light-auto"/>
+		<sr-27g			name="SR-27 Assault Rifle"		mod="22" wt="8lbs" caliber="7mm" rel="+1" dam="6d+1" ss="12" acc="14" rof="10" shots="80" st="9" rcl="-1" tl="8" skills="guns-rifle, guns-light-auto" req-mods="micro-glauncher"/>
+		<lpist			name="Launch Pistol"			mod="12" wt="4lbs" caliber="12.5mm" rel="+1" dam="2d(10)" ss="12" acc="5" rof="3" shots="9" st="-" rcl="0" tl="8" skills="guns-pistol, guns-gyroc"/>
+		<rcarb			name="Rocket Carbine"			mod="14" wt="9lbs" caliber="12.5mm" rel="+1" dam="2d(10)" ss="15" acc="7" rof="10" shots="20" st="-" rcl="0" tl="8" skills="guns-rifle, guns-light-auto, guns-gyroc"/>
+		<needlp			name="Needler Pistol"			mod="10" wt="1lbs" caliber="1.2mm" rel="+1" dam="1d+2" ss="9" acc="1" rof="3" shots="100" st="-" rcl="-1" tl="8" skills="guns-pistol"/>
+		<aneedl			name="Auto-Needler"				mod="15" wt="3.5lbs" caliber="1.2mm" rel="0" dam="1d+2" ss="9" acc="1" rof="15" shots="300" st="-" rcl="-1" tl="8" skills="guns-rifle, guns-light-auto, guns-machine-pistol"/>
+		<tangp			name="Tangler Pistol"			mod="4" wt="3lbs" caliber="26mm" rel="0" dam="-" ss="5" acc="6" rof="1" shots="2" st="10" rcl="-4" tl="8" skills="guns-pistol"/>
+		<xm8			name="XM-8 Assault Rifle"		mod="20" wt="7lbs" caliber="6.8mm" rel="+1" dam="6d" ss="11" acc="13" rof="12" shots="25" st="9" rcl="-1" tl="8" skills="guns-rifle, guns-light-auto" req-mods="laser-sight"/>
+
+		<!-- Tech8 Gear -->
+		<bi-phase		name="Bi-Phase Rope - 30ft."	wt=".5lbs"	note=" supports 1,000lbs"/>
+		<cdeck-2		name="Cyberdeck"				wt="5lbs"	note=" complexity:2"	skills="cyberdeck-operation"/>
+		<cdeck-3		name="Cyberdeck"				wt="5lbs"	note=" complexity:3"	skills="cyberdeck-operation"/>
+		<cdeck-4		name="Cyberdeck"				wt="5lbs"	note=" complexity:4"	skills="cyberdeck-operation"/>
+		<comm			name="Communicator"				wt="1lbs"	note=" range 100 miles"/>
+		<comms			name="Com Scrambler"			wt=".25lbs"	note=" "	skills="electronics-comm"/>
+		<dcamera		name="Digital Camera"			wt="1lbs"	note=" 2Gig memory"/>
+		<drugs			name="Drug Dose(s)"				wt=".1lbs"	quantity="1~2~3" doses="choose:1~credline~hypercoagulin~morphazine~revive~retro~dryad~face~sin~rage"/>
+		<emkit			name="Emergency Medkit"			wt="1lbs"	note=" +1 first-aid"			skills="first-aid"/>
+		<frag			name="Fragmentation Gernade"	quantity="1~4" wt="1lbs" dam="2d [6dx2]"/>
+		<ltorch			name="Laser Torch"				wt="5lbs"	note=" 4d/sec"/>
+		<mflashlight	name="Mini-Flashlight"			wt=".25lbs"	note=" 15' beam"/>
+		<mgoggles		name="Multi-View Goggles"		wt="1lbs"	note=" "/>
+		<microc			name="Micro Communicator"		wt=".12lbs"	note=" range 10 miles"/>
+		<mini-elec		name="Mini Electronics Kit"		wt="2lbs"	note=" -2/-4 to skill"	skills="electronics"/>
+		<mini-mech		name="Mini Mechanic's Kit"		wt="2lbs"	note=" -2/-4 to skill"	skills="engineering-mechanical"/>
+		<plastex		name="Plastex"					quantity="1~4" wt=".25lbs" dam="6dx2/block"	skills="demolitions"/>
+		<powerb			name="Power Cells (B)"			quantity="20~40" wt=".05lbs"/>
+		<powerc			name="Power Cells (C)"			quantity="2~4" wt=".5lbs"/>
+		<rpiton			name="Rocket Piton"				wt="2lbs"	note=" DX-4, 1d+2imp"/>
+		<sleepg			name="Sleep Gernade(s)"			quantity="1~2~3" wt="1lbs" note=" HT-4 resists"/>
+		<cphone			name="Cell Phone"				wt=".3lbs"	note=" needlessly expensive"/>
+
+		<!-- Gear -->
+		<!-- wwii engineer --> 
+		<goggles		name="Goggles"					wt="1lbs"	note=" "/>
+		<bang			name="Bangalore Torpedo(s)"		quantity="1~1~2" wt="13lbs" dam="6dx18"/>
+		<mineap			name="Mine(s)-Antipersonnel"	quantity="1~1~2" wt="9lbs" dam="4dx4 [6d]"	skills="demolitions"/>
+		<mineat			name="Mine - Anti-tank"			quantity="1" wt="20lbs" dam="6dx22"			skills="demolitions"/>
+		<engtoolk		name="Engineer's Tool Kit"		wt="20lbs"	note=" for small jobs"			skills="combat-engineering"/>
+		<wirec			name="Wire Cutters"				wt="3lbs"/>
+		<demotoolk		name="Demolitions Kit"			wt="20lbs"	note=" includes 5lbs TNT"/>
+
+		<!-- wwii soldier -->
+		<crashkit		name="Crash Kit"				wt="10lbs"	note=" +2 first-aid"			skills="first-aid"/>
+		<canteen		name="Canteen"					wt="3lbs"/>
+		<entrench		name="Entrenching Tool"			wt="3lbs"	note=" axe dam: sw-1"/>
+		<radiopack		name="Radio Pack"				wt="25lbs"	note=" lasts 10hrs"				skills="electronics-comm"/>
+		<gmask			name="Gas Mask"					wt="3lbs"	note=" -4 to sense, dr2"/>
+
+		<!-- modern combatant -->
+		<bandolier		name="Bandolier"				wt="3.5lbs" note="holds 75 cartgs"/>
+		<machb			name="Machinegun Belt"			wt="8lbs"	quantity="1~1~2" note=" 100 rounds"/>
+		<ammob			name="Ammo Belt"				wt="8lbs"	note=" holds 6 mags"/>
+		<ammop			name="Ammo Pouch(es)"			quantity="1~1~2" wt="2.5lbs"	note=" holds 2 mags"/>
+		<smokeg			name="Smoke Gernade(s)"			quantity="1~1~2" wt="1.5lbs"/>
+		<!-- hi-tech police -->
+		<headset		name="Headset"					wt=".5lbs"	note=" range 2 miles"/>
+		<handcuffs		name="Handcuffs"				wt="1lbs"/>
+		<flashb			name="Flash-bang Gernade(s)"	quantity="1~3" wt="1lbs"	note=" area, HT-5 resists"/>
+		<peppers		name="Pepper Spray"				wt=".5lbs"	note=" HT-3 resists"/>
+		<radioh			name="Radio - handheld"			wt="3lbs"	note=" lasts 5hrs"/>
+
+		<!-- universal -->
+		<firstaid		name="First Aid Kit"			wt="2lbs"	note=" +1 first-aid"			skills="first-aid"/>
+		<rope			name="Rope - 50ft."				wt="2.5lbs"	note=" supports 300lbs"/>
+		<backpack		name="Backpack"					wt="3lbs"	note=" back: dr2"/>
+		<!-- universal hi-tech -->
+		<flashlight		name="Flashlight"				wt="1lbs"	note=" small"/>
+		<hflashlight	name="Heavy Flashlight"			wt="3lbs"	note=" ssword dam: sw"/>
+		<nylonc			name="Nylon Cord - 30ft."		wt=".5lbs"	note=" supports 500lbs"/>
+		<rflare			name="Road Flare(s)"			quantity="1~1,2~4" wt="1lbs"	note=" 30 minutes"/>
+		<binoculars		name="Binoculars"				wt="3lbs"	note=" 7X - 2,000yrds"/>
+		<camera			name="Camera"					wt="1lbs"	note=" 35mm"/>
+
+		<!-- Fantasy Hand Weapons --> 
+		<basword		name="Bastardsword"				mod="3" wt="5lbs"	damage="1,1"  st="11"	rch="1,2"	note=" +1 dam 2h"		skills="broad-sword, two-hand-sword"/>
+		<baswordt		name="Bastardsword"				mod="3" wt="5lbs"	damage="2,1"  st="11"	rch="1,2"	note=" thrusting"		skills="broad-sword, two-hand-sword"/>
+		<baxe			name="Battle Axe"				mod="3" wt="4lbs"	damage="-1,2" st="12"	rch="1"		note=" U, thrust"		skills="axe-mace"/>
+		<bsword			name="Broadsword"				mod="3" wt="3lbs"	damage="1,1"  st="10"	rch="1"		note=" crush thrust"	skills="broad-sword"/>
+		<bswordt		name="Broadsword"				mod="4" wt="3lbs"	damage="2,1"  st="10"	rch="1"		note=" thrusting"		skills="broad-sword"/>
+		<claymore		name="Claymore"					mod="3" wt="6lbs"	damage="3,2"  st="11"	rch="1,2"	note=" 2-handed"		skills="two-hand-sword"/>
+		<clubl			name="Club - light"				mod="0" wt="3lbs"	damage="-,1"  st="11"	rch="1"		note=" U, crush"		skills="broad-sword"/>
+		<clubg			name="Club - great"				mod="0" wt="7.5lbs"	damage="-,3"  st="14"	rch="1,2"	note=" U, 2-h"			skills="two-hand-axe-mace"/>
+		<cutlass		name="Cutlass"					mod="3" wt="2.5lbs"	damage="1,0"  st="9 "	rch="1"		note=" imp thrust"		skills="short-sword"/>
+		<falchion		name="Falchion"					mod="3" wt="3lbs"	damage="0,1"  st="10"	rch="1"		note=" imp thrust"		skills="short-sword"/>
+		<flail			name="Flail"					mod="2" wt="8lbs"	damage="-,4" st="13"	rch="1,2"	note=" U, 2h"			skills="flail"/>
+		<flamberge		name="Flamberge"				mod="3" wt="6.5lbs"	damage="2,3"  st="12"	rch="1,2"	note=" 2-handed"		skills="two-hand-sword"/>
+		<gaxe			name="Great Axe"				mod="3" wt="9lbs"	damage="1,4" st="13"	rch="1,2"	note=" U, thrust"		skills="two-hand-axe-mace"/>
+		<glaive			name="Glaive"					mod="2" wt="8lbs"	damage="3,3"  st="11"	rch="1-3"	note=" U, 2h"			skills="pole-arm"/>
+		<gsword			name="Greatsword"				mod="3" wt="7lbs"	damage="3,3"  st="13"	rch="1,2"	note=" 2-handed"		skills="two-hand-sword"/>
+		<halberd		name="Halberd"					mod="2" wt="12lbs"	damage="3,5"  st="13"	rch="1-3"	note=" U, 2h"			skills="pole-arm"/>
+		<hatch			name="Hatchet"					mod="1" wt="2lbs"	damage="-,0" st="7"		rch="1"		note=" U"				skills="axe-mace"/>
+		<hspear			name="Half Spear"				mod="1" wt="3lbs"	damage="2,-2" st="7 "	rch="1"		note=" crush swing"		skills="spear, spear-throwing"/>
+		<laknife		name="Large Knife"				mod="2" wt="1lbs"	damage="0,-2" st="- "	rch="c,1"	note=" max dam 1d+2"	skills="knife, main-gauche"/>
+		<lspear			name="Long Spear"				mod="2" wt="5lbs"	damage="3,-" st="9 "	rch="1-3"	note=" 2-handed"		skills="spear, pole-arm"/>
+		<lsword			name="Longsword"				mod="3" wt="2.5lbs"	damage="2,0"  st="9 "	rch="1"		note=" imp thrust"		skills="broad-sword"/>
+		<macef			name="Mace - Footman's"			mod="3" wt="5lbs"	damage="-,3" st="12"	rch="1"		note=" U"				skills="axe-mace"/>
+		<maceh			name="Mace - Horseman's"		mod="2" wt="3lbs"	damage="-,2" st="9"		rch="1"		note=" U"				skills="axe-mace"/>
+		<mangosh		name="Main-Gauche"				mod="2" wt="1.5lbs"	damage="0,-2" st="- "	rch="c,1"	note=" max dam 1d+2"	skills="main-gauche, knife"/>
+		<maul			name="Maul"						mod="2" wt="12lbs"	damage="-,5" st="13"	rch="1,2"	note=" U, 2h"			skills="two-hand-axe-mace"/>
+		<mstar			name="Morningstar"				mod="3" wt="6lbs"	damage="-,3" st="12"	rch="1"		note=" U"				skills="flail"/>
+		<pick			name="Pick"						mod="1" wt="3lbs"	damage="-,1" st="11"	rch="1"		note=" U, imp"			skills="axe-mace"/>
+		<pike			name="Pike"						mod="2" wt="6lbs"	damage="4,-"  st="12"	rch="1-3"	note=" U, 2h"			skills="pole-arm, spear"/>
+		<rapier			name="Rapier"					mod="3" wt="2.5lbs"	damage="1,-" st="- "	rch="1,2"	note=" max dam 1d+2"	skills="fencing"/>
+		<srapier		name="Sword-Rapier"				mod="3" wt="2.75lbs" damage="1,0" st="10 "	rch="1,2"	note=" max cut 1d+2"	skills="fencing"/>
+		<saber			name="Saber"					mod="3" wt="2lbs"	damage="0,0"  st="6 "	rch="1"		note=" max imp 1d+2" skills="fencing, short-sword"/>
+		<scimitar		name="Scimitar"					mod="3" wt="3.5lbs"	damage="0,2"  st="12"	rch="1"		note=" imp thrust"		skills="broad-sword"/>
+		<sclub			name="Spiked Club"				mod="0" wt="3.4lbs"	damage="-,2"  st="11"	rch="1"		note=" crushing"		skills="broad-sword"/>
+		<scramsax		name="Scramsax"					mod="0" wt="3.5lbs"	damage="-,2"  st="11"	rch="1"		note=" no thrust"		skills="broad-sword"/>
+		<sknife			name="Small Knife/Dagger"		mod="1" wt=".5lbs"	damage="-1,-3" st="- "	rch="c,1"	note=" max dam 1d+1"	skills="knife"/>
+		<smsword		name="Small sword"				mod="2" wt="1lbs"	damage="1,-" st="- "	rch="1"		note=" max dam 1d+2"	skills="short-sword, fencing"/>
+		<spear			name="Spear"					mod="1" wt="4lbs"	damage="2,-" st="9 "	rch="1,2"	note=" +1 dam 2h"		skills="spear, spear-throwing"/>
+		<ssword			name="Shortsword"				mod="3" wt="2lbs"	damage="0,0"  st="7 "	rch="1"		note=" imp thrust"		skills="short-sword"/>
+		<staff			name="Staff"					mod="2" wt="4lbs"	damage="2,2"  st="6 "	rch="1,2"	note=" 2h, parry +2"	skills="staff"/>
+		<trident		name="Trident"					mod="2" wt="4lbs"	damage="2,-" st="11"	rch="1,2"	note=" +2 disarm"		skills="spear"/>
+		<wh				name="Warhammer"				mod="3" wt="7lbs"	damage="-,3" st="13"	rch="1,2"	note=" 1tn rdy, 2himp"	skills="two-hand-axe-mace"/>
+		<whip			name="Whip"						mod="2" wt="4lbs"	damage="-,-2"  st="10"	rch="1-7"	note=" max dam 1d-1"	skills="whip"/>
+
+		<!-- Fantasy Special Weapons -->
+		<bswordh		name="Broadsword - Holy Avenger"  mod="5" wt="3lbs" damage="2,1"  st="10"	rch="1"		note=" thrusting"		skills="broad-sword" req-mods="blessed, fine-craftmanship, increased-to-hit, defender, undead-bane"/>
+		<bswordtf		name="Broadsword"				mod="4" wt="3lbs"	damage="2,1"  st="10"	rch="1"		note=" thrusting"		skills="broad-sword" req-mods="fine-craftmanship"/>
+		<bswordtfire	name="Broadsword - Firebrand"	mod="4" wt="3lbs"	damage="2,1"  st="10"	rch="1"		note=" thrusting"		skills="broad-sword" req-mods="firebrand"/>
+		<darkblade		name="Dark-Elven Blade"			mod="3" wt="2lbs"	damage="1,-2" st="6 "	rch="1"		note=" max dam 2d"		skills="short-sword" req-mods="exotic-craftmanship, poison-reservoir"/>
+		<dwaxe			name="Dwarven War-Axe"			mod="3" wt="4.5lbs"	damage="0,2"  st="12"	rch="1"		note=" U, thrust"	skills="axe-mace" req-mods="adamantine"/>
+		<elsword		name="Elven Longsword"			mod="3" wt="2.5lbs"	damage="2,0"  st="9 "	rch="1"		note=" imp thrust"		skills="fencing, broad-sword" req-mods="exotic-craftmanship, lightened"/>
+		<espear			name="Elàrian Fine Spear"		mod="3" wt="3lbs"	damage="2,-"  st="9 "	rch="1,2"	note=" +1 dam 2h"		skills="spear, spear-throwing" req-mods="fine-craftmanship"/>
+		<ghammer		name="Gnomish Hammer"			mod="3" wt="4lbs"	damage="-,1"  st="10"	rch="1"		note=" U, imp/crush"	skills="axe-mace" req-mods="exotic-craftmanship, lightened"/>
+		<gswords		name="Greatsword of Slaying"	mod="9" wt="7lbs"	damage="3,3"  st="13"	rch="1,2"	note=" 2-handed"		skills="two-hand-sword" req-mods="true-strike, heart-seeker, improved-damage, wounding"/>
+		<istaff			name="Iron Staff of Speed"		mod="4" wt="7lbs"	damage="2,3"  st="9 " 	rch="1,2"	note=" 2h, parry +2"	skills="staff" req-mods="extra-parry, extra-attack"/>
+		<lswordf		name="Longsword"				mod="2" wt="2.5lbs"	damage="2,0"  st="9 "	rch="1"		note=" imp thrust"		skills="broad-sword" req-mods="fine-craftmanship"/>
+		<lswords		name="Longsword - Soulshrieker" mod="100" wt="2.5lbs" damage="2,0" st="9 "	rch="1"		note=" imp thrust"		skills="broad-sword" req-mods="intelligent, life-drain, wailing, dancing-weapon, returning"/>
+		<mstaff			name="Mage Staff"				mod="14" wt="4lbs"	damage="2,2"  st="6 " 	rch="1,2"	note=" 2h, parry +2"	skills="staff" req-mods="staff-enchantment"/>
+		<staffp			name="Staff of Power"			mod="54" wt="4lbs"	damage="2,2"  st="6 " 	rch="1,2"	note=" 2h, parry +2"	skills="staff" req-mods="staff-enchantment, fireball, powered, shocking"/>
+		<opick			name="Orcish Pick"				mod="2" wt="4lbs"	damage="1,1"  st="12"	rch="1"		note=" U, imp"	skills="axe-mace"/>
+		<sswordf		name="Shortsword"				mod="3" wt="2lbs"	damage="0,0"  st="7 "	rch="1"		note=" imp thrust"		skills="short-sword" req-mods="fine-craftmanship"/>
+		<sswordp		name="Shortsword of Piercing"	mod="3" wt="2lbs"	damage="1,0"  st="7 "	rch="1"		note=" imp thrust"		skills="short-sword" req-mods="armor-reduction"/>
+		<sswords		name="Shortsword of Speed"		mod="3" wt="2lbs"	damage="0,0"  st="7 "	rch="1"		note=" imp thrust"		skills="short-sword" req-mods="extra-attack"/>
+
+		<!-- Fantasy Ranged Weapons -->
+		<edart			name="Elàrian Dartbow"			mod="1" wt="3.5lbs"	damage="0,-"	ss="10" acc="3" st="9"	rof="3/9" ammo="10~20" awt=".06" skills="crossbow" req-mods="exotic-craftmanship"/>
+		<cbow			name="Crossbow"					mod="2" wt="6lbs"	damage="4,-"	ss="12" acc="4" st="7"	rof="1/5" ammo="18~26" awt=".08" skills="crossbow"/>
+		<cmbow			name="Composite bow"			mod="2" wt="4lbs"	damage="3,-"	ss="14" acc="3" st="10"	rof="1/3" ammo="16~32" awt=".12" skills="bow"/>
+		<csbow			name="Composite Shortbow"		mod="2" wt="2lbs"	damage="1,-"	ss="12" acc="1" st="7"	rof="1/3" ammo="12~28" awt=".12" skills="bow"/>
+		<gdart			name="Gnomish Dartbow"			mod="3" wt="2lbs"	damage="0,-"	ss="10" acc="2" st="7"	rof="1/2" ammo="15~25" awt=".06" skills="crossbow"/>
+		<javelin		name="Javelin(s)"				mod="-1" quantity="1~4" wt="2lbs"	damage="1,-"    ss="10" acc="3" st="7"	skills="spear, spear-throwing, throwing"/>
+		<latknife		name="Large Throwing Knife(s)"	mod="-1" quantity="2~2,3~5" wt="1lbs"	damage="0,-"   ss="12" acc="1" st="- "	skills="knife-throwing, throwing, knife"/>
+		<lbow			name="Longbow"					mod="2" wt="3lbs"	damage="2,-"	ss="15" acc="3" st="11"	rof="1/3" ammo="16~32" awt=".12" skills="bow"/>
+		<lcbow			name="Light Crossbow"			mod="2" wt="4lbs"	damage="2,-"	ss="11" acc="3" st="8"	rof="1/4" ammo="18~32" awt=".07" skills="crossbow"/>
+		<pcbow			name="Pistol Crossbow"			mod="1" wt="1lbs"	damage="-1,-"	ss="10" acc="1" st="6"	rof="1/3" ammo="10~20" awt=".06" skills="crossbow"/>
+		<satknife		name="Small Throwing Knife(s)"	mod="-1" quantity="2~6" wt=".5lbs"	damage="-1,-"  ss="11" acc="0" st="- "	skills="knife-throwing, throwing"/>
+		<sbow			name="Short bow"				mod="1" wt="2lbs"	damage="0,-"	ss="12" acc="1" st="6"	rof="1/3" ammo="12~28" awt=".12" skills="bow"/>
+		<sling			name="Sling"					mod="1" wt=".5lbs"	damage="-,0"	ss="12" acc="0" st="- "	rof="1/3" ammo="20~40" awt=".04" skills="sling"/>
+		<taxe			name="Throwing Axe(s)"			mod="-1" quantity="1~2" wt="3lbs"	damage="-,1"   ss="11" acc="1" st="9"	skills="axe-mace, axe-throwing, throwing"/>
+
+		<cbows			name="Crossbow of Speed"		mod="4" wt="4lbs"	damage="2,-"  ss="11" acc="3" st="- " rof="1/2" ammo="24~36" awt=".07" skills="crossbow" req-mods="lightened"/>
+		<dcbow			name="Double Crossbow"			mod="3" wt="7lbs"	damage="2,-"  ss="11" acc="3" st="12"  rof="2/4" ammo="26~34" awt=".07" skills="crossbow"/>
+		<kabow name="Karak's Ancient Warbow of Might"  mod="100" wt="4.5lbs" damage="3,-" ss="14" acc="3" st="10"  rof="1/3" ammo="16~32" awt=".12" skills="bow" req-mods="armor-reduction, fast-draw, ghost-weapon, improved-damage, true-strike, exotic-craftmanship"/>
+
+		<!-- Misc Fantasy Gear -->
+		<poison			name="Poison Dose(s)"			wt=".7lbs"	quantity="1~2,3~4" doses="choose:1~caustic-tar~blood-rot~wolfsbane~cobra-venom~spider-venom~asp-venom~curare~infectious-agent"	skills="poisons"/>
+		<potion			name="Potion Flask(s)"			wt=".6lbs"	quantity="1~1~2" doses="choose:1~water-breathing~enlarge~full-healing~blur~fire-breath~fire-immunity~cold-immune~regeneration~flame-body~minor-healing~mortal-healing~major-healing~great-haste~cure-poison~flight~invisibility~true-sight~hyper-reflexes~undead-ward~hyper-strength~bark-skin"/>
+		<scroll			name="Scroll(s)"				wt=".2lbs"	quantity="1~1,2~3" note="choose:1~possession~entombment~flaming-armor~bless~teleport~water-breathing~enlarge~full-healing~blur~fire-breath~fire-immune~cold-immune~regeneration~flame-body~minor-healing~mortal-healing~major-healing~great-haste~cure-poison~flight~invisibility~true-sight~hyper-reflexes~undead-ward~hyper-strength~bark-skin"/>
+		<pstone			name="Power Stone(s)"			wt=".5lbs"	quantity="1~2~3"		   st="1~2"/>
+		<pstone2		name="Power Stone(s)"			wt=".5lbs"	quantity="1~1~2"		   st="2~2,3~4"/>
+		<pstone3		name="Power Stone"				wt=".5lbs"	quantity="1"			   st="4~5,6~8"/>
+		<pstoneq		name="Power Stone - Quirked"	wt="1.5lbs"	quantity="1" st="6~6,7,8,9,10,11,12~20" note="light~dark~earth~air~fire~water~body~necro~healing~mind~evil~good~animal~plant"/>
+		<torch			name="Torch(es)"				wt="1lbs"	quantity="1~3~5" note=" lasts 1hr each"/>
+
+		<!-- Martial Arts Weapons -->
+		<katana			name="Katana"					mod="1" wt="4lbs"	damage="2,2"  st="11"	rch="1,2"	note=" fine quality"	skills="katana, broad-sword"/>
+		<bokken			name="Bokken"					mod="1" wt="3lbs"	damage="1,1"  st="11"	rch="1"		note=" wooden sword"	skills="katana, broad-sword"/>
+		<gum			name="Gum"						mod="1" wt="4.5lbs"	damage="2,2"  st="11"	rch="1,2"	note=" fine quality"	skills="katana, broad-sword"/>
+		<kama			name="Kama"						mod="1" wt="2lbs"	damage="-,1" st="10"	rch="1"		note=" U"		skills="axe-mace"/>
+		<kusari			name="Kusari"					mod="1" wt="4lbs"	damage="-,2" st="11"	rch="1-4"	note=" U"		skills="kusari, flail"/>
+		<kusarig		name="Kusari-gama"				mod="1" wt="4.5lbs"	damage="-,2" st="11"	rch="1-4"	note=" U"		skills="kusari, flail"/>
+		<estick			name="Escrima Sticks"			mod="1" wt="2lbs"	damage="0,0"  st="- "	rch="1"		note=" cr thrust"		skills="short-staff"/>
+		<sai			name="Sai"						mod="1" wt="2lbs"	damage="0,0"  st="- "	rch="1"		note=" +2 disarm"		skills="jitte-sai"/>
+		<nunchaku		name="Nunchaku"					mod="1" wt="3lbs"	damage="-,2" st="10"	rch="1"		note=" U"		skills="flail"/>
+		<shuriken		name="Shuriken"	mod="-1" quantity="2~6" wt=".5lbs"	damage="-1,-"  ss="11" acc="0" st="- "	skills="knife-throwing, throwing"/>
+	</weapon-stats>
+
+	<!-- Every Weapon has some (item-mod-inc + weapon[mod])% chance of being modified, special or unique in some way -->
+	<weapon-mods	mod-inc="0">
+		<ap-ammunition					min="0" max="0"/>
+		<adjustable-sights				min="0" max="0"/>
+		<apex-ammunition				min="0" max="0" mintl="8"/>
+		<bio-ammunition					min="0" max="0" mintl="8"/>
+		<burst-selector					min="0" max="0" mintl="7"/>
+		<chrome-plated					min="0" max="0"/>
+		<collapsing-stock				min="0" max="0" mintl="6"/>
+		<dum-dum-ammunition				min="0" max="0"/>
+		<extended-barrel				min="0" max="0"/>
+		<flashlight-mount				min="0" max="0" mintl="7"/>
+		<flash-suppressor				min="0" max="0"/>
+		<folding-stock					min="0" max="0" mintl="6"/>
+		<fore-grip						min="0" max="0" mintl="6"/>
+		<glasier-ammunition				min="0" max="0" mintl="7"/>
+		<gun-camera						min="0" max="0" mintl="7"/>
+		<improved-acc					min="1" max="3"/>
+		<improved-rcl					min="1" max="1"/>
+		<improved-rel					min="1" max="2"/>
+		<improved-rof					min="1" max="6" mean="2.4" mintl="6"/>
+		<improved-shots					min="2" max="10"/>
+		<infrared-sights				min="0" max="0" mintl="7"/>
+		<jhp-ammunition					min="0" max="0" mintl="7"/>
+		<red-dot-sight					min="0" max="0" mintl="7"/>
+		<laser-sight					min="0" max="0" mintl="7"/>
+		<micro-glauncher				min="0" max="0" mintl="8"/>
+		<night-sights					min="0" max="0" mintl="7"/>
+		<optical-sight					min="2" max="6" mintl="6"/>
+		<recoil-compensator				min="0" max="0"/>
+		<sabot-ammunition				min="0" max="0" mintl="7"/>
+		<silencer						min="0" max="0"/>
+		<smart-gun-link					min="0" max="0" mintl="8"/>
+		<biometric-security			min="0" max="0" mintl="8"/>
+		<super-light					min="0" max="0" mintl="7"/>
+		<tracer-ammunition				min="0" max="0" mintl="6"/>
+		<unique-design					min="0" max="0"/>
+	</weapon-mods>
+
+	<!-- Hand Weapons have their own mods, but share mod-inc value above -->
+	<hand-weapon-mods>
+		<adamantine						min="1" max="3" mean="1.12" sdev=".472"/>
+		<bone-handle					min="0" max="0"/>
+		<!-- <concealed-compartment			min="0" max="0"/> -->
+		<exotic-craftmanship			min="0" max="0"/>
+		<fine-craftmanship				min="1" max="2" mean="1" sdev="0.32"/>
+		<gold-plated					min="0" max="0"/>
+		<jewel-encrusted				min="0" max="0"/>
+		<laniard						min="0" max="0"/>
+		<poison-reservoir				min="0" max="0"/>
+		<rune-engraved					min="0" max="0"/>
+		<silver-plated					min="0" max="0"/>
+		<throwable						min="0" max="0"/>
+
+		<!-- magical enchantments - value is mod or uses per day (zero means always on) -->
+		<armor-reduction				min="1" max="3" mean="1.69" sdev=".72"/>
+		<backbiting-curse				min="0" max="0"/>
+		<berserker-curse				min="0" max="0"/>
+		<blessed						min="0" max="0"/>
+		<burning						min="0" max="0"/>
+		<dancing-weapon					min="1" max="4"/>
+		<danger-sense					min="0" max="0"/>
+		<darkness-shroud				min="0" max="0"/>
+		<defender						min="1" max="2" mean=".94" sdev=".437"/>
+		<dragon-bane					min="2" max="6"/>
+		<elf-bane						min="1" max="4"/>
+		<evil-sense						min="0" max="0"/>
+		<extra-attack					min="0" max="0"/>
+		<extra-parry					min="0" max="0"/>
+		<fast-draw						min="0" max="0"/>
+		<fatigue-drain					min="1" max="6" mean="3"/>
+		<fearlessness					min="2" max="4"/>
+		<fireball						min="1" max="8" mean="2.6"/>
+		<firebrand						min="0" max="0"/>
+		<firebrand						min="0" max="0"/>
+		<frost							min="0" max="0"/>
+		<ghost-weapon					min="0" max="0"/>
+		<giant-bane						min="1" max="4"/>
+		<glowing						min="0" max="0"/>
+		<heart-seeker					min="0" max="0"/>
+		<improved-damage				min="1" max="3" mean="1.04" sdev=".41"/>
+		<increased-to-hit				min="1" max="3" mean="1" sdev=".3901"/>
+		<intelligent					min="6" max="14" mean="10"/>
+		<life-drain						min="1" max="6" mean="3"/>
+		<lightened						min="-3" max="-1" mean="-1.3" sdev="-.404"/>
+		<luck							min="1" max="4"/>
+		<orc-bane						min="1" max="4"/>
+		<powered						min="1" max="4"/>
+		<returning						min="0" max="0"/>
+		<shocking						min="0" max="0"/>
+		<staff-enchantment				min="0" max="0"/>
+		<stunning						min="2" max="6"/>
+		<superior-initiative			min="2" max="8" mean="5"/>
+		<true-grip						min="0" max="0"/>
+		<true-strike					min="1" max="3" mean="1" sdev=".62"/>
+		<unbreakable					min="0" max="0"/>
+		<undead-bane					min="1" max="4"/>
+		<wailing						min="2" max="5"/>
+		<wounding						min="0" max="0"/>
+	</hand-weapon-mods>
+
+</weapons>

@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<classes type="standard" genre="empire-game" creation-time="2002-08-01 02:13:18">
+
+	<class alias="eelf" parents="ltp" name="Elàrian Dark-Elf" nationality="Dark-Elf"
+	       hair="silver, silver-blue, blue-gray, white, white-blonde, white-blue, golden, gray, gray-black, ghost-white, perl-white, raven-black, sandy-gray, gray, white, gray, silver, silvery-white, silvery-blue, blue-black, light-gray, dark-dray, light-silver, medium-silver, silver-streaked, silver-streaked, gray-white, alabaster-white"
+		   eyes="light-blue, light-green, blue-green, metallic-blue, white-blue, white, red, pink, white-pink, green, black, blue, sapphire, turquoise, emerald, white-green, mettalic-green, silver, silver-blue, silver-green, white-silver, light-red, white-blue, shining-blue, silver-blue, bright-blue, silver-blue, midnight-blue, sky-blue, marble-blue, blue-gray, gray, gray-blue, white-blue" 
+		   images-male="male-elf.gif" images-female="female-elf.gif" 
+		   tech-level="4" age="18~250~1100">
+		<stats>
+			<strength					max="17" mean="10.2"/>
+			<dexterity					max="20" mean="10.9"/>
+			<intelligence				max="19" mean="10.8"/>
+		</stats>
+
+		<advantages						min="0" max="1" mean="0">
+			<magery							min="0" max="1" mean="0" req="28"/>
+			<magic-resistance				min="1" max="5" mean="1.2" req="-1"/>
+
+			<attractive						min="1" max="2" mean="1" req="28"/>
+			<fashion-sense					req="15"/>
+			<longevity						req="-1"/>
+			<music-ability					min="1" max="3" mean="1.2" req="62"/>
+			<night-vision					req="72"/>
+		</advantages>
+
+		<disadvantages					min="1" max="4" mean="2.2">
+			<albinism						req="08"/>
+			<bad-smell						req="0.1"/>
+			<blind							req="-1"/>
+			<code-of-honor-elf				req="-1"/>
+			<combat-paralysis				req="01"/>
+			<dwarfism						req="-1"/>
+			<fat							req="-1"/>
+			<intolerance-racial				req="61"/>
+			<low-pain-threshold				req="-1"/>
+			<overweight						req="01"/>
+			<pyromania						req="01"/>
+			<sense-of-duty-elària			req="04"/>
+			<sense-of-duty-nature			req="02"/>
+			<skinny							req="10"/>
+			<stocky							req="0.3"/>
+			<ugly							req="03"/>
+			<unfit							req="02"/>
+		</disadvantages>
+
+		<skills>
+			<bard						min="-1" max="2" req="05"/>
+			<language-elvish			max="1" req="-1"/>
+			<musical-instrument			max="1" req="17"/>
+			<savoir-faire				min="-1" max="2" req="24"/>
+
+			<spell-apportation			max="1" req="02"/>
+			<spell-blur					max="1" req="02"/>
+			<spell-death-vision			max="1" req="03"/>
+			<spell-dexterity			max="0" req="01"/>
+			<spell-distant-blow			max="1" req="02"/>
+			<spell-fear					max="1" req="05"/>
+			<spell-fireball				max="1" req="01"/>
+			<spell-forest-warning		max="1" req="01"/>
+			<spell-hinder				max="1" req="01"/>
+			<spell-iron-arm				max="1" req="04"/>
+			<spell-lightning			max="1" req="01"/>
+			<spell-mage-stealth			max="1" req="02"/>
+			<spell-might				max="1" req="01"/>
+			<spell-minor-healing		max="1" req="02"/>
+			<spell-tangle-growth		max="1" req="01"/>
+			<spell-vigor				max="0" req="01"/>
+			<spell-water-jet			max="0" req="01"/>
+		</skills>
+	</class>
+
+	<class alias="echar" parents="elsold" name="Elàrian Charioteer" nationality="Dark-Elf" item-mod-inc="-2" gender-ratio="99">
+		<stats>
+			<dexterity					min="10" mean="12.1" max="15"/>
+			<intelligence				min="9"  max="15"  mean="10.9"/>
+		</stats>
+		<skills								min="3" max="8" mean="5.4">
+			<brawling						min="-1" max="1" req="17"/>
+			<driving-horselesschariot		min="-1" max="2" req="1"/>
+			<flail							req="02"/>
+			<gunner-ballista				max="1" req="25"/>
+			<pole-arm						max="1" req="10"/>
+			<spear							min="0" max="2" mean="1.2" req="1"/>
+			<spear-throwing					min="0" max="2" mean=".6" req="1"/>
+			<two-hand-axe-mace				req="04"/>
+			<two-hand-sword					max="1" req="20"/>
+		</skills>
+	</class>
+
+	<class alias="elsold" parents="eelf, hsold" name="Elàrian Soldier" nationality="Dark-Elf" item-mod-inc="-2" gender-ratio="99">
+		<stats>
+			<strength					min="11" max="15"  mean="12"/>
+			<dexterity					min="10" mean="11.8" max="16"/>
+			<intelligence				min="8"  max="15"  mean="10.7"/>
+			<health						min="8"  max="15"  mean="11.1"/>
+		</stats>
+
+		<advantages>
+			<high-pain-threshold			req="10"/>
+			<legal-enforcement				min="1" max="2" mean="1" req="06"/>
+			<rank							min="0" max="4" mean="1" req="1"/>
+
+			<combat-reflexes				req="48"/>
+			<toughness						req="12"/>
+		</advantages>
+		<disadvantages>
+			<callous						req="20"/>
+			<code-of-honor					req="02"/>
+			<combat-paralysis				req="-1"/>
+			<fanaticism						req="10"/>
+			<low-pain-threshold				req="-1"/>
+			<sadism							req="10"/>
+			<sense-of-duty-elària			req="20"/>
+			<unfit							req="0.5"/>
+		</disadvantages>
+
+		<skills								min="2" max="7" mean="4.4">
+			<brawling						min="-1" max="1" req="67"/>
+			<broad-sword					min="-2" max="2" req="50"/>
+			<bow							min="-1" max="1" req="01"/>
+			<crossbow						min="0" max="2" req="97"/>
+			<driving-horselesschariot		min="-2" max="2" req="10"/>
+			<flail							req="34"/>
+			<gunner-ballista				max="1" req="55"/>
+			<knife							req="82"/>
+			<poisons						max="1" req="14"/>
+			<pole-arm						max="1" req="51"/>
+			<shield							min="-1" max="2" mean="0.2" req="1"/>
+			<short-sword					req="84"/>
+			<spear							min="0" max="2" mean="1.2" req="1"/>
+			<spear-throwing					min="0" max="2" mean=".6" req="94"/>
+			<tactics						req="38"/>
+			<throwing						req="14"/>
+			<two-hand-axe-mace				req="20"/>
+			<two-hand-sword					max="1" req="30"/>
+			<whip							req="01"/>
+		</skills>
+
+		<weapons	 min="0" max="2" mean="0.8"> 
+			<lcbow							req="15"/>
+			<dcbow							req="10"/>
+			<pcbow							req="04"/>
+			<gdart							req="04"/>
+			<laknife						req="1"/>
+			<darkblade						req="24"/>
+			<ssword							req="74"/>
+			<espear							req="99"/>
+		</weapons>
+
+		<armor		min="1" max="3" mean="1.6"> 
+			<bplate							req="01"/>
+			<ccoif							req="01"/>
+			<circlet						req="01"/>
+			<mshield						req="-1"/>
+			<sshield						req="02"/>
+			<etshield						req="58"/>
+			<esshield						req="48"/>
+			<phelm							req="18"/>
+			<fhelm							req="98"/>
+			<leather						req="65"/>
+			<chain							req="22"/>
+		</armor>
+	</class>
+
+	<class alias="eelguard" parents="eelf, elsold, knta" name="Elàrian Elite Guard" nationality="Dark-Elf" item-mod-inc="2" gender-ratio="98">
+		<stats>
+			<strength					min="11" mean="13"/>
+			<dexterity					min="11"  mean="12.8"/>
+			<health						min="10" mean="12"/>
+		</stats>
+
+		<advantages>
+			<rank						min="2" max="4" mean="2" req="1"/>
+			<toughness					req="20"/>
+		</advantages>
+		<disadvantages min="0" max="2" mean="0.6"> 
+			<callous					req="43"/>
+			<code-of-honor				req="01"/>
+			<fanaticism					req="40"/>
+			<low-pain-threshold			req="-1"/>
+			<sadism						req="20"/>
+			<sense-of-duty-elària		req="80"/>
+			<skinny						req="12"/>
+			<unfit						req="-1"/>
+		</disadvantages>
+
+		<skills								min="2" max="8" mean="5">
+			<broad-sword					min="-1" max="2" req="70"/>
+			<crossbow						min="1" max="2" req="100"/>
+			<poisons						max="1" req="18"/>
+			<pole-arm						max="1" req="60"/>
+			<shield							max="3" req="1"/>
+			<spear							min="1" max="3" mean="1.9" req="1"/>
+			<speed-load-dartbow				max="1" req="12"/>
+		</skills>
+
+		<weapons>
+			<gdart							req="08"/>
+			<poison							req="20"/>
+			<potion							req="05"/>
+			<pstone							req="02"/>
+			<pstoneq						req="01"/>
+			<scroll							req="04"/>
+		</weapons>
+		<armor		min="0" max="2" mean="0.2"> 
+			<srobe							req="1"/>
+			<gauntlets						req="62"/>
+			<sollerets						req="59"/>
+			<mplate							req="79"/>
+			<mchain							req="30"/>
+			<leather						req="10"/>
+			<chain							req="02"/>
+			<phelm							req="-1"/>
+			<fhelm							req="99"/>
+			<etshield						req="18"/>
+			<esshield						req="68"/>
+
+			<ring							req="03"/>
+			<amulet							req="04"/>
+		</armor>
+	</class>
+
+	<class alias="eltemplar" parents="eelf, eelguard, pld" name="Elàrian Templar" nationality="Dark-Elf" item-mod-inc="3" gender-ratio="94">
+		<stats>
+			<intelligence				min="12" mean="13.5" max="17"/>
+		</stats>
+
+		<advantages>
+			<attractive					min="1" max="3" mean="1.2" req="32"/>
+			<rank						min="2" max="4" mean="2" req="-1"/>
+		</advantages>
+		<disadvantages min="0" max="2" mean="0.1"> 
+			<callous					req="02"/>
+			<fanaticism					req="10"/>
+			<sense-of-duty-elària		req="80"/>
+			<code-of-honor						min="-2" max="-2" req="1"/>
+			<sadism								req="-1"/>
+		</disadvantages>
+
+		<skills								min="0" max="3" mean="1"> 
+			<axe-mace						max="1" req="06"/>
+			<broad-sword					min="0" max="2" mean="0.7" req="94"/>
+			<flail							max="1" req="06"/>
+			<intimidation					max="1" req="20"/>
+			<knife							req="32"/>
+			<poisons						max="1" req="01"/>
+			<pole-arm						max="1" req="06"/>
+			<spear							min="0" max="2" mean="0.2" req="92"/>
+			<two-hand-axe-mace				max="1" req="02"/>
+
+			<spell-soul-jar					min="-2" max="1" mean="-0.4" req="12"/>
+			<spell-compell-truth			min="-1" max="1" mean="0.1" req="10"/>
+			<spell-water-jet				min="-1" max="1" mean="0.1" req="10"/>
+		</skills>
+
+		<weapons	 min="0" max="1" mean="0.4"> 
+			<edart							req="14"/>
+			<laknife						req="20"/>
+			<darkblade						req="02"/>
+			<ssword							req="74"/>
+			<espear							req="98"/>
+		</weapons>
+		<armor> 
+			<ghelm							req="02"/>
+			<plate							req="12"/>
+			<fplate							req="19"/>
+			<mplate							req="78"/>
+			<bplate							req="10"/>
+			<dplate							req="-1"/>
+			<mchain							req="20"/>
+			<leather						req="05"/>
+			<chain							req="02"/>
+			<srobe							req="-1"/>
+		</armor>
+	</class>
+
+	<class alias="elcommissar" parents="eelf, eelguard" name="Elàrian Commissar" nationality="Dark-Elf" item-mod-inc="6" gender-ratio="100">
+		<stats>
+			<intelligence				min="12" mean="14" max="17"/>
+		</stats>
+
+		<advantages>
+			<rank						min="4" max="6" mean="4" req="1"/>
+		</advantages>
+		<disadvantages min="0" max="2" mean="0.6"> 
+			<callous					req="90"/>
+			<fanaticism					req="60"/>
+			<sadism						req="50"/>
+			<sense-of-duty-elària		req="1"/>
+		</disadvantages>
+
+		<skills								min="1" max="9" mean="4.5"> 
+			<interrogation					max="1" req="96"/>
+			<intimidation					max="1" req="20"/>
+			<poisons						max="1" req="88"/>
+			<pole-arm						max="1" req="06"/>
+			<flail							max="1" req="06"/>
+			<axe-mace						max="1" req="06"/>
+			<two-hand-axe-mace				max="1" req="02"/>
+
+			<spell-agonize					min="-1" max="2" mean="0.1" req="20"/>
+			<spell-compell-truth			min="-1" max="1" mean="0.1" req="10"/>
+			<spell-fear						max="2" req="27"/>
+			<spell-mind-reading				min="-1" max="1" mean="0.1" req="06"/>
+			<spell-puppet-master			min="-1" max="1" mean="0.1" req="14"/>
+			<spell-soul-jar					min="-2" max="1" mean="-0.4" req="06"/>
+			<spell-water-jet				min="-1" max="1" mean="0.1" req="10"/>
+		</skills>
+
+		<weapons	 min="0" max="1" mean="0.4"> 
+			<edart							req="20"/>
+			<gdart							req="06"/>
+			<poison							req="40"/>
+			<potion							req="09"/>
+			<pstone							req="09"/>
+			<pstoneq						req="04"/>
+			<scroll							req="06"/>
+		</weapons>
+	</class>
+
+
+	<class alias="ehighpriestess" parents="eelf, larma, clerica" name="Elàrian High Priestess" item-mod-inc="6" gender-ratio="00">
+		<stats>
+			<dexterity					min="10" mean="12.44" max="16"/>
+			<intelligence				min="12" max="19" mean="14.49"/>
+			<strength					min="7" max="12" mean="8.95"/>
+		</stats>
+		<advantages>
+			<rank							min="0" max="4" mean="1" req="-1"/>
+		</advantages>
+
+		<skills							min="2" max="8" mean="4">
+			<axe-mace						min="-1" max="2" req="01"/>
+			<broad-sword					min="-1" max="2" req="22"/>
+			<first-aid						max="1" req="40"/>
+			<intimidation					max="1" req="27"/>
+			<knife							max="1" req="99"/>
+			<poisons						max="1" req="29"/>
+			<shield							max="1" req="-1"/>
+			<short-sword					min="-1" max="1" req="16"/>
+
+			<spell-awaken					max="1" req="15"/>
+			<spell-bravery					max="1" req="14"/>
+			<spell-death-vision				max="4" req="50"/>
+			<spell-exorcism					max="1" req="16"/>
+			<spell-healing-slumber			max="1" req="14"/>
+			<spell-instant-regeneration		max="1" req="05"/>
+			<spell-major-healing			max="1" req="50"/>
+			<spell-monk-banquet				max="1" req="01"/>
+			<spell-restoration				max="2" req="30"/>
+			<spell-water-jet				max="0" req="06"/>
+		</skills>
+
+		<weapons	min="0" max="3" mean="1">
+			<mstaff							req="95"/>
+			<macef							req="-1"/>
+			<maceh							req="-1"/>
+			<laknife						req="1"/>
+		</weapons>
+
+		<armor		min="0" max="4" mean="1.44">
+			<srobe							req="50"/>
+			<mshield						req="-1"/>
+			<sshield						req="0.65"/>
+			<dplate							req="-1"/>
+			<bplate							req="-1"/>
+		</armor>
+	</class>
+
+
+	<class alias="eenecro" parents="eelf, necroa" name="Elàrian Necromancer" item-mod-inc="3" gender-ratio="42">
+		<stats>
+			<intelligence				min="11" max="19" mean="13.8"/>
+		</stats>
+
+		<advantages						min="0" max="1" mean="0.4"/>
+		<disadvantages>
+			<ugly								req="-1"/>
+		</disadvantages>
+
+		<skills							min="1" max="5">
+			<diplomacy					max="1" req="10"/>
+			<knife						max="1" req="1"/>
+			<occultism					max="1" req="40"/>
+			<poisons					max="1" req="80"/>
+			<stealth					max="1" req="30"/>
+			<thaumatology				max="1" req="94"/>
+			<writing					max="2" req="84"/>
+
+			<spell-agonize				max="2" req="09"/>
+			<spell-bloat				max="2" req="07"/>
+			<spell-blur					max="1" req="01"/>
+			<spell-haste				max="0" req="01"/>
+			<spell-rotting-death		max="1" req="06"/>
+			<spell-ice-dagger			max="1" req="05"/>
+			<spell-infectious-zombie	max="1" req="01"/>
+			<spell-instant-regeneration	max="1" req="01"/>
+			<spell-madness				max="1" mean="-1" req="01"/>
+			<spell-might				max="1" req="01"/>
+			<spell-skull-spirit			max="1" req="06"/>
+			<spell-summon-shade			max="1" req="02"/>
+			<spell-turn-zombie			max="1" req="08"/>
+			<spell-wither-limb			max="1" req="04"/>
+			<spell-zombie				max="1" req="31"/>
+			<spell-firewalker-zombie	max="1" req="02"/>
+			<spell-zombie-double		min="-2" max="2" mean="0" req="13"/>
+		</skills>
+
+		<weapons>
+			<mstaff							req="96"/>
+			<poison							req="65"/>
+		</weapons>
+	</class>
+
+</classes>

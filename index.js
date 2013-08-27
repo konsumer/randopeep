@@ -4,48 +4,20 @@
 /* global require */
 /* global define */
 
-if (!module){ module = {}; }
+var randopeep = {};
 
-module.exports = require('./src/randopeep.js');
-
-module.exports.cc = require('./src/cc.js')(module.exports);
-module.exports.ipsum = require('./src/ipsum.js')(module.exports);
-module.exports.address = require('./src/address.js')(module.exports);
-module.exports.corporate = require('./src/corporate.js')(module.exports);
-module.exports.internet = require('./src/internet.js')(module.exports);
-require('./src/interface.js')(module.exports);
-
-
-// these are pre-cached by grunt, so browserify knows they are loaded:
-module.exports.data={};
-//<browserify>
-module.exports.data['bs/adjective'] = require('./data_js/bs/adjective.js');
-module.exports.data['bs/buzz'] = require('./data_js/bs/buzz.js');
-module.exports.data['bs/noun'] = require('./data_js/bs/noun.js');
-module.exports.data['catch_phrase/adjective'] = require('./data_js/catch_phrase/adjective.js');
-module.exports.data['catch_phrase/descriptor'] = require('./data_js/catch_phrase/descriptor.js');
-module.exports.data['catch_phrase/noun'] = require('./data_js/catch_phrase/noun.js');
-module.exports.data['city/prefix'] = require('./data_js/city/prefix.js');
-module.exports.data['city/suffix'] = require('./data_js/city/suffix.js');
-module.exports.data['domain/suffix'] = require('./data_js/domain/suffix.js');
-module.exports.data['ipsum/lorem'] = require('./data_js/ipsum/lorem.js');
-module.exports.data['jobs'] = require('./data_js/jobs.js');
-module.exports.data['person/modern/female'] = require('./data_js/person/modern/female.js');
-module.exports.data['person/modern/last'] = require('./data_js/person/modern/last.js');
-module.exports.data['person/modern/male'] = require('./data_js/person/modern/male.js');
-module.exports.data['person/netrunner'] = require('./data_js/person/netrunner.js');
-module.exports.data['person/prefix/female'] = require('./data_js/person/prefix/female.js');
-module.exports.data['person/prefix/male'] = require('./data_js/person/prefix/male.js');
-module.exports.data['person/suffix'] = require('./data_js/person/suffix.js');
-module.exports.data['phone/formats'] = require('./data_js/phone/formats.js');
-module.exports.data['street/suffix'] = require('./data_js/street/suffix.js');
-module.exports.data['uk/country'] = require('./data_js/uk/country.js');
-module.exports.data['uk/county'] = require('./data_js/uk/county.js');
-module.exports.data['us/state'] = require('./data_js/us/state.js');
-module.exports.data['us/state/abbr'] = require('./data_js/us/state/abbr.js');
-//</browserify>
+require('./src/randopeep.js')(randopeep);
+randopeep.name = require('./src/name.js')(randopeep);
+randopeep.cc = require('./src/cc.js')(randopeep);
+randopeep.ipsum = require('./src/ipsum.js')(randopeep);
+randopeep.address = require('./src/address.js')(randopeep);
+randopeep.corporate = require('./src/corporate.js')(randopeep);
+randopeep.internet = require('./src/internet.js')(randopeep);
+module.exports = require('./src/interface.js')(randopeep);
 
 // wrapper for AMD/browser-global
+// slightly wonky way to hand paths to laoder
+// should figure out how to lazy-load better
 /* global define */
 if (typeof(define) === 'function'){
 	define(function(){
@@ -56,3 +28,66 @@ if (typeof(define) === 'function'){
 		window.randopeep = module.exports;
 	}
 }
+
+// pre-load data files
+randopeep.data = {};
+//<data>
+randopeep.data["jobs"]=require("./data/jobs.json");
+randopeep.data["name/netrunner/first"]=require("./data/name/netrunner/first.json");
+randopeep.data["name/suffix"]=require("./data/name/suffix.json");
+randopeep.data["us/state"]=require("./data/us/state.json");
+randopeep.data["us/state/abbr"]=require("./data/us/state/abbr.json");
+randopeep.data["city/prefix"]=require("./data/city/prefix.json");
+randopeep.data["city/suffix"]=require("./data/city/suffix.json");
+randopeep.data["street/suffix"]=require("./data/street/suffix.json");
+randopeep.data["uk/county"]=require("./data/uk/county.json");
+randopeep.data["uk/country"]=require("./data/uk/country.json");
+randopeep.data["bs/adjective"]=require("./data/bs/adjective.json");
+randopeep.data["bs/buzz"]=require("./data/bs/buzz.json");
+randopeep.data["bs/noun"]=require("./data/bs/noun.json");
+randopeep.data["domain/suffix"]=require("./data/domain/suffix.json");
+randopeep.data["name/prefix/female"]=require("./data/name/prefix/female.json");
+randopeep.data["name/prefix/male"]=require("./data/name/prefix/male.json");
+randopeep.data["catchPhrase/adjective"]=require("./data/catchPhrase/adjective.json");
+randopeep.data["catchPhrase/descriptor"]=require("./data/catchPhrase/descriptor.json");
+randopeep.data["catchPhrase/noun"]=require("./data/catchPhrase/noun.json");
+randopeep.data["phone"]=require("./data/phone.json");
+randopeep.data["ipsum/lorem"]=require("./data/ipsum/lorem.json");
+randopeep.data["name/chinese/female/first"]=require("./data/name/chinese/female/first.json");
+randopeep.data["name/chinese/last"]=require("./data/name/chinese/last.json");
+randopeep.data["name/chinese/male/first"]=require("./data/name/chinese/male/first.json");
+randopeep.data["name/dark/elven/female/first"]=require("./data/name/dark/elven/female/first.json");
+randopeep.data["name/dwarven/male/first"]=require("./data/name/dwarven/male/first.json");
+randopeep.data["name/elven/female/first"]=require("./data/name/elven/female/first.json");
+randopeep.data["name/elven/last"]=require("./data/name/elven/last.json");
+randopeep.data["name/elven/male/first"]=require("./data/name/elven/male/first.json");
+randopeep.data["name/english/female/first"]=require("./data/name/english/female/first.json");
+randopeep.data["name/english/last"]=require("./data/name/english/last.json");
+randopeep.data["name/english/male/first"]=require("./data/name/english/male/first.json");
+randopeep.data["name/germanic/female/first"]=require("./data/name/germanic/female/first.json");
+randopeep.data["name/germanic/last"]=require("./data/name/germanic/last.json");
+randopeep.data["name/germanic/male/first"]=require("./data/name/germanic/male/first.json");
+randopeep.data["name/japanese/female/first"]=require("./data/name/japanese/female/first.json");
+randopeep.data["name/japanese/last"]=require("./data/name/japanese/last.json");
+randopeep.data["name/japanese/male/first"]=require("./data/name/japanese/male/first.json");
+randopeep.data["name/orcish/first"]=require("./data/name/orcish/first.json");
+randopeep.data["name/spanish/female/first"]=require("./data/name/spanish/female/first.json");
+randopeep.data["name/spanish/last"]=require("./data/name/spanish/last.json");
+randopeep.data["name/spanish/male/first"]=require("./data/name/spanish/male/first.json");
+randopeep.data["gurps/armor"]=require("./data/gurps/armor.json");
+randopeep.data["gurps/attribute/rules"]=require("./data/gurps/attribute/rules.json");
+randopeep.data["gurps/empiregame/fantasy"]=require("./data/gurps/empiregame/fantasy.json");
+randopeep.data["gurps/exotic/classes"]=require("./data/gurps/exotic/classes.json");
+randopeep.data["gurps/mage/fantasy"]=require("./data/gurps/mage/fantasy.json");
+randopeep.data["gurps/psi/classes"]=require("./data/gurps/psi/classes.json");
+randopeep.data["gurps/standard/cabal"]=require("./data/gurps/standard/cabal.json");
+randopeep.data["gurps/standard/cyberpunk"]=require("./data/gurps/standard/cyberpunk.json");
+randopeep.data["gurps/standard/classes"]=require("./data/gurps/standard/classes.json");
+randopeep.data["gurps/standard/martial/arts"]=require("./data/gurps/standard/martial/arts.json");
+randopeep.data["gurps/standard/undead"]=require("./data/gurps/standard/undead.json");
+randopeep.data["gurps/standard/fantasy"]=require("./data/gurps/standard/fantasy.json");
+randopeep.data["gurps/standard/wwii/classes"]=require("./data/gurps/standard/wwii/classes.json");
+randopeep.data["gurps/test/classes"]=require("./data/gurps/test/classes.json");
+randopeep.data["gurps/weapons"]=require("./data/gurps/weapons.json");
+randopeep.data["gurps/y2kgame/classes"]=require("./data/gurps/y2kgame/classes.json");
+//</data>

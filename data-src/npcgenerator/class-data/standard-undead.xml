@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<classes type="standard" genre="undead" creation-time="2002-08-01 02:13:18">
+
+	<class alias="zomb" parents="grd" name="Zombie" nationality="various" tech-level="3" gender-ratio="67"
+	       hair="no" eyes="no, black, gray, no, white, no" age="20~90"
+		   images-male="zombie.gif" images-female="zombie.gif">
+		<stats>
+			<strength					min="9" max="16" mean="11.6"/>
+			<dexterity					min="7" max="15" mean="10"/>
+			<intelligence				min="5" max="13" mean="8"/>
+		</stats>
+		<attributes>
+			<hit-points					min="1" max="7" mean="4"/>
+		</attributes>
+
+		<advantages						min="0" max="1" mean="0">
+			<animal-empathy					req="-1"/>
+			<attractive						req="-1"/>
+			<charisma						req="-1"/>
+			<clerical-investment			req="-1"/>
+			<combat-reflexes				req="04"/>
+			<daredevil						req="-1"/>
+			<fashion-sense					req="-1"/>
+			<higher-purpose					req="-1"/>
+			<high-pain-threshold			req="1"/>
+			<immunity-to-disease			req="1"/>
+			<immunity-to-poison				req="1"/>
+			<invulnerability-mind-control	req="1"/>
+			<legal-enforcement				req="-1"/>
+			<literacy						req="-1"/>
+			<pious							req="-1"/>
+			<rank							req="-1"/>
+			<rapid-healing					req="-1"/>
+			<sanctity						req="-1"/>
+			<single-minded					req="33.33"/>
+			<status							req="-1"/>
+			<true-faith						req="-1"/>
+			<unfazeable						req="1"/>
+		</advantages>
+
+		<disadvantages						min="0" max="1" mean="0">
+			<berserk						req="-1"/>
+			<charitable						req="-1"/>
+			<cowardice						req="-1"/>
+			<delicate-metabolism			req="-1"/>
+			<epilepsy						req="-1"/>
+			<fat							min="1" max="1" req="01.65"/>
+			<glory-hound					req="-1"/>
+			<gullibility					req="20"/>
+			<hemophilia						req="-1"/>
+			<lecherousness					req="-1"/>
+			<low-pain-threshold				req="-1"/>
+			<megalomania					req="-1"/>
+			<monstrous-appearance			req="1" min="1" max="4" mean="2"/>
+			<mute							req="10"/>
+			<overweight						req="02.9"/>
+			<pacifism						req="-1"/>
+			<reprogrammable-duty			req="50"/>
+			<slave-mentality				req="50"/>
+			<ugly							req="-1"/>
+			<unhealing						req="1"/>
+			<unliving						req="1"/>
+			<weak-immune-system				req="-1"/>
+			<youth							req="-1"/>
+		</disadvantages>
+		<quirk-verbs					min="0" max="2" mean="0.6"/>
+
+		<skills							min="2" max="8" mean="3">
+			<flail							req="50"/>
+			<language-common				req="08.33"/>
+			<sex-appeal						req="-1"/>
+		</skills>
+
+		<weapons>
+			<rope req="0.01"/>
+			<torch req="01"/>
+			<backpack req="01"/>
+			<firstaid req="-1"/>
+		</weapons>
+	</class>
+
+	<class alias="sket" parents="zomb" name="Skeleton" nationality="various" age="50~190">
+		<stats>
+			<strength					min="8" max="14" mean="10"/>
+			<dexterity					min="9" max="17" mean="11.5"/>
+			<intelligence				min="5" max="13" mean="8"/>
+			<health						min="8" max="15" mean="10.9"/>
+		</stats>
+		<attributes>
+			<hit-points					min="-1" max="2" mean="0"/>
+		</attributes>
+
+		<advantages>
+			<impaling-resistance			min="2" max="2" req="1"/>
+			<combat-reflexes								req="46"/>
+		</advantages>
+		<disadvantages>
+			<fragile										req="1"/>
+			<fat											req="-1"/>
+			<overweight										req="-1"/>
+			<skinny											req="1"/>
+		</disadvantages>
+
+		<skills>
+			<fencing										req="51"/>
+		</skills>
+	</class>
+
+	<class alias="mumm" parents="zomb" name="Mummy" nationality="various" age="130~1600">
+		<stats>
+			<intelligence						min="7" max="15" mean="10"/>
+		</stats>
+
+		<disadvantages>
+			<vulnerability-fire					req="1"/>
+		</disadvantages>
+	</class>
+
+	<class alias="firewalker" parents="zomb" name="Firewalker Zombie" nationality="various">
+		<stats>
+			<intelligence						min="10" max="15" mean="12"/>
+		</stats>
+		<attributes>
+			<will						min="-4" max="-2" mean="-3"/>
+		</attributes>
+		<skills>
+			<spell-body-of-flames		max="1" req="1"/>
+			<spell-breathe-fire			max="1" req="1"/>
+			<spell-flame-jet			max="1" req="1"/>
+		</skills>
+
+		<disadvantages>
+			<pyromania							req="1"/>
+			<vulnerability-cold					req="1"/>
+		</disadvantages>
+
+		<weapons	 min="0" max="1" mean="0">
+			<laknife						req="01"/>
+			<scramsax						req="01"/>
+			<ssword							req="01"/>
+			<cbow							req="-1"/>
+			<lbow							req="-1"/>
+			<bswordtfire					req="08"/>
+		</weapons>
+
+		<armor		min="0" max="1" mean="0">
+			<cloth							req="-1"/>
+			<mshield						req="-1"/>
+			<leather						req="-1"/>
+			<pad							req="-1"/>
+			<slshoes	req="-1"/>
+			<slboots	req="-1"/>
+			<lboots		req="-1"/>
+			<hlboots	req="-1"/>
+		</armor>
+	</class>
+
+</classes>

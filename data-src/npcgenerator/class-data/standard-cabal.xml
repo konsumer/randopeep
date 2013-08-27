@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<classes type="standard" genre="cabal" creation-time="2002-02-21 02:13:18">
+
+	<class alias="br" parents="np, cq" name="Brother" nationality="American" gender-ratio="84" tech-level="8">
+		<stats>
+			<strength					min="8" max="15" mean="10.7"/>
+			<dexterity					min="8" max="15" mean="10"/>
+			<intelligence				min="8" max="15" mean="10"/>
+			<health						min="8" max="15" mean="10.8"/>
+		</stats>
+		<attributes>
+			<will				min="-2" max="1" mean="0.4"/>
+		</attributes>
+
+		<advantages>
+			<magery						min="0" max="3" mean="0" req="26"/>
+			<awareness							min="1" max="2" req="02"/>
+			<danger-sense						req="03"/>
+			<intuition							req="03"/>
+			<medium								req="03.4"/>
+			<true-faith							req="01"/>
+			<unfazeable							req="02.5"/>
+		</advantages>
+		<disadvantages>
+			<fanaticism					req="12.5"/>
+		</disadvantages>
+
+		<skills							min="4" max="11" mean="7">
+			<brawling					max="2" req="1"/>
+			<computer-operation			max="2" req="1"/>
+			<guns-light-auto			max="1" req="60"/>
+			<guns-pistol				max="2" req="70"/>
+			<guns-rifle					max="1" req="75"/>
+			<guns-shotgun				max="1" req="55"/>
+			<driving					max="2" req="1"/>
+			<ritual-magic				max="2" req="1"/>
+			<stealth					max="2" req="1"/>
+		</skills>
+
+		<weapons	 min="1" max="2" mean="1">
+			<small-knife				req="12.5"/>
+			<combat-knife/>
+			<ruger-22/>
+			<enfield-38/>
+			<wppk/>
+			<colt-45/>
+			<beretta-92/>
+			<glock-17/>
+			<usp/>
+			<deagle/>
+			<snub-38/>
+			<python/>
+			<m870/>
+			<spas/>
+			<mini-uzi/>
+			<uzi/>
+			<mp5/>
+			<mp5k/>
+			<mac-10/>
+			<springfield-m1903/>
+			<m-16/>
+			<colt-m4/>
+			<aug/>
+			<ak-47/>
+			<fn-fal/>
+			<sig-p229/>
+			<handcuffs req="02"/>
+			<flashb req="01"/>
+			<ammob req="10"/>
+			<ammop req="10"/>
+			<headset req="04"/>
+			<radioh req="06"/>
+			<canteen req="01"/>
+			<flashlight req="09"/>
+			<hflashlight req="05"/>
+			<nylonc req="06"/>
+			<rflare req="02"/>
+			<binoculars req="03"/>
+			<ammop req="78"/>
+		</weapons>
+
+		<armor		min="0" max="1" mean="0">
+			<vest-standard/>
+			<vest-hardcorps/>
+			<flak/>
+			<sboots/>
+			<mboots/>
+			<cboots/>
+			<sbracers/>
+			<ljacket/>
+			<coat/>
+			<lcvest/>
+			<hlvest/>
+			<lgloves/>
+			<circlet/>
+			<rhelmet/>
+			<gphelmet/>
+			<overcoat/>
+		</armor>
+	</class>
+
+	<class alias="cq" abstract="1" name="Cabal Quirks - Abstract">
+		<quirk-nouns>
+			<Steven_King/>
+			<fake_psychics/>
+			<psychics/>
+			<auras/>
+			<astral_projection/>
+			<the_NRA/>
+			<magic_rituals/>
+			<the_occult/>
+			<psionics/>
+			<black_cats/>
+			<voodoo/>
+			<hoongans/>
+			<zomibies/>
+			<the_undead/>
+			<The_X_Files/>
+			<Gillian_Anderson/>
+			<seeing_dead_people/>
+			<The_Sixth_Sense/>
+			<Buffy/>
+			<CSI_type_TV_shows/>
+			<The_View/>
+			<dark_matter/>
+			<Ghost_Whisperer/>
+			<Jennifer_Love_Hewitt/>
+			<string_theory/>
+			<super_colliders/>
+			<Crossing_Over/>
+			<John_Edward/>
+			<spirits/>
+			<the_spirit_world/>
+			<Lost/>
+			<Limbo/>
+			<Wickens/>
+			<posers/>
+			<needy_spirits/>
+			<whiny_spirits/>
+			<evil_spirits/>
+			<alien_abductions/>
+			<neurological_disorders/>
+			<gun_nuts/>
+			<being_called_superstitious/>
+		</quirk-nouns>
+	</class>
+
+
+	<class alias="ay" parents="br" name="Acolyte" nationality="American" item-mod-inc="4">
+		<stats>
+			<dexterity					min="8" max="15" mean="10.6"/>
+			<intelligence				min="10" max="16" mean="11.8"/>
+		</stats>
+		<attributes>
+			<fatigue			min="-2" max="4" mean="0.4"/>
+			<will				min="-1" max="3" mean="0.8"/>
+		</attributes>
+
+		<advantages>
+			<awareness							min="1" max="2" req="04"/>
+			<medium								req="08"/>
+			<danger-sense						req="04"/>
+			<unfazeable							req="03"/>
+		</advantages>
+		<disadvantages>
+			<albinism							req="04"/>
+			<charitable							req="00.02"/>
+			<disturbing-voice					req="05"/>
+			<dwarfism					  		req="00.08"/>
+			<epilepsy							req="01.3"/>
+			<fanaticism					req="16.66"/>
+			<gigantism							req="00.05"/>
+			<megalomania						req="02.5"/>
+			<nightmares							req="12.5"/>
+			<one-arm							req="00.05"/>
+			<one-eye							req="00.05"/>
+			<one-hand							req="00.05"/>
+			<pacifism					req="-1"/>
+			<reputation					req="06.25"/>
+			<secret						req="06"/>
+			<trademark					req="05"/>
+			<ugly						req="12.5"/>
+		</disadvantages>
+
+		<skills>
+			<computer-operation			min="-1" max="2" req="1"/>
+			<guns-light-auto			max="1" req="80"/>
+			<guns-pistol				max="2" req="87"/>
+			<guns-rifle					max="2" req="88"/>
+			<knife						max="2" req="50"/>
+			<occultism					min="0" max="2" req="1"/>
+			<ritual-magic				min="0" max="2" req="1"/>
+		</skills>
+
+		<weapons>
+			<small-knife				req="22"/>
+		</weapons>
+
+		<armor		min="0" max="2" mean="1"/>
+	</class>
+
+	<class alias="in" parents="ay" name="Initiate" nationality="American" item-mod-inc="7">
+		<stats>
+			<dexterity					min="10" max="16" mean="11.6"/>
+			<intelligence				min="11" max="16" mean="12.4"/>
+		</stats>
+		<attributes>
+			<will				min="1" max="4" mean="1.5"/>
+		</attributes>
+
+		<advantages>
+			<magery						min="1" max="3" mean="1.5" req="1"/>
+			<awareness							min="1" max="2" req="12"/>
+			<charisma					min="1" max="4" mean="1.5" req="16.66"/>
+			<clerical-investment		min="1" max="3" mean="1" req="30"/>
+			<combat-reflexes					req="25"/>
+			<danger-sense						req="15"/>
+			<daredevil							req="-1"/>
+			<eidetic-memory				min="0" max="2" mean="0.4" req="03"/>
+			<high-pain-threshold				req="33"/>
+			<intuition							req="09"/>
+			<luck						min="1" max="2" mean="1" req="04"/>
+			<magic-resistance			min="1" max="5" mean="1.5" req="02.5"/>
+			<medium								req="16.66"/>
+			<psi-resistance				min="1" max="5" mean="1.5" req="07"/>
+			<reputation					min="1" max="3" mean="1" req="16.66"/>
+			<true-faith							req="04"/>
+			<unfazeable							req="07"/>
+		</advantages>
+
+		<disadvantages>
+			<charitable							req="-1"/>
+			<disturbing-voice					req="06.25"/>
+			<epilepsy							req="02.5"/>
+			<fanaticism							req="20"/>
+			<megalomania						req="09"/>
+			<reputation							req="12"/>
+			<secret								req="15"/>
+			<trademark							req="06"/>
+		</disadvantages>
+
+		<skills>
+			<alchemy					max="1" req="36"/>
+			<computer-operation			min="-1" max="2" req="1"/>
+			<guns-light-auto			max="2" req="1"/>
+			<guns-pistol				max="2" req="1"/>
+			<guns-rifle					max="2" req="91"/>
+			<knife						max="2" req="1"/>
+			<occultism					min="0" max="4" req="1"/>
+			<ritual-magic				min="0" max="4" req="1"/>
+		</skills>
+
+		<weapons>
+			<small-knife				req="50"/>
+		</weapons>
+
+		<armor		min="0" max="3" mean="1.5"/>
+	</class>
+
+	<class alias="empath" parents="telp, br" name="Empath" nationality="American"/>
+
+	<class alias="telkcabal" parents="telk, br" name="Telekinetic " nationality="American"/>
+
+	<class alias="precogcabal" parents="precog, br" name="Precog" nationality="American"/>
+
+
+	<class alias="armedguard" parents="secguard" name="Armed Guard" nationality="American">
+		<stats>
+			<intelligence				min="8" max="15" mean="10"/>
+		</stats>
+
+		<advantages>
+			<legal-enforcement			min="1" max="2" mean="1" req="61"/>
+		</advantages>
+		<disadvantages>
+			<social-stigma-ex-con		min="-3" max="-1" mean="-1" req="08"/>
+			<youth						req="-1"/>
+		</disadvantages>
+
+		<skills>
+			<armory						max="2" req="32"/>
+			<electronics-comm			max="2" req="12"/>
+			<guns-light-auto			min="0" max="2" req="05"/>
+			<guns-pistol				min="1" max="2" req="1"/>
+			<guns-rifle					min="0" max="2" req="66"/>
+			<guns-shotgun				min="0" max="2" req="70"/>
+			<law						max="1" req="06"/>
+		</skills>
+
+		<weapons	min="1" max="2" mean="1">
+			<combat-knife req="06"/>
+			<hflashlight req="21"/>
+			<handcuffs req="02"/>
+			<flashb req="-1"/>
+			<peppers req="06"/>
+			<radioh req="26"/>
+			<ammop req="20"/>
+			<rope req="01"/>
+			<firstaid req="04"/>
+			<backpack req="-1"/>
+		</weapons>
+		<armor		min="0" max="2" mean="0.4">
+			<vest-standard/>
+			<vest-hardcorps/>
+			<cbootsw req="74"/>
+			<ljacketw/>
+		</armor>
+	</class>
+
+	<class alias="secguard" parents="standsold" name="Security Guard" nationality="American" item-mod-inc="-20"
+	       gender-ratio="84" tech-level="8" age="20~22,23,24,25,26,27,28,29,30,31,32~48">
+		<stats>
+			<strength					min="8" max="17" mean="11.4"/>
+			<intelligence				min="7" max="15" mean="9.5"/>
+		</stats>
+
+		<advantages>
+			<high-pain-threshold				req="02"/>
+			<legal-enforcement			min="1" max="2" mean="1" req="20"/>
+			<marksman							req="00.03"/>
+			<rank						min="0" max="4" mean="1" req="-1"/>
+		</advantages>
+		<disadvantages>
+			<fanaticism					min="-2" max="-1" req="01"/>
+			<fat						min="-2" max="-1" req="02"/>
+			<laziness					  		req="05"/>
+			<youth						min="-3" max="-1" mean="-1" req="02"/>
+			<social-stigma-ex-con		min="-3" max="-1" mean="-1" req="12"/>
+		</disadvantages>
+
+		<skills							min="2" max="8" mean="5">
+			<armory						max="2" req="02"/>
+			<detect-lies				max="1" req="05"/>
+			<electronics-comm			max="2" req="02"/>
+			<fast-draw-smg				max="2" req="01"/>
+			<fast-draw-clip				max="2" req="02"/>
+			<forward-observer			max="2" req="-1"/>
+			<forensics					max="2" req="01"/>
+			<gesture					min="0" max="2" req="10"/>
+			<gunner-cannon				min="0" max="2" req="0.13"/>
+			<gunner-mg					min="0" max="2" req="01"/>
+			<gunner-rocket				min="0" max="2" req="0.07"/>
+			<guns-LAW					min="0" max="2" req="01"/>
+			<guns-light-auto			min="0" max="2" req="01.6"/>
+			<guns-pistol				min="0" max="2" req="70"/>
+			<guns-rifle					min="0" max="2" req="06"/>
+			<guns-shotgun				min="0" max="2" req="23"/>
+			<law						max="1" req="01"/>
+			<savoir-faire-martial		max="2" req="02"/>
+			<short-sword				max="2" req="70"/>
+			<soldier					max="2" req="-1"/>
+			<spear						min="-3" max="2" req="01"/>
+			<speed-load-pistol			max="2" req="02"/>
+			<speed-load-smg				max="2" req="01"/>
+			<speed-load-rifle			max="2" req="01"/>
+			<survival					min="0" max="2"/>
+			<tactics					min="-1" max="2"/>
+			<driving-halftrack			max="2" req="-1"/>
+			<driving-tank				max="2" req="-1"/>
+		</skills>
+
+		<weapons	min="0" max="1" mean="0">
+			<bandolier req="02"/>
+			<combat-knife req="01"/>
+			<enfield-38/>
+			<wppk/>
+			<colt-45/>
+			<beretta-92/>
+			<glock-17/>
+			<usp/>
+			<sig-p229/>
+			<deagle/>
+			<snub-38/>
+			<python/>
+			<m870/>
+			<pr24 req="65"/>
+			<backpack req="-1"/>
+			<flashlight req="05"/>
+			<hflashlight req="12"/>
+		</weapons>
+		<armor		min="0" max="1" mean="0">
+			<vest-standard/>
+			<vest-hardcorps/>
+			<gphelmet/>
+			<cvest req="01"/>
+			<cbootsw req="72"/>
+			<ljacketw/>
+		</armor>
+	</class>
+
+	<class alias="policeman" parents="secguard" name="Policeman" nationality="American">
+		<stats>
+			<intelligence				min="8" max="15" mean="10.8"/>
+			<dexterity					min="9" max="15" mean="11"/>
+		</stats>
+
+		<advantages>
+			<legal-enforcement			min="1" max="2" mean="2" req="1"/>
+			<paramilitary-rank			min="0" max="4" mean="1" req="1"/>
+		</advantages>
+		<disadvantages>
+			<combat-paralysis			req="01.6"/>
+			<social-stigma-ex-con		min="-3" max="-1" mean="-1" req="-1"/>
+			<youth						req="-1"/>
+		</disadvantages>
+
+		<skills							min="3" max="8" mean="5">
+			<administration				max="2" req="20"/>
+			<armory						max="2" req="52"/>
+			<brawling					req="84"/>
+			<detect-lies				max="1" req="48"/>
+			<diplomacy					max="2" req="57"/>
+			<disguise					max="1" req="18"/>
+			<driving					req="1"/>
+			<electronics-comm			max="2" req="38"/>
+			<fast-draw-clip				max="2" req="18"/>
+			<first-aid					max="2" req="1"/>
+			<forensics					max="2" req="14"/>
+			<guns-light-auto			min="0" max="2" req="11"/>
+			<guns-pistol				min="0" max="3" mean="1.5" req="1"/>
+			<guns-rifle					min="0" max="2" req="78"/>
+			<guns-shotgun				min="0" max="2" req="91"/>
+			<hold-out					req="18"/>
+			<illiteracy					req="-1"/>
+			<intimidation				req="92"/>
+			<law						max="1" req="46"/>
+			<leadership					max="2" req="31"/>
+			<motorcycle					req="37"/>
+			<shadowing					max="2" req="39"/>
+			<short-sword				max="2" req="90"/>
+			<speed-load-pistol			max="2" req="38"/>
+			<stealth					max="2" req="42"/>
+			<streetwise					max="2" req="47"/>
+			<tactics					min="0" max="2" req="24"/>
+			<tracking					min="-1" max="2" req="20"/>
+		</skills>
+
+		<weapons	min="0" max="1" mean="0">
+			<combat-knife req="01"/>
+			<enfield-38 req="06"/>
+			<wppk/>
+			<colt-45 req="38"/>
+			<beretta-92 req="50"/>
+			<glock-17 req="82"/>
+			<usp req="52"/>
+			<sig-p229 req="57"/>
+			<deagle/>
+			<snub-38/>
+			<python req="10"/>
+			<m870/>
+			<spas/>
+			<mp5/>
+			<pr24 req="85"/>
+			<rflare req="01.6"/>
+			<handcuffs req="91"/>
+			<flashb req="-1"/>
+			<peppers req="36"/>
+			<radioh req="51"/>
+			<ammop req="93"/>
+			<cbaton req="04"/>
+		</weapons>
+		<armor		min="0" max="1" mean="0">
+			<vest-standard req="67"/>
+			<cbootsw req="1"/>
+		</armor>
+	</class>
+
+	<class alias="fbi" parents="policeman, cq" name="FBI Field Agent" item-mod-inc="16" gender-ratio="72" age="25~27,28,29,30,31,32,33,34,35,36,37,38~51">
+		<stats>
+			<strength					min="9" max="15" mean="11.6"/>
+			<intelligence				min="10" max="15" mean="12.4"/>
+			<dexterity					min="10" max="16" mean="11.8"/>
+			<health						min="10" max="15" mean="11.8"/>
+		</stats>
+		<attributes>
+			<vision				min="0" max="2"/>
+			<will				min="0" max="3" mean="1.5"/>
+		</attributes>
+
+		<advantages>
+			<attractive					min="1" max="3" mean="1.5" req="18"/>
+			<combat-reflexes			req="34"/>
+			<fit						min="1" max="2" mean="1" req="38"/>
+			<legal-enforcement			min="2" max="3" mean="2" req="1"/>
+			<paramilitary-rank			req="-1"/>
+		</advantages>
+		<disadvantages			min="0" max="4" mean="1.9">
+			<addiction					req="0.05"/>
+			<berserk					req="0.03"/>
+			<callous					req="21"/>
+			<combat-paralysis			req="0.6"/>
+			<delusions					req="-1"/>
+			<fanaticism					req="36"/>
+			<fat						req="-1"/>
+			<honesty					req="98"/>
+			<overweight					req="02.2"/>
+			<unfit						req="02"/>
+			<youth						req="-1"/>
+		</disadvantages>
+
+		<skills							min="0" max="5" mean="2.4">
+			<acting						max="2" req="17"/>
+			<administration				max="2" req="40"/>
+			<armory						max="2" req="52"/>
+			<boxing						max="2" req="09"/>
+			<computer-operation			max="2" req="1"/>
+			<computer-programming		max="2" req="22"/>
+			<cryptanalysis				max="2" req="11"/>
+			<detect-lies				max="1" req="38"/>
+			<disguise					max="1" req="18"/>
+			<driving					req="1"/>
+			<electronics-comm			max="2" req="29"/>
+			<fast-draw-clip				max="2" req="19"/>
+			<fast-draw-pistol			max="2" req="26"/>
+			<fast-talk					max="2" req="29"/>
+			<first-aid					max="2" req="1"/>
+			<forensics					max="2" req="53"/>
+			<guns-light-auto			min="0" max="2" req="54"/>
+			<guns-pistol				min="1" max="4" mean="2.2" req="1"/>
+			<guns-rifle					min="0" max="2" req="59"/>
+			<guns-shotgun				min="0" max="2" req="67"/>
+			<hold-out					req="24"/>
+			<interrogation				max="2" req="63"/>
+			<intelligence-analysis		max="2" req="87"/>
+			<intimidation				req="36"/>
+			<karate						req="62" max="2" mean="-0.4"/>
+			<law						max="1" req="88"/>
+			<leadership					max="2" req="45"/>
+			<motorcycle					req="21"/>
+			<occultism					min="0" max="2" req="20"/>
+			<research					max="2" req="17"/>
+			<shadowing					max="2" req="72"/>
+			<speed-load-pistol			max="2" req="37"/>
+			<stealth					max="2" req="78"/>
+			<streetwise					max="2" req="13"/>
+			<tactics					min="0" max="2" req="09"/>
+			<tracking					min="-1" max="2" req="32"/>
+
+			<psi-astral-sight				max="1" req="01"/>
+			<psi-clairvoyance				max="1" req="01"/>
+			<psi-psychometry				max="1" req="02"/>
+			<psi-telereceive				max="1" req="01"/>
+		</skills>
+
+		<weapons	min="0" max="1" mean="0">
+			<beretta-92 req="26"/>
+			<cbaton req="44"/>
+			<colt-45 req="09"/>
+			<combat-knife req="09"/>
+			<deagle/>
+			<enfield-38 req="04"/>
+			<flashb req="06"/>
+			<flashlight req="54"/>
+			<glock-17 req="36"/>
+			<handcuffs req="91"/>
+			<headset req="97"/>
+			<hflashlight req="02"/>
+			<m870/>
+			<mp5 req="10"/>
+			<peppers req="31"/>
+			<pr24 req="01"/>
+			<python req="05"/>
+			<radioh req="06"/>
+			<rflare req="02"/>
+			<sig-p229 req="88"/>
+			<snub-38/>
+			<spas/>
+			<usp req="67"/>
+			<wppk req="10"/>
+		</weapons>
+		<armor		min="0" max="1" mean="0">
+			<vest-standard req="71"/>
+			<cbootsw req="-1"/>
+		</armor>
+	</class>
+
+	<class alias="swat" parents="policeman, se" name="SWAT Policeman" gender-ratio="92" age="20~21,22,23,24,25,26,27,28,29,30,31,32~43">
+		<stats>
+			<dexterity					min="10" max="16" mean="12.4"/>
+		</stats>
+		<advantages>
+			<combat-reflexes		req="31"/>
+			<rank					req="-1"/>
+		</advantages>
+		<skills							min="2" max="7" mean="4.2">
+			<guns-LAW					min="-1" max="1" req="03.6"/>
+			<guns-light-auto			min="0" max="3" mean="1.8" req="96"/>
+			<guns-rifle					min="0" max="3" mean="1.8" req="99"/>
+		</skills>
+		<weapons	min="0" max="1" mean="1">
+			<combat-knife req="91"/>
+			<mp5k req="10"/>
+			<mp5 req="33"/>
+			<aug req="12"/>
+			<colt-m4 req="64"/>
+			<m-16 req="38"/>
+			<fn-fal/>
+			<springfield-m1903/>
+			<pr24 req="15"/>
+			<handcuffs req="74"/>
+			<flashb req="21"/>
+			<ammob req="1"/>
+			<headset req="62"/>
+			<radioh req="03"/>
+			<canteen req="01"/>
+			<entrench req="-1"/>
+			<radiopack req="-1"/>
+		</weapons>
+		<armor		min="0" max="1" mean="1">
+			<ballshield req="13"/>
+			<cvest		req="94"/>
+			<vest-standard req="67"/>
+			<vest-hardcorps req="99"/>
+			<rhelmet req="87"/>
+		</armor>
+	</class>
+
+	<class alias="natguard" parents="standsold" name="National Guardsman" nationality="American" gender-ratio="82" age="18~20,21,22,23,24,25,26,27,28,29,30,31,32~49">
+		<advantages>
+			<legal-enforcement			min="1" max="2" mean="1" req="41"/>
+		</advantages>
+		<skills>
+			<armory						max="2" req="73"/>
+			<electronics-comm			max="2" req="42"/>
+			<forward-observer			max="2"	req="10"/>
+			<gunner-mg					min="0" max="2" req="84"/>
+			<guns-LAW					min="0" max="2" req="40"/>
+			<guns-light-auto			min="0" max="2" req="76"/>
+			<guns-pistol				min="0" max="2" req="68"/>
+			<guns-rifle					min="0" max="2" req="99"/>
+			<guns-shotgun				min="0" max="2" req="16"/>
+			<savoir-faire-martial		max="2" req="32"/>
+			<soldier					max="2" req="1"/>
+			<spear						min="-3" max="2" req="61"/>
+			<survival					min="0" max="2" req="16"/>
+			<tactics					min="-1" max="2" req="12"/>
+		</skills>
+
+		<weapons	min="0" max="1" mean="0">
+			<combat-knife req="1"/>
+			<m-16 req="1"/>
+			<enfield-38/>
+			<colt-45/>
+			<beretta-92/>
+			<glock-17/>
+			<usp/>
+			<m870/>
+			<handcuffs req="04"/>
+			<flashb req="05"/>
+			<ammop req="21"/>
+			<ammob req="52"/>
+			<headset req="01.7"/>
+			<radioh req="09"/>
+			<canteen req="72"/>
+		</weapons>
+		<armor		min="0" max="1" mean="0">
+			<ballshield req="11"/>
+			<vest-standard/>
+			<vest-hardcorps/>
+			<rhelmet req="17"/>
+			<gphelmet req="87"/>
+			<cvest req="40"/>
+			<cbootsw req="1"/>
+			<ljacketw/>
+		</armor>
+	</class>
+
+	<class alias="gang" parents="terror" name="Gang Member" nationality="American" gender-ratio="89" tech-level="7" age="14~14,15,16,17,18,19,20,21,22,23,24~31">
+		<advantages>
+			<rank						req="-1"/>
+			<legal-enforcement			req="-1"/>
+		</advantages>
+		<disadvantages>
+			<youth						min="-3" max="-1" mean="-1" req="52"/>
+		</disadvantages>
+
+		<skills							min="3" max="8" mean="5">
+			<acrobatics					max="1" req="05"/>
+			<bow						req="-1"/>
+			<brawling					max="1" req="1"/>
+			<breath-control				max="0" req="-1"/>
+			<broad-sword				min="-1" max="1" req="22"/>
+			<computer-operation			max="1" req="01"/>
+			<demolitions				max="1" req="01.6"/>
+			<fast-draw-sword			max="1" req="-1"/>
+			<fencing					max="1" req="-1"/>
+			<first-aid					max="1" req="02"/>
+			<flail						req="10"/>
+			<heraldry					max="1" req="40"/>
+			<immovable-stance			max="1" req="03"/>
+			<intimidation				req="65"/>
+			<jitte-sai					max="1" req="-1"/>
+			<judo						min="-1" max="1" req="02"/>
+			<judo-art					min="-1" max="1" req="-1"/>
+			<jumping					max="1" req="43"/>
+			<karate						min="-1" max="1" req="03"/>
+			<karate-art					min="-1" max="1" req="-1"/>
+			<katana						max="1" req="01"/>
+			<knife						min="-1" max="1" req="71"/>
+			<kusari						max="1" req="-1"/>
+			<language-chinese			max="-1" req="04"/>
+			<language-dutch				max="-1" req="03"/>
+			<language-french			max="-1" req="01"/>
+			<language-german			max="-1" req="01"/>
+			<language-italian			max="-1" req="01"/>
+			<language-japanese			max="-1" req="04"/>
+			<language-portuguese		max="-1" req="04"/>
+			<language-russian			max="-1" req="01"/>
+			<language-spanish			max="-1" req="08"/>
+			<meditation					max="1"	req="-1"/>
+			<philosophy					max="1" req="01"/>
+			<power-blow					max="1" req="02"/>
+			<pressure-points			max="1" req="-1"/>
+			<push						max="1" req="05"/>
+			<ritual-magic				max="1" req="-1"/>
+			<savoir-faire-dojo			max="1" req="01"/>
+			<short-staff				max="1" req="08"/>
+			<short-sword				max="1" req="47"/>
+			<spear						max="1" req="06"/>
+			<staff						max="0" req="06"/>
+			<stealth					max="1" req="1"/>
+			<streetwise					max="2" req="78"/>
+			<theology					max="1" req="02"/>
+			<tournament-law				max="1"	req="04"/>
+			<two-hand-sword				max="1" req="10"/>
+			<wrestling					min="-1" max="1" req="-1"/>
+		</skills>
+	</class>
+
+</classes>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<armor>
+	<armor-stats>
+		<!-- Modern Gear -->
+		<ballshield			name="Ballistic Shield"			mod="-1" db="3" dr="12" area="arm  " weight="9lbs" note=" [1hit/hp] 11/43"/>
+		<cboots				name="Combat boots"				mod="-1" db="0" dr="2/1"  area="feet " weight="2.5lbs"/>
+		<gphelmet			name="Gentex PASGT Helmet"		mod="-1" db="0" dr="12"  area="head " weight="3lbs"/>
+		<sgloves			name="Shooting Gloves"			mod="-1" db="0" dr="1/0"  area="hands" weight="0lbs"/>
+		<vest-hardcorps		name="Second Chance HardCorps"	mod="-1" db="0" dr="12/5" area="torso" weight="6lbs"	/>
+		<vest-standard		name="Second Chance Standard"	mod="-1" db="0" dr="8/2" area="torso" weight="2.5lbs"	/>
+		<!-- Modern Gear - possibly magical -->
+		<coat				name="Sports Coat"				mod="15" db="0" dr="0"  area="torso/arms" weight="2lbs"/>
+		<flak				name="Flak Jacket"				mod="4"  db="0" dr="7"  area="torso" weight="12lbs"/>
+		<rhelmet			name="Riot Helmet"				mod="5"  db="0" dr="5"  area="head " weight="3lbs" note=" dr 2 vs. imp"/>
+		<sboots				name="Steel-toed boots"			mod="5"  db="0" dr="2"  area="feet " weight="3lbs" note=" +3 dam"/>
+		<mboots				name="Motorcycle boots"			mod="5"  db="0" dr="3/2"  area="feet " weight="4.5lbs" note=" -1 move"/>
+
+		<!-- Tech8 Gear -->
+		<mono-vest			name="Monocrys Vest"			mod="-1"  db="0" dr="16/6" area="torso" weight="4lbs"	/>
+		<hmono-vest			name="Heavy Monocrys Vest"		mod="-1"  db="0" dr="24/8" area="torso" weight="7lbs"	/>
+		<light-mono			name="Light Monocrys Suit"		mod="-1"  db="0" dr="8/2"  area="body " weight="7lbs"	/>
+		<mono				name="Monocrys Suit"			mod="-1"  db="0" dr="16/6"  area="body " weight="12lbs"	/>
+		<heavy-mono			name="Heavy Monocrys Suit"		mod="-1"  db="0" dr="24/8"  area="body " weight="16lbs"	/>
+		<dvest				name="Durasteel Vest"			mod="-1"  db="0" dr="40" area="torso" weight="18lbs"	note=" "/>
+		<comb-dress			name="Combat Infantry Dress"	mod="-1"  db="0" dr="26" area="body "  weight="35lbs"	note=" "/>
+		<comb-helm			name="Combat Infantry Helmet"	mod="-1"  db="0" dr="18" area="head"  weight="8lbs"		note=" "/>
+
+		<!-- WWII Gear -->
+		<uhelmet			name="US Army M1 Helmet"		mod="-1" db="0" dr="4"  area="head " weight="4lbs"/>
+		<ghelmet			name="German M1935 Helmet"		mod="-1" db="0" dr="4"  area="head " weight="5lbs"/>
+		<flakw				name="Flak Jacket"				mod="-1" db="0" dr="7/3"  area="torso" weight="12lbs"/>
+		<cvest				name="Tactical Assault Vest"	mod="-1" db="0" dr="1/0"  area="torso " weight="3lbs"/>
+		<cbootsw			name="Combat boots"				mod="-1" db="0" dr="2/1"  area="feet " weight="2.5lbs"/>
+		<overcoatw			name="Overcoat"					mod="-1" db="0" dr="1/0"  area="body" weight="10lbs"/>
+		<ljacketw			name="Leather Jacket"			mod="-1" db="0" dr="1/0"  area="torso/arms" weight="4lbs"/>
+		<ltrench			name="Leather Trenchcoat"		mod="-1" db="0" dr="1/0"  area="body " weight="6.5lbs"/>
+		<fjacketw			name="Flight Jacket"			mod="-1" db="0" dr="2/0"  area="torso/arms" weight="5lbs"/>
+		<wcloth				name="Winter Clothing"			mod="-1" db="0" dr="1/0"  area="body " weight="3lbs"/>
+		<flhelm				name="Flight Helmet"			mod="-1" db="0" dr="2/1"  area="head " weight="1.5lbs"/>
+		<thelm				name="Tanker Helmet"			mod="-1" db="0" dr="2/1"  area="head " weight="1.5lbs"/>
+		<lglovesw			name="Leather Gloves"			mod="-1" db="0" dr="2/1"  area="hands" weight=".5lbs"/> 
+
+		<!-- Fantasy Gear -->
+		<slshoes			name="Soft Leather Shoes"		mod="1"  db="0" dr="1/0"  area="feet " weight="0.5lbs"/>
+		<slboots			name="Soft Leather Boots"		mod="2"  db="0" dr="2/0"  area="feet " weight="1.5lbs"/>
+		<lboots				name="Leather Boots"			mod="1"  db="0" dr="2/1"  area="feet " weight="2.5lbs"/>
+		<hlboots			name="Hard Leather Boots"		mod="1"  db="0" dr="2/2"  area="feet " weight="3.5lbs"/>
+		<sollerets			name="Sollerets"				mod="2"  db="0" dr="4"  area="feet " weight="7lbs"/>
+		<eboots				name="Elven boots"				mod="3"  db="0" dr="2/0"  area="feet " weight="2lbs" req-mods="lightened, light-walk"/>
+		<sbracers			name="Steel Bracers"			mod="7"  db="0" dr="6"  area="lower-arms" weight="4lbs"/>
+		<bracersd			name="Bracers of defense"		mod="56" db="0" dr="6"  area="lower-arms" weight="4lbs" req-mods="improved-db, iron-arm, missile-shield"/>
+		<spbracers			name="Spiked Bracers"			mod="3"  db="0" dr="5"  area="lower-arms" weight="3lbs" req-mods="spiked"/>
+		<shplates			name="Shoulder Plates"			mod="2"	 db="0" dr="6"  area="shoulders" weight="7.5lbs"/>
+		<thplates			name="Thigh Plates"				mod="1"	 db="0" dr="6"  area="thighs" weight="8lbs"/>
+
+		<cgloves			name="Cloth	Gloves"				mod="2"	 db="0" dr="1/0"  area="hands" weight="0lbs"/>
+		<lgloves			name="Leather Gloves"			mod="3"	 db="0" dr="2/1"  area="hands" weight=".5lbs"/>
+		<gauntlets			name="Gauntlets"				mod="6"	 db="0" dr="4"  area="hands" weight="2lbs"/>
+		<ocesti				name="Orcish Cesti"				mod="1"	 db="0" dr="3/2"  area="hands" weight="1.4lbs" req-mods="spiked"/>
+
+		<ljacket			name="Leather Jacket"			mod="1"	 db="0" dr="1"  area="torso" weight="4lbs"/>
+		<llvest				name="Light Leather Vest"		mod="2"	 db="0" dr="2/0"  area="torso" weight="8lbs"/>
+		<lvest				name="Leather Vest"				mod="2"	 db="0" dr="2/1"  area="torso" weight="10lbs"/>
+		<hlvest				name="Hardened Leather Vest"	mod="2"	 db="0" dr="2/2"  area="torso" weight="13lbs"/>
+		<slvest				name="Studded Leather Vest"		mod="2"	 db="0" dr="3/1"  area="torso" weight="14lbs"/>
+		<lcvest				name="Light Chain Mail Vest"	mod="3"	 db="0" dr="4/1"  area="torso" weight="16.5lbs"/>
+		<hcvest				name="Heavy Chain Mail Vest"	mod="2"	 db="0" dr="4/2"  area="torso" weight="18lbs"/>
+		<hrmvest			name="Heavy Ring Mail Vest"		mod="2"	 db="0" dr="4/3"  area="torso" weight="19lbs"/>
+		<hscvest			name="Heavy Scale Vest"			mod="2"	 db="0" dr="4"  area="torso" weight="22lbs"/>
+		<mcshirt			name="Mithril Chain Shirt"		mod="3"	 db="0" dr="4/2"  area="torso" weight="15lbs" req-mods="lightened, high-quality"/>
+		<brigv				name="Brigandine Vest"			mod="2"  db="0" dr="5/3"  area="torso" weight="24lbs"/>
+		<bplate				name="Breastplate"				mod="2"  db="0" dr="5"  area="torso" weight="28lbs"/>
+		<hcorse				name="Heavy Corselet"			mod="2"  db="0" dr="7"  area="torso" weight="45lbs"/>
+
+		<overcoat			name="Overcoat"					mod="2"	db="0" dr="1/0"  area="body" weight="10lbs"/>
+		<cloth				name="Cloth Armor"				mod="0" db="0" dr="1/0"  area="body " weight="14lbs"/>
+		<pad				name="Padded Armor"				mod="1" db="0" dr="2/0"  area="body " weight="18lbs"/>
+		<lleather			name="Light Leather Armor"		mod="1" db="0" dr="2/0"  area="body " weight="17lbs"/>
+		<leather			name="Leather Armor"			mod="1" db="0" dr="2/1"  area="body " weight="20lbs"/>
+		<hleather			name="Hardened Leather Armor"	mod="1" db="0" dr="2/2"  area="body " weight="28lbs"/>
+		<sleather			name="Studded Leather Armor"	mod="1" db="0" dr="3/1"  area="body " weight="32lbs"/>
+		<bone				name="Bone Armor"				mod="1" db="0" dr="3/1"  area="body " weight="34lbs"/>
+		<leatherl			name="Leather Lamellar Armor"	mod="1" db="0" dr="3/2"  area="body " weight="38lbs"/>
+		<lchain				name="Light Chain Mail Armor"	mod="1" db="0" dr="4/1"  area="body " weight="39lbs"/>
+		<chain				name="Chain Mail Armor"			mod="2" db="0" dr="4/2"  area="body " weight="45lbs" />
+		<rmail				name="Ring Mail Armor"			mod="2" db="0" dr="4/3"  area="body " weight="48lbs" />
+		<scale				name="Scale Mail Armor"			mod="2" db="0" dr="4"  area="body " weight="52lbs"/>
+		<brig				name="Brigandine Armor"			mod="2" db="0" dr="5/3"  area="body " weight="54lbs"/>
+		<metlam				name="Metal Lamellar Armor"		mod="2" db="0" dr="5/4"  area="body " weight="60lbs"/>
+		<banded				name="Banded Mail Armor"		mod="2" db="0" dr="5/5"  area="body " weight="70lbs"/>
+		<hplate				name="Half-Plate Mail Armor"	mod="2" db="0" dr="5"  area="body " weight="72lbs"/>
+		<plate				name="Plate Mail Armor"			mod="2" db="0" dr="6"  area="body " weight="90lbs"/>
+		<fplate				name="Full Plate Mail Armor"	mod="3" db="0" dr="7"  area="body " weight="95lbs" req-mods="high-quality"/>
+		<dplate				name="Dark Plate Armor"			mod="3" db="0" dr="6"  area="body " weight="92lbs" req-mods="spiked, hard-to-kill, dark-vision, immovable-stance"/>
+		<mchain				name="Mithril Chain Armor"		mod="3" db="0" dr="4/2"  area="body " weight="45lbs" req-mods="lightened, high-quality"/>
+		<mplate				name="Mithril Plate Armor"		mod="4" db="0" dr="6"  area="body " weight="90lbs" req-mods="aura-shield, lightened, high-quality"/>
+
+		<ccap				name="Cloth Cap"				mod="0" db="0" dr="1/0"  area="head" weight=".1lbs"/>
+		<lhelm				name="Leather Helm"				mod="1" db="0" dr="2/1"  area="head " weight="1lbs"/>
+		<ccoif				name="Chain Coif"				mod="1" db="0" dr="4/2"  area="head" weight="4lbs" />
+		<phelm				name="Pot Helm"					mod="1" db="0" dr="4"  area="head " weight="5lbs"/>
+		<fhelm				name="Full Helm"				mod="2" db="0" dr="5"  area="head " weight="7lbs" note="eyes/jar visible"/>
+		<ghelm				name="Great Helm"				mod="2" db="0" dr="7"  area="head " weight="10lbs" note=" tohit -1"/>
+
+		<buckler			name="Buckler"					mod="1" db="1" dr="3"  area="arm  "  weight="2lbs"  note=" [1hit/hp] 5/20"/>
+		<msshield			name="Mithril Small Shield"		mod="1" db="2" dr="4"  area="arm  "  weight="8lbs"  note=" [1hit/hp] 7/35" req-mods="lightened"/>
+		<sshield			name="Small Shield"				mod="1" db="2" dr="4"  area="arm  "  weight="8lbs"  note=" [1hit/hp] 5/30"/>
+		<mshield			name="Medium Shield"			mod="1" db="2" dr="5"  area="arm  "  weight="15lbs" note=" [1hit/hp] 7/40"/>
+		<bshield			name="Bronze Shield"			mod="2" db="3" dr="6"  area="arm  "  weight="45lbs" note=" [1hit/hp] 14/80"/>
+		<lshield			name="Large Shield"				mod="2" db="3" dr="5"  area="arm  "  weight="28lbs" note=" [1hit/hp] 9/60"/>
+		<atshield			name="Adamantine Tower Shield"	mod="2" db="4" dr="6"  area="arm  "  weight="32lbs" note=" [1hit/hp] 12/90" req-mods="high-quality"/>
+		<dkshield			name="Dwarven Kite Shield"		mod="2" db="3" dr="4"  area="arm  "  weight="26lbs" note=" [1hit/hp] 8/50" req-mods="high-quality"/>
+		<etshield			name="Elàrian Tower Shield"		mod="1" db="4" dr="5"  area="arm  "  weight="30lbs" note=" [1hit/hp] 8/50" req-mods="high-quality"/>
+		<esshield			name="Elàrian Spear Shield"		mod="1" db="1" dr="4"  area="arm  "  weight="7lbs" note=" [1hit/hp] 5/25"  req-mods="high-quality, unique-design"/>
+
+		<cloak				name="Cloak"					mod="8"  db="1" dr="0"  area="body" weight="4lbs"/>
+		<srobe				name="Shamanic Robe"			mod="9"  db="0" dr="1/0"  area="body" weight="8lbs" req-mods="fear-symbol"/>
+		<ring				name="Ring"						mod="60" db="0" dr="0"  area="finger"  weight=".1lbs"/>
+		<ring2				name="Ring"						mod="85" db="0" dr="0"  area="finger " weight=".1lbs"/>
+		<ringp				name="Ring of Protection"		mod="3"  db="0" dr="0"  area="finger " weight=".1lbs" req-mods="improved-db"/>
+		<broach				name="Broach"					mod="82" db="0" dr="0"  area="chest" weight=".2lbs"/>
+		<necklace			name="Necklace"					mod="16" db="0" dr="0"  area="neck"  weight=".1lbs"/>
+		<amulet				name="Amulet"					mod="72" db="0" dr="0"  area="neck " weight=".5lbs"/>
+		<bracelet			name="Bracelet"					mod="20" db="0" dr="0"  area="wrist" weight=".1lbs"/>
+		<circlet			name="Circlet"					mod="42" db="0" dr="1"  area="brain" weight=".5lbs"/>
+	</armor-stats>
+
+	<!-- Armor has some (item-mod-inc + weapon[mod])% chance of being modified, magical or unique in some way -->
+	<armor-mods		mod-inc="0">
+		<silver-plated					min="0" max="0"/>
+		<silver-inlay					min="0" max="0"/>
+		<gold-plated					min="0" max="0"/>
+		<gold-inlay						min="0" max="0"/>
+		<platinum-inlay					min="0" max="0"/>
+		<rune-engraved					min="0" max="0"/>
+		<jewel-encrusted				min="0" max="0"/>
+		<spiked							min="0" max="0"/>
+		<unique-design					min="0" max="0"/>
+		<high-quality					min="0" max="0"/>
+
+		<!-- magical enchantments - value is mod or uses per day (zero means always on) -->
+		<alertness						min="1" max="5" mean="2.4" sdev="1.4"/>
+		<animal-control					min="1" max="5"/>
+		<aura-shield					min="0" max="0"/>
+		<blink							min="3" max="8" mean="4"/>
+		<blur							min="2" max="4"/>
+		<call-armor						min="1" max="4"/>
+		<cold-resistance				min="0" max="0"/>
+		<dark-vision					min="0" max="0"/>
+		<energy-resistance				min="0" max="0"/>
+		<ethereal-body					min="1" max="2" mean="1"/>
+		<fear-symbol					min="1" max="4"/>
+		<fire-resistance				min="0" max="0"/>
+		<flame-jet						min="1" max="3"/>
+		<great-haste					min="1" max="2"/>
+		<hard-to-kill					min="1" max="3" mean="1.2" sdev=".6"/>
+		<hawk-vision					min="3" max="9" mean="5.6" sdev=".85"/>
+		<immovable-stance				min="0" max="0"/>
+		<improved-dr					min="1" max="4" mean="1.1" sdev=".601"/>
+		<improved-db					min="1" max="2" mean="0.64" sdev=".3"/>
+		<indestructible					min="0" max="0"/>
+		<infra-vision					min="0" max="0"/>
+		<invisibility					min="1" max="2" mean="1"/>
+		<iron-arm						min="2" max="8" mean="3.4"/>
+		<klutz-curse					min="0" max="0"/>
+		<levitate						min="1" max="3"/>
+		<lightened						min="1" max="3" mean="1.2" sdev="0.42"/>
+		<light-walk						min="2" max="7"/>
+		<magic-resistance				min="1" max="4"/>
+		<missile-reflection				min="1" max="4" mean="1.2"/>
+		<missile-shield					min="0" max="0"/>
+		<mobility						min="0" max="0"/>
+		<plant-control					min="1" max="5"/>
+		<powered						min="1" max="4"/>
+		<sanctuary						min="1" max="2"/>
+		<scry-shield					min="0" max="0"/>
+		<see-invisible					min="0" max="0"/>
+		<shadow-hide					min="2" max="6"/>
+		<sonic-resistance				min="0" max="0"/>
+		<stone-skin						min="1" max="2"/>
+		<true-sight						min="3" max="6"/>
+		<undead-control					min="1" max="2"/>
+		<undead-invisibility			min="0" max="0"/>
+		<unluck-curse					min="0" max="0"/>
+		<water-breathing				min="0" max="0"/>
+	</armor-mods>
+
+</armor>
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<classes type="test-game" genre="Y2K" creation-time="2008-11-17 12:47:18">
+	<class alias="y2kbaseclass" abstract="1" name="Y2K base class">
+		<quirk-nouns>
+			<looters/>
+			<looting/>
+			<apathy/>
+			<doom_sayers/>
+			<the_apocalypse/>
+			<deflation/>
+			<bailouts/>
+			<white_gang_members/>
+			<day_light_savings/>
+			<financial_institutions/>
+			<bank_computers/>
+			<telco_machines/>
+			<badly_written_software/>
+			<two_digit_date_formats/>
+		</quirk-nouns>
+	</class>
+
+	<class alias="teamhonest" parents="y2kbaseclass" abstract="1" name="Team Honest">
+		<disadvantages>
+			<greed					req="-1"/>
+			<honesty				req="1"/>
+		</disadvantages>
+	</class>
+	<class alias="teamgreed"  parents="y2kbaseclass" abstract="1" name="Team Greed">
+		<disadvantages>
+			<greed					req="1"/>
+			<honesty				req="-1"/>
+		</disadvantages>
+	</class>
+
+
+	<class alias="gangg" parents="teamgreed, gang" name="Gang Member "/>
+	<class alias="terrorg" parents="teamgreed, terror" name="Terrorist "/>
+	<class alias="policemang" parents="teamgreed, policeman" name="Corrupt Policeman"/>
+	<class alias="swatg" parents="teamgreed, swat" name="Corrupt SWAT Policeman"/>
+
+	<class alias="terrorh" parents="teamhonest, terror" name="Enlightened Anarchist">
+		<weapons						min="1" max="4" mean="2.4"/>
+	</class>
+	<class alias="swath" parents="teamhonest, swat" name="Honest SWAT Policeman"/>
+	<class alias="armedguardh" parents="teamhonest, armedguard" name="Armed Guard "/>
+	<class alias="policemanh" parents="teamhonest, policeman" name="Honest Policeman"/>
+
+	<class alias="natguardr" parents="natguard" name="Rogue National Guardsman"/>
+	<class alias="yfbi" parents="fbi" name="FBI Agent"/>
+	<class alias="ynp" parents="np" name="Hapless Civilian"/>
+
+</classes>

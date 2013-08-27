@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<attribute-bases>
+	<attributes>
+		<hit-points			stat="strength" costs="2"/>
+		<fatigue			stat="health" costs="3"/>
+		<vision				stat="intelligence" costs="2"/>
+		<hearing			stat="intelligence" costs="2"/>
+		<taste-smell		stat="intelligence" costs="1"/>
+		<will				stat="intelligence" costs="5"/>
+		<speed				stat="dex/health" costs="20"/> <!-- because, well, you know 20/4 (num inc. of .25 in 1) comes out to cost of 5 per .25 -->
+		<move				stat="dex/health" costs="5"/>
+	</attributes>
+ 
+	<skills>
+		<acrobatics			stat="one-eye, dexterity, perfect-balance, gyrobalance" min="-3"/>
+		<acting				stat="shy, low-empathy, solipsist, callous, charisma, eidetic-memory, intelligence" min="-2"/>
+		<administration		stat="eidetic-memory, intelligence" min="-2"/>
+		<agronomy			stat="eidetic-memory, intelligence" min="-2"/>
+		<alchemy			stat="eidetic-memory, intelligence" min="-4"/>
+		<animal-handling	stat="animal-empathy, eidetic-memory, intelligence" min="-3"/>
+		<archaeology		stat="eidetic-memory, intelligence" min="-3"/>
+		<architecture		stat="eidetic-memory, intelligence" min="-2"/>
+		<area-knowledge-cyberspace	stat="eidetic-memory, intelligence" min="-3"/>
+		<area-knowledge-yetcirah	stat="eidetic-memory, intelligence" min="-3"/>
+		<armory				stat="eidetic-memory, intelligence" min="-2"/>
+		<artist				stat="eidetic-memory, intelligence" min="-3"/>
+		<astrology			stat="eidetic-memory, intelligence" min="-3"/>
+		<astronomy			stat="eidetic-memory, intelligence" min="-3"/>
+		<axe-mace			stat="one-eye, dexterity" min="-2"/>
+		<axe-throwing		stat="one-eye, dexterity" min="-1"/>
+		<bard				stat="shy, low-empathy, solipsist, callous, charisma, eidetic-memory, intelligence" min="-2"/>
+		<biochemistry		prereqs="chemistry:-1~1~3" stat="eidetic-memory, intelligence" min="-4"/>
+		<blacksmith			stat="eidetic-memory, intelligence" min="-2"/>
+		<boating			stat="dexterity" min="-2"/>
+		<bow				stat="dexterity" min="-3"/>
+		<boxing				stat="one-eye, dexterity" min="-2"/>
+		<brawling			stat="one-eye, dexterity" min="-1"/>
+		<breath-control		stat="eidetic-memory, intelligence" min="-4"/>
+		<broad-sword		stat="one-eye, dexterity" min="-2"/>
+		<calligraphy		stat="dexterity" min="-2"/>
+		<camouflage			stat="eidetic-memory, intelligence" min="-1"/>
+		<carousing			stat="shy, low-empathy, callous, health" min="-2"/>
+		<carpentry			stat="eidetic-memory, intelligence" min="-1"/>
+		<chemistry			stat="eidetic-memory, intelligence" min="-3"/>
+		<climbing			stat="double-jointed, one-eye, dexterity" min="-1"/>
+		<cloak				stat="one-eye, dexterity" min="-2"/>
+		<combat-engineering	stat="math-ability, eidetic-memory, intelligence" min="-3"/>
+		<combat-drive		stat="one-eye, dexterity" min="-3"/>
+		<combat-pilot		stat="one-eye, dexterity" min="-3"/>
+		<computer-hacking		prereqs="computer-programming:-1~1~3" stat="math-ability, eidetic-memory, intelligence" min="-4"/>
+		<computer-programming	prereqs="computer-operation:-1~1~3"	stat="math-ability, eidetic-memory, intelligence" min="-3"/>
+		<computer-operation	stat="eidetic-memory, intelligence" min="-2"/>
+		<cooking			stat="eidetic-memory, intelligence" min="-1"/>
+		<crossbow			stat="dexterity" min="-1"/>
+		<cryptanalysis		stat="math-ability, eidetic-memory, intelligence" min="-3"/>
+		<cryptography		stat="math-ability, eidetic-memory, intelligence" min="-3"/>
+		<cryptology			stat="math-ability, eidetic-memory, intelligence" min="-3"/>
+		<cyberdeck-operation	prereqs="computer-operation:-1~1~3"	stat="math-ability, eidetic-memory, intelligence" min="-3"/>
+		<dancing			stat="health" min="-2"/>
+		<demolitions		stat="eidetic-memory, intelligence" min="-2"/>
+		<detect-lies		stat="shy, low-empathy, eidetic-memory, intelligence" min="-3"/>
+		<diagnosis			stat="eidetic-memory, intelligence" min="-3"/>
+		<diplomacy			stat="shy, voice, low-empathy, callous, charisma, solipsist, eidetic-memory, intelligence" min="-3"/>
+		<disguise			stat="fat, skinny, eidetic-memory, intelligence" min="-2"/>
+		<driving			stat="one-eye, dexterity" min="-1"/>
+		<driving-tank		stat="one-eye, dexterity" min="-1"/>
+		<driving-halftrack	stat="one-eye, dexterity" min="-1"/>
+		<driving-horselesschariot	stat="one-eye, dexterity" min="-2"/>
+		<electronics		stat="math-ability, eidetic-memory, intelligence" min="-3"/>
+		<electronics-comm	stat="eidetic-memory, intelligence" min="-2"/>
+		<electronics-security	stat="eidetic-memory, intelligence" min="-2"/>
+		<engineering-mechanical	stat="math-ability, eidetic-memory, intelligence" min="-3"/>
+		<escape				stat="double-jointed, dexterity" min="-3"/>
+		<falconry			stat="animal-empathy, eidetic-memory, intelligence" min="-2"/>
+		<fast-draw-arrow	prereqs="bow:-2~1~1"				stat="combat-reflexes, dexterity" min="-1"/>
+		<fast-draw-knife	prereqs="knife:-1~0~2"				stat="combat-reflexes, dexterity" min="-1"/>
+		<fast-draw-sword	prereqs="broad-sword:-1~0~1"		stat="combat-reflexes, dexterity" min="-1"/>
+		<fast-draw-pistol	prereqs="guns-pistol:-1~0~1"		stat="combat-reflexes, dexterity" min="-1"/>
+		<fast-draw-smg		prereqs="guns-light-auto:-1~0~1"	stat="combat-reflexes, dexterity" min="-1"/>
+		<fast-draw-clip		prereqs="guns-pistol:-1~0~1"		stat="dexterity, combat-reflexes" min="-1"/>
+		<fast-talk			stat="shy, solipsist, callous, charisma, eidetic-memory, intelligence" min="-2"/>
+		<fencing			stat="one-eye, dexterity" min="-2"/>
+		<first-aid			stat="eidetic-memory, intelligence" min="-1"/>
+		<fishing			stat="eidetic-memory, intelligence" min="-1"/>
+		<flail				stat="one-eye, dexterity" min="-2"/>
+		<forensics			stat="eidetic-memory, intelligence" min="-3"/>
+		<forgery			stat="eidetic-memory, intelligence" min="-3"/>
+		<forward-observer	stat="eidetic-memory, intelligence" min="-2"/>
+		<freefall			stat="dexterity" min="-2"/>
+		<gambling			stat="eidetic-memory, intelligence" min="-2"/>
+		<gardening			stat="eidetic-memory, intelligence" min="-1"/>
+		<gesture			stat="language-talent, eidetic-memory, intelligence" min="-1"/>
+		<guns-LAW			stat="dexterity" min="-1"/>
+		<guns-generic		stat="dexterity" min="-3"/>
+		<guns-glauncher		stat="dexterity" min="-1"/>
+		<guns-gyroc			stat="dexterity, weapon-link" min="-1"/>
+		<guns-light-auto	stat="dexterity, weapon-link" min="-1"/>
+		<guns-machine-pistol stat="dexterity, weapon-link" min="-1"/>
+		<guns-needler		stat="dexterity, weapon-link" min="-1"/>
+		<guns-pistol		stat="dexterity, weapon-link" min="-1"/>
+		<guns-rifle			stat="dexterity, weapon-link" min="-1"/>
+		<guns-shotgun		stat="dexterity, weapon-link" min="-1"/>
+		<guns-tangler		stat="dexterity, weapon-link" min="-1"/>
+		<gunner-ballista	stat="dexterity" min="-2"/>
+		<gunner-cannon		stat="dexterity" min="-2"/>
+		<gunner-generic		stat="dexterity" min="-3"/>
+		<gunner-mg			stat="dexterity" min="-2"/>
+		<gunner-rocket		stat="dexterity" min="-2"/>
+		<heraldry			stat="eidetic-memory, intelligence" min="-1"/>
+		<hiking				stat="health" min="-2"/>
+		<history			stat="eidetic-memory, intelligence" min="-3"/>
+		<hobby-roleplaying	stat="eidetic-memory, intelligence" min="-1"/>
+		<hold-out			stat="eidetic-memory, intelligence" min="-2"/>
+		<hypnotism			stat="voice, low-empathy, eidetic-memory, intelligence" min="-3"/>
+		<intelligence-analysis		stat="eidetic-memory, intelligence" min="-3"/>
+		<interrogation		stat="eidetic-memory, intelligence" min="-2"/>
+		<intimidation		stat="eidetic-memory, gigantism, intelligence" min="-2"/>
+		<jeweler			stat="eidetic-memory, intelligence" min="-3"/>
+		<jitte-sai			stat="one-eye, dexterity" min="-2"/>
+		<judo				stat="one-eye, dexterity" min="-3"/>
+		<judo-art			stat="one-eye, dexterity" min="-3"/>
+		<juggling			stat="one-eye, dexterity" min="-1"/>
+		<jumping			stat="one-eye, dexterity" min="-1"/>
+		<karate				stat="one-eye, dexterity" min="-3"/>
+		<karate-art			stat="one-eye, dexterity" min="-3"/>
+		<katana				stat="one-eye, dexterity" min="-2"/>
+		<katana-art			stat="one-eye, dexterity" min="-2"/>
+		<knife				stat="one-eye, dexterity" min="-1"/>
+		<knife-throwing		stat="one-eye, dexterity" min="-1"/>
+		<kusari				stat="one-eye, dexterity" min="-3"/>
+		<language-celestial			prereqs="awareness:1~2" stat="language-talent, eidetic-memory, intelligence" min="-7"/>
+		<language-chinese			stat="language-talent, eidetic-memory, intelligence" min="-7"/>
+		<language-dutch				stat="language-talent, eidetic-memory, intelligence" min="-6"/>
+		<language-english			stat="language-talent, eidetic-memory, intelligence" min="-6"/>
+		<language-french			stat="language-talent, eidetic-memory, intelligence" min="-6"/>
+		<language-german			stat="language-talent, eidetic-memory, intelligence" min="-6"/>
+		<language-italian			stat="language-talent, eidetic-memory, intelligence" min="-6"/>
+		<language-japanese			stat="language-talent, eidetic-memory, intelligence" min="-6"/>
+		<language-polish			stat="language-talent, eidetic-memory, intelligence" min="-6"/>
+		<language-portuguese		stat="language-talent, eidetic-memory, intelligence" min="-6"/>
+		<language-romanian			stat="language-talent, eidetic-memory, intelligence" min="-6"/>
+		<language-russian			stat="language-talent, eidetic-memory, intelligence" min="-6"/>
+		<language-serbo-croatian	stat="language-talent, eidetic-memory, intelligence" min="-6"/>
+		<language-spanish			stat="language-talent, eidetic-memory, intelligence" min="-6"/>
+		<language-common			stat="language-talent, eidetic-memory, intelligence" min="-6"/>
+		<language-draconic			stat="language-talent, eidetic-memory, intelligence" min="-7"/>
+		<language-dwarvish			stat="language-talent, eidetic-memory, intelligence" min="-6"/>
+		<language-elvish			stat="language-talent, eidetic-memory, intelligence" min="-6"/>
+		<language-orcish			stat="language-talent, eidetic-memory, intelligence" min="-6"/>
+		<lance				prereqs="riding:-1~1~3"		stat="one-eye, dexterity" min="-2"/>
+		<law				stat="eidetic-memory, intelligence" min="-3"/>
+		<law-martial		stat="eidetic-memory, intelligence" min="-2"/>
+		<leadership			stat="shy, low-empathy, solipsist, callous, charisma, eidetic-memory, intelligence" min="-2"/>
+		<linguistics		stat="language-talent, eidetic-memory, intelligence" min="-4"/>
+		<lip-reading		stat="eidetic-memory, intelligence" min="-2"/>
+		<literature			stat="eidetic-memory, intelligence" min="-3"/>
+		<lockpicking		stat="eidetic-memory, intelligence" min="-2"/>
+		<main-gauche		stat="one-eye, dexterity" min="-2"/>
+		<martial-punch		stat="one-eye, dexterity" min="-3"/>
+		<martial-throw		stat="one-eye, dexterity" min="-3"/>
+		<mathematics		stat="math-ability, eidetic-memory, intelligence" min="-3"/>
+		<mechanic			stat="double-jointed, eidetic-memory, intelligence" min="-2"/>
+		<meditation			stat="eidetic-memory, intelligence" min="-4"/>
+		<merchant			stat="shy, low-empathy, gullibility, charisma, eidetic-memory, intelligence" min="-2"/>
+		<metallurgy			stat="eidetic-memory, intelligence" min="-3"/>
+		<motorcycle			stat="one-eye, dexterity" min="-1"/>
+		<musical-instrument	stat="music-ability, intelligence" min="-3"/>
+		<naturalist			stat="eidetic-memory, intelligence" min="-3"/>
+		<navigation			stat="absolute-direction, eidetic-memory, intelligence" min="-3"/>
+		<nbc-warfare		stat="eidetic-memory, intelligence" min="-2"/>
+		<occultism			stat="eidetic-memory, intelligence" min="-2"/>
+		<packing			stat="eidetic-memory, intelligence" min="-2"/>
+		<panhandling		stat="pitiable, shy, low-empathy, callous, intelligence" min="-1"/>
+		<parachuting		stat="dexterity" min="-1"/>
+		<performance		stat="shy, low-empathy, solipsist, callous, charisma, eidetic-memory, intelligence" min="-2"/>
+		<piloting			stat="one-eye, dexterity, perfect-balance, gyrobalance" min="-3"/>
+		<philosophy			stat="eidetic-memory, intelligence" min="-3"/>
+		<photography		stat="eidetic-memory, intelligence" min="-2"/>
+		<physician			stat="eidetic-memory, intelligence" min="-3"/>
+		<pick-pocket		stat="dexterity" min="-3"/>
+		<poetry				stat="eidetic-memory, intelligence" min="-2"/>
+		<poisons			stat="eidetic-memory, intelligence" min="-3"/>
+		<pole-arm			stat="one-eye, dexterity" min="-2"/>
+		<pottery			stat="eidetic-memory, intelligence" min="-2"/>
+		<psychology			stat="low-empathy, eidetic-memory, intelligence" min="-3"/>
+		<research			stat="eidetic-memory, intelligence" min="-2"/>
+		<riding				stat="one-eye, animal-empathy, dexterity" min="-2"/>
+		<ritual-magic		stat="eidetic-memory, intelligence" min="-3"/>
+		<savoir-faire-dojo    stat="shy, voice, solipsist, clueless, callous, charisma, eidetic-memory, intelligence" min="-1"/>
+		<savoir-faire-martial stat="shy, voice, solipsist, clueless, callous, charisma, eidetic-memory, intelligence" min="-1"/>
+		<savoir-faire		  stat="shy, voice, solipsist, clueless, callous, charisma, eidetic-memory, intelligence" min="-2"/>
+		<scrounging			stat="eidetic-memory, intelligence" min="-1"/>
+		<scuba				stat="eidetic-memory, intelligence" min="-2"/>
+		<sculpting			stat="dexterity" min="-2"/>
+		<sex-appeal			stat="shy, voice, low-empathy, solipsist, callous, low-self-image, charisma, attractive, ugly, hideous, monstrous-appearance, bad-smell, social-disease, health" min="-2"/>
+		<shadowing			stat="fat, skinny, eidetic-memory, intelligence" min="-2"/>
+		<shield				stat="one-eye, dexterity" min="-1"/>
+		<short-staff		stat="one-eye, dexterity" min="-2"/>
+		<short-sword		stat="one-eye, dexterity" min="-2"/>
+		<singing			stat="music-ability, shy, low-empathy, health" min="-1"/>
+		<skating			stat="one-eye, dexterity" min="-3"/>
+		<skiing				stat="one-eye, dexterity" min="-3"/>
+		<sleight-of-hand	stat="dexterity" min="-3"/>
+		<sling				stat="dexterity" min="-3"/>
+		<soldier			stat="eidetic-memory, intelligence" min="-2"/>
+		<spear				stat="one-eye, dexterity" min="-2"/>
+		<spear-throwing		stat="dexterity" min="-1"/>
+		<speed-load-bow		prereqs="bow:-2~1~1"				stat="combat-reflexes, dexterity" min="-1"/>
+		<speed-load-dartbow	prereqs="crossbow:-2~1~1"			stat="combat-reflexes, dexterity" min="-1"/>
+		<speed-load-pistol	prereqs="guns-pistol:-1~0~1"		stat="combat-reflexes, dexterity" min="-1"/>
+		<speed-load-smg		prereqs="guns-light-auto:-1~0~1"	stat="combat-reflexes, dexterity" min="-1"/>
+		<speed-load-rifle	prereqs="guns-rifle:-1~0~1"			stat="combat-reflexes, dexterity" min="-1"/>
+		<sports				stat="one-eye, dexterity" min="-2"/>
+		<staff				stat="one-eye, dexterity" min="-3"/>
+		<stealth			stat="dexterity, audio-damping" min="-2"/>
+		<strategy			stat="eidetic-memory, intelligence" min="-3"/>
+		<streetwise			stat="eidetic-memory, intelligence" min="-2"/>
+		<surgery			stat="eidetic-memory, intelligence" min="-4"/>
+		<survival			stat="eidetic-memory, intelligence" min="-2"/>
+		<swimming			stat="overweight, dexterity" min="-1"/>
+		<tactics			stat="eidetic-memory, intelligence" min="-3"/>
+		<teaching			stat="shy, low-empathy, solipsist, callous, charisma, eidetic-memory, intelligence" min="-2"/>
+		<teamster			stat="eidetic-memory, intelligence" min="-2"/>
+		<theology			stat="eidetic-memory, intelligence" min="-3"/>
+		<throwing			stat="one-eye, dexterity" min="-3"/>
+		<tournament-law		stat="eidetic-memory, intelligence" min="-1"/>
+		<tracking			stat="eidetic-memory, intelligence" min="-2"/>
+		<traps				stat="eidetic-memory, intelligence" min="-2"/>
+		<two-hand-axe-mace	stat="one-eye, dexterity" min="-2"/>
+		<two-hand-sword		stat="one-eye, dexterity" min="-2"/>
+		<veterinary			stat="eidetic-memory, intelligence" min="-2"/>
+		<whip				stat="one-eye, dexterity" min="-2"/>
+		<wood-working		stat="dexterity" min="-2"/>
+		<wrestling			stat="one-eye, dexterity" min="-2"/>
+		<writing			stat="language-talent, eidetic-memory, intelligence" min="-2"/>
+		<zoology			stat="eidetic-memory, intelligence" min="-2"/>
+
+		<!-- martial-arts skills -->
+		<immovable-stance	prereqs="karate:-2~1" stat="dexterity" min="-3"/>
+		<power-blow			prereqs="karate:-2~1" stat="eidetic-memory, intelligence" min="-3"/>
+		<pressure-points	prereqs="karate:-2~1" stat="eidetic-memory, intelligence" min="-3"/>
+		<push				prereqs="karate:-2~1" stat="one-eye, dexterity" min="-3"/>
+
+		<!-- martial-arts maneuvers -->
+		<aggressive-parry			prereqs="karate:-2~1"										stat="karate-parry, enhanced-parry, combat-reflexes" min="-4"/>
+		<arm-lock					prereqs="judo:-2~1"											stat="judo" min="0"/>
+		<axe-kick					prereqs="karate:-2~1"										stat="karate" min="-4"/>
+		<back-kick					prereqs="karate:-2~1"										stat="karate" min="-4"/>
+		<breakfall					prereqs="judo:-2~1"											stat="judo" min="0"/>
+		<cat-stance					prereqs="karate:-2~1"										stat="karate" min="-3"/>
+		<choke-hold					prereqs="judo:-2~1"											stat="judo" min="-2"/>
+		<disarming					prereqs="judo:-2~1"											stat="judo" min="0"/>
+		<drop-kick					prereqs="karate:-2~1"										stat="karate" min="-4"/>
+		<ear-clap					prereqs="karate:-2~1"										stat="karate" min="-6"/>
+		<elbow-strike				prereqs="karate:-2~1"										stat="karate" min="-2"/>
+		<eye-gouging				prereqs="karate:-2~1"										stat="karate" min="-9"/>
+		<ground-fighting			prereqs="karate:-2~1"										stat="karate" min="-4"/>
+		<head-butt					prereqs="karate:-2~1"										stat="karate" min="-6"/>
+		<head-lock					prereqs="judo:-2~1"											stat="judo" min="-4"/>
+		<hook-kick					prereqs="karate:-2~1"										stat="karate" min="-3"/>
+		<jab						prereqs="boxing:-3~2"										stat="boxing" min="-3"/>
+		<jump-kick					prereqs="karate:-2~1"										stat="karate" min="-4"/>
+		<knee-strike				prereqs="karate:-2~1"										stat="karate" min="-1"/>
+		<roundhouse-punch			prereqs="boxing:-3~2"										stat="boxing" min="-3"/>
+		<shin-kick					prereqs="karate:-2~1"										stat="karate" min="-3"/>
+		<shuto						prereqs="karate:-2~1"										stat="karate" min="-3"/>
+		<spin-kick					prereqs="karate:-2~1"										stat="karate" min="-3"/>
+		<stamp-kick					prereqs="karate:-2~1"										stat="karate" min="-3"/>
+		<sweeping-kick				prereqs="karate:-2~1"										stat="karate" min="-3"/>
+
+		<!-- spells related skills -->
+		<body-sense					stat="dexterity" min="-3"/>
+		<illusion-art				stat="eidetic-memory, intelligence" min="-3"/>
+		<innate-attack-breath		stat="dexterity" min="-1"/>
+		<innate-attack-beam					stat="dexterity" min="-1"/>
+		<innate-attack-projectile	stat="dexterity" min="-1"/>
+		<thaumatology				stat="magery, eidetic-memory, intelligence" min="-4"/>
+
+		<!-- spells, listed by college (yes, this was very tedious to implement) --> 
+		<!-- fire -->
+		<spell-ignite-fire			prereqs="magery:0~1,2~3"									stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-create-fire			prereqs="spell-ignite-fire:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-shape-fire			prereqs="spell-ignite-fire:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-extinguish-fire		prereqs="spell-ignite-fire:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-fire-proof			prereqs="spell-extinguish-fire:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-heat					prereqs="spell-create-fire:*12, spell-shape-fire:*12"		stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-cold					prereqs="spell-heat:*12"									stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-resist-cold			prereqs="spell-create-fire:*12, spell-heat:*12"				stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-resist-fire			prereqs="spell-extinguish-fire:*12, spell-cold:*12"			stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-fireball				prereqs="spell-create-fire:*12, spell-shape-fire:*12, innate-attack-projectile:0~3"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-explosive-fireball	prereqs="spell-fireball:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-fire-bolt			prereqs="spell-create-fire:*12, spell-shape-fire:*12, innate-attack-projectile:0~3"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-homing-fire-bolt		prereqs="spell-fire-bolt:*12, spell-apportation:*12"		stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-flame-jet			prereqs="spell-create-fire:*12, spell-shape-fire:*12, innate-attack-beam:-1~3"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-breathe-fire			prereqs="spell-resist-fire:*12, spell-flame-jet:*12, innate-attack-breath:-1~3"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-phantom-flame		prereqs="spell-simple-illusion:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-flaming-weapon		prereqs="magery:*2, spell-heat:*12"							stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-essential-flame		prereqs="spell-fireball:*12, spell-heat:*12, spell-extinguish-fire:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-flaming-missiles		prereqs="magery:*2, spell-flaming-weapon:*12"				stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-fire-cloud			prereqs="spell-fireball:*12, spell-shape-air:*12"			stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-flaming-armor		prereqs="spell-resist-fire:*12, spell-flame-jet:*12"		stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-body-of-flames		prereqs="spell-breathe-fire:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-wall-of-fire			prereqs="spell-create-fire:*12, spell-shape-fire:*12"		stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-create-lava			prereqs="spell-heat:*12, spell-shape-stone:*12"				stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-lava-flow			prereqs="spell-create-lava:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-lava-eruption		prereqs="magery:*2, spell-lava-flow:*12"					stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-lava-bolt			prereqs="spell-create-lava:*12, spell-fire-bolt:*12"		stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-homing-lava-bolt		prereqs="magery:*2, spell-lava-bolt:*12, spell-apportation:*12"	stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-explosive-lava-bolt	prereqs="magery:*2, spell-lava-bolt:*12"					stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-lava-jet				prereqs="spell-lava-flow:*12, spell-flame-jet:*12"			stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-brand				prereqs="spell-heat:*12"									stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-great-brand			prereqs="magery:*2, spell-brand:*12, spell-glow:*12"			stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-firestorm			prereqs="spell-heat:*12, spell-windstorm:*12"				stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-firewalker-zombie	prereqs="spell-control-zombie:*12, spell-essential-flame:*12, spell-body-of-flames:*12"	stat="power-investiture, magery, intelligence" min="-3"/>
+
+		<!-- water -->
+		<spell-seek-water			prereqs="magery:0~1,2~3"									stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-purify-water			prereqs="spell-seek-water:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-create-water			prereqs="spell-purify-water:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-destroy-water		prereqs="spell-create-water:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-breathe-air			prereqs="spell-create-water:*12, spell-destroy-air:*12"		stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-shape-water			prereqs="spell-create-water:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-dehydrate			prereqs="spell-shape-water:*12, spell-destroy-water:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-rehydrate			prereqs="spell-shape-water:*12, spell-create-water:*12"		stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-bloat				prereqs="spell-rehydrate:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-essential-water		prereqs="spell-dehydrate:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-body-of-water		prereqs="spell-shape-water:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-walk-on-water		prereqs="spell-shape-water:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-fog					prereqs="spell-shape-water:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-water-vision			prereqs="spell-shape-water:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-umbrella				prereqs="spell-shape-water:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-water-jet			prereqs="spell-shape-water:*12, innate-attack-beam:-1~3"				stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-icy-weapon			prereqs="spell-create-water:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-ice-sphere			prereqs="spell-shape-water:*12, innate-attack-projectile:0~3"			stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-ice-dagger			prereqs="spell-ice-sphere:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-frost				prereqs="spell-create-water:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-ice-slick			prereqs="spell-frost:*12"									stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-freeze				prereqs="spell-shape-water:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-melt-ice				prereqs="spell-freeze:*12"									stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-ice-vision			prereqs="spell-shape-water:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-snow-shoes			prereqs="spell-shape-water:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-snow					prereqs="spell-frost:*12"									stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-hail					prereqs="spell-snow:*12"									stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-frostbite			prereqs="spell-frost:*12, spell-freeze:*12"					stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-geyser				prereqs="spell-essential-water:*12, spell-heat:*12"			stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-foul-water			prereqs="spell-purify-water:*12, spell-decay:*12"			stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-spit-venom			prereqs="magery:*2, spell-reptile-control:*12, spell-resist-poison:*12, innate-attack-breath:-1~3"	stat="power-investiture, magery, intelligence" min="-3"/>
+
+		<!-- animal -->
+		<spell-beast-soother		prereqs="animal-empathy|spell-persuasion:*12"				stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-beast-master			prereqs="spell-beast-soother:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-beast-summoning		prereqs="spell-beast-soother:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-beast-seeker			prereqs="spell-beast-summoning:*12, spell-seeker:*12"		stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-beast-link			prereqs="spell-beast-summoning:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-insect-control		prereqs="spell-beast-soother:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-arachnid-control		prereqs="spell-beast-soother:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-fish-control			prereqs="spell-beast-soother:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-reptile-control		prereqs="spell-beast-soother:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-bird-control			prereqs="spell-beast-soother:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-mammal-control		prereqs="magery:0~1,2~3, spell-beast-soother:*12"			stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-beast-rider			prereqs="spell-beast-soother:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-beast-rider-within	prereqs="spell-beast-rider:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-beast-possession		prereqs="spell-beast-rider-within:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-beast-speach			prereqs="spell-beast-summoning:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-shapeshifting		prereqs="spell-beast-link:*12, spell-beast-rider-within:*12" stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-shapeshift-other		prereqs="magery:*2, spell-shapeshifting:*12"				stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-repel-insect			prereqs="spell-insect-control:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-repel-arachnid		prereqs="spell-arachnid-control:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-repel-fish			prereqs="spell-fish-control:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-repel-reptile		prereqs="spell-reptile-control:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-repel-bird			prereqs="spell-bird-control:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-repel-mammal			prereqs="spell-mammal-control:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-spider-silk			prereqs="spell-arachnid-control:*12, innate-attack-projectile:0~3"	stat="power-investiture, magery, intelligence" min="-2"/>
+
+		<!-- communication -->
+		<spell-sense-life			prereqs="magery:0~1,2~3"									stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-sense-foes			prereqs="power-investiture|magery:0~1,2~3"					stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-sense-emotion		prereqs="spell-sense-foes:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-truthsayer			prereqs="spell-sense-emotion:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-compell-truth		prereqs="magery:*2, spell-truthsayer:*12"					stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-mind-reading			prereqs="spell-truthsayer:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-hide-thoughts		prereqs="spell-truthsayer:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-soul-rider			prereqs="spell-mind-reading:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-mind-search			prereqs="spell-mind-reading:*12"							stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-mind-sending			prereqs="spell-mind-reading:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-telepathy			prereqs="spell-mind-sending:*12"							stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-persuasion			prereqs="spell-sense-emotion:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-control-person		prereqs="spell-soul-rider:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-possession			prereqs="spell-control-person:*12"							stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-permanent-possession	prereqs="magery:*3, spell-possession:*12"					stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-exchange-bodies		prereqs="spell-soul-jar:*12, spell-permanent-possession:*12" stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-exorcism				prereqs="power-investiture|spell-soul-rider:*12"			stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-lend-language		prereqs="spell-mind-sending:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-borrow-language		prereqs="spell-lend-language:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-lend-skill			prereqs="spell-mind-sending:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-borrow-skill			prereqs="spell-lend-skill:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-gift-of-tongues		prereqs="spell-borrow-language:*14"							stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-gift-of-letters		prereqs="spell-borrow-language:*13, literacy"				stat="power-investiture, magery, intelligence" min="-3"/>
+
+		<!-- body-control -->
+		<spell-itch					prereqs="magery:0~1,2~3"									stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-spasm				prereqs="spell-itch:*12"									stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-pain					prereqs="spell-spasm:*12"									stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-stun					prereqs="spell-pain:*12"									stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-sensitize			prereqs="spell-stun:*12"									stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-agonize				prereqs="magery:*2, spell-sensitize:*12"					stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-clumsiness			prereqs="spell-spasm:*12"									stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-fumble				prereqs="spell-clumsiness:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-dexterity			prereqs="spell-clumsiness:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-might				prereqs="spell-lend-strength:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-vigor				prereqs="spell-lend-health:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-climbing				prereqs="magery:0~1,2~3"									stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-strike-blind			prereqs="spell-spasm:*12, spell-continual-light:*12"		stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-strike-deaf			prereqs="spell-spasm:*12, spell-thunderclap:*12"			stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-strike-dumb			prereqs="spell-spasm:*12"									stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-curse-missile		prereqs="magery:*2, spell-spasm:*12, innate-attack-projectile:0~3"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-paralyze-limb		prereqs="spell-pain:*12, spell-dexterity:*12"				stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-total-paralysis		prereqs="spell-paralyze-limb:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-wither-limb			prereqs="magery:*2, spell-paralyze-limb:*12"				stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-death-touch			prereqs="spell-wither-limb:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-fatigue				prereqs="magery:0~1,2~3"									stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-hinder				prereqs="spell-clumsiness:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-rooted-feet			prereqs="spell-hinder:*12"									stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-tanglefoot			prereqs="spell-clumsiness:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-roundabout			prereqs="spell-tanglefoot:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-resist-pain			prereqs="magery:*2, spell-pain:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-alter-visage			prereqs="spell-perfect-illusion:*12, spell-roundabout:*12, spell-total-paralysis:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-alter-body			prereqs="spell-alter-visage:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+
+		<!--earth -->
+		<spell-seek-earth			prereqs="magery:0~1,2~3"									stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-shape-earth			prereqs="spell-seek-earth:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-sand-jet				prereqs="spell-create-earth:*12, innate-attack-beam:-1~3"			stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-shape-stone			prereqs="spell-shape-earth:*12, spell-create-earth:*12"		stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-walk-through-earth	prereqs="spell-shape-stone:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-earth-to-stone		prereqs="spell-shape-earth:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-stone-to-earth		prereqs="spell-earth-to-stone:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-create-earth			prereqs="spell-earth-to-stone:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-flesh-to-stone		prereqs="spell-earth-to-stone:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-stone-to-flesh		prereqs="magery:*2, spell-flesh-to-stone:*12, spell-stone-to-earth:*12"			stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-body-of-stone		prereqs="spell-stone-to-flesh:*12"							stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-stone-missile		prereqs="spell-create-earth:*12, innate-attack-projectile:0~3"		stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-earth-to-air			prereqs="spell-create-air:*12, spell-shape-earth:*12"		stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-earth-vision			prereqs="spell-shape-earth:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-entombment			prereqs="magery:*2, spell-walk-through-earth:*12"			stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-earthquake			prereqs="magery:*2, spell-walk-through-earth:*12, spell-earth-vision:*12"		stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-volcano				prereqs="spell-earthquake:*12, spell-heat:*12, spell-explosive-fireball:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-rain-of-stones		prereqs="magery:*2, spell-create-earth:*12"					stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-skin-of-stone		prereqs="spell-stone-to-flesh:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+
+		<!--earth elemental -->
+		<spell-summon-earth-elemental	prereqs="magery:0~1,2~3, spell-earthquake:*12, spell-create-earth:*12"		stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-control-earth-elemental	prereqs="spell-summon-earth-elemental:*12"				stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-create-earth-elemental	prereqs="magery:*2, spell-control-earth-elemental:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+
+		<!--fire elemental -->
+		<spell-summon-fire-elemental	prereqs="magery:0~1,2~3, spell-essential-flame:*12, spell-phantom-flame:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-control-fire-elemental	prereqs="spell-summon-fire-elemental:*12"				stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-create-fire-elemental	prereqs="magery:*2, spell-control-fire-elemental:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+
+		<!--water elemental -->
+		<spell-summon-water-elemental	prereqs="magery:0~1,2~3, spell-essential-water:*12, spell-fog:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-control-water-elemental	prereqs="spell-summon-water-elemental:*12"				stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-create-water-elemental	prereqs="magery:*2, spell-control-water-elemental:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+
+		<!--air elemental -->
+		<spell-summon-air-elemental		prereqs="magery:0~1,2~3, spell-whirlwind:*12, spell-destory-air:*12, spell-predict-weather:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-control-air-elemental	prereqs="spell-summon-air-elemental:*12"				stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-create-air-elemental		prereqs="magery:*2, spell-control-air-elemental:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+
+		<!--air -->
+		<spell-purify-air				prereqs="magery:0~1,2~3"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-create-air				prereqs="spell-purify-air:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-shape-air				prereqs="spell-create-air:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-air-jet					prereqs="spell-shape-air:*12, innate-attack-beam:-1~3"			stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-no-smell					prereqs="spell-purify-air:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-body-of-air				prereqs="spell-shape-air:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-predict-weather			prereqs="spell-windstorm:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-destroy-air				prereqs="spell-create-air:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-breathe-water			prereqs="spell-create-air:*12, spell-destroy-water:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-walk-on-air				prereqs="spell-shape-air:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-clouds					prereqs="spell-windstorm:*12, spell-shape-water:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-rain						prereqs="spell-clouds:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-stench					prereqs="spell-purify-air:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-odor						prereqs="spell-no-smell:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-windstorm				prereqs="spell-shape-air:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-whirlwind				prereqs="spell-windstorm:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-lightning				prereqs="spell-whirlwind:*12, spell-destroy-air:*12, innate-attack-projectile:0~3"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-concussion				prereqs="spell-thunderclap:*12, spell-shape-air:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-stink-ball				prereqs="spell-stench:*12, innate-attack-projectile:0~3"			stat="power-investiture, magery, intelligence" min="-2"/>
+
+		<!--enchantment -->
+		<spell-enchant					prereqs="magery:*2, spell-detect-magic:*12, spell-light:*12, spell-simple-illusion:*12, spell-lend-strength:*12, spell-itch:*12, spell-ignite-fire:*12, spell-seek-water:*12, spell-create-air:*12, spell-seek-earth:*12, spell-beast-soother:*12, spell-sense-life:*12"	stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-scroll					prereqs="magery:0~1,2~3, literacy"					stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-remove-enchantment		prereqs="spell-enchant:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-suspend-enchantment		prereqs="spell-enchant:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-power					prereqs="spell-recover-strength:*12"					stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-speed					prereqs="spell-haste:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-hex						prereqs="spell-enchant:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-lesser-wish				prereqs="spell-enchant:*12"								stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-wish						prereqs="magery:*2, spell-lesser-wish:*14"				stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-great-wish				prereqs="magery:*5, spell-wish:*15, intuition"			stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-golem					prereqs="spell-shape-earth:*12, spell-animation:*12"	stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-hideaway					prereqs="spell-create-object:*12, spell-lighten:*12"	stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-accuracy					prereqs="spell-dexterity:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-puissance				prereqs="spell-create-earth:*12, spell-stone-to-earth:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-quick-draw				prereqs="spell-apportation:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-dancing-weapon			prereqs="spell-air-golem:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-loyal-sword				prereqs="spell-apportation:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-cornucopia				prereqs="magery:*2, spell-quick-draw:*12, spell-loyal-sword:*12"	stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-bane						prereqs="spell-enchant:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-fortify					prereqs="spell-enchant:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-deflect					prereqs="spell-enchant:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-lighten					prereqs="spell-enchant:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-name						prereqs="spell-enchant:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-password					prereqs="spell-enchant:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-limit					prereqs="spell-enchant:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-staff					prereqs="spell-enchant:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-power-stone				prereqs="spell-enchant:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-crystal-ball				prereqs="spell-divination:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+
+		<!--food -->
+		<spell-test-food				prereqs="power-investiture|magery:0~1,2~3"			stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-preserve-food			prereqs="spell-sterilize:*12, spell-test-food:*12"		stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-seek-food				prereqs="magery:0~1,2~3"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-decay					prereqs="spell-test-food:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-purify-food				prereqs="spell-decay:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-poison-food				prereqs="spell-decay:*12, spell-purify-food:*12"		stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-cook						prereqs="spell-create-fire:*12, spell-test-food:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-create-food				prereqs="spell-cook:*12, spell-seek-food:*12"			stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-ferment					prereqs="spell-decay:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-water-to-wine			prereqs="spell-ferment:*12, spell-purify-water:*12"		stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-distill					prereqs="spell-ferment:*12, spell-destroy-water:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-banquet					prereqs="spell-cook:*12, spell-foolishness:*12"			stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-monk-banquet				prereqs="spell-banquet:*12, spell-resist-pain:*12"		stat="power-investiture, magery, intelligence" min="-2"/>
+
+		<!--healing -->
+		<spell-lend-strength			prereqs="power-investiture|magery:0~1,2~3"			stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-lend-health				prereqs="spell-lend-strength:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-recover-strength			prereqs="spell-lend-strength:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-awaken					prereqs="spell-lend-health:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-invigorate				prereqs="spell-awaken:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-share-strength			prereqs="spell-lend-strength:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-minor-healing			prereqs="spell-lend-health:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-major-healing			prereqs="spell-minor-healing:*12"						stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-sterilize				prereqs="spell-decay:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-suspended-animation		prereqs="spell-sleep:*12, spell-major-healing:*12"		stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-cure-disease				prereqs="spell-sterilize:*12, spell-major-healing:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-resist-poison			prereqs="spell-vigor:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-neutralize-poison		prereqs="spell-cure-disease:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-restoration				prereqs="spell-major-healing:*12"						stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-instant-restoration		prereqs="magery:*2, spell-restoration:*12"				stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-regeneration				prereqs="magery:*2, spell-restoration:*12"				stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-instant-regeneration		prereqs="magery:*3, spell-regeneration:*12"				stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-halt-aging				prereqs="magery:*2, spell-restoration:*12, spell-recover-strength:*12"	stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-youth					prereqs="magery:*3, spell-halt-aging:*12"				stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-resurrection				prereqs="spell-instant-regeneration:*12, spell-summon-spirit:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-healing-slumber			prereqs="magery:*2, spell-minor-healing:*12, spell-peaceful-sleep:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+
+		<!--illusion --> 
+		<spell-simple-illusion			prereqs="magery:0~1,2~3"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-complex-illusion			prereqs="spell-sound:*12, spell-simple-illusion:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-perfect-illusion			prereqs="spell-complex-illusion:*12"					stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-illusion-shell			prereqs="spell-simple-illusion:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-illusion-disguise		prereqs="spell-simple-illusion:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-control-illusion			prereqs="spell-perfect-illusion:*12"					stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-dispel-illusion			prereqs="spell-control-illusion:*12"					stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-create-object			prereqs="magery:*2, spell-create-earth:*12, spell-perfect-illusion:*12"	stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-create-animal			prereqs="spell-create-water:*12, spell-create-object:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-create-servant			prereqs="magery:*3, spell-create-object:*12"			stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-create-warrior			prereqs="spell-create-servant:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-control-creation			prereqs="spell-create-servant:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-dispel-creation			prereqs="spell-control-creation:*12"					stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-know-illusion			prereqs="spell-simple-illusion:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-independence				prereqs="spell-simple-illusion:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+
+		<!--knowledge -->
+		<spell-tell-time				prereqs="magery:0~1,2~3"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-alarm					prereqs="spell-tell-time:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-find-direction			prereqs="magery:0~1,2~3"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-detect-magic				prereqs="magery:0~1,2~3"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-aura						prereqs="spell-detect-magic:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-measurement				prereqs="magery:0~1,2~3"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-seeker					prereqs="spell-seek-earth:*12, spell-seek-water:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-trace					prereqs="spell-seeker:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-path-finder				prereqs="spell-seek-earth:*12, spell-seek-water:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-history					prereqs="spell-trace:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-ancient-history			prereqs="spell-history:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-see-secrets				prereqs="spell-seeker:*12, spell-aura:*12"				stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-wizard-eye				prereqs="spell-apportation:*12, spell-keen-eyes:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-invisible-wizard-eye		prereqs="spell-invisibility:*12, spell-wizard-eye:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-mage-sight				prereqs="spell-detect-magic:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-mage-sense				prereqs="spell-detect-magic:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-identify-spell			prereqs="spell-detect-magic:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-analyze-magic			prereqs="spell-identify-spell:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-glass-wall				prereqs="spell-earth-vision:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-divination				prereqs="spell-history:*12, spell-predict-weather:*12, spell-essential-water:*12, spell-essential-flame:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+
+		<!--light and darkness -->
+		<spell-light					prereqs="magery:0~1,2~3"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-continual-light			prereqs="spell-light:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-light-jet				prereqs="spell-continual-light:*12, innate-attack-beam:-1~3"		stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-colors					prereqs="spell-light:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-flash					prereqs="spell-continual-light:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-mage-light				prereqs="spell-mage-sight:*12, spell-light:*12"			stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-glow						prereqs="spell-continual-light:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-sunlight					prereqs="spell-glow:*12, spell-colors:*12"				stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-darkness					prereqs="spell-continual-light:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-shape-darkness			prereqs="spell-darkness:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-blur						prereqs="spell-darkness:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-hide						prereqs="spell-blur:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-invisibility				prereqs="spell-blur:*12, spell-shape-darkness:*12, spell-colors:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-infravision				prereqs="spell-keen-eyes:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-nightvision				prereqs="spell-keen-eyes:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-darkvision				prereqs="spell-nightvision:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-hawkvision				prereqs="spell-keen-eyes:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-see-invisible			prereqs="spell-darkvision:*12, spell-infravision:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-sunbolt					prereqs="spell-sunlight:*12, spell-light-jet:*12, innate-attack-projectile:0~3"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-dazzle					prereqs="spell-colors:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-color-burst				prereqs="spell-dazzle:*12, innate-attack-beam:-1~3"				stat="power-investiture, magery, intelligence" min="-2"/>
+
+		<!--making and breaking spells -->
+		<spell-find-weakness			prereqs="magery:0~1,2~3"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-weaken					prereqs="spell-find-weakness:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-reshape					prereqs="spell-weaken:*12, spell-shape-earth:*12"		stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-shatter					prereqs="spell-weaken:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-ruin						prereqs="spell-weaken:*12, spell-decay:*12"				stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-disintegrate				prereqs="spell-shatter:*12, spell-ruin:*12, spell-earth-to-air:*12, spell-destroy-air:*12, spell-destroy-water:*12"	stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-restore					prereqs="spell-weaken:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-dye						prereqs="spell-restore:*12, spell-colors:*12"			stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-clean					prereqs="spell-restore:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-rejoin					prereqs="spell-weaken:*12, spell-restore:*12"			stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-stiffen					prereqs="spell-rejoin:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-repair					prereqs="magery:*2, spell-rejoin:*12"					stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-repair-arrow				prereqs="spell-rejoin:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-shatterproof				prereqs="spell-repair:*12, spell-shatter:*12"			stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-copy						prereqs="literacy, spell-dye:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-sharpen					prereqs="spell-repair:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-knots					prereqs="spell-stiffen:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-animate-object			prereqs="magery:*2, spell-shape-water:*12, spell-shape-air:*12, spell-shape-earth:*12" stat="power-investiture, magery, intelligence" min="-3"/>
+
+		<!--meta-spells -->
+		<spell-conceal-magic			prereqs="spell-detect-magic:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-scryguard				prereqs="magery:0~1,2~3"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-scrywall					prereqs="spell-scryguard:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-magic-resistance			prereqs="spell-detect-magic:*12, spell-light:*12, spell-simple-illusion:*12, spell-lend-strength:*12, spell-seek-water:*12, spell-sense-life:*12, spell-find-weakness:*12"	stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-spell-shield				prereqs="spell-scryguard:*12, spell-magic-resistance:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-counterspell				prereqs="magery:0~1,2~3"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-dispel-magic				prereqs="spell-counterspell:*12, spell-magic-resistance:*12, spell-analyze-magic:*12, spell-mage-sight:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-ward						prereqs="magery:0~1,2~3"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-reflect					prereqs="spell-ward:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-great-ward				prereqs="magery:*2, spell-ward:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-pentagram				prereqs="spell-spell-shield:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-minor-bless				prereqs="power-investiture|spell-dexterity:*12"			stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-bless					prereqs="magery:*2, spell-aura:*12, spell-continual-light:*12, spell-complex-illusion:*12, spell-recover-strength:*12, spell-spasm:*12, spell-create-fire:*12, spell-purify-water:*12, spell-create-air:*12, spell-create-earth:*12, spell-beast-link:*12, spell-sense-foes:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-curse					prereqs="magery:*2, spell-aura:*12, spell-continual-light:*12, spell-complex-illusion:*12, spell-recover-strength:*12, spell-spasm:*12, spell-create-fire:*12, spell-purify-water:*12, spell-create-air:*12, spell-create-earth:*12, spell-beast-link:*12, spell-sense-foes:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-remove-curse				prereqs="magery:*2, spell-curse:*12, spell-restore:*12, spell-analyze-magic:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-drain-mana				prereqs="spell-dispel-magic:*12, spell-continual-light:*12, spell-complex-illusion:*12, spell-recover-strength:*12, spell-spasm:*12, spell-create-fire:*12, spell-purify-water:*12, spell-create-air:*12, spell-create-earth:*12, spell-beast-link:*12, spell-sense-foes:*12"	stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-restore-mana				prereqs="spell-dispel-magic:*12, spell-continual-light:*12, spell-complex-illusion:*12, spell-recover-strength:*12, spell-spasm:*12, spell-create-fire:*12, spell-purify-water:*12, spell-create-air:*12, spell-create-earth:*12, spell-beast-link:*12, spell-sense-foes:*12"	stat="power-investiture, magery, intelligence" min="-3"/>
+
+		<!--linking-spells -->
+		<spell-delay					prereqs="magery:*3, spell-tell-time:*12, spell-measurement:*12, spell-conceal-magic:*12, spell-restore:*12, spell-analyze-magic:*12, spell-magic-resistance:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-link						prereqs="spell-delay:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-reflex					prereqs="spell-delay:*12, spell-ward:*12"				stat="power-investiture, magery, intelligence" min="-2"/>
+
+		<!--mind-control -->
+		<spell-fear						prereqs="spell-sense-emotion:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-panic					prereqs="spell-fear:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-terror					prereqs="spell-fear:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-bravery					prereqs="power-investiture|spell-fear:*12"				stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-berserker				prereqs="spell-bravery:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-foolishness				prereqs="magery:0~1,2~3"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-drunkenness				prereqs="spell-foolishness:*12, spell-clumsiness:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-sickness					prereqs="spell-drunkenness:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-forgetfulness			prereqs="spell-foolishness:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-permanent-forgetfulness	prereqs="magery:*2, spell-forgetfulness:*13"			stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-daze						prereqs="spell-foolishness:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-mass-daze				prereqs="spell-daze:*13"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-mental-stun				prereqs="spell-daze:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-sleep					prereqs="spell-daze:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-mass-sleep				prereqs="spell-sleep:*13"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-peaceful-sleep			prereqs="spell-sleep:*12, spell-silence:*12"			stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-madness					prereqs="spell-forgetfulness:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-permanent-madness		prereqs="magery:*2, spell-madness:*13"					stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-mindlessness				prereqs="magery:*2, spell-forgetfulness:*12"			stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-false-memory				prereqs="spell-madness:*12, spell-sleep:*12, spell-simple-illusion:*12"			stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-nightmare				prereqs="magery:*2, spell-death-vision:*12, spell-sleep:*12, spell-fear:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-avoid					prereqs="spell-forgetfulness:*12, spell-hide:*12, spell-fear:*12"				stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-loyalty					prereqs="spell-bravery:*12, spell-forgetfulness:*12, spell-sleep:*12"			stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-charm					prereqs="spell-loyalty:*12, spell-madness"				stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-enslave					prereqs="spell-charm:*12, spell-telepathy"				stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-wisdom					prereqs="spell-madness:*12, spell-mass-sleep:*12"		stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-emotion-control			prereqs="spell-loyalty:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-ecstasy					prereqs="magery:*2, spell-emotion-control:*12"			stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-command					prereqs="magery:*2, spell-forgetfulness:*12"			stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-suggestion				prereqs="spell-emotion-control:*12, spell-forgetfulness:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-mass-suggestion			prereqs="spell-suggestion:*13"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-lesser-geas				prereqs="magery:*2, spell-wisdom:*12, spell-suggestion"			stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-great-geas				prereqs="magery:*3, spell-lesser-geas:*12, spell-enslave"		stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-keen-eyes				prereqs="magery:0~1,2~3"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-keen-ears				prereqs="magery:0~1,2~3"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-keen-nose				prereqs="magery:0~1,2~3"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-alertness				prereqs="spell-keen-eyes:*12, spell-keen-ears:*12"		stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-rear-vision				prereqs="spell-alertness:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-weaken-will				prereqs="spell-foolishness:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-hysteria					prereqs="spell-madness:*12, spell-weaken-will"	stat="power-investiture, magery, intelligence" min="-2"/>
+
+		<!--movement spells -->
+		<spell-haste					prereqs="magery:0~1,2~3"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-quick-march				prereqs="spell-haste:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-great-haste				prereqs="spell-haste:*13"								stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-glue						prereqs="spell-haste:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-apportation				prereqs="magery:0~1,2~3"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-lighten-burden			prereqs="spell-apportation:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-slow-fall				prereqs="spell-apportation:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-wallwalker				prereqs="spell-apportation:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-poltergeist				prereqs="spell-apportation:*12, innate-attack-projectile:0~3"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-locksmith				prereqs="spell-apportation:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-lockmaster				prereqs="spell-locksmith:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-manipulate				prereqs="spell-locksmith:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-undo						prereqs="spell-locksmith:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-air-golem				prereqs="magery:*2, spell-apportation:*12"				stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-distant-blow				prereqs="magery:*2, spell-apportation:*12"				stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-levitation				prereqs="spell-apportation:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-swim						prereqs="spell-levitation:*12, spell-shape-water:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-flight					prereqs="magery:*2, spell-levitation:*12"				stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-hawkflight				prereqs="spell-flight:*12"								stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-teleport					prereqs="spell-hawkflight:*12"							stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-blink					prereqs="spell-teleport:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-teleport-other			prereqs="magery:*3, spell-teleport:*12"					stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-winged-knife				prereqs="spell-poltergeist:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-ethereal-body			prereqs="magery:*3, spell-body-of-air:*12"				stat="power-investiture, magery, intelligence" min="-3"/>
+
+		<!--necromantic spells -->
+		<spell-death-vision				prereqs="magery:0~1,2~3"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-sense-spirit				prereqs="spell-sense-life:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-summon-spirit			prereqs="magery:*2, spell-death-vision:*12"				stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-summon-shade				prereqs="spell-summon-spirit:*12"						stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-zombie					prereqs="spell-summon-spirit:*12, spell-lend-health:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-control-zombie			prereqs="spell-zombie:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-infectious-zombie		prereqs="spell-zombie:*12, spell-pestilence:*12"		stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-zombie-double			prereqs="spell-zombie:*12, spell-alter-body:*12"		stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-turn-zombie				prereqs="power-investiture|spell-zombie:*12"			stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-animation				prereqs="spell-summon-spirit:*12"						stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-skull-spirit				prereqs="spell-control-zombie:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-soul-jar					prereqs="spell-skull-spirit:*12, spell-steal-health"	stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-steal-strength			prereqs="spell-minor-healing:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-steal-health				prereqs="spell-steal-strength:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-age						prereqs="spell-youth:*12"								stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-steal-youth				prereqs="spell-age:*12, spell-steal-health:*12"			stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-pestilence				prereqs="spell-decay:*12, spell-steal-health"			stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-summon-demon				prereqs="magery:*1, spell-detect-magic:*12, spell-summon-spirit:*12, spell-simple-illusion:*12, spell-lend-strength:*12, spell-itch:*12, spell-ignite-fire:*12, spell-seek-water:*12, spell-create-air:*12, spell-seek-earth:*12, spell-beast-soother:*12, spell-sense-life:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-planar-summons			prereqs="magery:*1, spell-detect-magic:*12, spell-summon-spirit:*12, spell-simple-illusion:*12, spell-lend-strength:*12, spell-itch:*12, spell-ignite-fire:*12, spell-seek-water:*12, spell-create-air:*12, spell-seek-earth:*12, spell-beast-soother:*12, spell-sense-life:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-banish					prereqs="magery:*1, spell-detect-magic:*12, spell-summon-spirit:*12, spell-simple-illusion:*12, spell-lend-strength:*12, spell-itch:*12, spell-ignite-fire:*12, spell-seek-water:*12, spell-create-air:*12, spell-seek-earth:*12, spell-beast-soother:*12, spell-sense-life:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-burning-death			prereqs="magery:*2, spell-heat:*12, spell-sickness:*12"	stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-rotting-death			prereqs="magery:*2, spell-pestilence:*12"				stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-evisceration				prereqs="magery:*3, spell-apportation:*12, spell-steal-health:*12" stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-vampiric-bolt			prereqs="magery:*2, spell-vigor:*12, spell-fatigue:*12, spell-steal-health:*12, innate-attack-projectile:0~3" stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-steal-eyes				prereqs="magery:*2, spell-evisceration:*12"				stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-steal-mana				prereqs="magery:*2, spell-steal-strength:*12"			stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-drain-strength			prereqs="magery:*2, spell-steal-health:*12, spell-steal-mana:*12" stat="power-investiture, magery, intelligence" min="-3"/>
+		<spell-puppet-master			prereqs="magery:*2, spell-control-person:*12"			stat="power-investiture, magery, intelligence" min="-3"/>
+
+		<!--plant spells -->
+		<spell-seek-plant				prereqs="magery:0~1,2~3"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-identify-plant			prereqs="spell-seek-plant:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-heal-plant				prereqs="spell-identify-plant:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-shape-plant				prereqs="spell-identify-plant:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-plant-growth				prereqs="spell-heal-plant:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-bless-plants				prereqs="spell-heal-plant:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-create-plant				prereqs="spell-plant-growth:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-wither-plant				prereqs="spell-plant-growth:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-forest-warning			prereqs="spell-plant-growth:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-tangle-growth			prereqs="spell-plant-growth:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-hide-path				prereqs="spell-heal-plant:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-plant-sense				prereqs="spell-hide-path:*12, spell-forest-warning:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-animate-plant			prereqs="spell-plant-sense:*12, spell-shape-plant:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-plant-form				prereqs="spell-plant-sense:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-body-of-wood				prereqs="magery:*2, spell-plant-form:*12"				stat="power-investiture, magery, intelligence" min="-2"/>
+
+		<!--protection and warning spells -->
+		<spell-shield					prereqs="magery:*2"										stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-armor					prereqs="magery:*2, spell-repair:*12"					stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-sense-danger				prereqs="spell-sense-foes:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-watchdog					prereqs="spell-sense-danger:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-nightingale				prereqs="spell-sense-danger:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-mystic-mist				prereqs="magery:*1, spell-watchdog:*12"					stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-missile-shield			prereqs="spell-apportation:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-deflect-missile			prereqs="spell-apportation:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-reverse-missiles			prereqs="spell-missile-shield:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-iron-arm					prereqs="spell-resist-pain:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-mage-lock				prereqs="magery:*2"										stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-teleport-shield			prereqs="spell-watchdog:*12, spell-teleport:*12"		stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-weather-dome				prereqs="spell-destroy-air:*12, spell-destroy-water:*12, spell-shape-earth:*12, spell-shape-fire:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-force-dome				prereqs="spell-weather-dome:*12, spell-apportation:*12"		stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-utter-dome				prereqs="magery:*2, spell-force-dome:*12, spell-spell-shield:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+
+		<!--sound spells -->
+		<spell-sound					prereqs="magery:0~1,2~3"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-voices					prereqs="spell-sound:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-imitate-voice			prereqs="spell-voices:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-thunderclap				prereqs="spell-sound:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-great-voice				prereqs="spell-thunderclap:*12, spell-voices:*12"		stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-sound-jet				prereqs="spell-great-voice:*12, innate-attack-beam:-1~3"			stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-silence					prereqs="spell-sound:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-wall-of-silence			prereqs="spell-silence:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-noise					prereqs="spell-wall-of-silence:*12"						stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-hush						prereqs="spell-silence:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-mage-stealth				prereqs="spell-hush:*12"								stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-far-hearing				prereqs="spell-great-voice:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-sound-vision				prereqs="spell-keen-ears:*12"							stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-scribe					prereqs="spell-voices:*12, spell-air-golem:*12, literacy"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-wizard-ear				prereqs="spell-apportation:*12, spell-far-hearing:*12, spell-sound-vision:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-invisible-wizard-ear		prereqs="spell-wizard-ear:*12, spell-invisibility:*12"	stat="power-investiture, magery, intelligence" min="-2"/>
+		<spell-delayed-message			prereqs="spell-sense-life:*12, spell-voices:*12"		stat="power-investiture, magery, intelligence" min="-2"/>
+
+
+		<!--  psi  skills (yes, this was very difficult to implement) -->
+		<psi-neutralize-psi			prereqs="anti-psi-power:1~4,5,6,7,8,9,10,11~14"				stat="intelligence" min="-3"/>
+		<psi-psi-static				prereqs="anti-psi-power:1~4,5,6,7,8,9,10,11~14"				stat="intelligence" min="-3"/>
+
+		<psi-astral-projection		prereqs="astral-projection-power:1~4,5,6,7,8,9,10,11~14"	stat="intelligence" min="-3"/>
+		<psi-astral-sight			prereqs="astral-projection-power:1~4,5,6,7,8,9,10,11~14"	stat="intelligence" min="-3"/>
+
+		<psi-confuse				prereqs="electrokinesis-power:1~4,5,6,7,8,9,10,11~14"		stat="intelligence" min="-3"/>
+		<psi-cyberpsi				prereqs="electrokinesis-power:1~4,5,6,7,8,9,10,11~14"		stat="intelligence" min="-3"/>
+		<psi-dampen					prereqs="electrokinesis-power:1~4,5,6,7,8,9,10,11~14"		stat="intelligence" min="-3"/>
+		<psi-energy-sense			prereqs="electrokinesis-power:1~4,5,6,7,8,9,10,11~14"		stat="intelligence" min="-3"/>
+		<psi-energy-shield			prereqs="electrokinesis-power:1~4,5,6,7,8,9,10,11~14"		stat="intelligence" min="-3"/>
+		<psi-lightning				prereqs="electrokinesis-power:1~4,5,6,7,8,9,10,11~14, psi-surge:0~2"		stat="intelligence" min="-3"/>
+		<psi-surge					prereqs="electrokinesis-power:1~4,5,6,7,8,9,10,11~14"		stat="intelligence" min="-3"/>
+		<psi-photokinesis			prereqs="electrokinesis-power:1~4,5,6,7,8,9,10,11~14"		stat="intelligence" min="-3"/>
+
+		<psi-clairvoyance			prereqs="esp-power:1~4,5,6,7,8,9,10,11~14"					stat="intelligence" min="-3"/>
+		<psi-clairaudience			prereqs="esp-power:1~4,5,6,7,8,9,10,11~14"					stat="intelligence" min="-3"/>
+		<psi-clairsentience			prereqs="esp-power:1~4,5,6,7,8,9,10,11~14"					stat="intelligence" min="-3"/>
+		<psi-combat-sense			prereqs="esp-power:*10"									stat="intelligence" min="-3"/>
+		<psi-precognition			prereqs="esp-power:1~4,5,6,7,8,9,10,11~14"					stat="intelligence" min="-3"/>
+		<psi-psychometry			prereqs="esp-power:1~4,5,6,7,8,9,10,11~14"					stat="intelligence" min="-3"/>
+		<psi-retrogression			prereqs="esp-power:1~4,5,6,7,8,9,10,11~14"					stat="intelligence" min="-3"/>
+		<psi-seekersense			prereqs="esp-power:1~4,5,6,7,8,9,10,11~14"					stat="intelligence" min="-3"/>
+
+		<psi-healing				prereqs="healing-power:1~4,5,6,7,8,9,10,11~14"				stat="intelligence" min="-3"/>
+		<psi-metabolism-control		prereqs="healing-power:1~4,5,6,7,8,9,10,11~14"				stat="intelligence" min="-3"/>
+		<psi-life-extension			prereqs="healing-power:1~4,5,6,7,8,9,10,11~14, psi-metabolism-control:*14"	stat="intelligence" min="-3"/>
+		<psi-sense-aura				prereqs="healing-power:1~4,5,6,7,8,9,10,11~14"				stat="intelligence" min="-3"/>
+
+		<psi-drain-st				prereqs="psychic-vampirism-power:1~4,5,6,7,8,9,10,11~14"	stat="intelligence" min="-3"/>
+		<psi-drain-dx				prereqs="psychic-vampirism-power:1~4,5,6,7,8,9,10,11~14"	stat="intelligence" min="-3"/>
+		<psi-drain-ht				prereqs="psychic-vampirism-power:1~4,5,6,7,8,9,10,11~14"	stat="intelligence" min="-3"/>
+		<psi-drain-int				prereqs="psychic-vampirism-power:1~4,5,6,7,8,9,10,11~14"	stat="intelligence" min="-3"/>
+		<psi-drain-emotion			prereqs="psychic-vampirism-power:1~4,5,6,7,8,9,10,11~14"	stat="intelligence" min="-3"/>
+		<psi-steal-dreams			prereqs="psychic-vampirism-power:1~4,5,6,7,8,9,10,11~14"	stat="intelligence" min="-3"/>
+		<psi-steal-energy			prereqs="psychic-vampirism-power:1~4,5,6,7,8,9,10,11~14"	stat="intelligence" min="-3"/>
+		<psi-steal-power			prereqs="psychic-vampirism-power:1~4,5,6,7,8,9,10,11~14"	stat="intelligence" min="-3"/>
+
+		<psi-cryokinesis			prereqs="psychokinesis-power:1~4,5,6,7,8,9,10,11~14"		stat="intelligence" min="-3"/>
+		<psi-levitation				prereqs="psychokinesis-power:1~4,5,6,7,8,9,10,11~14"		stat="intelligence" min="-3"/>
+		<psi-pk-shield				prereqs="psychokinesis-power:1~4,5,6,7,8,9,10,11~14, esp-power:*1"	stat="intelligence" min="-3"/>
+		<psi-pyrokinesis			prereqs="psychokinesis-power:1~4,5,6,7,8,9,10,11~14"		stat="intelligence" min="-3"/>
+		<psi-telekinesis			prereqs="psychokinesis-power:1~4,5,6,7,8,9,10,11~14"		stat="intelligence" min="-3"/>
+
+		<psi-aspect					prereqs="telepathy-power:*10"							stat="intelligence" min="-3"/>
+		<psi-emotion-sense			prereqs="telepathy-power:1~4,5,6,7,8,9,10,11~14"			stat="intelligence" min="-3"/>
+		<psi-erase-signature		prereqs="telepathy-power:1~4,5,6,7,8,9,10,11~14"			stat="intelligence" min="-3"/>
+		<psi-illusion				prereqs="telepathy-power:1~4,5,6,7,8,9,10,11~14, psi-telereceive:*14, psi-telesend:*14"	stat="intelligence" min="-3"/>
+		<psi-mental-blow			prereqs="telepathy-power:1~4,5,6,7,8,9,10,11~14, psi-telesend:*12"	stat="intelligence" min="-3"/>
+		<psi-mental-stab			prereqs="telepathy-power:1~4,5,6,7,8,9,10,11~14, psi-mental-blow:*15"	stat="intelligence" min="-3"/>
+		<psi-mental-blast			prereqs="telepathy-power:6~11,12,13,14~19, psi-mental-blow:*15, psi-mental-stab:*15"	stat="intelligence" min="-4"/>
+		<psi-mind-shield			prereqs="telepathy-power:1~4,5,6,7,8,9,10,11~14"			stat="intelligence" min="-3"/>
+		<psi-mind-switch			prereqs="telepathy-power:1~4,5,6,7,8,9,10,11~14, psi-telereceive:*14, psi-telesend:*14"	stat="intelligence" min="-3"/>
+		<psi-mind-sword				prereqs="telepathy-power:1~4,5,6,7,8,9,10,11~14, psi-mental-blow:*12"	stat="intelligence" min="-3"/>
+		<psi-mind-wipe				prereqs="telepathy-power:1~4,5,6,7,8,9,10,11~14, psi-telereceive:*12, psi-telesend:*12"	stat="intelligence" min="-3"/>
+		<psi-psi-sense				prereqs="telepathy-power:1~4,5,6,7,8,9,10,11~14"			stat="intelligence" min="-3"/>
+		<psi-signature-sniffer		prereqs="telepathy-power:1~4,5,6,7,8,9,10,11~14, esp-power:*1"	stat="intelligence" min="-3"/>
+		<psi-sleep					prereqs="telepathy-power:1~4,5,6,7,8,9,10,11~14, psi-telesend:*12"	stat="intelligence" min="-3"/>
+		<psi-suggest				prereqs="telepathy-power:1~4,5,6,7,8,9,10,11~14, psi-telereceive:*12, psi-telesend:*12"	stat="intelligence" min="-3"/>
+		<psi-telecontrol			prereqs="telepathy-power:1~4,5,6,7,8,9,10,11~14, psi-telereceive:*15, psi-telesend:*15"	stat="intelligence" min="-3"/>
+		<psi-telereceive			prereqs="telepathy-power:1~4,5,6,7,8,9,10,11~14"			stat="intelligence" min="-3"/>
+		<psi-telescan				prereqs="telepathy-power:1~4,5,6,7,8,9,10,11~14"			stat="intelligence" min="-3"/>
+		<psi-telesend				prereqs="telepathy-power:1~4,5,6,7,8,9,10,11~14"			stat="intelligence" min="-3"/>
+
+		<psi-autoteleport			prereqs="teleportation-power:1~4,5,6,7,8,9,10,11~14"		stat="intelligence" min="-3"/>
+		<psi-combat-teleport		prereqs="teleportation-power:*10, psi-autoteleport:*14"	stat="intelligence" min="-3"/>
+		<psi-exoteleport			prereqs="teleportation-power:1~4,5,6,7,8,9,10,11~14"		stat="intelligence" min="-3"/>
+	</skills>
+
+ 
+	<skill-mods>
+		<absolute-direction	skill-mod="3"/>
+		<audio-damping		skill-mod="mult:2"/>
+		<animal-empathy		skill-mod="4"/>
+		<bad-smell			skill-mod="-3"/>
+		<bad-temper			exclusion-criteria="collected, berserk"/>
+		<berserk			exclusion-criteria="bad-temper, berserker-chip"/>
+		<blind				exclusion-criteria="color-blindness, one-eye, night-blindness, peripheral-vision, night-vision"/>
+		<blood-lust			exclusion-criteria="pacifism, pacifism-self-defense"/>
+		<callous			skill-mod="-2"	exclusion-criteria="empathy"/>
+		<careful			exclusion-criteria="daredevil, glory-hound, on-the-edge, impulsiveness"/>
+		<charitable			exclusion-criteria="greed"/>
+		<clueless			skill-mod="-4"/>
+		<combat-paralysis	exclusion-criteria="combat-reflexes"/>
+		<combat-reflexes	skill-mod="1"/>
+		<compulsive-carousing exclusion-criteria="shy, loner"/>
+		<compulsive-lying	exclusion-criteria="honesty, truthfulness"/>
+		<cowardice			exclusion-criteria="daredevil, on-the-edge, fearlessness"/>
+		<cursed				exclusion-criteria="luck"/>
+		<delicate-metabolism exclusion-criteria="cast-iron-stomach"/>
+		<disturbing-voice	exclusion-criteria="voice, stuttering"/>
+		<double-jointed		skill-mod="3"/>
+		<dyslexia			exclusion-criteria="eidetic-memory"/>
+		<edgy				exclusion-criteria="fearlessness, unfazeable, collected"/>
+		<enhanced-parry		skill-mod="1"/>
+		<fanaticism-chip	exclusion-criteria="fanaticism"/>
+		<fat				skill-mod="-3" exclusion-criteria="attractive, fit"/>
+		<gigantism			skill-mod="3"	exclusion-criteria="dwarfism, stocky, extra-stocky"/>
+		<gregarious			exclusion-criteria="shy, loner"/>
+		<gullibility		skill-mod="-3"/>
+		<gyrobalance		skill-mod="1"/>
+		<innumerate			exclusion-criteria="math-ability, lightning-calculator"/>
+		<loner				exclusion-criteria="compulsive-carousing, needy, gregarious"/>
+		<low-empathy		skill-mod="-3"	exclusion-criteria="empathy"/>
+		<low-pain-threshold	exclusion-criteria="high-pain-threshold"/>
+		<low-self-image		skill-mod="-4"	exclusion-criteria="overconfidence, glory-hound, higher-purpose"/>
+		<magery				skill-mod="val"/>
+		<magic-resistance	exclusion-criteria="magery"/>
+		<math-ability		skill-mod="3"/>
+		<monstrous-appearance	skill-mod="-6"	exclusion-criteria="attractive, ugly"/>
+		<music-ability		skill-mod="val"/>
+		<mute				exclusion-criteria="voice, stuttering, disturbing-voice"/>
+		<night-blindness	exclusion-criteria="night-vision"/>
+		<one-arm			exclusion-criteria="ambidexterity, iron-hand"/>
+		<one-eye			skill-mod="-1"	exclusion-criteria="peripheral-vision"/>
+		<one-hand			exclusion-criteria="ambidexterity, iron-hand"/>
+		<overweight			skill-mod="2"	exclusion-criteria="fat, fit"/>
+		<pacifism			exclusion-criteria="pacifism-self-defense"/>
+		<paranoid			exclusion-criteria="gullibility"/>
+		<perfect-balance	skill-mod="1"/>
+		<poverty			exclusion-criteria="wealth"/>
+		<power-investiture	skill-mod="val"/>
+		<shy				skill-mod="val" exclusion-criteria="compulsive-carousing, charisma, glory-hound"/>
+		<skinny				skill-mod="-2"	exclusion-criteria="overweight, fat, stocky, extra-stocky, attractive"/>
+		<social-disease		skill-mod="val" exclusion-criteria="immunity-to-disease"/>
+		<solipsist			skill-mod="-3"/>
+		<stocky				exclusion-criteria="skinny, fat"/>
+		<stuttering			exclusion-criteria="charisma, voice, disturbing-voice"/>
+		<ugly				skill-mod="-3"	exclusion-criteria="attractive, monstrous-appearance"/>
+		<unfit				exclusion-criteria="fit"/>
+		<unluckiness		exclusion-criteria="luck"/>
+		<voice				skill-mod="2"/>
+		<weak-immune-system	exclusion-criteria="immunity-to-disease, disease-resistant"/>
+		<weapon-link		skill-mod="val"/>
+	</skill-mods>
+
+</attribute-bases>

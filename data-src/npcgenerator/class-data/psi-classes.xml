@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<classes type="psi" genre="psi" creation-time="2005-03-26 17:23:40">
+
+	<class alias="telp" parents="np" name="Telepath" nationality="various">
+		<stats>
+			<strength					min="8" max="15" mean="10"/>
+			<dexterity					min="8" max="15" mean="10"/>
+			<intelligence				min="10" max="17" mean="12.4"/>
+		</stats>
+		<advantages>
+			<telepathy-power			min="5" max="14" mean="9.4" req="1"/>
+		</advantages>
+
+		<skills>
+			<psi-mental-stab			max="2" req="30"/>
+			<psi-mental-blast			max="1" req="02"/>
+			<psi-aspect					max="1" req="46"/>
+			<psi-erase-signature		max="1" req="30"/>
+			<psi-illusion				max="1" req="32"/>
+			<psi-mind-shield			max="2" req="56"/>
+			<psi-mind-wipe				max="1" req="48"/>
+			<psi-psi-sense				max="1" req="42"/>
+			<psi-sleep					max="1" req="49"/>
+			<psi-suggest				max="1" req="50"/>
+			<psi-telecontrol			max="1" req="43"/>
+			<psi-telereceive			max="2" req="68"/>
+
+			<psi-astral-projection			max="1" req="01"/>
+			<psi-astral-sight				max="1" req="01"/>
+			<psi-clairvoyance				max="1" req="01"/>
+			<psi-combat-teleport			max="1" req="01"/>
+			<psi-confuse					max="1" req="01"/>
+			<psi-dampen						max="1" req="01"/>
+			<psi-healing					max="1" req="01"/>
+			<psi-photokinesis				max="1" req="01"/>
+			<psi-pk-shield					max="1" req="01"/>
+			<psi-psychometry				max="1" req="01"/>
+			<psi-sense-aura					max="1" req="01"/>
+			<psi-steal-energy				max="1" req="01"/>
+			<psi-steal-power				max="1" req="01"/>
+			<psi-telekinesis				max="1" req="01"/>
+		</skills>
+	</class>
+
+	<class alias="telk" parents="np" name="Telekinetic" nationality="various">
+		<stats>
+			<strength					min="8" max="15" mean="10"/>
+			<dexterity					min="8" max="15" mean="10"/>
+			<intelligence				min="10" max="17" mean="12.4"/>
+			<health						min="9" max="16" mean="11"/>
+		</stats>
+		<advantages>
+			<psychokinesis-power		min="5" max="13" mean="8.6" req="1"/>
+			<telepathy-power			req="01"/>
+		</advantages>
+
+		<skills>
+			<psi-cryokinesis				max="1" req="46"/>
+			<psi-levitation					max="1" req="69"/>
+			<psi-pk-shield					max="1" req="72"/>
+			<psi-pyrokinesis				max="2" req="51"/>
+			<psi-telekinesis				max="2" req="73"/>
+			<psi-erase-signature			max="1" req="03"/>
+
+			<psi-astral-projection			max="1" req="01"/>
+			<psi-astral-sight				max="1" req="01"/>
+			<psi-clairvoyance				max="1" req="01"/>
+			<psi-combat-teleport			max="1" req="01"/>
+			<psi-confuse					max="1" req="01"/>
+			<psi-dampen						max="1" req="01"/>
+			<psi-healing					max="1" req="01"/>
+			<psi-mental-stab				max="1" req="01"/>
+			<psi-mind-shield				max="1" req="02"/>
+			<psi-photokinesis				max="1" req="01"/>
+			<psi-psychometry				max="1" req="01"/>
+			<psi-sense-aura					max="1" req="01"/>
+			<psi-steal-energy				max="1" req="01"/>
+			<psi-steal-power				max="1" req="01"/>
+			<psi-suggest					max="1" req="01"/>
+			<psi-telereceive				max="1" req="01"/>
+		</skills>
+	</class>
+
+	<class alias="precog" parents="np" name="Precognitive" nationality="various">
+		<stats>
+			<strength					min="8" max="15" mean="10"/>
+			<dexterity					min="8" max="15" mean="10"/>
+			<intelligence				min="10" max="17" mean="12.4"/>
+			<health						min="9" max="16" mean="11"/>
+		</stats>
+		<advantages>
+			<esp-power					min="6" max="14" mean="9.6" req="1"/>
+			<telepathy-power			req="01"/>
+		</advantages>
+
+		<skills>
+			<psi-clairvoyance				max="2" req="46"/>
+			<psi-clairaudience				max="1" req="42"/>
+			<psi-clairsentience				max="1" req="38"/>
+			<psi-combat-sense				max="2" req="48"/>
+			<psi-precognition				max="2" req="70"/>
+			<psi-psychometry				max="2" req="62"/>
+			<psi-retrogression				max="1" req="37"/>
+			<psi-seekersense				max="1" req="41"/>
+
+			<psi-aspect						max="1" req="01"/>
+			<psi-astral-projection			max="1" req="01"/>
+			<psi-astral-sight				max="1" req="01"/>
+			<psi-combat-teleport			max="1" req="01"/>
+			<psi-confuse					max="1" req="01"/>
+			<psi-dampen						max="1" req="01"/>
+			<psi-healing					max="1" req="01"/>
+			<psi-mental-stab				max="1" req="01"/>
+			<psi-mind-shield				max="1" req="03"/>
+			<psi-photokinesis				max="1" req="01"/>
+			<psi-pk-shield					max="1" req="01"/>
+			<psi-sense-aura					max="1" req="01"/>
+			<psi-steal-energy				max="1" req="01"/>
+			<psi-steal-power				max="1" req="01"/>
+			<psi-suggest					max="1" req="01"/>
+			<psi-telekinesis				max="1" req="01"/>
+			<psi-telereceive				max="1" req="01"/>
+		</skills>
+	</class>
+
+
+	<class alias="padept" parents="np" name="Psi-Adept" nationality="various">
+		<stats>
+			<strength					min="8" max="15" mean="10"/>
+			<dexterity					min="8" max="15" mean="10"/>
+			<intelligence				min="10" max="17" mean="12.4"/>
+			<health						min="9" max="15" mean="10"/>
+		</stats>
+		<attributes>
+			<fatigue			min="-1" max="3" mean="1.5"/>
+		</attributes>
+
+		<advantages>
+			<magery						min="0" max="3" mean="0.4" req="-1"/>
+			<psi-resistance				min="1" max="5" mean="1.5" req="0.31"/>
+			<telepathy-power			min="2" max="10" mean="6" req="50"/>
+		</advantages>
+
+		<skills							min="7" max="12" mean="7.8" sdev="2.4">
+			<ritual-magic					max="2" req="12"/>
+			<psi-aspect						max="1" req="07"/>
+			<psi-astral-projection			max="1" req="10"/>
+			<psi-astral-sight				max="1" req="10"/>
+			<psi-clairvoyance				max="1" req="11"/>
+			<psi-combat-teleport			max="1" req="09"/>
+			<psi-confuse					max="1" req="10"/>
+			<psi-dampen						max="1" req="09"/>
+			<psi-erase-signature			max="1" req="08"/>
+			<psi-healing					max="1" req="11"/>
+			<psi-mental-stab				max="1" req="08"/>
+			<psi-mind-shield				max="1" req="14"/>
+			<psi-photokinesis				max="1" req="10"/>
+			<psi-pk-shield					max="1" req="14"/>
+			<psi-psychometry				max="1" req="13"/>
+			<psi-sense-aura					max="1" req="11"/>
+			<psi-steal-energy				max="1" req="06"/>
+			<psi-steal-power				max="1" req="06"/>
+			<psi-suggest					max="1" req="06"/>
+			<psi-telekinesis				max="1" req="07"/>
+			<psi-telereceive				max="1" req="16"/>
+		</skills>
+	</class>
+
+</classes>

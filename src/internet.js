@@ -1,6 +1,9 @@
 'use strict';
 
 module.exports = function(randopeep){
+	// where do domains/usernames come from?
+	var sOrigins = ['netrunner','netrunner','netrunner','english','japanese','chinese','germanic','spanish'];
+
 	var internet = {
 		email: function(derived){
 			switch (randopeep.int(2)) {
@@ -13,30 +16,15 @@ module.exports = function(randopeep){
 		
 		username:function(derived){
 			if (!derived){
-				switch (randopeep.int(8)) {
+				switch (randopeep.int(3)) {
 				case 0:
-					derived = randopeep.get('person/modern/male');
+					derived = randopeep.name({'justLast':randopeep.randomEl([true,false]) , 'origin': sOrigins, 'prefix':false});
 					break;
 				case 1:
-					derived = randopeep.get('person/modern/female');
-					break;
-				case 2:
-					derived = randopeep.get('person/modern/male') + randopeep.get('person/modern/last');
-					break;
-				case 3:
-					derived = randopeep.get('person/modern/female') + randopeep.get('person/modern/last');
-					break;
-				case 4:
-					derived = randopeep.get('person/netrunner') + randopeep.get('person/netrunner');
-					break;
-				case 5:
-					derived = randopeep.get('person/netrunner');
-					break;
-				case 6:
 					derived = randopeep.get('bs/noun');
 					break;
-				case 7:
-					derived = randopeep.get('catch_phrase/noun');
+				case 2:
+					derived = randopeep.get('catchPhrase/noun');
 					break;
 				}
 			}
@@ -44,7 +32,11 @@ module.exports = function(randopeep){
 		},
 
 		domain:function(derived){
-			return internet.username(derived) + '.' + randopeep.get('domain/suffix');
+			return randopeep.format(
+				'{0}.{1}',
+				internet.username(derived),
+				randopeep.get('domain/suffix')
+			);
 		},
 		
 		ip:function(){
