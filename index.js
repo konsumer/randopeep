@@ -1,5 +1,9 @@
 'use strict';
 
+/* global module */
+
+if (!module){ module = {}; }
+
 module.exports = require('./src/randopeep.js');
 
 module.exports.cc = require('./src/cc.js')(module.exports);
