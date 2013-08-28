@@ -4,8 +4,8 @@ module.exports = function(randopeep){
     // synchronous AJAX for loading data files in light-mode
     /* global ActiveXObject */
     function getFile(url) {
-        // node, not AMD
-        if (typeof(define) === 'undefined' && typeof(require) === 'function'){
+        // node, not browser
+        if (typeof(window) === 'undefined'){
             return require(url);
         }
         var AJAX;
@@ -41,15 +41,11 @@ module.exports = function(randopeep){
     randopeep.get = function(){
         var out = [];
         for (var a in arguments){
-            try{
-                if (typeof(randopeep.data[arguments[a]]) === 'undefined'){
-                    // sync AJAX or dynamic require
-                    randopeep.data[arguments[a]] = getFile(randopeep.dataLocation + arguments[a]+'.json');
-                }
-                out.push(randopeep.randomEl(randopeep.data[arguments[a]]));
-            }catch(e){
-                console.log('err', arguments[a]);
+            if (typeof(randopeep.data[arguments[a]]) === 'undefined'){
+                // sync AJAX or dynamic require
+                randopeep.data[arguments[a]] = getFile(randopeep.dataLocation + arguments[a]+'.json');
             }
+            out.push(randopeep.randomEl(randopeep.data[arguments[a]]));
         }
         return out.join(' ');
     };

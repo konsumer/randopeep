@@ -9,8 +9,24 @@ module.exports = function(grunt) {
 				'options':{
 					'main':'index.js',
 					'out': 'index.js',
-					// 'dataLocation': __dirname + '/data/' // lite version, that gets data for node, with dynamic require
-					// 'dataLocation': '../data/' // lite version, that gets data for browser, with synchronous AJAX
+				},
+				'cwd': './data-src/',
+				'dest': './data/'
+			},
+			'lite-browser': {
+				'options':{
+					'main':'index.js',
+					'out': 'index.js',
+					'dataLocation': '../data/' // lite version, that gets data for browser, with synchronous AJAX
+				},
+				'cwd': './data-src/',
+				'dest': './data/'
+			},
+			'lite-node': {
+				'options':{
+					'main':'index.js',
+					'out': 'index.js',
+					'dataLocation': __dirname + '/data/' // lite version, that gets data for node, with dynamic require
 				},
 				'cwd': './data-src/',
 				'dest': './data/'
@@ -75,6 +91,8 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-connect');
 
-	grunt.registerTask('default', ['clean:default', 'wordlists', 'browserify', 'uglify']);
+	grunt.registerTask('default', ['clean:default', 'wordlists:default', 'browserify:default', 'uglify:default']);
+	grunt.registerTask('lite-browser', ['clean:default', 'wordlists:lite-browser', 'browserify:default', 'uglify:default']);
+	grunt.registerTask('lite-node', ['clean:default', 'wordlists:lite-node', 'browserify:default', 'uglify:default']);
 	grunt.registerTask('server', ['connect']);
 };

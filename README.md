@@ -105,21 +105,6 @@ Will attempt to use the text that you give it as a base for generating other thi
 
 See unit-tests in [test/test.js](https://github.com/konsumer/randopeep/blob/master/test/test.js) if you need more details.
 
-### Adding your own name-libraries
-
-You can add your own, if you install dev-tools with `npm install` then add whatever you want to [data-src/wordlists](https://github.com/konsumer/randopeep/tree/master/data-src/wordlists) dir, and run `grunt`.
-
-Format is 1 item per line.
-
-### Using name-libraries
-
-Say you want an English female firstname, and a hacker lastname:
-
-```javascript
-var myLeetName = randopeep.get(1, 'name/english/female/first') + ' ' + randopeep.get(1, 'name/netrunner/first');
-```
-
-
 ### Node
 
 Install: `npm install randopeep`
@@ -148,6 +133,24 @@ There is also support for AMD/require.js, just put build/randopeep.js in your ap
 define(['randopeep'], function(peep){
 	document.body.innerHTML = 'I am a totally cool lady, my name is ' + randopeep.name({gender:'female'});
 });
+```
+
+### Lite-version
+
+If you want to load your data dynamically, instead of inline, build with `grunt lite-browser` or `grunt lite-node`. For `grunt lite-browser`, make sure `dataLocation` in Gruntfile.js is set to a URL where your data can be found.
+
+### Adding your own name-libraries
+
+You can add your own, if you install dev-tools with `npm install` then add whatever you want to [data-src/wordlists](https://github.com/konsumer/randopeep/tree/master/data-src/wordlists) dir, and run `grunt`.
+
+Format is 1 item per line.
+
+### Using name-libraries
+
+Say you want an English female firstname, and a hacker lastname:
+
+```javascript
+var myLeetName = randopeep.get(1, 'name/english/female/first') + ' ' + randopeep.get(1, 'name/netrunner/first');
 ```
 
 ## Testing
