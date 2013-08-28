@@ -68,7 +68,7 @@ All parameters are optional.
 
 A lot of different types of names can be generated. All parameters are optional, here are the defaults:
 
-```
+```json
 {
 	'origin' : random - 'chinese', 'dark/elven', 'dwarven','elven', 'english', 'germanic','japanese','orcish','spanish','netrunner',
 	'gender': random - 'male','female',
