@@ -1,5 +1,7 @@
 # [Rando Peeps Data](http://konsumer.github.io/randopeep/)
 
+[![Peeps](http://thenewforty.areavoices.com/files/2012/04/marshmallow_peeps.jpg)]
+
 [![NPM](https://nodei.co/npm/randopeep.png)](https://nodei.co/npm/randopeep/)
 [![Build Status](https://travis-ci.org/konsumer/randopeep.png?branch=master)](https://travis-ci.org/konsumer/randopeep)
 [![Demo](https://drupal.org/files/issues/demo_stamp.gif)](http://konsumer.github.io/randopeep/test/)
