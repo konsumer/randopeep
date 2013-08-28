@@ -129,7 +129,7 @@ Just include `build/randopeep.min.js` in your thing, and use it like normal:
 ```html
 <script src="http://konsumer.github.io/randopeep/randopeep.min.js"></script>
 <script>
-	document.body.innerHTML = 'I am a totally cool dude, my name is ' + randopeep.name({gender:'male'});
+	document.body.innerHTML = "I'm cool dude named " + randopeep.name({gender:'male'});
 </script>
 ```
 
@@ -137,7 +137,7 @@ There is also support for AMD/require.js, just put out/randopeep.js in your appl
 
 ```javascript
 define(['randopeep'], function(peep){
-	document.body.innerHTML = 'I am a totally cool lady, my name is ' + randopeep.name({gender:'female'});
+	document.body.innerHTML = "I'm cool lady named " + randopeep.name({gender:'female'});
 });
 ```
 
