@@ -127,7 +127,7 @@ Just include `build/randopeep.min.js` in your thing, and use it like normal:
 </script>
 ```
 
-There is also support for AMD/require.js, just put build/randopeep.js in your application dir, and do this:
+There is also support for AMD/require.js, just put out/randopeep.js in your application dir, and do this:
 
 ```javascript
 define(['randopeep'], function(peep){
