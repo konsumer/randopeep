@@ -89,6 +89,9 @@ A lot of different types of names can be generated. All parameters are optional,
 * `prefix` - look up gendered prefix, if applicable
 * `returnData` - return options (as generated) with `name` field, good if you want random gender/origin, but want to know about it after
 
+If you set any of them to an array, it will pick a random element.
+
+
 #### `type` for `randopeep.corporate.name`
 
 It can be one of these:
