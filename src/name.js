@@ -29,7 +29,6 @@ module.exports = function(randopeep){
 		// some don't have titles
 		// some don't have prefixes
 		if (params.origin === 'dark/elven'){
-			params.last = false;
 			params.gender = 'female';
 			params.prefix = false;
 		}
@@ -45,6 +44,9 @@ module.exports = function(randopeep){
 		}
 		if (params.origin === 'netrunner'){
 			params.gender = false;
+		}
+		if (params.origin === 'elven'){
+			params.prefix = false;
 		}
 
 		var key = 'name/' + params.origin + '/';
@@ -67,7 +69,11 @@ module.exports = function(randopeep){
 		}
 
 		if (params.last && params.origin !== 'netrunner'){
-			out.push(randopeep.get(key + 'last'));
+			if (params.origin !== 'dark/elven'){
+				out.push(randopeep.get(key + 'last'));
+			}else{
+				out.push(randopeep.get('name/elven/last'));
+			}
 		}
 
 		if (params.last && params.origin === 'netrunner'){
