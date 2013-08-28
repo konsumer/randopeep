@@ -156,7 +156,7 @@ Format is 1 item per line.
 Say you want an English female firstname, and a hacker lastname:
 
 ```javascript
-var myLeetName = randopeep.get('name/english/female/first') + ' ' + randopeep.get('name/netrunner/first');
+var myLeetName = ['english/female/first', 'netrunner/first'].map(function(n){ return randopeep.get('name/' + n); }).join(' ');
 ```
 
 ## Testing
