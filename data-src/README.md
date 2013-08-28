@@ -2,6 +2,8 @@
 
 Put your own wordlist data (1 item per line) in [data-src/wordlists](https://github.com/konsumer/randopeep/tree/master/data-src/wordlists) to have it added to the data-stack.
 
+Run `grunt` to compile your wordlist into JSON.
+
 It doesn't have to be single words, just 1 item per line.
 
 ## Credits
