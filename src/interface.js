@@ -24,6 +24,7 @@ module.exports = function(randopeep){
 	api.name = function (params,n){ return wrapFunc(n, randopeep.name, params); };
 	api.job = function(n) { return api.get(n,'jobs'); };
 	api.cc = function(type, charCount, n){ return wrapFunc(n, randopeep.cc, type, charCount); };
+	api.invention = function(n){ return wrapFunc(n, randopeep.invention); };
 
 	api.address = {};
 	api.address.state = function(n) { return api.get(n,'us/state'); };

@@ -3,7 +3,7 @@
 [![NPM](https://nodei.co/npm/randopeep.png)](https://nodei.co/npm/randopeep/)
 [![Build Status](https://travis-ci.org/konsumer/randopeep.png?branch=master)](https://travis-ci.org/konsumer/randopeep)
 
-Generate fake details about people, in javascript, based on data files. Originally made for generating fake NPCs for RPGs & fake accounts for things online.
+Generate random fake people, in javascript, based on data files. Originally made for generating fake NPCs for RPGs & fake accounts for things online.
 
 ## What random stuff can it generate?
 
@@ -15,6 +15,7 @@ All parameters are optional.
 
 * `randopeep.name(params, n)` - a person's name, `params` are explained below
 * `randopeep.job(n)` - a job a person might do
+* `randopeep.invention(n)` - a seemingly awesome-sounding invention
 
 ### Places
 
@@ -102,11 +103,11 @@ Will attempt to use the text that you give it as a base for generating other thi
 
 ## Usage
 
-See my units-tests in [test/test.js](https://github.com/konsumer/randopeep/blob/master/test/test.js) if you need more detail.
+See unit-tests in [test/test.js](https://github.com/konsumer/randopeep/blob/master/test/test.js) if you need more details.
 
 ### Adding your own name-libraries
 
-You can add your own, if you install dev-tools with `npm install` then add whatever you want to `data/` dir, and run `grunt`.
+You can add your own, if you install dev-tools with `npm install` then add whatever you want to [data-src/wordlists](https://github.com/konsumer/randopeep/tree/master/data-src/wordlists) dir, and run `grunt`.
 
 Format is 1 item per line.
 
@@ -164,4 +165,4 @@ You can run my CLI tests with `npm test` or open test/index.html to run same tes
 
 ## Credits
 
-* see [data credits](https://github.com/konsumer/randopeep/tree/master/data_src) for info about where a lot of this stuff came from.
+* see [data credits](https://github.com/konsumer/randopeep/tree/master/data-src) for info about where a lot of this stuff came from.

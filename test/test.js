@@ -271,4 +271,11 @@ describe('randopeep', function() {
 			expect(email).to.not.be.empty;
 		});
 	});
+
+	describe('invention', function() {
+		var invention = randopeep.invention();
+		it('should do an invention ('+invention+')', function() {
+			expect(invention).to.not.be.empty;
+		});
+	});
 });

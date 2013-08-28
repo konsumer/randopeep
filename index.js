@@ -7,12 +7,15 @@
 var randopeep = {};
 
 require('./src/randopeep.js')(randopeep);
+
 randopeep.name = require('./src/name.js')(randopeep);
 randopeep.cc = require('./src/cc.js')(randopeep);
 randopeep.ipsum = require('./src/ipsum.js')(randopeep);
 randopeep.address = require('./src/address.js')(randopeep);
 randopeep.corporate = require('./src/corporate.js')(randopeep);
 randopeep.internet = require('./src/internet.js')(randopeep);
+randopeep.invention = require('./src/invention.js')(randopeep);
+
 module.exports = require('./src/interface.js')(randopeep);
 
 // wrapper for AMD/browser-global
@@ -74,18 +77,9 @@ randopeep.data["name/orcish/first"]=require("./data/name/orcish/first.json");
 randopeep.data["name/spanish/female/first"]=require("./data/name/spanish/female/first.json");
 randopeep.data["name/spanish/last"]=require("./data/name/spanish/last.json");
 randopeep.data["name/spanish/male/first"]=require("./data/name/spanish/male/first.json");
-randopeep.data["gurps/armor"]=require("./data/gurps/armor.json");
-randopeep.data["gurps/attribute/rules"]=require("./data/gurps/attribute/rules.json");
-randopeep.data["gurps/empiregame/fantasy"]=require("./data/gurps/empiregame/fantasy.json");
-randopeep.data["gurps/mage/fantasy"]=require("./data/gurps/mage/fantasy.json");
-randopeep.data["gurps/exotic/classes"]=require("./data/gurps/exotic/classes.json");
-randopeep.data["gurps/psi/classes"]=require("./data/gurps/psi/classes.json");
-randopeep.data["gurps/standard/cabal"]=require("./data/gurps/standard/cabal.json");
-randopeep.data["gurps/standard/classes"]=require("./data/gurps/standard/classes.json");
-randopeep.data["gurps/standard/fantasy"]=require("./data/gurps/standard/fantasy.json");
-randopeep.data["gurps/standard/cyberpunk"]=require("./data/gurps/standard/cyberpunk.json");
-randopeep.data["gurps/standard/undead"]=require("./data/gurps/standard/undead.json");
-randopeep.data["gurps/test/classes"]=require("./data/gurps/test/classes.json");
-randopeep.data["gurps/standard/wwii/classes"]=require("./data/gurps/standard/wwii/classes.json");
-randopeep.data["gurps/y2kgame/classes"]=require("./data/gurps/y2kgame/classes.json");
+randopeep.data["invention/prefix"]=require("./data/invention/prefix.json");
+randopeep.data["invention/function1"]=require("./data/invention/function1.json");
+randopeep.data["invention/function2"]=require("./data/invention/function2.json");
+randopeep.data["invention/catalyst1"]=require("./data/invention/catalyst1.json");
+randopeep.data["invention/catalyst2"]=require("./data/invention/catalyst2.json");
 //</data>

@@ -87,28 +87,33 @@ module.exports = function(inDir, outDir, mainCB){
 	function doInventions(cb){
 		// parse invention-generator
 		var def = require(inDir + 'invention.js');
+		var nfiles = [];
 		mkdirp.sync(outDir + 'invention');
 		for (var n in def){
-			fs.writeFileSync(outDir + 'invention/' + n + '.json', JSON.stringify(def[n]));
+			var f = outDir + 'invention/' + n + '.json';
+			fs.writeFileSync(f, JSON.stringify(def[n]));
+			nfiles.push(f);
 		}
+		cb(nfiles);
+	}
 
-		// parse NPC generator class-data
+
+	/*
+		// parse GURPS NPC generator class-data
 		glob(inDir + 'npcgenerator/class-data/*.xml', function(err,files){
-			var nfiles = [];
 			files.forEach(function(file,i){
 				var parser = new xml.Parser({mergeAttrs:true,explicitArray:true,strict:false,normalizeTags:true});
 				var f = outDir + 'gurps/' + path.basename(file, '.xml').toLowerCase().replace(/-/g,'/') + '.json';
+				nfiles.push(f);
 				mkdirp.sync(path.dirname(f));
 				parser.addListener('end', function(result) {
 				    fs.writeFileSync(f, JSON.stringify(result));
-
-				    nfiles.push(f);
-					if (i === (files.length-1)){ cb(nfiles); }
 				});
 				fs.readFile(file, function(err, f){ parser.parseString(f); });
+				if (i === (files.length-1)){ cb(nfiles); }
 			});
 		});
-	}
+	*/
 
 	var allFiles = [];
 	doWordLists(function(files){
