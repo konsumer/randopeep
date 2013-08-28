@@ -20,6 +20,30 @@ All parameters are optional.
 * `randopeep.job(n)` - a job a person might do
 * `randopeep.invention(n)` - a seemingly awesome-sounding invention
 
+#### `params`
+
+A lot of different types of names can be generated. All parameters are optional, here are the defaults:
+
+```javascript
+{
+	'origin' : random - 'chinese', 'dark/elven', 'dwarven','elven', 'english', 'germanic','japanese','orcish','spanish','netrunner',
+	'gender': random - 'male','female',
+	'last': true,
+	'justLast': false,
+	'prefix': random - true, false,
+	'returnData': false,
+}
+```
+
+* `origin` - the place/time the names come from (see data dir)
+* `gender` - male/female, if names are gendered
+* `last` - get a lastname?
+* `justLast` - get lastname only?
+* `prefix` - look up gendered prefix, if applicable
+* `returnData` - return options (as generated) with `name` field, good if you want random gender/origin, but want to know about it after
+
+If you set any of them to an array, it will pick a random element.
+
 ### Places
 
 * `randopeep.address.state(n)` - a US state
@@ -45,6 +69,15 @@ All parameters are optional.
 * `randopeep.corporate.catchPhrase(n)` - `n` corporate catchphrases
 * `randopeep.corporate.bs(n)` - `n` lines of corporate BS
 
+#### `type`
+
+It can be one of these:
+
+* cyber -  a company from the future
+* firm - a law-firm, all last names are random non-fantasy, but from the same origin
+* small - a small company
+* large - a large corp
+
 
 ### Internet Things
 
@@ -52,6 +85,11 @@ All parameters are optional.
 * `randopeep.internet.domain(derived, n)` - a internet domainname, `derived` is explained, below
 * `randopeep.internet.email(derived, n)` - an email address, `derived` is explained, below
 * `randopeep.internet.username(derived, n)` - an internet username, `derived` is explained, below
+
+#### `derived`
+
+Will attempt to use the text that you give it as a base for generating other things.  Makes more-legit looking email, if you already know the name, for example.
+
 
 
 ### Random Text
@@ -63,48 +101,6 @@ All parameters are optional.
 
 * `randopeep.data` - the raw data, keyed by list name
 * `randopeep.get(list, n)` - `n` items from `list`
-
-
-### Parameters used above
-
-#### `params` for `randopeep.name`
-
-A lot of different types of names can be generated. All parameters are optional, here are the defaults:
-
-```javascript
-{
-	'origin' : random - 'chinese', 'dark/elven', 'dwarven','elven', 'english', 'germanic','japanese','orcish','spanish','netrunner',
-	'gender': random - 'male','female',
-	'last': true,
-	'justLast': false,
-	'prefix': random - true, false,
-	'returnData': false,
-}
-```
-
-* `origin` - the place/time the names come from (see data dir)
-* `gender` - male/female, if names are gendered
-* `last` - get a lastname?
-* `justLast` - get lastname only?
-* `prefix` - look up gendered prefix, if applicable
-* `returnData` - return options (as generated) with `name` field, good if you want random gender/origin, but want to know about it after
-
-If you set any of them to an array, it will pick a random element.
-
-
-#### `type` for `randopeep.corporate.name`
-
-It can be one of these:
-
-* cyber -  a company from the future
-* firm - a law-firm, all last names are random non-fantasy, but from the same origin
-* small - a small company
-* large - a large corp
-
-
-#### `derived` for `randopeep.internet.*`
-
-Will attempt to use the text that you give it as a base for generating other things.  Makes more-legit looking email, if you already know the name, for example.
 
 
 ## Usage
