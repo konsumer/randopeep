@@ -76,7 +76,7 @@ A lot of different types of names can be generated. All parameters are optional,
 	'justLast': false,
 	'prefix': random - true, false,
 	'returnData': false,
-};
+}
 ```
 
 * `origin` - the place/time the names come from (see data dir)
