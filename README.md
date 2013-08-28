@@ -60,7 +60,7 @@ All parameters are optional.
 ### Other stuff
 
 * `randopeep.data` - the raw data, keyed by list name
-* `randopeep.get(n, list)` - `n` items from `list`
+* `randopeep.get(list, n)` - `n` items from `list`
 
 
 ### Parameters used above
@@ -151,7 +151,7 @@ Format is 1 item per line.
 Say you want an English female firstname, and a hacker lastname:
 
 ```javascript
-var myLeetName = randopeep.get(1, 'name/english/female/first') + ' ' + randopeep.get(1, 'name/netrunner/first');
+var myLeetName = randopeep.get('name/english/female/first') + ' ' + randopeep.get('name/netrunner/first');
 ```
 
 ## Testing

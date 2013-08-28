@@ -18,17 +18,17 @@ module.exports = function(randopeep){
 	var api = {};
 
 	api.data = randopeep.data;
-	api.get = randopeep.getCount; // (n, list)
+	api.get = function(list, n){ return randopeep.getCount(n, list); };
 	api.ipsum = randopeep.ipsum; // (n, list)
 
 	api.name = function (params,n){ return wrapFunc(n, randopeep.name, params); };
-	api.job = function(n) { return api.get(n,'jobs'); };
+	api.job = function(n) { return api.get('jobs',n); };
 	api.cc = function(type, charCount, n){ return wrapFunc(n, randopeep.cc, type, charCount); };
 	api.invention = function(n){ return wrapFunc(n, randopeep.invention); };
 
 	api.address = {};
-	api.address.state = function(n) { return api.get(n,'us/state'); };
-	api.address.state.a = function(n) { return api.get(n,'us/state/abbr'); };
+	api.address.state = function(n) { return api.get('us/state',n); };
+	api.address.state.a = function(n) { return api.get('us/state/abbr',n); };
 	api.address.zip = function(n){ return wrapFunc(n, randopeep.address.zip); };
 	api.address.city = function(n){ return wrapFunc(n, randopeep.address.city); };
 	api.address.geo = function(n){ return wrapFunc(n, randopeep.address.geo); };
@@ -36,8 +36,8 @@ module.exports = function(randopeep){
 	api.address.streetAddress = function(useFullAddress,n){ return wrapFunc(n, randopeep.address.streetAddress, useFullAddress); };
 	api.address.phone = function(n){ return wrapFunc(n, randopeep.address.phone); };
 	api.address.uk = {};
-	api.address.uk.country = function(n) { return api.get(n,'uk/country'); };
-	api.address.uk.county = function(n) { return api.get(n,'uk/county'); };
+	api.address.uk.country = function(n) { return api.get('uk/country',n); };
+	api.address.uk.county = function(n) { return api.get('uk/county',n); };
 	
 	api.corporate = {};
 	api.corporate.name = function (type,n){ return wrapFunc(n, randopeep.corporate.name, type); };
