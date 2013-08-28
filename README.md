@@ -153,14 +153,8 @@ Format is 1 item per line.
 
 ### Using name-libraries
 
-Say you want an English female firstname, and a hacker lastname:
+Let's pretend some of the built-in wordlist librarues don't have the `randopeep.name()` convenience function, and load the libraries, directly:
 
-```javascript
-var doName = function(a){return a.map(function(n){return randopeep.get('name/'+n+'/first');}).join(' ');};
-var myLeetName = doName(['english/female','netrunner']);
-```
-
-or simply:
 ```javascript
 var myLeetName = randopeep.get('name/english/female/first') + ' ' + randopeep.get('name/netrunner/first');
 ```
