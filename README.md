@@ -90,8 +90,8 @@ A lot of different types of names can be generated. All parameters are optional,
 
 It can be one of these:
 
-* cyber -  a company form the future
-* firm - a law-firm, all alst names are random, but from the same origin
+* cyber -  a company from the future
+* firm - a law-firm, all last names are random non-fantasy, but from the same origin
 * small - a small company
 * large - a large corp
 
