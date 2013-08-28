@@ -4,16 +4,8 @@ module.exports = function(randopeep){
     // synchronous AJAX for loading data files in light-mode
     /* global ActiveXObject */
     function getFile(url) {
-        // node, not browser
-        if (typeof(window) === 'undefined'){
-            return require(url);
-        }
-        var AJAX;
-        if (window.XMLHttpRequest) {
-            AJAX=new XMLHttpRequest();
-        } else {
-            AJAX=new ActiveXObject('Microsoft.XMLHTTP');
-        }
+        if (typeof(window) === 'undefined'){ return require(url); }
+        var AJAX = (window.XMLHttpRequest) ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
         if (AJAX) {
             AJAX.open('GET', url, false);
             AJAX.send(null);
@@ -25,6 +17,7 @@ module.exports = function(randopeep){
 
 
     randopeep.int = function(max){
+        max = max || 10;
         return Math.floor(Math.random() * max);
     };
 
