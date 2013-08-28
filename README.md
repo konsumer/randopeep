@@ -1,12 +1,12 @@
 # [Rando Peeps Data](http://konsumer.github.io/randopeep/)
 
+Generate random fake people, in javascript, based on data files. Originally made for generating fake NPCs for RPGs & fake accounts for things online.
+
 ![Peeps](http://thenewforty.areavoices.com/files/2012/04/marshmallow_peeps.jpg)
 
 [![NPM](https://nodei.co/npm/randopeep.png)](https://nodei.co/npm/randopeep/)
 [![Build Status](https://travis-ci.org/konsumer/randopeep.png?branch=master)](https://travis-ci.org/konsumer/randopeep)
 [![Demo](https://drupal.org/files/issues/demo_stamp.gif)](http://konsumer.github.io/randopeep/test/)
-
-Generate random fake people, in javascript, based on data files. Originally made for generating fake NPCs for RPGs & fake accounts for things online.
 
 ## What random stuff can it generate?
 
