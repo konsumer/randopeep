@@ -137,7 +137,7 @@ describe('randopeep', function() {
 			'visa': new RegExp('4(?:[0-9]{12}|[0-9]{15})'),
 			'mastercard':  new RegExp('5[1-5][0-9]{14}'),
 			'amex': new RegExp('3[47][0-9]{13}'),
-			'discover': new RegExp('6[0-9]{15}')
+			'discover': new RegExp('6[0-9]{15}') // not the best, I got lazy...
 		};
 
 		var luhnGen = (function(){
