@@ -159,8 +159,6 @@ You can run my CLI tests with `npm test` or open test/index.html to run same tes
 
 * use the GURPS class-data
 * ipsum could be smarter with English, so it can assemble seemingly sensical text.
-* serve all this up with a remote API, so you don't need all the dictionaries, if you have internet access (and make "light" build)
-
 
 
 ## Credits

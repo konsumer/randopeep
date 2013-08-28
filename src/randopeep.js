@@ -1,6 +1,29 @@
 'use strict';
 
 module.exports = function(randopeep){
+    // synchronous AJAX for loading data files in light-mode
+    /* global ActiveXObject */
+    function getFile(url) {
+        // node, not AMD
+        if (typeof(define) === 'undefined' && typeof(require) === 'function'){
+            return require(url);
+        }
+        var AJAX;
+        if (window.XMLHttpRequest) {
+            AJAX=new XMLHttpRequest();
+        } else {
+            AJAX=new ActiveXObject('Microsoft.XMLHTTP');
+        }
+        if (AJAX) {
+            AJAX.open('GET', url, false);
+            AJAX.send(null);
+            return JSON.parse(AJAX.responseText);
+        } else {
+            return false;
+        }
+    }
+
+
     randopeep.int = function(max){
         return Math.floor(Math.random() * max);
     };
@@ -19,6 +42,10 @@ module.exports = function(randopeep){
         var out = [];
         for (var a in arguments){
             try{
+                if (typeof(randopeep.data[arguments[a]]) === 'undefined'){
+                    // sync AJAX or dynamic require
+                    randopeep.data[arguments[a]] = getFile(randopeep.dataLocation + arguments[a]+'.json');
+                }
                 out.push(randopeep.randomEl(randopeep.data[arguments[a]]));
             }catch(e){
                 console.log('err', arguments[a]);
