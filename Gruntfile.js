@@ -53,15 +53,29 @@ module.exports = function(grunt) {
 			'server': {
 				'options': {
 					'port': 8000,
-					'base': '.',
+					'base': 'test',
 					'keepalive':true
 				}
 			}
 		},
 
 		'clean': {
-			'default': ['out','data'],
+			'default': ['out','data','test/randopeep.js', 'test/randopeep.min.js'],
+		},
+
+		'gh-pages': {
+			options: {
+				base: 'test'
+			},
+			src: ['**']
+		},
+
+		copy: {
+			default: {
+				files: [{expand: true, src: ['out/*.js'], dest: 'test/', filter: 'isFile'}]
+			}
 		}
+
 	});
 
 	// Generate JS wordlist data
@@ -90,9 +104,13 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-browserify');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-connect');
+	grunt.loadNpmTasks('grunt-gh-pages');
+	grunt.loadNpmTasks('grunt-contrib-copy');
 
-	grunt.registerTask('default', ['clean:default', 'wordlists:default', 'browserify:default', 'uglify:default']);
+	grunt.registerTask('default', ['clean:default', 'copy:default', 'wordlists:default', 'browserify:default', 'uglify:default']);
 	grunt.registerTask('lite-browser', ['clean:default', 'wordlists:lite-browser', 'browserify:default', 'uglify:default']);
 	grunt.registerTask('lite-node', ['clean:default', 'wordlists:lite-node', 'browserify:default', 'uglify:default']);
 	grunt.registerTask('server', ['connect']);
+	grunt.registerTask('page', ['default', 'gh-pages']);
+
 };

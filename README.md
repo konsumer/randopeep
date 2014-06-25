@@ -6,7 +6,7 @@ Originally I made this for generating fake NPCs for RPGs & fake accounts for thi
 
 [![NPM](https://nodei.co/npm/randopeep.png)](https://nodei.co/npm/randopeep/)
 [![Build Status](https://travis-ci.org/konsumer/randopeep.png?branch=master)](https://travis-ci.org/konsumer/randopeep)
-[Demo](http://konsumer.github.io/randopeep/test/)
+[Demo](http://konsumer.github.io/randopeep/)
 
 ## What random stuff can it generate?
 
