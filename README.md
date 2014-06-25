@@ -132,7 +132,7 @@ Just include `build/randopeep.min.js` in your thing, and use it like normal:
 There is also support for AMD/require.js, just put out/randopeep.js in your application dir, and do this:
 
 ```javascript
-define(['randopeep'], function(peep){
+define(['randopeep'], function(randopeep){
 	document.body.innerHTML = "I'm cool lady named " + randopeep.name({gender:'female'});
 });
 ```
