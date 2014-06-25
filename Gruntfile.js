@@ -72,7 +72,7 @@ module.exports = function(grunt) {
 
 		copy: {
 			default: {
-				files: [{flatten:true, expand: true, src: ['*.js'], dest: 'test/', filter: 'isFile'}]
+				files: [{flatten:true, expand: true, src: ['out/*.js'], dest: 'test/', filter: 'isFile'}]
 			}
 		}
 
