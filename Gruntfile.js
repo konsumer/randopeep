@@ -17,7 +17,7 @@ module.exports = function(grunt) {
 				'options':{
 					'main':'index.js',
 					'out': 'index.js',
-					'dataLocation': '../data/' // lite version, that gets data for browser, with synchronous AJAX
+					'dataLocation': 'http://konsumer.github.io/randopeep/data/' // lite version, that gets data for browser, with synchronous AJAX
 				},
 				'cwd': './data-src/',
 				'dest': './data/'
@@ -60,19 +60,22 @@ module.exports = function(grunt) {
 		},
 
 		'clean': {
-			'default': ['out','data','test/randopeep.js', 'test/randopeep.min.js'],
+			'default': ['out','data','test/randopeep.js', 'test/randopeep.min.js', 'test/data'],
 		},
 
 		'gh-pages': {
-			options: {
-				base: 'test'
+			'options': {
+				'base': 'test'
 			},
-			src: ['**']
+			'src': ['**']
 		},
 
-		copy: {
-			default: {
-				files: [{flatten:true, expand: true, src: ['out/*.js'], dest: 'test/', filter: 'isFile'}]
+		'copy': {
+			'default': {
+				'files': [
+					{'chdir':'out', 'expand': true, 'src': ['*.js'], 'dest': 'test/', 'filter': 'isFile'},
+					{'expand': true, 'src': ['data'], 'dest': 'test/'},
+				]
 			}
 		}
 
@@ -108,9 +111,9 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-copy');
 
 	grunt.registerTask('default', ['clean:default', 'wordlists:default', 'browserify:default', 'uglify:default', 'copy:default']);
-	grunt.registerTask('lite-browser', ['clean:default', 'wordlists:lite-browser', 'browserify:default', 'uglify:default']);
+	grunt.registerTask('lite-browser', ['clean:default', 'wordlists:lite-browser', 'browserify:default', 'uglify:default', 'copy:defualt']);
 	grunt.registerTask('lite-node', ['clean:default', 'wordlists:lite-node', 'browserify:default', 'uglify:default']);
 	grunt.registerTask('server', ['connect']);
-	grunt.registerTask('page', ['default', 'gh-pages']);
+	grunt.registerTask('page', ['lite-browser', 'gh-pages']);
 
 };

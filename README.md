@@ -149,7 +149,7 @@ Format is 1 item per line.
 
 ### Using name-libraries
 
-Let's pretend some of the built-in wordlist librarues don't have the `randopeep.name()` convenience function, and load the libraries, directly:
+Let's pretend some of the built-in wordlist libraries don't have the `randopeep.name()` convenience function, and load the libraries, directly:
 
 ```javascript
 var myLeetName = randopeep.get('name/english/female/first') + ' ' + randopeep.get('name/netrunner/first');
