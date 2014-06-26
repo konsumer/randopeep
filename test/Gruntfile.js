@@ -73,7 +73,8 @@ module.exports = function(grunt) {
 		'copy': {
 			'default': {
 				'files': [
-					{'cwd':'out', 'expand': true, 'src': ['*.js'], 'dest': 'test/', 'filter': 'isFile'}
+					{'chdir':'out', 'expand': true, 'src': ['*.js'], 'dest': 'test/', 'filter': 'isFile'},
+					{'expand': true, 'src': ['data'], 'dest': 'test/'},
 				]
 			}
 		}
@@ -110,9 +111,9 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-copy');
 
 	grunt.registerTask('default', ['clean:default', 'wordlists:default', 'browserify:default', 'uglify:default', 'copy:default']);
-	grunt.registerTask('lite-browser', ['clean:default', 'wordlists:lite-browser', 'browserify:default', 'uglify:default']);
+	grunt.registerTask('lite-browser', ['clean:default', 'wordlists:lite-browser', 'browserify:default', 'uglify:default', 'copy:default']);
 	grunt.registerTask('lite-node', ['clean:default', 'wordlists:lite-node', 'browserify:default', 'uglify:default']);
 	grunt.registerTask('server', ['connect']);
-	grunt.registerTask('page', ['default', 'gh-pages']);
+	grunt.registerTask('page', ['lite-browser', 'gh-pages']);
 
 };
