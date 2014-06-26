@@ -4,7 +4,7 @@
   "description": "Generate random fake data, in javascript, based on data files & functions",
   "main": "index.js",
   "scripts": {
-    "test": "grunt && mocha -R spec",
+    "test": "mocha -R spec",
     "start": "grunt server"
   },
   "author": "David Konsumer <konsumer@jetboystudio.com>",
