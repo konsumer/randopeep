@@ -73,8 +73,8 @@ module.exports = function(grunt) {
 		'copy': {
 			'default': {
 				'files': [
-					{'chdir':'out', 'expand': true, 'src': ['*.js'], 'dest': 'test/', 'filter': 'isFile'},
-					{'expand': true, 'src': ['data'], 'dest': 'test/'},
+					{'cwd':'out', 'expand': true, 'src': ['*.js'], 'dest': 'test/', 'filter': 'isFile'},
+					{'expand': true, 'src': ['data/**'], 'dest': 'test/'},
 				]
 			}
 		}
