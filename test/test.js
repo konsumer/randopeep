@@ -208,7 +208,7 @@ describe('randopeep', function() {
 		});
 
 		var ipsum2 = randopeep.ipsum(20);
-		it('should do 20 words of random text.', function() {
+		it('should do 20 words of random text ('+ipsum2+')', function() {
 			// ipsum2 = randopeep.ipsum(20);
 			expect(ipsum2).to.not.be.empty;
 		});
