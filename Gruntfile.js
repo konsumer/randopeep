@@ -111,7 +111,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-copy');
 
 	grunt.registerTask('default', ['clean:default', 'wordlists:default', 'browserify:default', 'uglify:default', 'copy:default']);
-	grunt.registerTask('lite-browser', ['clean:default', 'wordlists:lite-browser', 'browserify:default', 'uglify:default', 'copy:defualt']);
+	grunt.registerTask('lite-browser', ['clean:default', 'wordlists:lite-browser', 'browserify:default', 'uglify:default', 'copy:default']);
 	grunt.registerTask('lite-node', ['clean:default', 'wordlists:lite-node', 'browserify:default', 'uglify:default']);
 	grunt.registerTask('server', ['connect']);
 	grunt.registerTask('page', ['lite-browser', 'gh-pages']);
