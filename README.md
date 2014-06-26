@@ -139,7 +139,7 @@ define(['randopeep'], function(randopeep){
 
 ### Lite-version
 
-If you want to load your data dynamically, instead of inline, build with `grunt lite-browser` or `grunt lite-node`. For `grunt lite-browser`, make sure `dataLocation` in Gruntfile.js is set to a URL where your data can be found.
+If you want to load your data dynamically, instead of inline, build with `grunt lite-browser` or `grunt lite-node`. For `grunt lite-browser`, make sure `dataLocation` in Gruntfile.js is set to a URL where your data can be found. Put the `data/` dir on a host that can be loaded via HTTP (same host is easiest.)
 
 ### Adding your own name-libraries
 
