@@ -206,6 +206,12 @@ describe('randopeep', function() {
 			// ipsum = randopeep.ipsum();
 			expect(ipsum.split(' ')).length.is(200);
 		});
+
+		var ipsum2 = randopeep.ipsum(20);
+		it('should do 20 words of random text.', function() {
+			// ipsum2 = randopeep.ipsum(20);
+			expect(ipsum2).to.not.be.empty;
+		});
 	});
 
 	describe('address', function() {
