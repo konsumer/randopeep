@@ -4,3 +4,4 @@ out
 npm-debug.log
 test/randopeep.js
 test/randopeep.min.js
+.grunt
