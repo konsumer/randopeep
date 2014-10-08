@@ -159,6 +159,16 @@ Let's pretend some of the built-in wordlist libraries don't have the `randopeep.
 var myLeetName = randopeep.get('name/english/female/first') + ' ' + randopeep.get('name/netrunner/first');
 ```
 
+or even use formatting to make the code a bit neater:
+
+```javascript
+var myLeetName = randopeep.format(
+  '{0} {1}',
+  randopeep.get('name/chinese/male/first'),
+  randopeep.get('name/netrunner/first')
+);
+```
+
 
 ## Testing
 
