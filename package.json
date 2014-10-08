@@ -1,6 +1,6 @@
 {
   "name": "randopeep",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Generate random fake data, in javascript, based on data files & functions",
   "main": "index.js",
   "scripts": {
