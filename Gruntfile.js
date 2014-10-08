@@ -97,7 +97,7 @@ module.exports = function(grunt) {
 			}else{
 				out += 'randopeep.dataLocation=' + JSON.stringify(options.dataLocation) + ';\n';
 			}
-			grunt.file.write(options.out, out + '//</data>');
+			grunt.file.write(options.out, out + '//</data>\n');
 		});
 	});
 
