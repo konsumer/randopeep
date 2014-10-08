@@ -49,6 +49,11 @@ module.exports = function(randopeep){
 	api.internet.domain = function (derived,n){ return wrapFunc(n, randopeep.internet.domain, derived); };
 	api.internet.email = function (derived,n){ return wrapFunc(n, randopeep.internet.email, derived); };
 	api.internet.username = function (derived,n){ return wrapFunc(n, randopeep.internet.username, derived); };
+
+	api.clickbait = {};
+	// TODO: add support for `mode` when I come up with more modes
+	api.clickbait.headline = function (star,n){ return wrapFunc(n, randopeep.clickbait, star); };
+	api.clickbait.star = function(n) { return api.get('clickbait/star',n); };
 	
 	return api;
 };

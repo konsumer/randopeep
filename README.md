@@ -170,7 +170,7 @@ You can run my CLI tests with `npm test` or open test/index.html to run same tes
 *  use the GURPS class-data
 *  ipsum could be smarter with English, so it can assemble seemingly sensical text.
 *  use some [packetstorm wordlists](http://packetstormsecurity.com/Crackers/wordlists) to generate more stuff
-*  setup JSONP service, so none of this needs to be local
+*  setup JSONP/REST wordlist service, so none of this needs dictionaries to be local
 *  add support for specific types of clickbait headlines, like "tech": "X has a serious flaw, that will probably crash the internet"
 
 

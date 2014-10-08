@@ -15,6 +15,7 @@ randopeep.address = require('./src/address.js')(randopeep);
 randopeep.corporate = require('./src/corporate.js')(randopeep);
 randopeep.internet = require('./src/internet.js')(randopeep);
 randopeep.invention = require('./src/invention.js')(randopeep);
+randopeep.clickbait = require('./src/clickbait.js')(randopeep);
 
 module.exports = require('./src/interface.js')(randopeep);
 
@@ -35,6 +36,10 @@ if (typeof(define) === 'function'){
 // pre-load data files
 randopeep.data = {};
 //<data>
+randopeep.data["clickbait/modifier"]=require("./data/clickbait/modifier.json");
+randopeep.data["clickbait/noun"]=require("./data/clickbait/noun.json");
+randopeep.data["clickbait/star"]=require("./data/clickbait/star.json");
+randopeep.data["clickbait/verb"]=require("./data/clickbait/verb.json");
 randopeep.data["jobs"]=require("./data/jobs.json");
 randopeep.data["name/netrunner/first"]=require("./data/name/netrunner/first.json");
 randopeep.data["name/suffix"]=require("./data/name/suffix.json");

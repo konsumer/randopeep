@@ -365,4 +365,20 @@ describe('randopeep', function() {
 			expect(invention).to.not.be.empty;
 		});
 	});
+
+	describe('clickbait', function() {
+		var clickbait = randopeep.clickbait.headline();
+		it('should do an clickbait headline ('+clickbait+')', function() {
+			// clickbait = randopeep.clickbait.headline();
+			expect(clickbait).to.not.be.empty;
+		});
+
+		var star = randopeep.clickbait.star();
+		clickbait = randopeep.clickbait.headline(star);
+		it('should do an clickbait headline about '+star+' ('+clickbait+')', function() {
+			// star = randopeep.clickbait.star();
+			// clickbait = randopeep.clickbait.headline(star);
+			expect(clickbait).to.not.be.empty;
+		});
+	});
 });
