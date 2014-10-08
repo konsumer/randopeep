@@ -76,25 +76,7 @@ module.exports = function(grunt) {
 					{'cwd':'out', 'expand': true, 'src': ['*.js'], 'dest': 'test/', 'filter': 'isFile'}
 				]
 			}
-		},
-		
-		'bump': {
-	    'options': {
-	      'files': ['package.json'],
-	      'updateConfigs': [],
-	      'commit': true,
-	      'commitMessage': 'Release v%VERSION%',
-	      'commitFiles': ['package.json'],
-	      'createTag': true,
-	      'tagName': 'v%VERSION%',
-	      'tagMessage': 'Version %VERSION%',
-	      'push': true,
-	      'pushTo': 'origin',
-	      'gitDescribeOptions': '--tags --always --abbrev=1 --dirty=-d',
-	      'globalReplace': false
-	    }
-	  }
-
+		}
 	});
 
 	// Generate JS wordlist data
@@ -125,12 +107,12 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-gh-pages');
 	grunt.loadNpmTasks('grunt-contrib-copy');
-	grunt.loadNpmTasks('grunt-bump');
+	grunt.loadNpmTasks('grunt-release');
 
 	grunt.registerTask('default', ['clean:default', 'wordlists:default', 'browserify:default', 'uglify:default', 'copy:default']);
 	grunt.registerTask('lite-browser', ['clean:default', 'wordlists:lite-browser', 'browserify:default', 'uglify:default']);
 	grunt.registerTask('lite-node', ['clean:default', 'wordlists:lite-node', 'browserify:default', 'uglify:default']);
 	grunt.registerTask('server', ['connect']);
-	grunt.registerTask('release', ['default', 'gh-pages', 'bump']);
+	grunt.registerTask('npm', ['default', 'gh-pages', 'release']);
 
 };
