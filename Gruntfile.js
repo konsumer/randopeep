@@ -76,7 +76,24 @@ module.exports = function(grunt) {
 					{'cwd':'out', 'expand': true, 'src': ['*.js'], 'dest': 'test/', 'filter': 'isFile'}
 				]
 			}
-		}
+		},
+		
+		'bump': {
+	    'options': {
+	      'files': ['package.json'],
+	      'updateConfigs': [],
+	      'commit': true,
+	      'commitMessage': 'Release v%VERSION%',
+	      'commitFiles': ['package.json'],
+	      'createTag': true,
+	      'tagName': 'v%VERSION%',
+	      'tagMessage': 'Version %VERSION%',
+	      'push': true,
+	      'pushTo': 'upstream',
+	      'gitDescribeOptions': '--tags --always --abbrev=1 --dirty=-d',
+	      'globalReplace': false
+	    }
+	  }
 
 	});
 
@@ -113,6 +130,6 @@ module.exports = function(grunt) {
 	grunt.registerTask('lite-browser', ['clean:default', 'wordlists:lite-browser', 'browserify:default', 'uglify:default']);
 	grunt.registerTask('lite-node', ['clean:default', 'wordlists:lite-node', 'browserify:default', 'uglify:default']);
 	grunt.registerTask('server', ['connect']);
-	grunt.registerTask('page', ['default', 'gh-pages']);
+	grunt.registerTask('release', ['default', 'gh-pages', 'bump']);
 
 };
