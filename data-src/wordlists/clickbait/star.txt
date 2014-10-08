@@ -35,7 +35,6 @@ JK Rowling
 Prince George
 Vanilla Ice
 Ozzy Osbourne
-@horse_ebooks
 Chris Hadfield
 Lady Gaga
 Kim Kardashian
@@ -44,7 +43,6 @@ Joe Jonas
 Tina Fey
 Alec Baldwin
 the TSA
-this clickbait headline generator
 Paris Hilton
 Bill O'Reilly
 Gen. Keith Alexander
@@ -64,3 +62,5 @@ Netflix CEO Reed Hastings
 Mark Zuckerberg
 Bono
 Kevin Spacey
+Morrissey
+Robert Smith of The Cure
