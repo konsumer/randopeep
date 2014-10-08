@@ -96,6 +96,10 @@ Will attempt to use the text that you give it as a base for generating other thi
 
 * `randopeep.ipsum(n, list)` - `n` words from ipsum `list`, default list is "lorem" and default count is 200
 
+### Clickbait
+
+* `randopeep.clickbait.headline(star, n)` - a clickbait headline, `star` is the optional name of a star for the headline to be about
+* `randopeep.clickbait.star(n)` - a star from a headline
 
 ### Other stuff
 
@@ -163,8 +167,12 @@ You can run my CLI tests with `npm test` or open test/index.html to run same tes
 
 ## TODO
 
-* use the GURPS class-data
-* ipsum could be smarter with English, so it can assemble seemingly sensical text.
+*  use the GURPS class-data
+*  ipsum could be smarter with English, so it can assemble seemingly sensical text.
+*  use some [packetstorm wordlists](http://packetstormsecurity.com/Crackers/wordlists) to generate more stuff
+*  setup JSONP service, so none of this needs to be local
+*  add support for specific types of clickbait headlines, like "tech": "X has a serious flaw, that will probably crash the internet"
+
 
 
 ## Credits
