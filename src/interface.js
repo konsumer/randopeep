@@ -52,7 +52,7 @@ module.exports = function(randopeep){
 
 	api.clickbait = {};
 	// TODO: add support for `mode` when I come up with more modes
-	api.clickbait.headline = function (star,n){ return wrapFunc(n, randopeep.clickbait, star); };
+	api.clickbait.headline = function (star,mode,withInfo,n){ return wrapFunc(n, randopeep.clickbait, star,mode,withInfo); };
 	api.clickbait.star = function(n) { return api.get('clickbait/star',n); };
 	
 	return api;

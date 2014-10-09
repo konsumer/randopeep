@@ -368,17 +368,23 @@ describe('randopeep', function() {
 
 	describe('clickbait', function() {
 		var clickbait = randopeep.clickbait.headline();
-		it('should do an clickbait headline ('+clickbait+')', function() {
+		it('should do a clickbait headline ('+clickbait+')', function() {
 			// clickbait = randopeep.clickbait.headline();
 			expect(clickbait).to.not.be.empty;
 		});
 
 		var star = randopeep.clickbait.star();
 		clickbait = randopeep.clickbait.headline(star);
-		it('should do an clickbait headline about '+star+' ('+clickbait+')', function() {
+		it('should do a clickbait headline about '+star+' ('+clickbait+')', function() {
 			// star = randopeep.clickbait.star();
 			// clickbait = randopeep.clickbait.headline(star);
 			expect(clickbait).to.not.be.empty;
+		});
+
+		clickbait = randopeep.clickbait.headline(null, null, true);
+		it('should do a clickbait headline with extra info ('+JSON.stringify(clickbait)+')', function() {
+			// clickbait = randopeep.clickbait.headline(null, null, true);
+			expect(clickbait).to.have.property('headline');
 		});
 	});
 });

@@ -1,41 +1,29 @@
 'use strict';
 
+var formats = {
+  star1: 'Is {0} {1} {2}?',
+  star2: 'Is {0} {1} {2} {3}?',
+  star3: '{0} {1} {2}, you won\'t guess what happened next!',
+  star4: '{0} {1} {2} and you won\'t believe what happened next!'
+};
+
 module.exports = function(randopeep){
-  return function(star, mode){
+  return function(star, mode, withInfo){
     star = star || randopeep.get('clickbait/star');
-    mode = mode || randopeep.randomEl(['star1', 'star2', 'star3', 'star4']);
-    
-    if (mode == 'star1'){
-      return randopeep.format('Is {0} {1} {2}?',
-        star,
-        randopeep.get('clickbait/verb'),
-        randopeep.get('clickbait/noun')
-      );
-    }
+    mode = mode || randopeep.randomEl(Object.keys(formats));
 
-    if (mode == 'star2'){
-      return randopeep.format('Is {0} {1} {2} {3}?',
-        star,
-        randopeep.get('clickbait/verb'),
-        randopeep.get('clickbait/noun'),
-        randopeep.get('clickbait/modifier')
-      );
-    }
+    var noun = randopeep.get('clickbait/noun'),
+      verb = randopeep.get('clickbait/verb'),
+      modifier = randopeep.get('clickbait/modifier');
 
-    if (mode == 'star3'){
-      return randopeep.format('{0} {1} {2}, you won\'t guess what happened next!',
-        star,
-        randopeep.get('clickbait/verb'),
-        randopeep.get('clickbait/noun')
-      );
-    }
+    var out = randopeep.format(
+      formats[mode],
+      star,
+      verb,
+      noun,
+      modifier
+    );
 
-    if (mode == 'star4'){
-      return randopeep.format('{0} {1} {2} and you won\'t believe what happened next!',
-        star,
-        randopeep.get('clickbait/verb'),
-        randopeep.get('clickbait/noun')
-      );
-    }
+    return withInfo ? {headline:out, star:star, verb:verb, noun:noun, modifier:modifier} : out;
   };
 };
