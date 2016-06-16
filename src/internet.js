@@ -34,7 +34,7 @@ module.exports = function(randopeep){
 		domain:function(derived){
 			return randopeep.format(
 				'{0}.{1}',
-				internet.username(derived),
+				internet.username(derived).replace('_','-'),
 				randopeep.get('domain/suffix')
 			);
 		},
