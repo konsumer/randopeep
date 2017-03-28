@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha -R spec",
-    "start": "grunt server"
+    "start": "grunt server",
+    "preversion": "grunt npm"
   },
   "author": "David Konsumer <konsumer@jetboystudio.com>",
   "license": "MIT",
