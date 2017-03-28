@@ -12,6 +12,7 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "browserify": "^14.1.0",
     "chai": "~1.7.2",
     "glob": "~3.2.6",
     "grunt-browserify": "~1.2.4",
