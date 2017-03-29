@@ -1,5 +1,0 @@
-exports.prefix = ['incini-', 'nova-', 'auto-', 'micro-', 'neo-', 'aero-', 'cryo-', 'nega-', 'multi-', 'electro-', 'hydro-', 'infini-', 'magneto-', 'omni-', 'porta-', 'mega-', 'uni-', 'hyper-', 'nano-', 'anti-']
-exports.function1 = ['converter', 'transformer', 'launcher', 'spectralyzer', 'capacitor', 'reflector', 'focus', 'enhancer', 'charger', 'targeter', 'emitter', 'transmitter', 'transporter', 'energy', 'matter', 'prismator', 'reactor', 'reverser', 'negator', 'neutralizer']
-exports.function2 = ['gun', 'sphere', 'unit', 'machine', 'array', 'rocket', 'compound', 'antenna', 'engine', 'drive', 'network', 'weapon', 'probe', 'robot', 'craft', 'bomb', 'suit', 'armor', 'shield', 'construct']
-exports.catalyst1 = ['Gaussian', 'zortillium', 'mu-particle', 'microwave', 'infrared', 'ultraviolet', 'full-spectrum', 'polarity', 'dark matter', 'positron', 'gamma-ray', 'neutron', 'electron', 'atomic', 'Kirlian', 'jet', 'martellium', 'space', 'inertial', 'quantum']
-exports.catalyst2 = ['wave', 'particle', 'beam', 'field', 'alloy', 'vestor', 'plasma', 'pulse', 'radiation', 'flux', 'reaction', 'vapor', 'element', 'molecule', 'atom', 'spectrum', 'phase', 'laser', 'ray', 'force']

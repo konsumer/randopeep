@@ -1,5 +1,3 @@
-import path from 'path'
-
 const libraryName = 'randopeep'
 const outputFile = libraryName + '.js'
 
@@ -26,9 +24,5 @@ export default {
         exclude: /(node_modules|bower_components)/
       }
     ]
-  },
-  resolve: {
-    root: path.resolve('./src'),
-    extensions: ['', '.js', '.json']
   }
 }

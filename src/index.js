@@ -21,7 +21,7 @@ export const get = (...args) => args
 
 export const getCount = (n, list) => (new Array(n)).fill('').map(() => get(list))
 
-export default {
+const iface = {
   data,
   int,
   randomEl,
@@ -38,3 +38,6 @@ export default {
   invention,
   clickbait
 }
+
+export default iface
+module.exports = iface

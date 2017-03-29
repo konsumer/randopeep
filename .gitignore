@@ -3,4 +3,4 @@ node_modules
 *.log
 src/data.json
 test/randopeep.js
-
+test/randopeep.js.map
