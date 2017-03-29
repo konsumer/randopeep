@@ -4,10 +4,8 @@
 
 /* global describe it */
 
-// for client-side, you should have included these as script tags (see index.html)
-if (!chai) {
-  var chai = require('chai')
-}
+// for browser, you should have included these as script tags (see index.html)
+if (!chai) { var chai = require('chai') }
 if (!randopeep) {
   require('babel-register')
   var randopeep = require('../src/index.js')
@@ -16,187 +14,190 @@ if (!randopeep) {
 var expect = chai.expect
 
 describe('randopeep', function () {
-  describe('name', function () {
-    var name
+  if (require) {
+    it('conforms to standard', require('mocha-standard'))
+  }
+  // describe('name', function () {
+  //   var name
 
-    name = randopeep.name()
-    it('should do a totally random name (' + name + ')', function () {
-      // name = randopeep.name();
-      expect(name).to.not.be.empty
-    })
+  //   name = randopeep.name()
+  //   it('should do a totally random name (' + name + ')', function () {
+  //     // name = randopeep.name();
+  //     expect(name).to.not.be.empty
+  //   })
 
-    name = randopeep.name({origin: 'chinese'})
-    it('should do a random Chinese name (' + name + ')', function () {
-      // name = randopeep.name({origin:'chinese'});
-      expect(name).to.not.be.empty
-    })
+  //   name = randopeep.name({origin: 'chinese'})
+  //   it('should do a random Chinese name (' + name + ')', function () {
+  //     // name = randopeep.name({origin:'chinese'});
+  //     expect(name).to.not.be.empty
+  //   })
 
-    name = randopeep.name({origin: 'chinese', gender: 'female'})
-    it('should do a random female Chinese name (' + name + ')', function () {
-      // name = randopeep.name({origin:'chinese',gender:'female'});
-      expect(name).to.not.be.empty
-    })
+  //   name = randopeep.name({origin: 'chinese', gender: 'female'})
+  //   it('should do a random female Chinese name (' + name + ')', function () {
+  //     // name = randopeep.name({origin:'chinese',gender:'female'});
+  //     expect(name).to.not.be.empty
+  //   })
 
-    name = randopeep.name({origin: 'chinese', gender: 'male'})
-    it('should do a random male Chinese name (' + name + ')', function () {
-      // name = randopeep.name({origin:'chinese',gender:'male'});
-      expect(name).to.not.be.empty
-    })
+  //   name = randopeep.name({origin: 'chinese', gender: 'male'})
+  //   it('should do a random male Chinese name (' + name + ')', function () {
+  //     // name = randopeep.name({origin:'chinese',gender:'male'});
+  //     expect(name).to.not.be.empty
+  //   })
 
-    name = randopeep.name({origin: 'elven/dark'})
-    it('should do a random dark Elven name (' + name + ')', function () {
-      // name = randopeep.name({origin:'elven/dark'});
-      expect(name).to.not.be.empty
-    })
+  //   name = randopeep.name({origin: 'elven/dark'})
+  //   it('should do a random dark Elven name (' + name + ')', function () {
+  //     // name = randopeep.name({origin:'elven/dark'});
+  //     expect(name).to.not.be.empty
+  //   })
 
-    name = randopeep.name({origin: 'dwarven'})
-    it('should do a random Dwarven name (' + name + ')', function () {
-      // name = randopeep.name({origin:'dwarven'});
-      expect(name).to.not.be.empty
-    })
+  //   name = randopeep.name({origin: 'dwarven'})
+  //   it('should do a random Dwarven name (' + name + ')', function () {
+  //     // name = randopeep.name({origin:'dwarven'});
+  //     expect(name).to.not.be.empty
+  //   })
 
-    name = randopeep.name({origin: 'elven', gender: 'female'})
-    it('should do a random female Elven name (' + name + ')', function () {
-      // name = randopeep.name({origin:'elven',gender:'female'});
-      expect(name).to.not.be.empty
-    })
+  //   name = randopeep.name({origin: 'elven', gender: 'female'})
+  //   it('should do a random female Elven name (' + name + ')', function () {
+  //     // name = randopeep.name({origin:'elven',gender:'female'});
+  //     expect(name).to.not.be.empty
+  //   })
 
-    name = randopeep.name({origin: 'elven', gender: 'male'})
-    it('should do a random male Elven name (' + name + ')', function () {
-      // name = randopeep.name({origin:'elven',gender:'male'});
-      expect(name).to.not.be.empty
-    })
+  //   name = randopeep.name({origin: 'elven', gender: 'male'})
+  //   it('should do a random male Elven name (' + name + ')', function () {
+  //     // name = randopeep.name({origin:'elven',gender:'male'});
+  //     expect(name).to.not.be.empty
+  //   })
 
-    name = randopeep.name({origin: 'english', gender: 'female'})
-    it('should do a random female English name (' + name + ')', function () {
-      // name = randopeep.name({origin:'english',gender:'female'});
-      expect(name).to.not.be.empty
-    })
+  //   name = randopeep.name({origin: 'english', gender: 'female'})
+  //   it('should do a random female English name (' + name + ')', function () {
+  //     // name = randopeep.name({origin:'english',gender:'female'});
+  //     expect(name).to.not.be.empty
+  //   })
 
-    name = randopeep.name({origin: 'english', gender: 'male'})
-    it('should do a random male English name (' + name + ')', function () {
-      // name = randopeep.name({origin:'english',gender:'male'});
-      expect(name).to.not.be.empty
-    })
+  //   name = randopeep.name({origin: 'english', gender: 'male'})
+  //   it('should do a random male English name (' + name + ')', function () {
+  //     // name = randopeep.name({origin:'english',gender:'male'});
+  //     expect(name).to.not.be.empty
+  //   })
 
-    name = randopeep.name({origin: 'germanic', gender: 'female'})
-    it('should do a random female Germanic name (' + name + ')', function () {
-      // name = randopeep.name({origin:'germanic',gender:'female'});
-      expect(name).to.not.be.empty
-    })
+  //   name = randopeep.name({origin: 'germanic', gender: 'female'})
+  //   it('should do a random female Germanic name (' + name + ')', function () {
+  //     // name = randopeep.name({origin:'germanic',gender:'female'});
+  //     expect(name).to.not.be.empty
+  //   })
 
-    name = randopeep.name({origin: 'germanic', gender: 'male'})
-    it('should do a random male Germanic name (' + name + ')', function () {
-      // name = randopeep.name({origin:'germanic',gender:'male'});
-      expect(name).to.not.be.empty
-    })
+  //   name = randopeep.name({origin: 'germanic', gender: 'male'})
+  //   it('should do a random male Germanic name (' + name + ')', function () {
+  //     // name = randopeep.name({origin:'germanic',gender:'male'});
+  //     expect(name).to.not.be.empty
+  //   })
 
-    name = randopeep.name({origin: 'japanese', gender: 'female'})
-    it('should do a random female Japanese name (' + name + ')', function () {
-      // name = randopeep.name({origin:'japanese',gender:'female'});
-      expect(name).to.not.be.empty
-    })
+  //   name = randopeep.name({origin: 'japanese', gender: 'female'})
+  //   it('should do a random female Japanese name (' + name + ')', function () {
+  //     // name = randopeep.name({origin:'japanese',gender:'female'});
+  //     expect(name).to.not.be.empty
+  //   })
 
-    name = randopeep.name({origin: 'japanese', gender: 'male'})
-    it('should do a random male Japanese name (' + name + ')', function () {
-      // name = randopeep.name({origin:'japanese',gender:'male'});
-      expect(name).to.not.be.empty
-    })
+  //   name = randopeep.name({origin: 'japanese', gender: 'male'})
+  //   it('should do a random male Japanese name (' + name + ')', function () {
+  //     // name = randopeep.name({origin:'japanese',gender:'male'});
+  //     expect(name).to.not.be.empty
+  //   })
 
-    name = randopeep.name({origin: 'netrunner'})
-    it('should do a random Netrunner name (' + name + ')', function () {
-      // name = randopeep.name({origin:'netrunner'});
-      expect(name).to.not.be.empty
-    })
+  //   name = randopeep.name({origin: 'netrunner'})
+  //   it('should do a random Netrunner name (' + name + ')', function () {
+  //     // name = randopeep.name({origin:'netrunner'});
+  //     expect(name).to.not.be.empty
+  //   })
 
-    name = randopeep.name({origin: 'netrunner', last: false})
-    it('should do a 1-word random Netrunner name (' + name + ')', function () {
-      // name = randopeep.name({origin:'netrunner', last:false});
-      expect(name).to.not.be.empty
-    })
+  //   name = randopeep.name({origin: 'netrunner', last: false})
+  //   it('should do a 1-word random Netrunner name (' + name + ')', function () {
+  //     // name = randopeep.name({origin:'netrunner', last:false});
+  //     expect(name).to.not.be.empty
+  //   })
 
-    name = randopeep.name({origin: 'netrunner', last: false, prefix: false})
-    it('should do a 1-word random Netrunner name with no prefix (' + name + ')', function () {
-      // name = randopeep.name({origin:'netrunner', last:false, prefix:false});
-      expect(name).to.not.be.empty
-    })
-  })
-
-  describe('cc', function () {
-    var cc = [
-      randopeep.cc(),
-      randopeep.cc('visa', 13),
-      randopeep.cc('mastercard'),
-      randopeep.cc('mastercard', 13),
-      randopeep.cc('amex'),
-      randopeep.cc('discover')
-    ]
-
-    var regex = {
-      'visa': new RegExp('4(?:[0-9]{12}|[0-9]{15})'),
-      'mastercard': new RegExp('5[1-5][0-9]{14}'),
-      'amex': new RegExp('3[47][0-9]{13}'),
-      'discover': new RegExp('6[0-9]{15}') // not the best, I got lazy...
-    }
-
-    var luhnGen = (function () {
-      var d = [0, 1, 2, 3, 4, -4, -3, -2, -1, 0]
-      return function (l, s, i, m) {
-        s = 0
-        for (i = 0; i < l.length; i++) { s += parseInt(l.substring(i, i + 1), 10) }
-        for (i = l.length - 1; i >= 0; i -= 2) { s += d[parseInt(l.substring(i, i + 1), 10)] }
-        m = 10 - (s % 10)
-        return (m === 10) ? 0 : m
-      }
-    })()
-    var luhnVal = function (l, d) {
-      d = parseInt(l.replace(/\s/g, '').substring(l.length - 1, l.length), 10)
-      return luhnGen(l.substring(0, l.length - 1)) === parseInt(d, 10)
-    }
-    var valid = function (t, v) {
-      return v.match(regex[t]) && luhnVal(v)
-    }
-
-    it('should fake a Visa, by default (' + cc[0] + ')', function () {
-      // cc[0] = randopeep.cc();
-      expect(valid('visa', cc[0])).to.be.true
-    })
-
-    it('should fake a 13-digit Visa (' + cc[1] + ')', function () {
-      // cc[1] = randopeep.cc('visa', 13);
-      expect(valid('visa', cc[1])).to.be.true
-      expect(cc[1]).length.is(13)
-    })
-
-    it('should fake a Mastercard (' + cc[2] + ')', function () {
-      // cc[2] = randopeep.cc('mastercard');
-      expect(valid('mastercard', cc[2])).to.be.true
-    })
-
-    it('should fake a 16-digit Mastercard, even if I ask for 13 (' + cc[3] + ')', function () {
-      // cc[3] = randopeep.cc('mastercard',13);
-      expect(valid('mastercard', cc[3])).to.be.true
-      expect(cc[3]).length.is(16)
-    })
-
-    it('should fake an American Express (' + cc[4] + ')', function () {
-      // cc[4] = randopeep.cc('amex');
-      expect(valid('amex', cc[4])).to.be.true
-    })
-
-    it('should fake a Discover (' + cc[5] + ')', function () {
-      // cc[5] = randopeep.cc('discover');
-      expect(valid('discover', cc[5])).to.be.true
-    })
-  })
-
-  // describe('jobs', function () {
-  //   var job = randopeep.job()
-  //   it('should do a job (' + job + ')', function () {
-  //     // job = randopeep.job();
-  //     expect(job).to.not.be.empty
+  //   name = randopeep.name({origin: 'netrunner', last: false, prefix: false})
+  //   it('should do a 1-word random Netrunner name with no prefix (' + name + ')', function () {
+  //     // name = randopeep.name({origin:'netrunner', last:false, prefix:false});
+  //     expect(name).to.not.be.empty
   //   })
   // })
+
+  // describe('cc', function () {
+  //   var cc = [
+  //     randopeep.cc(),
+  //     randopeep.cc('visa', 13),
+  //     randopeep.cc('mastercard'),
+  //     randopeep.cc('mastercard', 13),
+  //     randopeep.cc('amex'),
+  //     randopeep.cc('discover')
+  //   ]
+
+  //   var regex = {
+  //     'visa': new RegExp('4(?:[0-9]{12}|[0-9]{15})'),
+  //     'mastercard': new RegExp('5[1-5][0-9]{14}'),
+  //     'amex': new RegExp('3[47][0-9]{13}'),
+  //     'discover': new RegExp('6[0-9]{15}') // not the best, I got lazy...
+  //   }
+
+  //   var luhnGen = (function () {
+  //     var d = [0, 1, 2, 3, 4, -4, -3, -2, -1, 0]
+  //     return function (l, s, i, m) {
+  //       s = 0
+  //       for (i = 0; i < l.length; i++) { s += parseInt(l.substring(i, i + 1), 10) }
+  //       for (i = l.length - 1; i >= 0; i -= 2) { s += d[parseInt(l.substring(i, i + 1), 10)] }
+  //       m = 10 - (s % 10)
+  //       return (m === 10) ? 0 : m
+  //     }
+  //   })()
+  //   var luhnVal = function (l, d) {
+  //     d = parseInt(l.replace(/\s/g, '').substring(l.length - 1, l.length), 10)
+  //     return luhnGen(l.substring(0, l.length - 1)) === parseInt(d, 10)
+  //   }
+  //   var valid = function (t, v) {
+  //     return v.match(regex[t]) && luhnVal(v)
+  //   }
+
+  //   it('should fake a Visa, by default (' + cc[0] + ')', function () {
+  //     // cc[0] = randopeep.cc();
+  //     expect(valid('visa', cc[0])).to.be.true
+  //   })
+
+  //   it('should fake a 13-digit Visa (' + cc[1] + ')', function () {
+  //     // cc[1] = randopeep.cc('visa', 13);
+  //     expect(valid('visa', cc[1])).to.be.true
+  //     expect(cc[1]).length.is(13)
+  //   })
+
+  //   it('should fake a Mastercard (' + cc[2] + ')', function () {
+  //     // cc[2] = randopeep.cc('mastercard');
+  //     expect(valid('mastercard', cc[2])).to.be.true
+  //   })
+
+  //   it('should fake a 16-digit Mastercard, even if I ask for 13 (' + cc[3] + ')', function () {
+  //     // cc[3] = randopeep.cc('mastercard',13);
+  //     expect(valid('mastercard', cc[3])).to.be.true
+  //     expect(cc[3]).length.is(16)
+  //   })
+
+  //   it('should fake an American Express (' + cc[4] + ')', function () {
+  //     // cc[4] = randopeep.cc('amex');
+  //     expect(valid('amex', cc[4])).to.be.true
+  //   })
+
+  //   it('should fake a Discover (' + cc[5] + ')', function () {
+  //     // cc[5] = randopeep.cc('discover');
+  //     expect(valid('discover', cc[5])).to.be.true
+  //   })
+  // })
+
+  describe('jobs', function () {
+    var job = randopeep.job()
+    it('should do a job (' + job + ')', function () {
+      // job = randopeep.job();
+      expect(job).to.not.be.empty
+    })
+  })
 
   // describe('ipsum', function () {
   //   var ipsum = randopeep.ipsum()
