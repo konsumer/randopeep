@@ -2,30 +2,27 @@
   "name": "randopeep",
   "version": "0.2.5",
   "description": "Generate random fake data, in javascript, based on data files & functions",
-  "main": "index.js",
+  "main": "test/randopeep.js",
   "scripts": {
-    "test": "mocha -R spec",
-    "start": "grunt server",
-    "preversion": "grunt npm"
+    "test": "mocha",
+    "test:watch": "npm test -- -w",
+    "preversion": "npm run build",
+    "prebuild": "babel-node scripts/wordlists.js",
+    "build": "webpack -p"
   },
   "author": "David Konsumer <konsumer@jetboystudio.com>",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "browserify": "^14.1.0",
-    "chai": "~1.7.2",
-    "glob": "~3.2.6",
-    "grunt-browserify": "~1.2.4",
-    "grunt-cli": "^1.2.0",
-    "grunt-contrib-clean": "~0.5.0",
-    "grunt-contrib-connect": "~0.3.0",
-    "grunt-contrib-copy": "^0.5.0",
-    "grunt-contrib-uglify": "~0.2.2",
-    "grunt-gh-pages": "^0.9.1",
-    "grunt-release": "^0.7.0",
-    "mkdirp": "~0.3.5",
-    "mocha": "~1.12.0",
-    "xml2js": "~0.2.8"
+    "babel-cli": "^6.24.0",
+    "babel-loader": "^6.4.1",
+    "babel-preset-latest": "^6.24.0",
+    "babel-register": "^6.24.0",
+    "chai": "^3.5.0",
+    "json-loader": "^0.5.4",
+    "mkdirp-promise": "^5.0.1",
+    "mocha": "^3.2.0",
+    "webpack": "^2.3.2"
   },
   "homepage": "https://github.com/konsumer/randopeeps",
   "bugs": {
@@ -35,5 +32,10 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/konsumer/randopeeps.git"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
   }
 }

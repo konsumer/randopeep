@@ -1,7 +1,5 @@
 node_modules
 .DS_Store
-out
-npm-debug.log
-test/randopeep.js
-test/randopeep.min.js
-.grunt
+*.log
+build/
+

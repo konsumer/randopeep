@@ -1,6 +1,5 @@
-node_modules
-.DS_Store
-out
-npm-debug.log
 .git
 .gitignore
+node_modules
+.DS_Store
+*.log

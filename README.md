@@ -2,7 +2,7 @@
 
 Originally I made this for generating fake NPCs for RPGs & fake accounts for things online.
 
-![Peeps](http://thenewforty.areavoices.com/files/2012/04/marshmallow_peeps.jpg)
+![Peeps](http://68.media.tumblr.com/ab6873991500bef6c1952724594fc7e2/tumblr_inline_n4c3qgSe901r6s53m.jpg)
 
 [![NPM](https://nodei.co/npm/randopeep.png)](https://nodei.co/npm/randopeep/)
 [![Build Status](https://travis-ci.org/konsumer/randopeep.png?branch=master)](https://travis-ci.org/konsumer/randopeep)
@@ -26,7 +26,7 @@ A lot of different types of names can be generated. All parameters are optional,
 
 ```javascript
 {
-	'origin' : random - 'chinese', 'dark/elven', 'dwarven','elven', 'english', 'germanic','japanese','orcish','spanish','netrunner',
+	'origin' : random - 'chinese', 'elven/dark', 'dwarven','elven', 'english', 'germanic','japanese','orcish','spanish','netrunner',
 	'gender': random - 'male','female',
 	'last': true,
 	'justLast': false,
@@ -35,7 +35,7 @@ A lot of different types of names can be generated. All parameters are optional,
 }
 ```
 
-* `origin` - the place/time the names come from (see data dir)
+* `origin` - the place/time the names come from
 * `gender` - male/female, if names are gendered
 * `last` - get a lastname?
 * `justLast` - get lastname only?
