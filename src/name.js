@@ -19,8 +19,6 @@ export default (params = {}) => {
     }
   })
 
-  params.name = 'not set'
-
   // some don't have gender
   // some don't have titles
   // some don't have prefixes
@@ -29,30 +27,40 @@ export default (params = {}) => {
       params.last = false
       params.gender = false
       params.prefix = false
+      params.suffix = false
       params.name = randomEl(data['name/elven/dark'])
       break
     case 'dwarven':
       params.last = false
       params.gender = false
       params.prefix = false
+      params.suffix = false
       params.name = randomEl(data['name/dwarven'])
       break
     case 'orcish':
       params.last = false
       params.gender = false
       params.prefix = false
+      params.suffix = false
       params.name = randomEl(data['name/orcish'])
       break
     case 'netrunner':
       params.name = ''
       if (params.last) {
-        params.origin = randomEl(['chinese', 'english', 'germanic', 'japanese', 'spanish'])
-        params.name = randomEl(data[`name/${params.origin}/${params.gender}`]) + ' '
+        if (randomEl([true, false])) {
+          params.origin = randomEl(['chinese', 'english', 'germanic', 'japanese', 'spanish'])
+          params.name = randomEl(data[`name/${params.origin}/${params.gender}`])
+        } else {
+          params.name = randomEl(data['name/netrunner'])
+        }
+        params.name += ' '
       }
-      params.name = params.name + randomEl(data['name/netrunner'])
+      params.suffix = false
+      params.name += randomEl(data['name/netrunner'])
       break
     case 'elven':
       params.prefix = false
+      params.suffix = false
       params.name = [params.gender, 'last'].map(e => randomEl(data[`name/elven/${e}`])).join(' ')
       break
     default:
