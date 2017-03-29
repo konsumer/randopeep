@@ -1,0 +1,5 @@
+english
+japanese
+chinese
+germanic
+spanish
