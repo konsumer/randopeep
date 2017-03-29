@@ -8,6 +8,12 @@ import internet from './internet'
 import invention from './invention'
 import clickbait from './clickbait'
 
+export const format = (...args) => args.shift().replace(/{(\d+)}/g, (match, number) => (
+  typeof args[number] !== 'undefined'
+    ? args[number]
+    : match
+))
+
 export const titleCase = str => str.replace(/\w\S*/g, txt => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase())
 export const data = require('./data.json')
 export const int = max => Math.floor(Math.random() * (max || 10))
@@ -27,6 +33,7 @@ const iface = {
   randomEl,
   get,
   getCount,
+  format,
   replaceSymbolWithNumber,
   name,
   cc,

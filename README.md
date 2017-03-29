@@ -158,7 +158,7 @@ const myLeetName = randopeep.get('name/english/female/first') + ' ' + randopeep.
 or even use formatting to make the code a bit neater:
 
 ```javascript
-const myLeetName = '{0} {1}'.format(
+const myLeetName = randopeep.format('{0} {1}',
   randopeep.get('name/chinese/male/first'),
   randopeep.get('name/netrunner/first')
 )

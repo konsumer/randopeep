@@ -357,13 +357,13 @@ describe('randopeep', function () {
   //   })
   // })
 
-  // describe('invention', function () {
-  //   var invention = randopeep.invention()
-  //   it('should do an invention (' + invention + ')', function () {
-  //     // invention = randopeep.invention();
-  //     expect(invention).to.not.be.empty
-  //   })
-  // })
+  describe('invention', function () {
+    var invention = randopeep.invention()
+    it('should do an invention (' + invention + ')', function () {
+      // invention = randopeep.invention();
+      expect(invention).to.not.be.empty
+    })
+  })
 
   // describe('clickbait', function () {
   //   var clickbait = randopeep.clickbait.headline()
