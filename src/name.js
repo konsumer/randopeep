@@ -6,11 +6,12 @@ const defaults = {
   'last': true,
   'justLast': false,
   'prefix': [true, false],
+  'suffix': [true, false],
   'returnData': false
 }
 
 export default (params = {}) => {
-  params = Object.assign(defaults, params)
+  params = Object.assign({}, defaults, params)
 
   Object.keys(defaults).forEach(i => {
     if (Array.isArray(params[i])) {
@@ -67,6 +68,11 @@ export default (params = {}) => {
     }
     params.prefix = randomEl(data[`name/prefix/${params.gender}`])
     params.name = `${params.prefix} ${params.name}`
+  }
+
+  if (params.suffix) {
+    params.suffix = randomEl(data[`name/suffix`])
+    params.name = `${params.name} ${params.suffix}`
   }
 
   return params.returnData ? params : params.name
