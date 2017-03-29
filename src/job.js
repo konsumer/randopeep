@@ -1,1 +1,3 @@
-export default () => {}
+import { get } from './index'
+
+export default () => get('jobs')
