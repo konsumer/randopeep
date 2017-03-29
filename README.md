@@ -118,8 +118,8 @@ Install: `npm install randopeep`
 in your code:
 
 ```javascript
-var randopeep = require('randopeep');
-var myFakeName = randopeep.name();
+const randopeep = require('randopeep')
+const myFakeName = randopeep.name()
 ```
 
 ### Browser
@@ -129,7 +129,7 @@ Just include `build/randopeep.min.js` in your thing, and use it like normal:
 ```html
 <script src=": https://rawgit.com/konsumer/randopeep/gh-pages/randopeep.min.js"></script>
 <script>
-	document.body.innerHTML = "I'm cool dude named " + randopeep.name({gender:'male'});
+	document.body.innerHTML = "I'm cool dude named " + randopeep.name({gender:'male'})
 </script>
 ```
 
@@ -137,17 +137,13 @@ There is also support for AMD/require.js, just put out/randopeep.js in your appl
 
 ```javascript
 define(['randopeep'], function(randopeep){
-	document.body.innerHTML = "I'm cool lady named " + randopeep.name({gender:'female'});
-});
+	document.body.innerHTML = "I'm cool lady named " + randopeep.name({gender:'female'})
+})
 ```
-
-### Lite-version
-
-If you want to load your data dynamically, instead of inline, build with `grunt lite-browser` or `grunt lite-node`. For `grunt lite-browser`, make sure `dataLocation` in Gruntfile.js is set to a URL where your data can be found. Put the `data/` dir on a host that can be loaded via HTTP (same host is easiest.)
 
 ### Adding your own name-libraries
 
-You can add your own, if you install dev-tools with `npm install` then add whatever you want to [data-src/wordlists](https://github.com/konsumer/randopeep/tree/master/data-src/wordlists) dir, and run `grunt`.
+You can add your own, if you install dev-tools with `npm install` then add whatever you want to [data/](https://github.com/konsumer/randopeep/tree/master/src/) dir, and run `npm run build`.
 
 Format is 1 item per line.
 
@@ -156,17 +152,16 @@ Format is 1 item per line.
 Let's pretend some of the built-in wordlist libraries don't have the `randopeep.name()` convenience function, and load the libraries, directly:
 
 ```javascript
-var myLeetName = randopeep.get('name/english/female/first') + ' ' + randopeep.get('name/netrunner/first');
+const myLeetName = randopeep.get('name/english/female/first') + ' ' + randopeep.get('name/netrunner/first')
 ```
 
 or even use formatting to make the code a bit neater:
 
 ```javascript
-var myLeetName = randopeep.format(
-  '{0} {1}',
+const myLeetName = '{0} {1}'.format(
   randopeep.get('name/chinese/male/first'),
   randopeep.get('name/netrunner/first')
-);
+)
 ```
 
 

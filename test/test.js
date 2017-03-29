@@ -122,73 +122,73 @@ describe('randopeep', function () {
     })
   })
 
-  // describe('cc', function () {
-  //   var cc = [
-  //     randopeep.cc(),
-  //     randopeep.cc('visa', 13),
-  //     randopeep.cc('mastercard'),
-  //     randopeep.cc('mastercard', 13),
-  //     randopeep.cc('amex'),
-  //     randopeep.cc('discover')
-  //   ]
+  describe('cc', function () {
+    var cc = [
+      randopeep.cc(),
+      randopeep.cc('visa', 13),
+      randopeep.cc('mastercard'),
+      randopeep.cc('mastercard', 13),
+      randopeep.cc('amex'),
+      randopeep.cc('discover')
+    ]
 
-  //   var regex = {
-  //     'visa': new RegExp('4(?:[0-9]{12}|[0-9]{15})'),
-  //     'mastercard': new RegExp('5[1-5][0-9]{14}'),
-  //     'amex': new RegExp('3[47][0-9]{13}'),
-  //     'discover': new RegExp('6[0-9]{15}') // not the best, I got lazy...
-  //   }
+    var regex = {
+      'visa': new RegExp('4(?:[0-9]{12}|[0-9]{15})'),
+      'mastercard': new RegExp('5[1-5][0-9]{14}'),
+      'amex': new RegExp('3[47][0-9]{13}'),
+      'discover': new RegExp('6[0-9]{15}') // not the best, I got lazy...
+    }
 
-  //   var luhnGen = (function () {
-  //     var d = [0, 1, 2, 3, 4, -4, -3, -2, -1, 0]
-  //     return function (l, s, i, m) {
-  //       s = 0
-  //       for (i = 0; i < l.length; i++) { s += parseInt(l.substring(i, i + 1), 10) }
-  //       for (i = l.length - 1; i >= 0; i -= 2) { s += d[parseInt(l.substring(i, i + 1), 10)] }
-  //       m = 10 - (s % 10)
-  //       return (m === 10) ? 0 : m
-  //     }
-  //   })()
-  //   var luhnVal = function (l, d) {
-  //     d = parseInt(l.replace(/\s/g, '').substring(l.length - 1, l.length), 10)
-  //     return luhnGen(l.substring(0, l.length - 1)) === parseInt(d, 10)
-  //   }
-  //   var valid = function (t, v) {
-  //     return v.match(regex[t]) && luhnVal(v)
-  //   }
+    var luhnGen = (function () {
+      var d = [0, 1, 2, 3, 4, -4, -3, -2, -1, 0]
+      return function (l, s, i, m) {
+        s = 0
+        for (i = 0; i < l.length; i++) { s += parseInt(l.substring(i, i + 1), 10) }
+        for (i = l.length - 1; i >= 0; i -= 2) { s += d[parseInt(l.substring(i, i + 1), 10)] }
+        m = 10 - (s % 10)
+        return (m === 10) ? 0 : m
+      }
+    })()
+    var luhnVal = function (l, d) {
+      d = parseInt(l.replace(/\s/g, '').substring(l.length - 1, l.length), 10)
+      return luhnGen(l.substring(0, l.length - 1)) === parseInt(d, 10)
+    }
+    var valid = function (t, v) {
+      return v.match(regex[t]) && luhnVal(v)
+    }
 
-  //   it('should fake a Visa, by default (' + cc[0] + ')', function () {
-  //     // cc[0] = randopeep.cc();
-  //     expect(valid('visa', cc[0])).to.be.true
-  //   })
+    it('should fake a Visa, by default (' + cc[0] + ')', function () {
+      // cc[0] = randopeep.cc();
+      expect(valid('visa', cc[0])).to.be.true
+    })
 
-  //   it('should fake a 13-digit Visa (' + cc[1] + ')', function () {
-  //     // cc[1] = randopeep.cc('visa', 13);
-  //     expect(valid('visa', cc[1])).to.be.true
-  //     expect(cc[1]).length.is(13)
-  //   })
+    it('should fake a 13-digit Visa (' + cc[1] + ')', function () {
+      // cc[1] = randopeep.cc('visa', 13);
+      expect(valid('visa', cc[1])).to.be.true
+      expect(cc[1]).length.is(13)
+    })
 
-  //   it('should fake a Mastercard (' + cc[2] + ')', function () {
-  //     // cc[2] = randopeep.cc('mastercard');
-  //     expect(valid('mastercard', cc[2])).to.be.true
-  //   })
+    it('should fake a Mastercard (' + cc[2] + ')', function () {
+      // cc[2] = randopeep.cc('mastercard');
+      expect(valid('mastercard', cc[2])).to.be.true
+    })
 
-  //   it('should fake a 16-digit Mastercard, even if I ask for 13 (' + cc[3] + ')', function () {
-  //     // cc[3] = randopeep.cc('mastercard',13);
-  //     expect(valid('mastercard', cc[3])).to.be.true
-  //     expect(cc[3]).length.is(16)
-  //   })
+    it('should fake a 16-digit Mastercard, even if I ask for 13 (' + cc[3] + ')', function () {
+      // cc[3] = randopeep.cc('mastercard',13);
+      expect(valid('mastercard', cc[3])).to.be.true
+      expect(cc[3]).length.is(16)
+    })
 
-  //   it('should fake an American Express (' + cc[4] + ')', function () {
-  //     // cc[4] = randopeep.cc('amex');
-  //     expect(valid('amex', cc[4])).to.be.true
-  //   })
+    it('should fake an American Express (' + cc[4] + ')', function () {
+      // cc[4] = randopeep.cc('amex');
+      expect(valid('amex', cc[4])).to.be.true
+    })
 
-  //   it('should fake a Discover (' + cc[5] + ')', function () {
-  //     // cc[5] = randopeep.cc('discover');
-  //     expect(valid('discover', cc[5])).to.be.true
-  //   })
-  // })
+    it('should fake a Discover (' + cc[5] + ')', function () {
+      // cc[5] = randopeep.cc('discover');
+      expect(valid('discover', cc[5])).to.be.true
+    })
+  })
 
   // describe('jobs', function () {
   //   var job = randopeep.job()
