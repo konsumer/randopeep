@@ -65,7 +65,7 @@ export default (params = {}) => {
     if (!params.gender) {
       params.gender = randomEl(['male', 'female'])
     }
-    params.prefix = randomEl(data.faker.name_prefix[params.gender])
+    params.prefix = randomEl(data[`name/prefix/${params.gender}`])
     params.name = `${params.prefix} ${params.name}`
   }
 

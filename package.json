@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha",
     "test:watch": "npm test -- -w",
-    "build": "webpack -p",
+    "build": "webpack -p --progress --hide-modules",
     "preversion": "npm run build",
     "prebuild": "babel-node scripts/wordlists.js"
   },
