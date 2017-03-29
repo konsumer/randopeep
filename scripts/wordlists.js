@@ -47,6 +47,6 @@ Promise.all([
 
   return mkdirp(join(__dirname, '..', 'build'))
     .then(() => {
-      write(join(__dirname, '..', 'build', 'wordlists.json'), JSON.stringify(data, null, 2))
+      write(join(__dirname, '..', 'src', 'data.json'), JSON.stringify(data, null, 2))
     })
 })

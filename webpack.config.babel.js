@@ -1,29 +1,34 @@
-import { DefinePlugin } from 'webpack'
-import { resolve } from 'path'
+import path from 'path'
 
-const config = {
-  devtool: 'cheap-module-eval-source-map',
-  entry: {
-    randopeep: [
-      './src/index.js',
-      'webpack/hot/only-dev-server'
-    ]
-  },
+const libraryName = 'randopeep'
+const outputFile = libraryName + '.js'
+
+export default {
+  entry: `${__dirname}/src/index.js`,
+  devtool: 'source-map',
   output: {
-    path: resolve(__dirname, './build'),
-    filename: '[name].js'
+    path: `${__dirname}/test`,
+    filename: outputFile,
+    library: libraryName,
+    libraryTarget: 'umd',
+    umdNamedDefine: true
   },
   module: {
     loaders: [
-      { test: /\.jsx?$/i, exclude: /(node_modules)/, loader: 'babel-loader' },
-      { test: /\.json$/i, exclude: /(node_modules)/, loader: 'json-loader' }
+      {
+        test: /(\.jsx|\.js)$/,
+        loader: 'babel-loader',
+        exclude: /(node_modules|bower_components)/
+      },
+      {
+        test: /\.json$/,
+        loader: 'json-loader',
+        exclude: /(node_modules|bower_components)/
+      }
     ]
   },
-  plugins: [
-    new DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV)
-    })
-  ]
+  resolve: {
+    root: path.resolve('./src'),
+    extensions: ['', '.js', '.json']
+  }
 }
-
-export default config

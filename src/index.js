@@ -9,7 +9,7 @@ import invention from './invention'
 import clickbait from './clickbait'
 
 export const titleCase = str => str.replace(/\w\S*/g, txt => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase())
-export const data = require('../build/wordlists.json')
+export const data = require('./data.json')
 export const int = max => Math.floor(Math.random() * (max || 10))
 export const randomEl = arr => arr[int(arr.length)]
 export const replaceSymbolWithNumber = (string, symbol = '#') => string.replace(new RegExp(symbol, 'g'), (match, number) => int(10))
@@ -21,7 +21,7 @@ export const get = (...args) => args
 
 export const getCount = (n, list) => (new Array(n)).fill('').map(() => get(list))
 
-const iface = {
+export default {
   data,
   int,
   randomEl,
@@ -38,5 +38,3 @@ const iface = {
   invention,
   clickbait
 }
-export default iface
-module.exports = iface
