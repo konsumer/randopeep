@@ -14,7 +14,7 @@ if (!randopeep) {
 var expect = chai.expect
 
 describe('randopeep', function () {
-  if (require) {
+  if (typeof require !== 'undefined') {
     it('conforms to standard', require('mocha-standard'))
   }
   describe('name', function () {
