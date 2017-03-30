@@ -50,15 +50,5 @@
     "ignore": [
       "test/"
     ]
-  },
-  "gh-pages-deploy": {
-    "staticpath": "test",
-    "prep": [
-      "build"
-    ],
-    "post": [
-      "clean-source"
-    ],
-    "noprompt": true
   }
 }
