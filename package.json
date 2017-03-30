@@ -9,7 +9,7 @@
     "build": "webpack -p --progress --hide-modules",
     "preversion": "npm run build",
     "prebuild": "babel-node scripts/wordlists.js",
-    "deploy": "git push origin `git subtree split --prefix test master`:gh-pages --force",
+    "deploy": "git add test/randopeep* && git push origin `git subtree split --prefix test master`:gh-pages --force && git rm test/randopeep*",
     "predeploy": "npm run build"
   },
   "author": "David Konsumer <konsumer@jetboystudio.com>",
