@@ -8,6 +8,7 @@
     "test:watch": "npm test -- -w",
     "build": "webpack -p --progress --hide-modules",
     "preversion": "npm run build",
+    "postversion": "git push && git push --tags && npm publish",
     "prebuild": "babel-node scripts/wordlists.js",
     "deploy": "git-directory-deploy --directory test --branch gh-pages",
     "predeploy": "npm run build"
