@@ -19,7 +19,7 @@ const wordlistDirRegex = new RegExp(`^${resolve(__dirname, '../src/data')}/`)
 
 const getTextFiles = () => files('**/*.txt')
   .then(files => files.map(file => ({
-    [file.replace(wordlistDirRegex, '').replace(/.txt$/, '')]: read(file).toString().split('\n')
+    [file.replace(wordlistDirRegex, '').replace(/.txt$/, '')]: read(file).toString().replace(/\uFEFF/g, '').split('\n')
   })))
 
 getTextFiles()
