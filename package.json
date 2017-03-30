@@ -8,7 +8,8 @@
     "test:watch": "npm test -- -w",
     "build": "webpack -p --progress --hide-modules",
     "preversion": "npm run build",
-    "prebuild": "babel-node scripts/wordlists.js"
+    "prebuild": "babel-node scripts/wordlists.js",
+    "deploy": "gh-pages-deploy"
   },
   "author": "David Konsumer <konsumer@jetboystudio.com>",
   "license": "MIT",
@@ -21,6 +22,7 @@
     "babel-preset-latest": "^6.24.0",
     "babel-register": "^6.24.0",
     "chai": "^3.5.0",
+    "gh-pages-deploy": "^0.4.2",
     "json-loader": "^0.5.4",
     "mocha": "^3.2.0",
     "mocha-standard": "^1.0.0",
@@ -44,5 +46,12 @@
     "ignore": [
       "test/"
     ]
+  },
+  "gh-pages-deploy": {
+    "staticpath": "test",
+    "prep": [
+      "build"
+    ],
+    "noprompt": true
   }
 }
