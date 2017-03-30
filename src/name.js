@@ -10,7 +10,8 @@ const defaults = {
   'returnData': false
 }
 
-export default (params = {}) => {
+const name = (params = {}, n = 1) => {
+  if (n !== 1) return (new Array(n)).fill('').map(() => name(params))
   params = Object.assign({}, defaults, params)
 
   Object.keys(defaults).forEach(i => {
@@ -67,7 +68,13 @@ export default (params = {}) => {
       if (!params.gender) {
         params.gender = randomEl(['male', 'female'])
       }
-      params.name = [params.gender, 'last'].map(e => get(`name/${params.origin}/${e}`)).join(' ')
+      if (params.last && !params.justLast) {
+        params.name = [params.gender, 'last'].map(e => get(`name/${params.origin}/${e}`)).join(' ')
+      } else if (!params.last) {
+        params.name = get(`name/${params.origin}/${params.gender}`)
+      } else {
+        params.name = get(`name/${params.origin}/last`)
+      }
   }
 
   if (params.prefix) {
@@ -85,3 +92,5 @@ export default (params = {}) => {
 
   return params.returnData ? params : params.name
 }
+
+export default name

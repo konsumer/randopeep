@@ -11,7 +11,10 @@ const luhnGen = ((() => {
   }
 }))()
 
-export default (issuer = 'visa', len = 16) => {
+const cc = (issuer = 'visa', len = 16, n = 1) => {
+  if (n !== 1) {
+    return (new Array(n)).fill('').map(() => cc(issuer, len))
+  }
   let out
 
   if (issuer !== 'visa') {
@@ -47,3 +50,5 @@ export default (issuer = 'visa', len = 16) => {
   out.push(luhnGen(out.join('')))
   return out.join('')
 }
+
+export default cc

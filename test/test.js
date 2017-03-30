@@ -20,6 +20,10 @@ describe('randopeep', function () {
   describe('name', function () {
     var name
 
+    it('should be able to get a list of 5 names', function () {
+      expect(randopeep.name({}, 5).length).to.equal(5)
+    })
+
     name = randopeep.name()
     it('should do a totally random name (' + name + ')', function () {
       // name = randopeep.name();
@@ -158,6 +162,10 @@ describe('randopeep', function () {
       return v.match(regex[t]) && luhnVal(v)
     }
 
+    it('should be able to get a list of 5 cc nums', function () {
+      expect(randopeep.cc('visa', 13, 5).length).to.equal(5)
+    })
+
     it('should fake a Visa, by default (' + cc[0] + ')', function () {
       // cc[0] = randopeep.cc();
       expect(valid('visa', cc[0])).to.be.true
@@ -192,6 +200,9 @@ describe('randopeep', function () {
   })
 
   describe('jobs', function () {
+    it('should be able to get a list of 5 jobs', function () {
+      expect(randopeep.job(5).length).to.equal(5)
+    })
     var job = randopeep.job()
     it('should do a job (' + job + ')', function () {
       // job = randopeep.job();
@@ -199,165 +210,180 @@ describe('randopeep', function () {
     })
   })
 
-  // describe('ipsum', function () {
-  //   var ipsum = randopeep.ipsum()
-  //   it('should do 200 words, by default.', function () {
-  //     // ipsum = randopeep.ipsum();
-  //     expect(ipsum.split(' ')).length.is(200)
-  //   })
+  describe('ipsum', function () {
+    var ipsum = randopeep.ipsum()
+    it('should do 200 words, by default.', function () {
+      // ipsum = randopeep.ipsum();
+      expect(ipsum.split(' ')).length.is(200)
+    })
 
-  //   var ipsum2 = randopeep.ipsum(20)
-  //   it('should do 20 words of random text (' + ipsum2 + ')', function () {
-  //     // ipsum2 = randopeep.ipsum(20);
-  //     expect(ipsum2).to.not.be.empty
-  //   })
-  // })
+    var ipsum2 = randopeep.ipsum(20)
+    it('should do 20 words of random text (' + ipsum2 + ')', function () {
+      // ipsum2 = randopeep.ipsum(20);
+      expect(ipsum2).to.not.be.empty
+    })
+  })
 
-  // describe('address', function () {
-  //   var city, zip, geo, state, address, county, country, phone
+  describe('address', function () {
+    it('should be able to get a list of 5 addresses', function () {
+      expect(randopeep.address.streetAddress(true, 5).length).to.equal(5)
+    })
 
-  //   zip = randopeep.address.zip()
-  //   it('should do a zip code (' + zip + ')', function () {
-  //     // zip = randopeep.address.zip();
-  //     expect(zip).to.not.be.empty
-  //   })
+    var city, zip, geo, state, address, county, country, phone
 
-  //   geo = randopeep.address.geo()
-  //   it('should do a geo location (' + geo + ')', function () {
-  //     // geo = randopeep.address.geo();
-  //     expect(geo).to.not.be.empty
-  //   })
+    zip = randopeep.address.zip()
+    it('should do a zip code (' + zip + ')', function () {
+      // zip = randopeep.address.zip();
+      expect(zip).to.not.be.empty
+    })
 
-  //   state = randopeep.address.state()
-  //   it('should do a US state name (' + state + ')', function () {
-  //     // state = randopeep.address.state();
-  //     expect(state).to.not.be.empty
-  //   })
+    geo = randopeep.address.geo()
+    it('should do a geo location (' + geo + ')', function () {
+      // geo = randopeep.address.geo();
+      expect(geo).to.not.be.empty
+    })
 
-  //   state = randopeep.address.state.a()
-  //   it('should do a US state abbreviation (' + state + ')', function () {
-  //     // state = randopeep.address.state.a();
-  //     expect(state).to.not.be.empty
-  //   })
+    state = randopeep.address.state()
+    it('should do a US state name (' + state + ')', function () {
+      // state = randopeep.address.state();
+      expect(state).to.not.be.empty
+    })
 
-  //   county = randopeep.address.uk.county()
-  //   it('should do a UK county (' + county + ')', function () {
-  //     // county = randopeep.address.uk.county();
-  //     expect(county).to.not.be.empty
-  //   })
+    state = randopeep.address.state.a()
+    it('should do a US state abbreviation (' + state + ')', function () {
+      // state = randopeep.address.state.a();
+      expect(state).to.not.be.empty
+    })
 
-  //   country = randopeep.address.uk.country()
-  //   it('should do a UK country (' + country + ')', function () {
-  //     // country = randopeep.address.uk.country();
-  //     expect(country).to.not.be.empty
-  //   })
+    county = randopeep.address.uk.county()
+    it('should do a UK county (' + county + ')', function () {
+      // county = randopeep.address.uk.county();
+      expect(county).to.not.be.empty
+    })
 
-  //   phone = randopeep.address.phone()
-  //   it('should do a phone number (' + phone + ')', function () {
-  //     // phone = randopeep.address.phone();
-  //     expect(phone).to.not.be.empty
-  //   })
+    country = randopeep.address.uk.country()
+    it('should do a UK country (' + country + ')', function () {
+      // country = randopeep.address.uk.country();
+      expect(country).to.not.be.empty
+    })
 
-  //   city = randopeep.address.city()
-  //   it('should do a city name (' + city + ')', function () {
-  //     // city = randopeep.address.city();
-  //     expect(city).to.not.be.empty
-  //   })
+    phone = randopeep.address.phone()
+    it('should do a phone number (' + phone + ')', function () {
+      // phone = randopeep.address.phone();
+      expect(phone).to.not.be.empty
+    })
 
-  //   address = randopeep.address.streetAddress()
-  //   it('should do a street address (' + address + ')', function () {
-  //     // address=randopeep.address.streetAddress();
-  //     expect(address).to.not.be.empty
-  //   })
+    city = randopeep.address.city()
+    it('should do a city name (' + city + ')', function () {
+      // city = randopeep.address.city();
+      expect(city).to.not.be.empty
+    })
 
-  //   address = randopeep.address.streetAddress(true)
-  //   it('should do a street address - full (' + address + ')', function () {
-  //     // address=randopeep.address.streetAddress(true);
-  //     expect(address).to.not.be.empty
-  //   })
-  // })
+    address = randopeep.address.streetAddress()
+    it('should do a street address (' + address + ')', function () {
+      // address=randopeep.address.streetAddress();
+      expect(address).to.not.be.empty
+    })
 
-  // describe('corporate', function () {
-  //   var company, catchPhrase, bs
+    address = randopeep.address.streetAddress(true)
+    it('should do a street address - full (' + address + ')', function () {
+      // address=randopeep.address.streetAddress(true);
+      expect(address).to.not.be.empty
+    })
+  })
 
-  //   company = randopeep.corporate.name()
-  //   it('should do a company name (' + company + ')', function () {
-  //     // company = randopeep.corporate.name();
-  //     expect(company).to.not.be.empty
-  //   })
+  describe('corporate', function () {
+    it('should be able to get a list of 5 company names', function () {
+      expect(randopeep.corporate.name(false, 5).length).to.equal(5)
+    })
 
-  //   company = randopeep.corporate.name('firm')
-  //   it('should do a firm company name (' + company + ')', function () {
-  //     // company = randopeep.corporate.name('firm');
-  //     expect(company).to.not.be.empty
-  //   })
+    var company, catchPhrase, bs
 
-  //   company = randopeep.corporate.name('small')
-  //   it('should do a small company name (' + company + ')', function () {
-  //     // company = randopeep.corporate.name('small');
-  //     expect(company).to.not.be.empty
-  //   })
+    company = randopeep.corporate.name()
+    it('should do a company name (' + company + ')', function () {
+      // company = randopeep.corporate.name();
+      expect(company).to.not.be.empty
+    })
 
-  //   company = randopeep.corporate.name('large')
-  //   it('should do a large company name (' + company + ')', function () {
-  //     // company = randopeep.corporate.name('large');
-  //     expect(company).to.not.be.empty
-  //   })
+    company = randopeep.corporate.name('firm')
+    it('should do a firm company name (' + company + ')', function () {
+      // company = randopeep.corporate.name('firm');
+      expect(company).to.not.be.empty
+    })
 
-  //   company = randopeep.corporate.name('cyber')
-  //   it('should do a cyber company name (' + company + ')', function () {
-  //     // company = randopeep.corporate.name('cyber');
-  //     expect(company).to.not.be.empty
-  //   })
+    company = randopeep.corporate.name('small')
+    it('should do a small company name (' + company + ')', function () {
+      // company = randopeep.corporate.name('small');
+      expect(company).to.not.be.empty
+    })
 
-  //   catchPhrase = randopeep.corporate.catchPhrase()
-  //   it('should do a catch-phrase (' + catchPhrase + ')', function () {
-  //     // catchPhrase = randopeep.corporate.catchPhrase();
-  //     expect(catchPhrase).to.not.be.empty
-  //   })
+    company = randopeep.corporate.name('large')
+    it('should do a large company name (' + company + ')', function () {
+      // company = randopeep.corporate.name('large');
+      expect(company).to.not.be.empty
+    })
 
-  //   bs = randopeep.corporate.bs()
-  //   it('should do some BS (' + bs + ')', function () {
-  //     // bs = randopeep.corporate.bs();
-  //     expect(bs).to.not.be.empty
-  //   })
-  // })
+    company = randopeep.corporate.name('cyber')
+    it('should do a cyber company name (' + company + ')', function () {
+      // company = randopeep.corporate.name('cyber');
+      expect(company).to.not.be.empty
+    })
 
-  // describe('internet', function () {
-  //   var ip, username, domain, email
+    catchPhrase = randopeep.corporate.catchPhrase()
+    it('should do a catch-phrase (' + catchPhrase + ')', function () {
+      // catchPhrase = randopeep.corporate.catchPhrase();
+      expect(catchPhrase).to.not.be.empty
+    })
 
-  //   ip = randopeep.internet.ip()
-  //   it('should do an IP address (' + ip + ')', function () {
-  //     // ip = randopeep.internet.ip();
-  //     expect(ip).to.not.be.empty
-  //   })
+    bs = randopeep.corporate.bs()
+    it('should do some BS (' + bs + ')', function () {
+      // bs = randopeep.corporate.bs();
+      expect(bs).to.not.be.empty
+    })
+  })
 
-  //   username = randopeep.internet.username()
-  //   it('should do a username (' + username + ')', function () {
-  //     // username = randopeep.internet.username();
-  //     expect(username).to.not.be.empty
-  //   })
+  describe('internet', function () {
+    it('should be able to get a list of 5 email addresses', function () {
+      expect(randopeep.internet.email(false, 5).length).to.equal(5)
+    })
 
-  //   domain = randopeep.internet.domain()
-  //   it('should do a domain name (' + domain + ')', function () {
-  //     // domain = randopeep.internet.domain();
-  //     expect(domain).to.not.be.empty
-  //   })
+    var ip, username, domain, email
 
-  //   email = randopeep.internet.email()
-  //   it('should do an email address (' + email + ')', function () {
-  //     // email = randopeep.internet.email();
-  //     expect(email).to.not.be.empty
-  //   })
+    ip = randopeep.internet.ip()
+    it('should do an IP address (' + ip + ')', function () {
+      // ip = randopeep.internet.ip();
+      expect(ip).to.not.be.empty
+    })
 
-  //   email = randopeep.internet.email('Cool Guy')
-  //   it('should do an email address derived from "Cool Guy" (' + email + ')', function () {
-  //     // email = randopeep.internet.email('Cool Guy');
-  //     expect(email).to.not.be.empty
-  //   })
-  // })
+    username = randopeep.internet.username()
+    it('should do a username (' + username + ')', function () {
+      // username = randopeep.internet.username();
+      expect(username).to.not.be.empty
+    })
+
+    domain = randopeep.internet.domain()
+    it('should do a domain name (' + domain + ')', function () {
+      // domain = randopeep.internet.domain();
+      expect(domain).to.not.be.empty
+    })
+
+    email = randopeep.internet.email()
+    it('should do an email address (' + email + ')', function () {
+      // email = randopeep.internet.email();
+      expect(email).to.not.be.empty
+    })
+
+    email = randopeep.internet.email('Cool Guy')
+    it('should do an email address derived from "Cool Guy" (' + email + ')', function () {
+      // email = randopeep.internet.email('Cool Guy');
+      expect(email).to.not.be.empty
+    })
+  })
 
   describe('invention', function () {
+    it('should be able to get a list of 5 inventions', function () {
+      expect(randopeep.invention(5).length).to.equal(5)
+    })
     var invention = randopeep.invention()
     it('should do an invention (' + invention + ')', function () {
       // invention = randopeep.invention();
@@ -365,25 +391,29 @@ describe('randopeep', function () {
     })
   })
 
-  // describe('clickbait', function () {
-  //   var clickbait = randopeep.clickbait.headline()
-  //   it('should do a clickbait headline (' + clickbait + ')', function () {
-  //     // clickbait = randopeep.clickbait.headline();
-  //     expect(clickbait).to.not.be.empty
-  //   })
+  describe('clickbait', function () {
+    it('should be able to get a list of 5 stars', function () {
+      expect(randopeep.clickbait.star(5).length).to.equal(5)
+    })
 
-  //   var star = randopeep.clickbait.star()
-  //   clickbait = randopeep.clickbait.headline(star)
-  //   it('should do a clickbait headline about ' + star + ' (' + clickbait + ')', function () {
-  //     // star = randopeep.clickbait.star();
-  //     // clickbait = randopeep.clickbait.headline(star);
-  //     expect(clickbait).to.not.be.empty
-  //   })
+    var clickbait = randopeep.clickbait.headline()
+    it('should do a clickbait headline (' + clickbait + ')', function () {
+      // clickbait = randopeep.clickbait.headline();
+      expect(clickbait).to.not.be.empty
+    })
 
-  //   clickbait = randopeep.clickbait.headline(null, null, true)
-  //   it('should do a clickbait headline with extra info (' + JSON.stringify(clickbait) + ')', function () {
-  //     // clickbait = randopeep.clickbait.headline(null, null, true);
-  //     expect(clickbait).to.have.property('headline')
-  //   })
-  // })
+    var star = randopeep.name()
+    clickbait = randopeep.clickbait.headline(star)
+    it('should do a clickbait headline about ' + star + ' (' + clickbait + ')', function () {
+      // star = randopeep.name();
+      // clickbait = randopeep.clickbait.headline(star);
+      expect(clickbait).to.not.be.empty
+    })
+
+    clickbait = randopeep.clickbait.headline(null, null, true)
+    it('should do a clickbait headline with extra info (' + JSON.stringify(clickbait) + ')', function () {
+      // clickbait = randopeep.clickbait.headline(null, null, true);
+      expect(clickbait).to.have.property('headline')
+    })
+  })
 })

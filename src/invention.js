@@ -11,10 +11,15 @@ const formats = [
   '{3} {0}{4} {1} {2}'
 ]
 
-export default () => format(randomEl(formats),
-  get('invention/prefix'),
-  get('invention/function1'),
-  get('invention/function2'),
-  get('invention/catalyst1'),
-  get('invention/catalyst2')
-)
+const invention = (n = 1) => {
+  if (n !== 1) return (new Array(n)).fill('').map(() => invention())
+  return format(randomEl(formats),
+    get('invention/prefix'),
+    get('invention/function1'),
+    get('invention/function2'),
+    get('invention/catalyst1'),
+    get('invention/catalyst2')
+  )
+}
+
+export default invention
