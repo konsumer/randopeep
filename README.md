@@ -73,10 +73,10 @@ If you set any of them to an array, it will pick a random element.
 
 It can be one of these:
 
-* cyber -  a company from the future
-* firm - a law-firm, all last names are random non-fantasy, but from the same origin
-* small - a small company
-* large - a large corp
+* `cyber` -  a company from the future
+* `firm` - a law-firm, all last names are random non-fantasy, but from the same origin
+* `small` - a small company
+* `large` - a large corp
 
 
 ### Internet Things
@@ -129,7 +129,7 @@ Just include `build/randopeep.min.js` in your thing, and use it like normal:
 ```html
 <script src=": https://rawgit.com/konsumer/randopeep/gh-pages/randopeep.min.js"></script>
 <script>
-	document.body.innerHTML = "I'm cool dude named " + randopeep.name({gender:'male'})
+  document.body.innerHTML = "I'm cool dude named " + randopeep.name({gender:'male'})
 </script>
 ```
 
@@ -137,7 +137,7 @@ There is also support for AMD/require.js, just put out/randopeep.js in your appl
 
 ```javascript
 define(['randopeep'], function(randopeep){
-	document.body.innerHTML = "I'm cool lady named " + randopeep.name({gender:'female'})
+  document.body.innerHTML = "I'm cool lady named " + randopeep.name({gender:'female'})
 })
 ```
 
