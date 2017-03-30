@@ -4,7 +4,7 @@
   "description": "Generate random fake data, in javascript, based on data files & functions",
   "main": "test/randopeep.js",
   "scripts": {
-    "test": "standard && mocha",
+    "test": "npm run prebuild && standard && mocha",
     "test:watch": "npm test -- -w",
     "build": "webpack -p --progress --hide-modules",
     "preversion": "npm run build",
