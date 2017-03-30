@@ -127,7 +127,7 @@ const myFakeName = randopeep.name()
 Just include `build/randopeep.min.js` in your thing, and use it like normal:
 
 ```html
-<script src=": https://rawgit.com/konsumer/randopeep/gh-pages/randopeep.min.js"></script>
+<script src="http://konsumer.js.org/randopeep/randopeep.js"></script>
 <script>
   document.body.innerHTML = "I'm cool dude named " + randopeep.name({gender:'male'})
 </script>
