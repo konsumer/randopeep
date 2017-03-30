@@ -9,7 +9,8 @@
     "build": "webpack -p --progress --hide-modules",
     "preversion": "npm run build",
     "prebuild": "babel-node scripts/wordlists.js",
-    "deploy": "gh-pages-deploy"
+    "deploy": "gh-pages-deploy",
+    "clean-source": "rimraf scripts src .* package.json README.md webpack.config.babel.js"
   },
   "author": "David Konsumer <konsumer@jetboystudio.com>",
   "license": "MIT",
@@ -26,6 +27,7 @@
     "json-loader": "^0.5.4",
     "mocha": "^3.2.0",
     "mocha-standard": "^1.0.0",
+    "rimraf": "^2.6.1",
     "webpack": "^2.3.2"
   },
   "homepage": "https://github.com/konsumer/randopeeps",
@@ -51,6 +53,9 @@
     "staticpath": "test",
     "prep": [
       "build"
+    ],
+    "post": [
+      "clean-source"
     ],
     "noprompt": true
   }
