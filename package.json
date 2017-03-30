@@ -9,7 +9,7 @@
     "build": "webpack -p --progress --hide-modules",
     "preversion": "npm run build",
     "prebuild": "babel-node scripts/wordlists.js",
-    "deploy": "git add test/randopeep* && git push origin `git subtree split --prefix test master`:gh-pages --force && git rm test/randopeep*",
+    "deploy": "git-directory-deploy --directory test --branch gh-pages",
     "predeploy": "npm run build"
   },
   "author": "David Konsumer <konsumer@jetboystudio.com>",
@@ -23,6 +23,7 @@
     "babel-preset-latest": "^6.24.0",
     "babel-register": "^6.24.0",
     "chai": "^3.5.0",
+    "git-directory-deploy": "^1.5.1",
     "json-loader": "^0.5.4",
     "mocha": "^3.2.0",
     "mocha-standard": "^1.0.0",
