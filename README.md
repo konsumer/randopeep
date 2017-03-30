@@ -183,4 +183,4 @@ You can run my CLI tests with `npm test` or open test/index.html to run same tes
 
 ## Credits
 
-* see [data credits](https://github.com/konsumer/randopeep/tree/master/data-src) for info about where a lot of this stuff came from.
+* see [data credits](https://github.com/konsumer/randopeep/tree/master/src/data) for info about where a lot of this stuff came from.
