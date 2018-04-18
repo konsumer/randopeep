@@ -1,5 +1,7 @@
 # [Rando Peeps Data](http://konsumer.github.io/randopeep/)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/konsumer/randopeep.svg)](https://greenkeeper.io/)
+
 Originally I made this for generating fake NPCs for RPGs & fake accounts for things online.
 
 ![Peeps](http://68.media.tumblr.com/ab6873991500bef6c1952724594fc7e2/tumblr_inline_n4c3qgSe901r6s53m.jpg)
