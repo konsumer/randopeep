@@ -14,13 +14,8 @@ export default {
   module: {
     rules: [
       {
-        test: /(\.jsx|\.js)$/,
+        test: /(\.jsx|\.js|\.json)$/,
         loader: 'babel-loader',
-        exclude: /(node_modules|bower_components)/
-      },
-      {
-        test: /\.json$/,
-        loader: 'json-loader',
         exclude: /(node_modules|bower_components)/
       }
     ]
