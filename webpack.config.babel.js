@@ -8,8 +8,7 @@ export default {
     path: `${__dirname}/test`,
     filename: outputFile,
     library: libraryName,
-    libraryTarget: 'umd',
-    umdNamedDefine: true
+    libraryTarget: 'umd'
   },
   module: {
     rules: [
