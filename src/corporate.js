@@ -8,30 +8,30 @@ export const name = (frm, n = 1) => {
   switch (frm) {
     case 'cyber':
       return format(
-          '{0}{1}',
-          getName({'last': false, 'origin': 'netrunner', 'prefix': false, suffix: false}),
-          get('corporate/cyber')
-        )
+        '{0}{1}',
+        getName({'last': false, 'origin': 'netrunner', 'prefix': false, suffix: false}),
+        get('corporate/cyber')
+      )
     case 'firm':
       // they are all from the same origin
       return format(
-          '{0}, {1} and {2}',
-          getName({justLast: true, origin, prefix: false, suffix: false}),
-          getName({justLast: true, origin, prefix: false, suffix: false}),
-          getName({justLast: true, origin, prefix: false, suffix: false})
-        )
+        '{0}, {1} and {2}',
+        getName({justLast: true, origin, prefix: false, suffix: false}),
+        getName({justLast: true, origin, prefix: false, suffix: false}),
+        getName({justLast: true, origin, prefix: false, suffix: false})
+      )
     case 'small':
       return format(
-          '{0} {1}',
-          getName({justLast: true, origin, prefix: false, suffix: false}),
-          get('corporate/small')
-        )
+        '{0} {1}',
+        getName({justLast: true, origin, prefix: false, suffix: false}),
+        get('corporate/small')
+      )
     case 'large':
       return format(
-          '{0} {1}',
-          getName({justLast: true, origin, prefix: false, suffix: false}),
-          get('corporate/large')
-        )
+        '{0} {1}',
+        getName({justLast: true, origin, prefix: false, suffix: false}),
+        get('corporate/large')
+      )
   }
 }
 

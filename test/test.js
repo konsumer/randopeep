@@ -174,7 +174,7 @@ describe('randopeep', function () {
     it('should fake a 13-digit Visa (' + cc[1] + ')', function () {
       // cc[1] = randopeep.cc('visa', 13);
       expect(valid('visa', cc[1])).to.be.true
-      expect(cc[1]).length.is(13)
+      expect(cc[1].length).to.equal(13)
     })
 
     it('should fake a Mastercard (' + cc[2] + ')', function () {
@@ -185,7 +185,7 @@ describe('randopeep', function () {
     it('should fake a 16-digit Mastercard, even if I ask for 13 (' + cc[3] + ')', function () {
       // cc[3] = randopeep.cc('mastercard',13);
       expect(valid('mastercard', cc[3])).to.be.true
-      expect(cc[3]).length.is(16)
+      expect(cc[3].length).to.equal(16)
     })
 
     it('should fake an American Express (' + cc[4] + ')', function () {
@@ -214,7 +214,7 @@ describe('randopeep', function () {
     var ipsum = randopeep.ipsum()
     it('should do 200 words, by default.', function () {
       // ipsum = randopeep.ipsum();
-      expect(ipsum.split(' ')).length.is(200)
+      expect(ipsum.split(' ').length).to.equal(200)
     })
 
     var ipsum2 = randopeep.ipsum(20)
