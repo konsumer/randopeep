@@ -3,6 +3,7 @@
   "version": "1.1.2",
   "description": "Generate random fake data, in javascript, based on data files & functions",
   "main": "test/randopeep.js",
+  "files": [],
   "scripts": {
     "test": "npm run prebuild && standard && mocha",
     "test:watch": "npm test -- -w",
