@@ -23,7 +23,7 @@ export const headline = (star, mode, withInfo, n) => {
     modifier
   )
 
-  return withInfo ? {headline: out, star: star, verb: verb, noun: noun, modifier: modifier} : out
+  return withInfo ? { headline: out, star: star, verb: verb, noun: noun, modifier: modifier } : out
 }
 
 export const star = (n = 1) => (n === 1) ? get('jobs') : (new Array(n)).fill('').map(() => get('jobs'))

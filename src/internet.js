@@ -11,10 +11,10 @@ export const username = (derived, n = 1) => {
   if (!derived) {
     switch (int(4)) {
       case 0:
-        derived = name({'justLast': randomEl([true, false]), 'origin': get('address/origins'), 'prefix': false, suffix: false})
+        derived = name({ 'justLast': randomEl([true, false]), 'origin': get('address/origins'), 'prefix': false, suffix: false })
         break
       case 1:
-        derived = name({'justLast': randomEl([true, false]), 'origin': 'netrunner', 'prefix': false, suffix: false})
+        derived = name({ 'justLast': randomEl([true, false]), 'origin': 'netrunner', 'prefix': false, suffix: false })
         break
       case 2:
         derived = get('bs/noun')

@@ -2,7 +2,7 @@
  * Test file works in client-side or server-side
  */
 
-/* global describe it */
+/* global describe it expect */
 
 // for browser, you should have included these as script tags (see index.html)
 if (!chai) { var chai = require('chai') }
@@ -30,97 +30,97 @@ describe('randopeep', function () {
       expect(name).to.not.be.empty
     })
 
-    name = randopeep.name({origin: 'chinese'})
+    name = randopeep.name({ origin: 'chinese' })
     it('should do a random Chinese name (' + name + ')', function () {
       // name = randopeep.name({origin:'chinese'});
       expect(name).to.not.be.empty
     })
 
-    name = randopeep.name({origin: 'chinese', gender: 'female'})
+    name = randopeep.name({ origin: 'chinese', gender: 'female' })
     it('should do a random female Chinese name (' + name + ')', function () {
       // name = randopeep.name({origin:'chinese',gender:'female'});
       expect(name).to.not.be.empty
     })
 
-    name = randopeep.name({origin: 'chinese', gender: 'male'})
+    name = randopeep.name({ origin: 'chinese', gender: 'male' })
     it('should do a random male Chinese name (' + name + ')', function () {
       // name = randopeep.name({origin:'chinese',gender:'male'});
       expect(name).to.not.be.empty
     })
 
-    name = randopeep.name({origin: 'elven/dark'})
+    name = randopeep.name({ origin: 'elven/dark' })
     it('should do a random dark Elven name (' + name + ')', function () {
       // name = randopeep.name({origin:'elven/dark'});
       expect(name).to.not.be.empty
     })
 
-    name = randopeep.name({origin: 'dwarven'})
+    name = randopeep.name({ origin: 'dwarven' })
     it('should do a random Dwarven name (' + name + ')', function () {
       // name = randopeep.name({origin:'dwarven'});
       expect(name).to.not.be.empty
     })
 
-    name = randopeep.name({origin: 'elven', gender: 'female'})
+    name = randopeep.name({ origin: 'elven', gender: 'female' })
     it('should do a random female Elven name (' + name + ')', function () {
       // name = randopeep.name({origin:'elven',gender:'female'});
       expect(name).to.not.be.empty
     })
 
-    name = randopeep.name({origin: 'elven', gender: 'male'})
+    name = randopeep.name({ origin: 'elven', gender: 'male' })
     it('should do a random male Elven name (' + name + ')', function () {
       // name = randopeep.name({origin:'elven',gender:'male'});
       expect(name).to.not.be.empty
     })
 
-    name = randopeep.name({origin: 'english', gender: 'female'})
+    name = randopeep.name({ origin: 'english', gender: 'female' })
     it('should do a random female English name (' + name + ')', function () {
       // name = randopeep.name({origin:'english',gender:'female'});
       expect(name).to.not.be.empty
     })
 
-    name = randopeep.name({origin: 'english', gender: 'male'})
+    name = randopeep.name({ origin: 'english', gender: 'male' })
     it('should do a random male English name (' + name + ')', function () {
       // name = randopeep.name({origin:'english',gender:'male'});
       expect(name).to.not.be.empty
     })
 
-    name = randopeep.name({origin: 'germanic', gender: 'female'})
+    name = randopeep.name({ origin: 'germanic', gender: 'female' })
     it('should do a random female Germanic name (' + name + ')', function () {
       // name = randopeep.name({origin:'germanic',gender:'female'});
       expect(name).to.not.be.empty
     })
 
-    name = randopeep.name({origin: 'germanic', gender: 'male'})
+    name = randopeep.name({ origin: 'germanic', gender: 'male' })
     it('should do a random male Germanic name (' + name + ')', function () {
       // name = randopeep.name({origin:'germanic',gender:'male'});
       expect(name).to.not.be.empty
     })
 
-    name = randopeep.name({origin: 'japanese', gender: 'female'})
+    name = randopeep.name({ origin: 'japanese', gender: 'female' })
     it('should do a random female Japanese name (' + name + ')', function () {
       // name = randopeep.name({origin:'japanese',gender:'female'});
       expect(name).to.not.be.empty
     })
 
-    name = randopeep.name({origin: 'japanese', gender: 'male'})
+    name = randopeep.name({ origin: 'japanese', gender: 'male' })
     it('should do a random male Japanese name (' + name + ')', function () {
       // name = randopeep.name({origin:'japanese',gender:'male'});
       expect(name).to.not.be.empty
     })
 
-    name = randopeep.name({origin: 'netrunner'})
+    name = randopeep.name({ origin: 'netrunner' })
     it('should do a random Netrunner name (' + name + ')', function () {
       // name = randopeep.name({origin:'netrunner'});
       expect(name).to.not.be.empty
     })
 
-    name = randopeep.name({origin: 'netrunner', last: false})
+    name = randopeep.name({ origin: 'netrunner', last: false })
     it('should do a 1-word random Netrunner name (' + name + ')', function () {
       // name = randopeep.name({origin:'netrunner', last:false});
       expect(name).to.not.be.empty
     })
 
-    name = randopeep.name({origin: 'netrunner', last: false, prefix: false})
+    name = randopeep.name({ origin: 'netrunner', last: false, prefix: false })
     it('should do a 1-word random Netrunner name with no prefix (' + name + ')', function () {
       // name = randopeep.name({origin:'netrunner', last:false, prefix:false});
       expect(name).to.not.be.empty

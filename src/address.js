@@ -32,39 +32,39 @@ export const city = (n = 1) => {
       return format(
         '{0} {1}{2}',
         get('address/city/prefix'),
-        name({'justLast': true, 'origin': sOrigins, 'prefix': false, suffix: false}),
+        name({ 'justLast': true, 'origin': sOrigins, 'prefix': false, suffix: false }),
         get('address/city/suffix')
       )
     case 1:
       return format(
         '{0} {1}{2}',
         get('address/city/prefix'),
-        name({'last': false, 'origin': sOrigins, 'prefix': false, suffix: false}),
+        name({ 'last': false, 'origin': sOrigins, 'prefix': false, suffix: false }),
         get('address/city/suffix')
       )
     case 2:
       return format(
         '{0}{1}',
-        name({'justLast': true, 'origin': sOrigins, 'prefix': false, suffix: false}),
+        name({ 'justLast': true, 'origin': sOrigins, 'prefix': false, suffix: false }),
         get('address/city/suffix')
       )
     case 3:
       return format(
         '{0}{1}',
-        name({'last': false, 'origin': sOrigins, 'prefix': false, suffix: false}),
+        name({ 'last': false, 'origin': sOrigins, 'prefix': false, suffix: false }),
         get('address/city/suffix')
       )
     case 4:
       return format(
         '{0} {1}',
         get('address/city/prefix'),
-        name({'justLast': true, 'origin': sOrigins, 'prefix': false, suffix: false})
+        name({ 'justLast': true, 'origin': sOrigins, 'prefix': false, suffix: false })
       )
     case 5:
       return format(
         '{0} {1}',
         get('address/city/prefix'),
-        name({'last': false, 'origin': sOrigins, 'prefix': false, suffix: false})
+        name({ 'last': false, 'origin': sOrigins, 'prefix': false, suffix: false })
       )
   }
 }
@@ -79,7 +79,7 @@ const streetName = (n = 1) => {
     case 3:
       return format(
         '{0} {1}',
-        name({'justLast': true, 'origin': sOrigins, 'prefix': false, suffix: false}),
+        name({ 'justLast': true, 'origin': sOrigins, 'prefix': false, suffix: false }),
         get('address/street')
       )
     case 4:
